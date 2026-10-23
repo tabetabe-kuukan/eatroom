@@ -64,10 +64,7 @@ export async function loadSpace(def, renderer, onProgress) {
 
   const pGlb = fetchProgress(`${BASE}models/${tag}.glb`, (v) => { parts.glb = v; report(); });
   const pLm = meta.lightmap
-    ? Promise.all([
-      fetchProgress(`${BASE}models/${meta.lightmap.file}`, (v) => { parts.lm = v * 0.8; report(); }),
-      fetchProgress(`${BASE}models/${meta.lightmap.ao}`, () => {}),
-    ])
+    ? fetchProgress(`${BASE}models/${meta.lightmap.file}`, (v) => { parts.lm = v * 0.9; report(); })
     : Promise.resolve(null);
   const pHdr = meta.hdri
     ? fetchProgress(`${BASE}hdri/${meta.hdri}`, (v) => { parts.hdr = v; report(); })
@@ -76,10 +73,8 @@ export async function loadSpace(def, renderer, onProgress) {
   const [glbBuf, lmBufs, hdrBuf] = await Promise.all([pGlb, pLm, pHdr]);
   const gltf = await gltfLoader.parseAsync(glbBuf, `${BASE}models/`);
   let lm = null;
-  let ao = null;
   if (lmBufs) {
-    lm = await textureFrom(lmBufs[0], 'image/webp', THREE.SRGBColorSpace);
-    ao = await textureFrom(lmBufs[1], 'image/webp', THREE.NoColorSpace);
+    lm = await textureFrom(lmBufs, 'image/webp', THREE.SRGBColorSpace);
     parts.lm = 1; report();
   }
   let env = null;
@@ -98,15 +93,16 @@ export async function loadSpace(def, renderer, onProgress) {
     env = pmrem.fromEquirectangular(hdrTex).texture;
     pmrem.dispose();
   }
-  return buildWorld(def, meta, gltf.scene, { lm, ao, env, hdrTex });
+  return buildWorld(def, meta, gltf.scene, { lm, env, hdrTex });
 }
 
-function buildWorld(def, meta, root, { lm, ao, env, hdrTex }) {
+function buildWorld(def, meta, root, { lm, env, hdrTex }) {
   const look = def.look;
   const group = new THREE.Group();
   group.add(root);
   const lmScale = (meta.lightmap?.scale || 1) * (look.lightmapBoost ?? 1);
   const lmMaterials = [];
+  const flickerMaterials = [];
   const vlitMaterials = [];
   const swapped = new Map();
 
@@ -148,18 +144,33 @@ function buildWorld(def, meta, root, { lm, ao, env, hdrTex }) {
       src.side = THREE.DoubleSide;
     }
     if (isLm && lm) {
+      // テクスチャのない色だけのマテリアルは、エクスポーターが LM の UV を TEXCOORD_0 として書き出す
+      const g = o.geometry;
+      const ownTex = src.map || src.normalMap || src.roughnessMap || src.metalnessMap || src.emissiveMap;
+      if (!g.attributes.uv1 && g.attributes.uv && !ownTex) {
+        g.setAttribute('uv1', g.attributes.uv);
+        if (src.aoMap) src.aoMap.channel = 1;
+      }
       if (!src.userData._lm) {
+        // AO は glTF の occlusion（uv1）として読み込まれている
         src.lightMap = lm;
         src.lightMapIntensity = lmScale * Math.PI;
-        src.aoMap = ao;
-        src.aoMapIntensity = 0.6;
+        if (src.aoMap) src.aoMapIntensity = 0.6;
+        // 金属は拡散反射がないためライトマップが効かない。ステンレス等は少しだけ金属感を残す
+        if (src.metalness > 0.3) { src.metalness = 0.25; src.roughness = Math.max(src.roughness, 0.3); }
         src.userData._lm = true;
         src.userData.baseLm = src.lightMapIntensity;
         lmMaterials.push(src);
       }
     }
     // 発光体（蛍光灯など）はブルームが乗る程度に強める
-    if (src.emissive && src.emissiveMap == null && src.emissive.getHex() !== 0) src.emissiveIntensity = Math.max(src.emissiveIntensity, 2.0);
+    if (src.emissive && src.emissive.getHex() !== 0 && !src.userData._em) {
+      src.userData._em = true;
+      // 管球は明るすぎるとブルームで画面が白むので上限を設ける（look.emissive で空間ごとに調整）
+      src.emissiveIntensity = Math.min(look.emissiveMax ?? 3.0, Math.max(src.emissiveIntensity, src.emissiveMap ? 1.0 : 2.0));
+      src.userData.baseEm = src.emissiveIntensity;
+      if (/flicker/.test(src.name)) flickerMaterials.push(src);
+    }
   });
 
   // 動的ライト（揺らぎつき）
@@ -173,7 +184,7 @@ function buildWorld(def, meta, root, { lm, ao, env, hdrTex }) {
   }
 
   return {
-    group, meta, env, hdrTex, lmMaterials, vlitMaterials, lights, lmScale,
+    group, meta, env, hdrTex, lmMaterials, vlitMaterials, flickerMaterials, lights, lmScale,
     colliders: meta.colliders || [],
     dispose() {
       group.traverse((o) => {
@@ -183,7 +194,7 @@ function buildWorld(def, meta, root, { lm, ao, env, hdrTex }) {
           o.material.dispose();
         }
       });
-      lm?.dispose(); ao?.dispose(); env?.dispose(); hdrTex?.dispose();
+      lm?.dispose(); env?.dispose(); hdrTex?.dispose();
     },
   };
 }
@@ -202,6 +213,9 @@ export function updateFlicker(world, kind, t) {
   }
   for (const m of world.lmMaterials) m.lightMapIntensity = m.userData.baseLm * k;
   for (const m of world.vlitMaterials) m.color.setScalar(m.userData.base * k);
+  // 切れかけの蛍光灯
+  const bad = Math.sin(t * 31.0) * Math.sin(t * 4.7 + 1.0) > 0.55 || (Math.sin(t * 0.7) > 0.93 && Math.sin(t * 57.0) > 0);
+  for (const m of world.flickerMaterials) m.emissiveIntensity = m.userData.baseEm * (bad ? 0.08 : 1);
   for (const l of world.lights) {
     const f = l.userData.flicker;
     if (!f) continue;

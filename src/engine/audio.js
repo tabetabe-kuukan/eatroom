@@ -265,16 +265,15 @@ const AMBIENCES = {
   // 深夜の電車〜無人駅
   night_train(bus, ctxObj) {
     const nodes = [];
-    const rumble = noise({ type: 'lowpass', freq: 140, q: 0.7, gain: 0.25 });
+    const rumble = noise({ type: 'lowpass', freq: 110, q: 0.7, gain: 0.14 });
     const rg = ctx.createGain(); rg.gain.value = 1;
     rumble.out.connect(rg); rg.connect(bus); nodes.push(rumble.src);
     ctxObj.trainGain = rg;
-    // レールの継ぎ目（タタン、タタン）
+    // 停車中の電車：ときどきコンプレッサーが息をつく
     ctxObj.stoppers.push(scheduler(() => {
       if (ctxObj.zone > 1) return;
-      const t = ctx.currentTime;
-      for (const d of [0, 0.13, 0.9, 1.03]) burst(t + d, { freq: 300, q: 1.2, dur: 0.12, gain: 0.12, dest: bus });
-    }, 1.8, 1.8));
+      burst(ctx.currentTime, { freq: 2500, q: 0.4, dur: 1.4, gain: 0.04, type: 'highpass', dest: bus });
+    }, 9, 16));
     const hum = osc('sawtooth', 100, 0.004);
     hum.out.connect(bus); nodes.push(hum.o);
     // 遠くの太鼓と鈴（第2区画から）

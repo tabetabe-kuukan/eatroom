@@ -55,7 +55,8 @@ for (const id of ids) {
   const files = [`${tag}.glb ${mb(dst)}`];
 
   if (meta.lightmap) {
-    for (const [key, q] of [['file', 88], ['ao', 80]]) {
+    // AO は glb の occlusion スロットに入っている。ライトマップだけ別ファイル
+    for (const [key, q] of [['file', 88]]) {
       const name = meta.lightmap[key];
       const png = join(EXP, name.replace('.webp', '.png'));
       const out = join(OUT, name);

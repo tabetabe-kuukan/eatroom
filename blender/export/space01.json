@@ -3,7 +3,7 @@
  "spawn": {
   "pos": [
    0,
-   0,
+   0.0,
    -0.6
   ],
   "yaw": 0.0
@@ -16,11 +16,11 @@
  "traces": {
   "rindo": {
    "pos": [
-    2.6,
+    2.0,
     1.4,
     -2.6
    ],
-   "radius": 2.4
+   "radius": 3.2
   },
   "yamaoku": {
    "pos": [
@@ -174,7 +174,6 @@
  },
  "lightmap": {
   "file": "space01_lm.webp",
-  "ao": "space01_ao.webp",
   "scale": 1.8175
  },
  "tris": 115378,

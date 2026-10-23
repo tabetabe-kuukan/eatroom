@@ -97,6 +97,7 @@ async function enterSpace(index) {
   R.applyLook(look);
   if (def.final) extras = decorateFinal(world, R.scene, st.getState(), SPACES);
   player.setColliders(world.colliders);
+  player.setFloors(world.meta.floors);
   const sp = world.meta.spawn;
   player.spawn(sp.pos, sp.yaw);
   zone = computeZone();
@@ -348,6 +349,18 @@ if (import.meta.env.DEV) {
   window.__dbg = {
     R, player, get world() { return world; },
     tp(x, z, yawDeg = 0) { player.spawn([x, 0, z], (yawDeg * Math.PI) / 180); },
+    async ready() {
+      while (mode !== 'ready') await new Promise((r) => setTimeout(r, 200));
+      $('btn-enter').click();
+      $('intro').classList.remove('show');
+    },
+    // 位置と向きを決めて数フレーム描く（バックグラウンドでも撮影できるように）
+    async shot(x, z, yawDeg = 0, pitch = 0) {
+      this.tp(x, z, yawDeg);
+      R.camera.rotation.x = pitch;
+      for (let i = 0; i < 3; i++) { R.render(performance.now() / 1000); await new Promise((r) => setTimeout(r, 60)); }
+      return 'ok';
+    },
     fps() { return new Promise((res) => { let n = 0; const t0 = performance.now(); const f = () => { n++; if (performance.now() - t0 < 2000) requestAnimationFrame(f); else res(n / 2); }; requestAnimationFrame(f); }); },
   };
 }

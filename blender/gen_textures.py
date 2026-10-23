@@ -300,9 +300,172 @@ def s01_stripe():
     save(img, "s01_stripe.png")
 
 
+# ---------------------------------------------------------------- 共通：足跡
+def footprint():
+    """靴底の形のアルファ（黒い泥の跡）"""
+    W, H = 128, 320
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    m = Image.new("L", (W, H), 0)
+    d = ImageDraw.Draw(m)
+    d.ellipse([10, 8, W - 10, 190], fill=255)          # つま先側
+    d.ellipse([22, 200, W - 22, H - 8], fill=255)      # かかと
+    d.rectangle([28, 120, W - 30, 250], fill=255)
+    # 靴底の溝
+    for y in range(20, H - 10, 18):
+        d.line([0, y, W, y + 6], fill=60, width=5)
+    m = m.filter(ImageFilter.GaussianBlur(2.5))
+    n = noise_layer((W, H), 6, 91).point(lambda v: 255 if v > 90 else int(v * 2))
+    m = ImageChops.multiply(m, n)
+    col = Image.new("RGB", (W, H), (34, 28, 22))
+    img = col.convert("RGBA")
+    img.putalpha(m.point(lambda v: 255 if v > 110 else 0))
+    save(img, "footprint.png")
+
+
+# ---------------------------------------------------------------- 空間2 きさらぎ駅
+def led(text_lines, size=(1024, 256), color=(255, 140, 30), name="led.png", fsize=96):
+    """LED 表示（ドットマトリクス風）"""
+    W, H = size
+    src = Image.new("L", (W, H), 0)
+    d = ImageDraw.Draw(src)
+    y = (H - len(text_lines) * fsize * 1.1) / 2
+    for t in text_lines:
+        draw_text_center(d, (W / 2, y + fsize * 0.55), t, font("gothic_bold", fsize), 255)
+        y += fsize * 1.1
+    cell = 8
+    small = src.resize((W // cell, H // cell), Image.BILINEAR)
+    img = Image.new("RGB", (W, H), (12, 10, 9))
+    dd = ImageDraw.Draw(img)
+    px = small.load()
+    for j in range(small.height):
+        for i in range(small.width):
+            on = px[i, j] > 90
+            c = color if on else (40, 26, 18)
+            dd.ellipse([i * cell + 1, j * cell + 1, i * cell + cell - 2, j * cell + cell - 2], fill=c)
+    save(img, name)
+
+
+def s02_led():
+    led(["次は　　　　", "0:24"], name="s02_led_next.png")
+    led(["本日の終電です"], name="s02_led_last.png", color=(255, 60, 40))
+
+
+def s02_routemap():
+    W, H = 1024, 192
+    img = Image.new("RGB", (W, H), (236, 234, 226))
+    d = ImageDraw.Draw(img)
+    d.line([40, 100, 760, 100], fill=(40, 120, 70), width=10)
+    for i in range(14):
+        d.line([780 + i * 16, 100, 790 + i * 16, 100], fill=(40, 120, 70), width=10)
+    names = ["遠浜", "新森", "桜川", "二俣", "宮口", "西沢", "上ノ原"]
+    f = font("gothic_bold", 26)
+    for i, n in enumerate(names):
+        x = 60 + i * 110
+        d.ellipse([x - 12, 88, x + 12, 112], fill=(255, 255, 255), outline=(40, 120, 70), width=5)
+        vertical_text(d, x, 126 if i % 2 else 126, n, f, (30, 30, 30), step=27)
+    d.text((40, 20), "各駅停車　路線図", font=font("gothic_bold", 30), fill=(30, 30, 30))
+    img = grime(img, 101, 0.3)
+    save(img, "s02_routemap.png")
+
+
+def s02_ekimei():
+    """駅名標。文字は読めそうで読めない程度にかすれさせる"""
+    W, H = 1024, 384
+    img = Image.new("RGB", (W, H), (240, 240, 236))
+    d = ImageDraw.Draw(img)
+    draw_text_center(d, (W / 2, 120), "きさらぎ", font("gothic_bold", 150), (20, 20, 20), spacing=30)
+    draw_text_center(d, (W / 2, 220), "KISARAGI", font("latin_bold", 44), (40, 40, 40), spacing=10)
+    d.rectangle([0, 262, W, 300], fill=(30, 110, 60))
+    d.text((40, 312), "← やみ", font=font("gothic_bold", 44), fill=(30, 30, 30))
+    d.text((W - 260, 312), "かたす →", font=font("gothic_bold", 44), fill=(30, 30, 30))
+    # かすれ（塗装の剥がれ・雨だれ）
+    rnd = random.Random(111)
+    n = noise_layer((W, H), 14, 112)
+    n2 = noise_layer((W, H), 50, 113, 2)
+    m = ImageChops.add(n.point(lambda v: v * 0.7), n2.point(lambda v: v * 0.45))
+    erase = m.point(lambda v: 255 if v > 146 else 0).filter(ImageFilter.GaussianBlur(1.5))
+    base = Image.new("RGB", (W, H), (200, 196, 186))
+    base = grime(base, 114, 0.6, (120, 100, 70))
+    img = Image.composite(base, img, erase)
+    drip = Image.new("L", (W, H), 0)
+    dd = ImageDraw.Draw(drip)
+    for _ in range(90):
+        x = rnd.uniform(0, W)
+        dd.line([x, rnd.uniform(0, 60), x + rnd.uniform(-3, 3), rnd.uniform(100, H)], fill=rnd.randint(60, 160), width=rnd.randint(2, 9))
+    img = Image.composite(Image.new("RGB", (W, H), (110, 90, 60)), img, drip.filter(ImageFilter.GaussianBlur(3)))
+    img = img.filter(ImageFilter.GaussianBlur(1.2))
+    img = speckle(img, 115, 9000)
+    save(img, "s02_ekimei.png")
+
+
+def s02_mujin():
+    W, H = 512, 640
+    img = Image.new("RGB", (W, H), (238, 236, 228))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 110], fill=(30, 90, 160))
+    draw_text_center(d, (W / 2, 56), "お知らせ", font("gothic_bold", 64), (255, 255, 255))
+    f = font("gothic_bold", 46)
+    lines = ["この駅は", "無人駅です。", "", "乗車券は", "車内でお求め", "ください。"]
+    y = 160
+    for t in lines:
+        draw_text_center(d, (W / 2, y), t, f, (30, 30, 30))
+        y += 70
+    img = grime(img, 121, 0.5)
+    img = speckle(img, 122, 3000)
+    save(img, "s02_mujin.png")
+
+
+def phone_screen(lines, name, kengai=False, bbs=False):
+    W, H = 360, 760
+    if bbs:
+        img = Image.new("RGB", (W, H), (240, 240, 236))
+        d = ImageDraw.Draw(img)
+        d.rectangle([0, 0, W, 54], fill=(30, 30, 30))
+        d.text((14, 12), "0:58", font=font("gothic_bold", 28), fill=(255, 255, 255))
+        d.text((W - 90, 14), "圏外", font=font("gothic_bold", 24), fill=(255, 255, 255))
+        d.rectangle([0, 54, W, 110], fill=(220, 220, 214))
+        d.text((14, 66), "オカルト板 ＞ 奇妙な駅", font=font("gothic_bold", 26), fill=(30, 30, 30))
+        y = 126
+        for no, who, body in lines:
+            d.text((14, y), f"{no} ：", font=font("gothic_bold", 22), fill=(30, 30, 30))
+            d.text((60, y), who, font=font("gothic_bold", 22), fill=(20, 120, 40))
+            y += 32
+            for b in body:
+                d.text((24, y), b, font=font("gothic", 22), fill=(20, 20, 20))
+                y += 30
+            y += 18
+        save(img, name)
+        return
+    img = Image.new("RGB", (W, H), (8, 10, 18))
+    g = Image.new("L", (W, H))
+    g.putdata([int(40 * (1 - y / H)) for y in range(H) for x in range(W)])
+    img = Image.composite(Image.new("RGB", (W, H), (40, 50, 90)), img, g)
+    d = ImageDraw.Draw(img)
+    d.text((16, 14), "圏外", font=font("gothic_bold", 26), fill=(255, 255, 255))
+    draw_text_center(d, (W / 2, 200), "0:47", font("latin_bold", 110), (240, 240, 245))
+    draw_text_center(d, (W / 2, 280), "1月8日 月曜日", font("gothic", 26), (220, 220, 230))
+    d.rounded_rectangle([20, 360, W - 20, 470], 18, fill=(40, 44, 60))
+    d.text((40, 378), "電話", font=font("gothic_bold", 24), fill=(255, 255, 255))
+    d.text((40, 414), "発信できません（圏外）", font=font("gothic", 24), fill=(220, 220, 230))
+    save(img, name)
+
+
+def s02_phones():
+    phone_screen(None, "s02_phone_kengai.png", kengai=True)
+    phone_screen([
+        ("1", "名無しさん", ["電車がずっと止まらない", "乗ってるの自分だけ"]),
+        ("2", "名無しさん", ["釣り？今どこ"]),
+        ("3", "名無しさん", ["駅に着いた。聞いたことない", "名前。誰もいない"]),
+        ("4", "名無しさん", ["遠くで太鼓と鈴の音がする"]),
+        ("5", "名無しさん", ["線路を歩いてトンネルの", "方に行ってみます"]),
+        ("6", "名無しさん", ["おい戻れ"]),
+    ], "s02_phone_bbs.png", bbs=True)
+
+
 SPACES = {
-    "00": [grass_blade],
+    "00": [grass_blade, footprint],
     "01": [s01_bounty, s01_map, s01_sake_label, s01_canopy, s01_snakeskin, s01_rindo, s01_marker, s01_stripe],
+    "02": [s02_led, s02_routemap, s02_ekimei, s02_mujin, s02_phones],
 }
 
 if __name__ == "__main__":

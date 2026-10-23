@@ -480,6 +480,60 @@ def grass(name, points, mat, blades=(10, 18), height=(0.25, 0.65), width=(0.012,
     return mesh_obj(name, bm, mat, collection, uv=None)
 
 
+# ------------------------------------------------------------------ 照明器具
+def fluorescent(name, x, y, z, length=1.2, power=60, lit=True, along="y", flicker=False, color=(1.0, 0.97, 0.9),
+                housing=None, width=0.14):
+    """天井の蛍光灯（器具 + 発光管 + ベイク用エリアライト）。flicker=True で three 側で点滅させる"""
+    hm = housing or mat_color("fixture_white", (0.8, 0.8, 0.78), 0.5)
+    sx, sy = (width, length) if along == "y" else (length, width)
+    box(f"{name}_housing", (sx + 0.04, sy + 0.04, 0.05), (x, y, z + 0.025), hm)
+    if lit:
+        em = mat_color("tube_flicker" if flicker else "tube_on", color, 0.4, emit=color, emit_strength=6.0)
+    else:
+        em = mat_color("tube_off", (0.55, 0.56, 0.55), 0.4)
+    box(f"{name}_tube", (sx, sy, 0.03), (x, y, z - 0.012), em)
+    if lit:
+        area_light((x, y, z - 0.04), size=(sx, sy), power=power, color=color, name=f"{name}_light")
+        # 天井側にも少し回り込ませる（乳白カバー越しの光）
+        area_light((x, y, z - 0.035), size=(sx * 1.4, sy * 1.1), power=power * 0.18, color=color, rot=(180, 0, 0),
+                   name=f"{name}_up")
+
+
+def footprints(name, pts, mat, stride=0.65, gap=0.13, size=(0.11, 0.27), z_fn=None, collection="static", seed=5):
+    """点列に沿って左右交互の足跡デカールを置く（地面から少し浮かせる）"""
+    rnd = random.Random(seed)
+    bm = bmesh.new()
+    uvl = bm.loops.layers.uv.new("UVMap")
+    # 経路を等間隔にリサンプル
+    path = [Vector((p[0], p[1], 0)) for p in pts]
+    acc, out = 0.0, []
+    for a, b in zip(path, path[1:]):
+        seg = (b - a).length
+        while acc <= seg:
+            out.append((a.lerp(b, acc / seg if seg else 0), (b - a).normalized()))
+            acc += stride
+        acc -= seg
+    for i, (p, d) in enumerate(out):
+        side = 1 if i % 2 else -1
+        n = Vector((-d.y, d.x, 0))
+        c = p + n * gap * side * 0.5 + Vector((rnd.uniform(-0.02, 0.02), rnd.uniform(-0.03, 0.03), 0))
+        ang = math.atan2(d.y, d.x) - math.pi / 2 + rnd.uniform(-0.12, 0.12) + side * 0.08
+        z = (z_fn(c.x, c.y) if z_fn else 0.0) + 0.006
+        w, h = size
+        corners = [(-w / 2, -h / 2), (w / 2, -h / 2), (w / 2, h / 2), (-w / 2, h / 2)]
+        vs = []
+        for cx, cy in corners:
+            if side > 0:
+                cx = -cx  # 右足は鏡像
+            rx = cx * math.cos(ang) - cy * math.sin(ang)
+            ry = cx * math.sin(ang) + cy * math.cos(ang)
+            vs.append(bm.verts.new((c.x + rx, c.y + ry, z)))
+        f = bm.faces.new(vs)
+        for lp, uv in zip(f.loops, [(0, 0), (1, 0), (1, 1), (0, 1)]):
+            lp[uvl].uv = uv
+    return mesh_obj(name, bm, mat, collection, uv=None)
+
+
 # ------------------------------------------------------------------ モデル読み込み
 _TEMPLATES = {}
 
@@ -567,9 +621,9 @@ class Meta:
         self.d = {"space": space_id, "spawn": None, "zones": [], "traces": {}, "colliders": [], "lights": [],
                   "sounds": {}, "markers": {}, "lightmap": None}
 
-    def spawn(self, x, y, yaw_deg=0.0):
+    def spawn(self, x, y, yaw_deg=0.0, z=0.0):
         """yaw 0 で +Y（奥）を向く"""
-        self.d["spawn"] = {"pos": to3(x, y, 0), "yaw": math.radians(yaw_deg)}
+        self.d["spawn"] = {"pos": to3(x, y, z), "yaw": math.radians(yaw_deg)}
 
     def zones(self, *y_starts):
         """各区画の開始 y（第1区画は 0 などで開始）。three では z = -y 以下で区画に入る"""
@@ -587,6 +641,14 @@ class Meta:
     def obox(self, cx, cy, hx, hy, rot_deg):
         self.d["colliders"].append({"x": round(cx, 3), "z": round(-cy, 3), "hx": hx, "hz": hy,
                                     "rot": round(math.radians(rot_deg), 4)})
+
+    def floor(self, x0, y0, x1, y1, h0, h1=None):
+        """歩ける床の高さ（矩形、y 方向に h0→h1 で傾斜）。重なる場合は高い方"""
+        h1 = h0 if h1 is None else h1
+        self.d.setdefault("floors", []).append({"x0": round(min(x0, x1), 3), "x1": round(max(x0, x1), 3),
+                                                 "z0": round(-max(y0, y1), 3), "z1": round(-min(y0, y1), 3),
+                                                 "hz0": round(h1 if y1 > y0 else h0, 3),
+                                                 "hz1": round(h0 if y1 > y0 else h1, 3)})
 
     def circle(self, cx, cy, r):
         self.d["colliders"].append({"x": round(cx, 3), "z": round(-cy, 3), "r": r})
@@ -791,6 +853,40 @@ def bake_vertex_light(obj, samples, scale):
     obj["vlit"] = round(scale, 4)
 
 
+def _gltf_output_group():
+    """glTF エクスポーターが読む「glTF Material Output」ノードグループ（Occlusion 入力）"""
+    g = bpy.data.node_groups.get("glTF Material Output")
+    if g:
+        return g
+    g = bpy.data.node_groups.new("glTF Material Output", "ShaderNodeTree")
+    g.interface.new_socket("Occlusion", in_out="INPUT", socket_type="NodeSocketFloat")
+    return g
+
+
+def attach_ao_occlusion(obj, ao_path):
+    """ベイクした AO を LM の UV で occlusion スロットにつなぐ。
+    Blender の glTF エクスポーターはマテリアルが使う UV しか書き出さないので、
+    これで TEXCOORD_1（ライトマップ用 UV）も一緒に書き出される。"""
+    img = bpy.data.images.load(ao_path, check_existing=True)
+    img.colorspace_settings.name = "Non-Color"
+    grp = _gltf_output_group()
+    for m in obj.data.materials:
+        if not m or not m.use_nodes:
+            continue
+        nt = m.node_tree
+        if any(n.type == "GROUP" and n.node_tree == grp for n in nt.nodes):
+            continue
+        uv = nt.nodes.new("ShaderNodeUVMap")
+        uv.uv_map = "LM"
+        tex = nt.nodes.new("ShaderNodeTexImage")
+        tex.image = img
+        tex.name = "__AO__"
+        out = nt.nodes.new("ShaderNodeGroup")
+        out.node_tree = grp
+        nt.links.new(uv.outputs["UV"], tex.inputs["Vector"])
+        nt.links.new(tex.outputs["Color"], out.inputs["Occlusion"])
+
+
 def export_glb(path, objs):
     for o in bpy.context.view_layer.objects:
         o.select_set(False)
@@ -823,8 +919,10 @@ def finalize(space_id, meta, hdri_file=None, lm_size=2048, lm_samples=512, ao_si
     meta.d["tris"] = tris
     if bake:
         scale = bake_lightmap(lm_obj, lm_size, lm_samples, os.path.join(EXPORT, f"{tag}_lm.png"))
-        bake_ao(lm_obj, ao_size, ao_samples, os.path.join(EXPORT, f"{tag}_ao.png"))
-        meta.d["lightmap"] = {"file": f"{tag}_lm.webp", "ao": f"{tag}_ao.webp", "scale": round(scale, 4)}
+        ao_path = os.path.join(EXPORT, f"{tag}_ao.png")
+        bake_ao(lm_obj, ao_size, ao_samples, ao_path)
+        attach_ao_occlusion(lm_obj, ao_path)
+        meta.d["lightmap"] = {"file": f"{tag}_lm.webp", "scale": round(scale, 4)}
     else:
         scale = 1.0
     meta.d["hdri"] = hdri_file

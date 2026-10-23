@@ -1,0 +1,118 @@
+[
+ {
+  "id": "old_linoleum_flooring_01",
+  "kind": "texture",
+  "name": "Old Linoleum Flooring 01",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/old_linoleum_flooring_01",
+  "license": "CC0"
+ },
+ {
+  "id": "beige_wall_001",
+  "kind": "texture",
+  "name": "Beige Wall 001",
+  "authors": [
+   "Dimitrios Savva",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/beige_wall_001",
+  "license": "CC0"
+ },
+ {
+  "id": "denim_fabric_04",
+  "kind": "texture",
+  "name": "Denim Fabric 04",
+  "authors": [
+   "colormass",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/denim_fabric_04",
+  "license": "CC0"
+ },
+ {
+  "id": "concrete_floor_worn_001",
+  "kind": "texture",
+  "name": "Concrete Floor Worn 001",
+  "authors": [
+   "Dimitrios Savva",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/concrete_floor_worn_001",
+  "license": "CC0"
+ },
+ {
+  "id": "gravel_floor_02",
+  "kind": "texture",
+  "name": "Gravel Floor 02",
+  "authors": [
+   "Jenelle van Heerden",
+   "Dimitrios Savva"
+  ],
+  "url": "https://polyhaven.com/a/gravel_floor_02",
+  "license": "CC0"
+ },
+ {
+  "id": "concrete_wall_008",
+  "kind": "texture",
+  "name": "Concrete Wall 008",
+  "authors": [
+   "Dario Barresi",
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/concrete_wall_008",
+  "license": "CC0"
+ },
+ {
+  "id": "weathered_plank_siding",
+  "kind": "texture",
+  "name": "Weathered Plank Siding",
+  "authors": [
+   "Dimitrios Savva"
+  ],
+  "url": "https://polyhaven.com/a/weathered_plank_siding",
+  "license": "CC0"
+ },
+ {
+  "id": "brown_mud_02",
+  "kind": "texture",
+  "name": "Brown Mud 02",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/brown_mud_02",
+  "license": "CC0"
+ },
+ {
+  "id": "corrugated_iron_02",
+  "kind": "texture",
+  "name": "Corrugated Iron 02",
+  "authors": [
+   "Jenelle van Heerden",
+   "Sergej Majboroda"
+  ],
+  "url": "https://polyhaven.com/a/corrugated_iron_02",
+  "license": "CC0"
+ },
+ {
+  "id": "painted_wooden_bench",
+  "kind": "model",
+  "name": "Painted Wooden Bench",
+  "authors": [
+   "Kirill Sannikov"
+  ],
+  "url": "https://polyhaven.com/a/painted_wooden_bench",
+  "license": "CC0"
+ },
+ {
+  "id": "dresden_station_night",
+  "kind": "hdri",
+  "name": "Dresden Station Night",
+  "authors": [
+   "Greg Zaal"
+  ],
+  "url": "https://polyhaven.com/a/dresden_station_night",
+  "license": "CC0"
+ }
+]

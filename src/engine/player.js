@@ -15,6 +15,8 @@ export function createPlayer(camera, canvas, ui) {
   let pitch = 0;
   let enabled = false;
   let colliders = [];
+  let floors = [];
+  let floorY = 0;
   const keys = new Set();
   const joy = { id: null, ox: 0, oy: 0, x: 0, y: 0 };
   const look = { id: null, lx: 0, ly: 0 };
@@ -138,6 +140,19 @@ export function createPlayer(camera, canvas, ui) {
     }
   }
 
+  function floorAt(x, z) {
+    let h = 0;
+    let hit = false;
+    for (const f of floors) {
+      if (x < f.x0 || x > f.x1 || z < f.z0 || z > f.z1) continue;
+      const t = f.z1 > f.z0 ? (z - f.z0) / (f.z1 - f.z0) : 0;
+      const fh = f.hz0 + (f.hz1 - f.hz0) * t;
+      h = hit ? Math.max(h, fh) : fh;
+      hit = true;
+    }
+    return h;
+  }
+
   function update(dt) {
     if (!enabled) { vel.set(0, 0); return; }
     let f = 0;
@@ -170,7 +185,9 @@ export function createPlayer(camera, canvas, ui) {
     if (stepDist > (running ? 0.95 : 0.72)) { stepDist = 0; onStep(running); }
     bob += moved * (running ? 7.5 : 8.5);
     const bobAmt = Math.min(1, Math.hypot(vel.x, vel.y) / WALK);
-    camera.position.set(pos.x, EYE + Math.sin(bob) * 0.025 * bobAmt, pos.z);
+    // 床の高さ（段差・スロープ）。なめらかに追従させる
+    floorY += (floorAt(pos.x, pos.z) - floorY) * (1 - Math.exp(-dt * 14));
+    camera.position.set(pos.x, floorY + EYE + Math.sin(bob) * 0.025 * bobAmt, pos.z);
     camera.rotation.set(pitch, yaw, Math.sin(bob * 0.5) * 0.004 * bobAmt, 'YXZ');
   }
 
@@ -188,10 +205,13 @@ export function createPlayer(camera, canvas, ui) {
     spawn(p, y) {
       pos.set(p[0], 0, p[2]);
       yaw = y; pitch = 0; vel.set(0, 0);
-      camera.position.set(pos.x, EYE, pos.z);
+      floorY = floorAt(pos.x, pos.z);
+      camera.position.set(pos.x, floorY + EYE, pos.z);
       camera.rotation.set(0, yaw, 0, 'YXZ');
     },
     setColliders(c) { colliders = c; },
+    setFloors(f) { floors = f || []; },
+    get floorY() { return floorY; },
     onStep(fn) { onStep = fn; },
     onLockLost(fn) { lockLost = fn; },
   };
