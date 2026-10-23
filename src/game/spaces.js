@@ -98,11 +98,11 @@ export const SPACES = [
     zones: [
       { name: '第1区画', traces: [{ id: 'gomi', words: ['ゴミ'] }, { id: 'hikkoshi', words: ['引っ越し'] }, { id: 'ningyo', words: ['人形'] }] },
       { name: '第2区画', traces: [{ id: 'koshu', words: ['公衆電話', '電話'] }, { id: 'seiyo', words: ['西洋人形'] }] },
-      { name: '第3区画', traces: [{ id: 'imadoko', words: ['今どこにいるの'] }, { id: 'chikazuku', words: ['だんだん近づく'] }, { id: 'ushiro', words: ['あなたの後ろ'] }] },
+      { name: '第3区画', traces: [{ id: 'imadoko', words: ['今どこにいるの'] }, { id: 'chikazuku', words: ['だんだん近づく'] }, { id: 'ushiro', words: ['あなたの後ろ'], effect: 'ringBehind' }] },
     ],
     look: {
-      exposure: 1.0,
-      fog: { color: 0x07080b, density: 0.05 },
+      exposure: 1.6,
+      fog: { color: 0x07080b, density: 0.04 },
       background: 'fog', envIntensity: 0.1,
       lightmapBoost: 1.0, vlitBoost: 1.0,
       bloom: { strength: 0.35, radius: 0.5, threshold: 6.0 },

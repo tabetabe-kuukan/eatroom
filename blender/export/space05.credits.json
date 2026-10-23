@@ -1,0 +1,124 @@
+[
+ {
+  "id": "asphalt_02",
+  "kind": "texture",
+  "name": "Asphalt 02",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/asphalt_02",
+  "license": "CC0"
+ },
+ {
+  "id": "concrete_pavers",
+  "kind": "texture",
+  "name": "Concrete Pavers",
+  "authors": [
+   "Amal Kumar"
+  ],
+  "url": "https://polyhaven.com/a/concrete_pavers",
+  "license": "CC0"
+ },
+ {
+  "id": "concrete_block_wall",
+  "kind": "texture",
+  "name": "Concrete Block Wall",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/concrete_block_wall",
+  "license": "CC0"
+ },
+ {
+  "id": "exterior_wall_cladding",
+  "kind": "texture",
+  "name": "Exterior Wall Cladding",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/exterior_wall_cladding",
+  "license": "CC0"
+ },
+ {
+  "id": "concrete",
+  "kind": "texture",
+  "name": "Concrete",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/concrete",
+  "license": "CC0"
+ },
+ {
+  "id": "trashbag",
+  "kind": "model",
+  "name": "Trashbag",
+  "authors": [
+   "Benny Weimer"
+  ],
+  "url": "https://polyhaven.com/a/trashbag",
+  "license": "CC0"
+ },
+ {
+  "id": "cardboard_box_01",
+  "kind": "model",
+  "name": "Cardboard Box 01",
+  "authors": [
+   "Rahul Chaudhary"
+  ],
+  "url": "https://polyhaven.com/a/cardboard_box_01",
+  "license": "CC0"
+ },
+ {
+  "id": "patterned_paving",
+  "kind": "texture",
+  "name": "Patterned Paving",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/patterned_paving",
+  "license": "CC0"
+ },
+ {
+  "id": "painted_metal_shutter",
+  "kind": "texture",
+  "name": "Painted Metal Shutter",
+  "authors": [
+   "Dario Barresi",
+   "Rico Cilliers",
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/painted_metal_shutter",
+  "license": "CC0"
+ },
+ {
+  "id": "dirty_carpet",
+  "kind": "texture",
+  "name": "Dirty Carpet",
+  "authors": [
+   "Rohit Seervi"
+  ],
+  "url": "https://polyhaven.com/a/dirty_carpet",
+  "license": "CC0"
+ },
+ {
+  "id": "white_plaster_02",
+  "kind": "texture",
+  "name": "White Plaster 02",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/white_plaster_02",
+  "license": "CC0"
+ },
+ {
+  "id": "old_apartments_walkway",
+  "kind": "hdri",
+  "name": "Old Apartments Walkway",
+  "authors": [
+   "Octavian Tudose"
+  ],
+  "url": "https://polyhaven.com/a/old_apartments_walkway",
+  "license": "CC0"
+ }
+]

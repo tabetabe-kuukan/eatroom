@@ -1,0 +1,52 @@
+[
+ {
+  "id": "rounded_square_tiled_wall",
+  "kind": "texture",
+  "name": "Rounded Square Tiled Wall",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/rounded_square_tiled_wall",
+  "license": "CC0"
+ },
+ {
+  "id": "anti_slip_concrete",
+  "kind": "texture",
+  "name": "Anti Slip Concrete",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/anti_slip_concrete",
+  "license": "CC0"
+ },
+ {
+  "id": "blue_floor_tiles_01",
+  "kind": "texture",
+  "name": "Blue Floor Tiles 01",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/blue_floor_tiles_01",
+  "license": "CC0"
+ },
+ {
+  "id": "dining_chair_02",
+  "kind": "model",
+  "name": "Dining Chair 02",
+  "authors": [
+   "James Ray Cock"
+  ],
+  "url": "https://polyhaven.com/a/dining_chair_02",
+  "license": "CC0"
+ },
+ {
+  "id": "indoor_pool",
+  "kind": "hdri",
+  "name": "Indoor Pool",
+  "authors": [
+   "Oliksiy Yakovlyev"
+  ],
+  "url": "https://polyhaven.com/a/indoor_pool",
+  "license": "CC0"
+ }
+]

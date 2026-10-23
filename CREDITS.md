@@ -10,31 +10,41 @@
 | 種類 | 素材 | 作者 | ライセンス | 使用した空間 |
 |---|---|---|---|---|
 | HDRI | [Dresden Station Night](https://polyhaven.com/a/dresden_station_night) | Greg Zaal | CC0 | 2 |
+| HDRI | [Indoor Pool](https://polyhaven.com/a/indoor_pool) | Oliksiy Yakovlyev | CC0 | 6 |
 | HDRI | [Mossy Forest](https://polyhaven.com/a/mossy_forest) | Greg Zaal | CC0 | 1 |
+| HDRI | [Old Apartments Walkway](https://polyhaven.com/a/old_apartments_walkway) | Octavian Tudose | CC0 | 5 |
 | HDRI | [Rostock-Laage Airport](https://polyhaven.com/a/rostock_laage_airport) | Greg Zaal | CC0 | 4 |
 | HDRI | [Unfinished Office Night](https://polyhaven.com/a/unfinished_office_night) | Sergej Majboroda | CC0 | 3 |
-| 3Dモデル | [Cardboard Box 01](https://polyhaven.com/a/cardboard_box_01) | Rahul Chaudhary | CC0 | 3 |
+| 3Dモデル | [Cardboard Box 01](https://polyhaven.com/a/cardboard_box_01) | Rahul Chaudhary | CC0 | 3, 5 |
+| 3Dモデル | [Dining Chair 02](https://polyhaven.com/a/dining_chair_02) | James Ray Cock | CC0 | 6 |
 | 3Dモデル | [Fern 02](https://polyhaven.com/a/fern_02) | Rob Tuytel, Rico Cilliers | CC0 | 1 |
 | 3Dモデル | [Metal Office Desk](https://polyhaven.com/a/metal_office_desk) | Ulan Cabanilla | CC0 | 3 |
 | 3Dモデル | [Modern Arm Chair 01](https://polyhaven.com/a/modern_arm_chair_01) | Vibrant Nordic | CC0 | 3 |
 | 3Dモデル | [Painted Wooden Bench](https://polyhaven.com/a/painted_wooden_bench) | Kirill Sannikov | CC0 | 2 |
 | 3Dモデル | [Rock Moss Set 01](https://polyhaven.com/a/rock_moss_set_01) | Kless Gyzen | CC0 | 1 |
 | 3Dモデル | [Steel Frame Shelves 01](https://polyhaven.com/a/steel_frame_shelves_01) | James Ray Cock | CC0 | 3 |
+| 3Dモデル | [Trashbag](https://polyhaven.com/a/trashbag) | Benny Weimer | CC0 | 5 |
 | 3Dモデル | [Tree Stump 01](https://polyhaven.com/a/tree_stump_01) | Rob Tuytel | CC0 | 1 |
 | 3Dモデル | [Wooden Crate 01](https://polyhaven.com/a/wooden_crate_01) | James Ray Cock | CC0 | 1 |
-| テクスチャ | [Asphalt 02](https://polyhaven.com/a/asphalt_02) | Rob Tuytel | CC0 | 4 |
+| テクスチャ | [Anti Slip Concrete](https://polyhaven.com/a/anti_slip_concrete) | Charlotte Baglioni | CC0 | 6 |
+| テクスチャ | [Asphalt 02](https://polyhaven.com/a/asphalt_02) | Rob Tuytel | CC0 | 4, 5 |
 | テクスチャ | [Beige Wall 001](https://polyhaven.com/a/beige_wall_001) | Dimitrios Savva, Rico Cilliers | CC0 | 2 |
+| テクスチャ | [Blue Floor Tiles 01](https://polyhaven.com/a/blue_floor_tiles_01) | Rob Tuytel | CC0 | 6 |
 | テクスチャ | [Brown Leather](https://polyhaven.com/a/brown_leather) | Rob Tuytel | CC0 | 4 |
 | テクスチャ | [Brown Mud 02](https://polyhaven.com/a/brown_mud_02) | Rob Tuytel | CC0 | 2 |
 | テクスチャ | [Brown Mud Leaves 01](https://polyhaven.com/a/brown_mud_leaves_01) | Rob Tuytel | CC0 | 1 |
 | テクスチャ | [Ceiling Interior](https://polyhaven.com/a/ceiling_interior) | Dimitrios Savva | CC0 | 4 |
+| テクスチャ | [Concrete](https://polyhaven.com/a/concrete) | Rob Tuytel | CC0 | 5 |
+| テクスチャ | [Concrete Block Wall](https://polyhaven.com/a/concrete_block_wall) | Charlotte Baglioni | CC0 | 5 |
 | テクスチャ | [Concrete Floor Worn 001](https://polyhaven.com/a/concrete_floor_worn_001) | Dimitrios Savva, Rico Cilliers | CC0 | 2, 3 |
+| テクスチャ | [Concrete Pavers](https://polyhaven.com/a/concrete_pavers) | Amal Kumar | CC0 | 5 |
 | テクスチャ | [Concrete Wall 008](https://polyhaven.com/a/concrete_wall_008) | Dario Barresi, Charlotte Baglioni | CC0 | 2 |
 | テクスチャ | [Corrugated Iron](https://polyhaven.com/a/corrugated_iron) | Jenelle van Heerden, Dimitrios Savva | CC0 | 4 |
 | テクスチャ | [Corrugated Iron 02](https://polyhaven.com/a/corrugated_iron_02) | Jenelle van Heerden, Sergej Majboroda | CC0 | 2 |
 | テクスチャ | [Dark Wood](https://polyhaven.com/a/dark_wood) | Dario Barresi, Dimitrios Savva, Rico Cilliers | CC0 | 4 |
 | テクスチャ | [Denim Fabric 04](https://polyhaven.com/a/denim_fabric_04) | colormass, Rico Cilliers | CC0 | 2, 4 |
-| テクスチャ | [Dirty Carpet](https://polyhaven.com/a/dirty_carpet) | Rohit Seervi | CC0 | 3, 4 |
+| テクスチャ | [Dirty Carpet](https://polyhaven.com/a/dirty_carpet) | Rohit Seervi | CC0 | 3, 4, 5 |
+| テクスチャ | [Exterior Wall Cladding](https://polyhaven.com/a/exterior_wall_cladding) | Charlotte Baglioni | CC0 | 5 |
 | テクスチャ | [Forest Leaves 02](https://polyhaven.com/a/forest_leaves_02) | Rob Tuytel | CC0 | 1 |
 | テクスチャ | [Gravel Floor 02](https://polyhaven.com/a/gravel_floor_02) | Jenelle van Heerden, Dimitrios Savva | CC0 | 2 |
 | テクスチャ | [Japanese Cedar Bark](https://polyhaven.com/a/japanese_cedar_bark) | Charlotte Baglioni | CC0 | 1 |
@@ -42,14 +52,17 @@
 | テクスチャ | [Linoleum Brown](https://polyhaven.com/a/linoleum_brown) | Rob Tuytel | CC0 | 3 |
 | テクスチャ | [Mossy Rock](https://polyhaven.com/a/mossy_rock) | Rob Tuytel | CC0 | 1 |
 | テクスチャ | [Old Linoleum Flooring 01](https://polyhaven.com/a/old_linoleum_flooring_01) | Charlotte Baglioni | CC0 | 2 |
+| テクスチャ | [Painted Metal Shutter](https://polyhaven.com/a/painted_metal_shutter) | Dario Barresi, Rico Cilliers, Charlotte Baglioni | CC0 | 5 |
 | テクスチャ | [Painted Plaster Wall](https://polyhaven.com/a/painted_plaster_wall) | Amal Kumar | CC0 | 3 |
+| テクスチャ | [Patterned Paving](https://polyhaven.com/a/patterned_paving) | Charlotte Baglioni | CC0 | 5 |
 | テクスチャ | [Plywood](https://polyhaven.com/a/plywood) | Rob Tuytel | CC0 | 3 |
+| テクスチャ | [Rounded Square Tiled Wall](https://polyhaven.com/a/rounded_square_tiled_wall) | Charlotte Baglioni | CC0 | 6 |
 | テクスチャ | [Rubber Tiles](https://polyhaven.com/a/rubber_tiles) | Amal Kumar | CC0 | 4 |
 | テクスチャ | [Rusty Metal 02](https://polyhaven.com/a/rusty_metal_02) | Rob Tuytel | CC0 | 1 |
 | テクスチャ | [Terrazzo Tiles](https://polyhaven.com/a/terrazzo_tiles) | Amal Kumar | CC0 | 4 |
 | テクスチャ | [Weathered Plank Siding](https://polyhaven.com/a/weathered_plank_siding) | Dimitrios Savva | CC0 | 2 |
 | テクスチャ | [Weathered Planks](https://polyhaven.com/a/weathered_planks) | Dario Barresi, Dimitrios Savva | CC0 | 1 |
-| テクスチャ | [White Plaster 02](https://polyhaven.com/a/white_plaster_02) | Rob Tuytel | CC0 | 4 |
+| テクスチャ | [White Plaster 02](https://polyhaven.com/a/white_plaster_02) | Rob Tuytel | CC0 | 4, 5 |
 | テクスチャ | [Wood Table 001](https://polyhaven.com/a/wood_table_001) | Dimitrios Savva, Rico Cilliers | CC0 | 3 |
 
 ## 文章の引用（Wikipedia）

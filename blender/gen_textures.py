@@ -742,10 +742,134 @@ def s04_manifest():
     save(img, "s04_manifest.png")
 
 
+# ---------------------------------------------------------------- 空間5 メリーさんの電話
+def s05_gomi():
+    W, H = 512, 640
+    img = Image.new("RGB", (W, H), (240, 240, 232))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 120], fill=(30, 120, 60))
+    draw_text_center(d, (W / 2, 62), "ごみ集積所", font("gothic_bold", 74), (255, 255, 255))
+    draw_text_center(d, (W / 2, 200), "燃えるごみ", font("gothic_bold", 64), (200, 30, 30))
+    draw_text_center(d, (W / 2, 290), "月・木", font("gothic_bold", 80), (20, 20, 20))
+    draw_text_center(d, (W / 2, 400), "朝8時までに", font("gothic", 48), (20, 20, 20))
+    draw_text_center(d, (W / 2, 460), "出してください", font("gothic", 48), (20, 20, 20))
+    draw_text_center(d, (W / 2, 580), "西ヶ丘三丁目 町内会", font("gothic", 34), (60, 60, 60))
+    img = grime(img, 221, 0.35)
+    save(img, "s05_gomi.png")
+
+
+def s05_hikkoshi():
+    W, H = 512, 360
+    img = Image.new("RGB", (W, H), (176, 136, 92))
+    d = ImageDraw.Draw(img)
+    d.rectangle([20, 20, W - 20, H - 20], outline=(40, 70, 140), width=6)
+    draw_text_center(d, (W / 2, 130), "引 越", font("gothic_bold", 130), (40, 70, 140), spacing=30)
+    draw_text_center(d, (W / 2, 260), "天地無用 ↑  こわれもの", font("gothic_bold", 40), (40, 70, 140))
+    img = grime(img, 223, 0.3, (100, 70, 40))
+    save(img, "s05_hikkoshi.png")
+
+
+def s05_dollbox():
+    W, H = 512, 720
+    img = Image.new("RGB", (W, H), (120, 30, 50))
+    d = ImageDraw.Draw(img)
+    d.rectangle([24, 24, W - 24, H - 24], outline=(220, 190, 120), width=10)
+    d.rectangle([70, 90, W - 70, H - 150], fill=(16, 10, 12))   # 中身のない窓
+    draw_text_center(d, (W / 2, 58), "Doll", font("latin_bold", 48), (230, 200, 130))
+    draw_text_center(d, (W / 2, H - 100), "人 形", font("mincho_heavy", 70), (230, 200, 130), spacing=24)
+    img = grime(img, 225, 0.3)
+    save(img, "s05_dollbox.png")
+
+
+def s05_station():
+    W, H = 1024, 220
+    img = Image.new("RGB", (W, H), (240, 240, 236))
+    d = ImageDraw.Draw(img)
+    draw_text_center(d, (W / 2, 90), "西ヶ丘駅", font("gothic_bold", 120), (20, 20, 20), spacing=20)
+    draw_text_center(d, (W / 2, 180), "NISHIGAOKA STATION", font("latin_bold", 44), (40, 40, 40))
+    img = grime(img, 227, 0.25)
+    save(img, "s05_station.png")
+
+
+def s05_lost():
+    W, H = 512, 724
+    img = Image.new("RGB", (W, H), (248, 244, 230))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 110], fill=(200, 40, 40))
+    draw_text_center(d, (W / 2, 56), "落とし物のお知らせ", font("gothic_bold", 52), (255, 255, 255))
+    lines = ["西洋人形", "（金色の髪・青いドレス）", "", "駅前の公衆電話の", "そばに置かれていました。", "",
+             "お心当たりの方は", "駅係員まで。"]
+    y = 160
+    for t in lines:
+        f = font("gothic_bold", 60) if t == "西洋人形" else font("gothic", 34)
+        draw_text_center(d, (W / 2, y), t, f, (20, 20, 20))
+        y += 66 if t == "西洋人形" else 52
+    img = grime(img, 229, 0.4)
+    save(img, "s05_lost.png")
+
+
+def note(text_lines, name, seed, red=False):
+    W, H = 384, 512
+    img = Image.new("RGB", (W, H), (246, 242, 226))
+    d = ImageDraw.Draw(img)
+    for yy in range(70, H, 46):
+        d.line([20, yy, W - 20, yy], fill=(200, 210, 230), width=2)
+    rnd = random.Random(seed)
+    y = 80
+    for t in text_lines:
+        x = 40
+        for ch in t:  # 一文字ずつ少し揺らして手書き風に
+            f = font("mincho", rnd.randint(40, 46))
+            d.text((x, y + rnd.randint(-3, 3)), ch, font=f, fill=(150, 20, 20) if red else (30, 30, 50))
+            x += 44 + rnd.randint(-3, 2)
+        y += 92
+    img = img.rotate(rnd.uniform(-3, 3), fillcolor=(246, 242, 226))
+    img = grime(img, seed + 1, 0.25)
+    save(img, name)
+
+
+def s05_notes():
+    note(["いま、", "どこにいるの？"], "s05_note_doko.png", 231)
+    note(["わたし、", "ゴミ捨て場に", "いるの"], "s05_note_1.png", 233)
+    note(["わたし、", "いま駅に", "いるの"], "s05_note_2.png", 235)
+    note(["いま、", "あなたの家の", "前にいるの"], "s05_note_3.png", 237)
+    note(["いま、", "あなたの", "うしろに"], "s05_note_4.png", 239, red=True)
+
+
+def s05_vending():
+    W, H = 512, 1024
+    img = Image.new("RGB", (W, H), (230, 232, 236))
+    d = ImageDraw.Draw(img)
+    rnd = random.Random(241)
+    cols = [(200, 40, 40), (40, 90, 200), (240, 200, 40), (60, 160, 80), (240, 240, 240), (120, 70, 40)]
+    for row in range(4):
+        for c in range(6):
+            x, y = 30 + c * 76, 60 + row * 150
+            col = rnd.choice(cols)
+            d.rounded_rectangle([x, y, x + 56, y + 110], 10, fill=col)
+            d.rectangle([x + 4, y + 120, x + 52, y + 136], fill=(30, 30, 30))
+            d.text((x + 8, y + 118), str(rnd.choice([110, 130, 160])), font=font("latin_bold", 16), fill=(255, 80, 60))
+    d.rectangle([30, 680, W - 30, 980], fill=(40, 42, 48))
+    d.rectangle([60, 860, W - 60, 940], fill=(10, 10, 10))
+    save(img, "s05_vending.png")
+
+
+def s05_net():
+    """カラスよけネット（緑の網目、アルファ）"""
+    W = H = 256
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    for k in range(-W, 2 * W, 22):
+        d.line([k, 0, k + H, H], fill=(30, 120, 70, 255), width=4)
+        d.line([k, H, k + H, 0], fill=(30, 120, 70, 255), width=4)
+    save(img, "s05_net.png")
+
+
 SPACES = {
     "00": [grass_blade, footprint],
     "01": [s01_bounty, s01_map, s01_sake_label, s01_canopy, s01_snakeskin, s01_rindo, s01_marker, s01_stripe],
     "02": [s02_led, s02_routemap, s02_ekimei, s02_mujin, s02_phones],
+    "05": [s05_gomi, s05_hikkoshi, s05_dollbox, s05_station, s05_lost, s05_notes, s05_vending, s05_net],
     "04": [s04_board, s04_signs, s04_aachen, s04_news, s04_portoalegre, s04_manifest],
     "03": [s03_monitors, s03_pack, s03_deleted_wall, s03_redacted, s03_massho, s03_label, s03_thread, s03_notice],
 }

@@ -164,7 +164,13 @@ function checkTraces() {
       const dx = p.x - m.pos[0];
       const dz = p.z - m.pos[2];
       if (dx * dx + dz * dz < m.radius * m.radius) {
-        for (const w of tr.words) if (st.addWord(def.id, w)) found.push(w);
+        let fresh = false;
+        for (const w of tr.words) if (st.addWord(def.id, w)) { found.push(w); fresh = true; }
+        // 空間5の最後：振り返った先（背後）で電話が鳴る
+        if (fresh && tr.effect === 'ringBehind') {
+          const y = player.yaw;
+          setTimeout(() => audio.ringPhone({ pos: [p.x + Math.sin(y) * 1.4, 1.5, p.z + Math.cos(y) * 1.4], times: 1, gain: 0.4 }), 1200);
+        }
       }
     }
   }
@@ -287,7 +293,7 @@ function cleared() {
 
 $('btn-next').onclick = () => {
   if (mode === 'final-result') return showAllClear();
-  st.advance();
+  st.advance(SPACES.indexOf(def));
   enterSpace(st.getState().current);
 };
 
@@ -311,7 +317,7 @@ async function finale() {
 }
 
 function showAllClear() {
-  st.advance();
+  st.advance(SPACES.indexOf(def));
   mode = 'allclear';
   if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
   $('summary').innerHTML = SPACES.map((s, i) => {

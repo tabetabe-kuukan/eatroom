@@ -74,8 +74,9 @@ export function recordPath(id, x, z) {
   save();
 }
 
-export function advance() {
-  state.current = Math.min(state.current + 1, SPACES.length);
+// クリアした空間の次へ進む（保存された番号に +1 するのではなく、今いる空間から決める）
+export function advance(fromIndex = state.current) {
+  state.current = Math.min(fromIndex + 1, SPACES.length);
   if (state.current >= SPACES.length) state.finished = true;
   save(true);
 }
