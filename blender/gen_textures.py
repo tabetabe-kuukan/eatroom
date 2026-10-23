@@ -620,10 +620,133 @@ def s03_notice():
     save(img, "s03_notice.png")
 
 
+# ---------------------------------------------------------------- 空間4 サンチアゴ航空513便事件
+def s04_board():
+    """出発便の案内板（パタパタ表示）"""
+    W, H = 1024, 576
+    img = Image.new("RGB", (W, H), (14, 14, 16))
+    d = ImageDraw.Draw(img)
+    d.text((30, 20), "AACHEN", font=font("latin_bold", 44), fill=(240, 240, 240))
+    d.text((210, 22), "出発", font=font("gothic_bold", 42), fill=(240, 240, 240))
+    d.text((320, 20), "DEPARTURES", font=font("latin_bold", 44), fill=(240, 240, 240))
+    d.text((W - 300, 28), "04 SEP 1954", font=font("latin_bold", 40), fill=(255, 200, 40))
+    heads = ["時刻", "便名", "行先", "備考"]
+    xs = [30, 190, 360, 760]
+    for x, h in zip(xs, heads):
+        d.text((x, 92), h, font=font("gothic_bold", 30), fill=(170, 170, 170))
+    rows = [("21:05", "LH 204", "FRANKFURT", "出発済"), ("21:40", "SN 118", "BRUXELLES", "出発済"),
+            ("22:10", "KL 331", "AMSTERDAM", "出発済"), ("23:50", "513", "PORTO ALEGRE", "消息不明"),
+            ("--:--", "------", "----------", ""), ("--:--", "------", "----------", "")]
+    y = 150
+    for r in rows:
+        for x, t in zip(xs, r):
+            for k, ch in enumerate(t):  # 一文字ずつのフラップ
+                cx = x + k * 30
+                d.rectangle([cx, y, cx + 27, y + 52], fill=(32, 32, 36))
+                d.line([cx, y + 26, cx + 27, y + 26], fill=(10, 10, 10), width=2)
+            col = (255, 90, 60) if t == "消息不明" else (255, 205, 60)
+            f = font("gothic_bold", 34) if any(ord(c) > 255 for c in t) else font("latin_bold", 38)
+            d.text((x + 2, y + 6), t if any(ord(c) > 255 for c in t) else " ".join(t).replace("   ", "  "),
+                   font=f, fill=col)
+        y += 68
+    save(img, "s04_board.png")
+
+
+def s04_signs():
+    W, H = 1024, 256
+    img = Image.new("RGB", (W, H), (24, 60, 110))
+    d = ImageDraw.Draw(img)
+    draw_text_center(d, (300, 128), "空 港", font("gothic_bold", 120), (255, 255, 255), spacing=20)
+    draw_text_center(d, (730, 128), "AIRPORT", font("latin_bold", 100), (255, 255, 255))
+    img = grime(img, 181, 0.2)
+    save(img, "s04_kuko.png")
+    img = Image.new("RGB", (W, H), (230, 226, 214))
+    d = ImageDraw.Draw(img)
+    draw_text_center(d, (W / 2, 90), "南大西洋航空", font("mincho_heavy", 96), (30, 50, 90), spacing=10)
+    draw_text_center(d, (W / 2, 200), "AIRLINE COUNTER", font("latin_bold", 52), (30, 50, 90))
+    img = grime(img, 182, 0.3)
+    save(img, "s04_koku.png")
+
+
+def s04_aachen():
+    W, H = 512, 724
+    img = Image.new("RGB", (W, H), (210, 196, 160))
+    d = ImageDraw.Draw(img)
+    # 大聖堂のシルエット風
+    d.rectangle([0, 0, W, 430], fill=(80, 110, 140))
+    d.polygon([(120, 430), (120, 260), (170, 200), (220, 260), (220, 430)], fill=(40, 50, 60))
+    d.polygon([(220, 430), (220, 300), (300, 300), (300, 430)], fill=(45, 55, 65))
+    d.polygon([(300, 430), (300, 180), (330, 90), (360, 180), (360, 430)], fill=(35, 45, 55))
+    d.ellipse([230, 230, 290, 290], fill=(55, 65, 75))
+    draw_text_center(d, (W / 2, 500), "AACHEN", font("latin_bold", 96), (40, 40, 40))
+    draw_text_center(d, (W / 2, 590), "アーヘンへようこそ", font("mincho_heavy", 44), (40, 40, 40))
+    draw_text_center(d, (W / 2, 660), "Willkommen", font("latin_bold", 36), (90, 60, 40))
+    img = fade(img, 0.2)
+    img = grime(img, 183, 0.45)
+    save(img, "s04_aachen.png")
+
+
+def newspaper(name, date, head, sub, seed):
+    W, H = 724, 1024
+    img = Image.new("RGB", (W, H), (222, 214, 192))
+    d = ImageDraw.Draw(img)
+    d.rectangle([30, 30, W - 30, 120], outline=(40, 40, 40), width=3)
+    draw_text_center(d, (W / 2, 76), "夕 刊", font("mincho_heavy", 60), (30, 30, 30), spacing=20)
+    d.text((40, 132), date, font=font("mincho", 28), fill=(40, 40, 40))
+    vertical_text(d, W - 110, 190, head, font("mincho_heavy", 92), (20, 20, 20), step=98)
+    vertical_text(d, W - 200, 210, sub, font("mincho_heavy", 50), (20, 20, 20), step=54)
+    rnd = random.Random(seed)
+    for col in range(7):  # 本文（読めない細かい文字の帯）
+        x = W - 260 - col * 62
+        y = 200
+        while y < H - 60:
+            l = rnd.randint(30, 120)
+            d.line([x, y, x, min(H - 60, y + l)], fill=(90, 90, 86), width=18)
+            y += l + rnd.randint(6, 14)
+    img = grime(img, seed + 1, 0.45, (150, 120, 60))
+    img = speckle(img, seed + 2, 4000)
+    save(img, name)
+
+
+def s04_news():
+    newspaper("s04_news1954.png", "昭和二十九年九月五日", "旅客機消息不明", "大西洋上で連絡途絶える", 191)
+    newspaper("s04_news1989.png", "一九八九年十月十二日", "消えた機体着陸", "ポルトアレグレ空港", 195)
+
+
+def s04_portoalegre():
+    W, H = 1024, 512
+    img = Image.new("RGB", (W, H), (240, 236, 220))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 120], fill=(0, 120, 70))
+    draw_text_center(d, (W / 2, 62), "BEM-VINDO A", font("latin_bold", 70), (255, 230, 60))
+    draw_text_center(d, (W / 2, 230), "PORTO ALEGRE", font("latin_bold", 120), (20, 40, 80))
+    draw_text_center(d, (W / 2, 340), "ポルトアレグレ", font("gothic_bold", 64), (20, 40, 80))
+    draw_text_center(d, (W / 2, 440), "12 · OUT · 1989", font("latin_bold", 60), (180, 30, 30))
+    img = grime(img, 201, 0.25)
+    save(img, "s04_porto.png")
+
+
+def s04_manifest():
+    W, H = 512, 724
+    img = Image.new("RGB", (W, H), (236, 230, 210))
+    d = ImageDraw.Draw(img)
+    draw_text_center(d, (W / 2, 60), "乗客名簿", font("mincho_heavy", 64), (20, 20, 20), spacing=8)
+    draw_text_center(d, (W / 2, 120), "FLIGHT 513  ·  92 PAX", font("latin_bold", 32), (40, 40, 40))
+    rnd = random.Random(211)
+    for k in range(18):
+        y = 170 + k * 29
+        d.text((40, y), f"{k + 1:02d}", font=font("mono", 22), fill=(60, 60, 60))
+        d.line([90, y + 14, 90 + rnd.randint(140, 300), y + 14], fill=(110, 110, 105), width=12)
+        d.text((W - 90, y), f"{rnd.randint(1, 23)}{'ABCD'[rnd.randint(0, 3)]}", font=font("mono", 22), fill=(60, 60, 60))
+    img = grime(img, 212, 0.5, (140, 120, 80))
+    save(img, "s04_manifest.png")
+
+
 SPACES = {
     "00": [grass_blade, footprint],
     "01": [s01_bounty, s01_map, s01_sake_label, s01_canopy, s01_snakeskin, s01_rindo, s01_marker, s01_stripe],
     "02": [s02_led, s02_routemap, s02_ekimei, s02_mujin, s02_phones],
+    "04": [s04_board, s04_signs, s04_aachen, s04_news, s04_portoalegre, s04_manifest],
     "03": [s03_monitors, s03_pack, s03_deleted_wall, s03_redacted, s03_massho, s03_label, s03_thread, s03_notice],
 }
 

@@ -131,6 +131,14 @@ def sun(rot_deg, strength=4.0, color=(1, 0.95, 0.85), angle_deg=1.0):
     return o
 
 
+def spot_at(loc, target, power=200, angle_deg=60, blend=0.5, color=(1, 1, 1), radius=0.05, name="Spot"):
+    """target の方向へ向けたスポットライト"""
+    o = spot_light(loc, (0, 0, 0), power, angle_deg, blend, color, radius, name)
+    d = Vector(target) - Vector(loc)
+    o.rotation_euler = d.to_track_quat("-Z", "Y").to_euler()
+    return o
+
+
 def point_light(loc, power=100, color=(1, 1, 1), radius=0.05, name="Point"):
     l = bpy.data.lights.new(name, "POINT")
     l.energy = power
@@ -687,7 +695,8 @@ def _join(objs, name):
 
 def _select_only(obj):
     for o in bpy.context.view_layer.objects:
-        o.select_set(False)
+        if o is not None:
+            o.select_set(False)
     obj.select_set(True)
     bpy.context.view_layer.objects.active = obj
 
