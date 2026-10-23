@@ -1,0 +1,114 @@
+[
+ {
+  "id": "dirty_carpet",
+  "kind": "texture",
+  "name": "Dirty Carpet",
+  "authors": [
+   "Rohit Seervi"
+  ],
+  "url": "https://polyhaven.com/a/dirty_carpet",
+  "license": "CC0"
+ },
+ {
+  "id": "linoleum_brown",
+  "kind": "texture",
+  "name": "Linoleum Brown",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/linoleum_brown",
+  "license": "CC0"
+ },
+ {
+  "id": "concrete_floor_worn_001",
+  "kind": "texture",
+  "name": "Concrete Floor Worn 001",
+  "authors": [
+   "Dimitrios Savva",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/concrete_floor_worn_001",
+  "license": "CC0"
+ },
+ {
+  "id": "plywood",
+  "kind": "texture",
+  "name": "Plywood",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/plywood",
+  "license": "CC0"
+ },
+ {
+  "id": "painted_plaster_wall",
+  "kind": "texture",
+  "name": "Painted Plaster Wall",
+  "authors": [
+   "Amal Kumar"
+  ],
+  "url": "https://polyhaven.com/a/painted_plaster_wall",
+  "license": "CC0"
+ },
+ {
+  "id": "wood_table_001",
+  "kind": "texture",
+  "name": "Wood Table 001",
+  "authors": [
+   "Dimitrios Savva",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/wood_table_001",
+  "license": "CC0"
+ },
+ {
+  "id": "modern_arm_chair_01",
+  "kind": "model",
+  "name": "Modern Arm Chair 01",
+  "authors": [
+   "Vibrant Nordic"
+  ],
+  "url": "https://polyhaven.com/a/modern_arm_chair_01",
+  "license": "CC0"
+ },
+ {
+  "id": "metal_office_desk",
+  "kind": "model",
+  "name": "Metal Office Desk",
+  "authors": [
+   "Ulan Cabanilla"
+  ],
+  "url": "https://polyhaven.com/a/metal_office_desk",
+  "license": "CC0"
+ },
+ {
+  "id": "steel_frame_shelves_01",
+  "kind": "model",
+  "name": "Steel Frame Shelves 01",
+  "authors": [
+   "James Ray Cock"
+  ],
+  "url": "https://polyhaven.com/a/steel_frame_shelves_01",
+  "license": "CC0"
+ },
+ {
+  "id": "cardboard_box_01",
+  "kind": "model",
+  "name": "Cardboard Box 01",
+  "authors": [
+   "Rahul Chaudhary"
+  ],
+  "url": "https://polyhaven.com/a/cardboard_box_01",
+  "license": "CC0"
+ },
+ {
+  "id": "unfinished_office_night",
+  "kind": "hdri",
+  "name": "Unfinished Office Night",
+  "authors": [
+   "Sergej Majboroda"
+  ],
+  "url": "https://polyhaven.com/a/unfinished_office_night",
+  "license": "CC0"
+ }
+]

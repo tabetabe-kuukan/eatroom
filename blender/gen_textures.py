@@ -462,10 +462,169 @@ def s02_phones():
     ], "s02_phone_bbs.png", bbs=True)
 
 
+# ---------------------------------------------------------------- 空間3 鮫島事件
+def browser_frame(W, H, title, url="http://bbs.example/test/read.cgi/"):
+    img = Image.new("RGB", (W, H), (236, 236, 232))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 46], fill=(60, 64, 72))
+    d.text((14, 10), title, font=font("gothic_bold", 24), fill=(235, 235, 235))
+    d.rectangle([0, 46, W, 84], fill=(220, 220, 214))
+    d.rounded_rectangle([12, 52, W - 12, 78], 6, fill=(250, 250, 248))
+    d.text((24, 54), url, font=font("mono", 19), fill=(90, 90, 90))
+    return img, d
+
+
+def s03_monitors():
+    W, H = 1024, 640
+    img, d = browser_frame(W, H, "総合掲示板 - スレッド一覧")
+    rows = ["【雑談】眠れない人が集まるスレ (998)", "【閲覧注意】例の件について (1001)", "■■について知ってる人いる？ (12)",
+            "このスレは削除されました", "【検証】あの書き込みは本当だったのか (87)", "このスレは削除されました",
+            "深夜に見ると後悔するスレ part.4 (640)", "このスレは削除されました", "【質問】昔の書き込みが消えた (3)"]
+    y = 104
+    for i, r in enumerate(rows):
+        c = (150, 150, 150) if "削除" in r else (20, 40, 160)
+        d.text((24, y), f"{i + 1}: {r}", font=font("gothic", 30), fill=c)
+        y += 54
+    save(img, "s03_bbs_list.png")
+
+    img, d = browser_frame(W, H, "書き込み - 総合掲示板")
+    d.text((24, 104), "名前：", font=font("gothic_bold", 28), fill=(30, 30, 30))
+    d.rectangle([110, 100, 520, 142], outline=(150, 150, 150), width=2, fill=(255, 255, 255))
+    d.text((122, 106), "名無しさん", font=font("gothic", 26), fill=(30, 30, 30))
+    d.text((24, 168), "本文：", font=font("gothic_bold", 28), fill=(30, 30, 30))
+    d.rectangle([24, 210, W - 24, 500], outline=(150, 150, 150), width=2, fill=(255, 255, 255))
+    for k, t in enumerate(["前にここで書かれてた、あの事件のこと", "覚えてる人いない？", "あのスレ、気づいたら全部消えてた", "|"]):
+        d.text((40, 226 + k * 44), t, font=font("gothic", 30), fill=(20, 20, 20))
+    d.rounded_rectangle([W - 260, 530, W - 24, 600], 8, fill=(70, 110, 200))
+    draw_text_center(d, (W - 142, 565), "書き込む", font("gothic_bold", 34), (255, 255, 255))
+    save(img, "s03_post.png")
+
+
+def s03_pack():
+    W, H = 512, 724
+    img = Image.new("RGB", (W, H), (20, 24, 60))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 170], fill=(240, 200, 30))
+    draw_text_center(d, (W / 2, 88), "深夜パック", font("gothic_bold", 92), (20, 20, 40))
+    rows = [("3時間", "880円"), ("6時間", "1,280円"), ("9時間", "1,680円")]
+    y = 250
+    for a, b in rows:
+        d.text((50, y), a, font=font("gothic_bold", 56), fill=(255, 255, 255))
+        d.text((250, y), b, font=font("gothic_bold", 56), fill=(255, 230, 90))
+        y += 110
+    draw_text_center(d, (W / 2, 640), "22:00〜翌5:00 受付", font("gothic", 34), (220, 220, 230))
+    img = grime(img, 131, 0.25)
+    save(img, "s03_pack.png")
+
+
+def deleted_sheet(seed):
+    W, H = 512, 724
+    img = Image.new("RGB", (W, H), (244, 243, 238))
+    d = ImageDraw.Draw(img)
+    rnd = random.Random(seed)
+    y = 40
+    for i in range(6):
+        no = rnd.randint(100, 999)
+        d.text((30, y), f"{no} ：名無しさん：20XX/0{rnd.randint(1, 9)}/{rnd.randint(10, 28)}  ID:????", font=font("gothic", 20), fill=(30, 110, 40))
+        d.text((44, y + 36), "この投稿は削除されました", font=font("gothic_bold", 30), fill=(120, 120, 120))
+        y += 110
+    return img
+
+
+def s03_deleted_wall():
+    """壁一面に貼られたプリント（4枚を1枚のタイルに）"""
+    W, H = 1024, 1448
+    img = Image.new("RGB", (W, H), (60, 58, 54))
+    for k in range(4):
+        sh = deleted_sheet(140 + k).rotate(random.Random(k).uniform(-2.5, 2.5), expand=False, fillcolor=(60, 58, 54))
+        img.paste(sh, ((k % 2) * 512, (k // 2) * 724))
+    img = grime(img, 141, 0.25, (120, 110, 80))
+    save(img, "s03_deleted.png")
+
+
+def s03_redacted():
+    W, H = 724, 1024
+    img = Image.new("RGB", (W, H), (240, 238, 230))
+    d = ImageDraw.Draw(img)
+    draw_text_center(d, (W / 2, 70), "報 告 書", font("mincho_heavy", 60), (20, 20, 20), spacing=10)
+    rnd = random.Random(151)
+    y = 150
+    while y < H - 80:
+        x = 60
+        while x < W - 60:
+            w = rnd.randint(40, 180)
+            if rnd.random() < 0.55:
+                d.rectangle([x, y, min(W - 60, x + w), y + 26], fill=(10, 10, 10))
+            else:
+                d.text((x, y), "　".join("記録の内容"[: max(1, w // 40)]), font=font("mincho", 24), fill=(60, 60, 60))
+            x += w + 14
+        y += 46
+    img = grime(img, 152, 0.2)
+    save(img, "s03_redacted.png")
+
+
+def s03_massho():
+    W, H = 724, 1024
+    img = Image.new("RGB", (W, H), (238, 236, 228))
+    d = ImageDraw.Draw(img)
+    d.text((60, 60), "記録番号　第■■■号", font=font("mincho", 34), fill=(40, 40, 40))
+    for k in range(14):
+        d.rectangle([60, 140 + k * 52, W - 60 - (k * 37) % 160, 160 + k * 52], fill=(160, 160, 155))
+    stamp = Image.new("L", (W, H), 0)
+    sd = ImageDraw.Draw(stamp)
+    sd.rectangle([170, 360, 560, 620], outline=255, width=18)
+    draw_text_center(sd, (365, 490), "抹消", font("mincho_heavy", 170), 255, spacing=10)
+    stamp = stamp.rotate(-12, center=(365, 490))
+    stamp = ImageChops.multiply(stamp, noise_layer((W, H), 30, 153).point(lambda v: 255 if v > 70 else 120))
+    img = Image.composite(Image.new("RGB", (W, H), (190, 30, 30)), img, stamp)
+    save(img, "s03_massho.png")
+
+
+def s03_label():
+    W, H = 512, 300
+    img = Image.new("RGB", (W, H), (245, 243, 236))
+    d = ImageDraw.Draw(img)
+    d.rectangle([8, 8, W - 8, H - 8], outline=(30, 30, 30), width=4)
+    draw_text_center(d, (W / 2, 100), "事件資料", font("mincho_heavy", 96), (20, 20, 20), spacing=12)
+    d.rectangle([40, 170, W - 40, 230], fill=(190, 30, 30))
+    draw_text_center(d, (W / 2, 200), "取扱注意", font("gothic_bold", 44), (255, 255, 255))
+    draw_text_center(d, (W / 2, 262), "No. ■■ − ■■■", font("gothic", 30), (40, 40, 40))
+    img = grime(img, 161, 0.3)
+    save(img, "s03_label.png")
+
+
+def s03_thread():
+    W, H = 800, 600
+    img = Image.new("RGB", (W, H), (239, 239, 231))
+    d = ImageDraw.Draw(img)
+    d.text((20, 18), "■■事件について語るスレ part.13", font=font("gothic_bold", 30), fill=(200, 20, 20))
+    y = 80
+    for i in range(1, 8):
+        d.text((20, y), f"{i} ：名無しさん＠2ちゃんねる", font=font("gothic", 22), fill=(20, 120, 40))
+        d.text((40, y + 30), "このレスは削除されました" if i != 4 else "それ以上は書かないほうがいい", font=font("gothic", 24), fill=(60, 60, 60))
+        y += 70
+    # ブラウン管の走査線
+    for yy in range(0, H, 3):
+        d.line([0, yy, W, yy], fill=(200, 200, 190))
+    img = img.filter(ImageFilter.GaussianBlur(0.7))
+    save(img, "s03_thread.png")
+
+
+def s03_notice():
+    W, H = 512, 724
+    img = Image.new("RGB", (W, H), (246, 244, 236))
+    d = ImageDraw.Draw(img)
+    vertical_text(d, W / 2 + 60, 80, "この件には", font("mincho_heavy", 78), (20, 20, 20), step=86)
+    vertical_text(d, W / 2 - 60, 160, "触れないこと", font("mincho_heavy", 78), (180, 20, 20), step=86)
+    img = grime(img, 171, 0.3)
+    save(img, "s03_notice.png")
+
+
 SPACES = {
     "00": [grass_blade, footprint],
     "01": [s01_bounty, s01_map, s01_sake_label, s01_canopy, s01_snakeskin, s01_rindo, s01_marker, s01_stripe],
     "02": [s02_led, s02_routemap, s02_ekimei, s02_mujin, s02_phones],
+    "03": [s03_monitors, s03_pack, s03_deleted_wall, s03_redacted, s03_massho, s03_label, s03_thread, s03_notice],
 }
 
 if __name__ == "__main__":
