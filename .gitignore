@@ -1,0 +1,12 @@
+node_modules/
+dist/
+blender/cache/
+blender/logs/
+blender/export/*.png
+blender/export/cli_test.*
+*.blend1
+.DS_Store
+__pycache__/
+# 中間ファイル（blender/spaces/*.py から再生成できる。最適化後の版は public/models にある）
+blender/export/*.glb
+.claude/

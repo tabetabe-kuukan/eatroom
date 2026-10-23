@@ -1,0 +1,126 @@
+[
+ {
+  "id": "mossy_forest",
+  "kind": "hdri",
+  "name": "Mossy Forest",
+  "authors": [
+   "Greg Zaal"
+  ],
+  "url": "https://polyhaven.com/a/mossy_forest",
+  "license": "CC0"
+ },
+ {
+  "id": "forest_leaves_02",
+  "kind": "texture",
+  "name": "Forest Leaves 02",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/forest_leaves_02",
+  "license": "CC0"
+ },
+ {
+  "id": "brown_mud_leaves_01",
+  "kind": "texture",
+  "name": "Brown Mud Leaves 01",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/brown_mud_leaves_01",
+  "license": "CC0"
+ },
+ {
+  "id": "japanese_stone_wall",
+  "kind": "texture",
+  "name": "Japanese Stone Wall",
+  "authors": [
+   "Rico Cilliers",
+   "Charlotte Baglioni",
+   "Dario Barresi"
+  ],
+  "url": "https://polyhaven.com/a/japanese_stone_wall",
+  "license": "CC0"
+ },
+ {
+  "id": "japanese_cedar_bark",
+  "kind": "texture",
+  "name": "Japanese Cedar Bark",
+  "authors": [
+   "Charlotte Baglioni"
+  ],
+  "url": "https://polyhaven.com/a/japanese_cedar_bark",
+  "license": "CC0"
+ },
+ {
+  "id": "weathered_planks",
+  "kind": "texture",
+  "name": "Weathered Planks",
+  "authors": [
+   "Dario Barresi",
+   "Dimitrios Savva"
+  ],
+  "url": "https://polyhaven.com/a/weathered_planks",
+  "license": "CC0"
+ },
+ {
+  "id": "mossy_rock",
+  "kind": "texture",
+  "name": "Mossy Rock",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/mossy_rock",
+  "license": "CC0"
+ },
+ {
+  "id": "fern_02",
+  "kind": "model",
+  "name": "Fern 02",
+  "authors": [
+   "Rob Tuytel",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/fern_02",
+  "license": "CC0"
+ },
+ {
+  "id": "rock_moss_set_01",
+  "kind": "model",
+  "name": "Rock Moss Set 01",
+  "authors": [
+   "Kless Gyzen"
+  ],
+  "url": "https://polyhaven.com/a/rock_moss_set_01",
+  "license": "CC0"
+ },
+ {
+  "id": "tree_stump_01",
+  "kind": "model",
+  "name": "Tree Stump 01",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/tree_stump_01",
+  "license": "CC0"
+ },
+ {
+  "id": "rusty_metal_02",
+  "kind": "texture",
+  "name": "Rusty Metal 02",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/rusty_metal_02",
+  "license": "CC0"
+ },
+ {
+  "id": "wooden_crate_01",
+  "kind": "model",
+  "name": "Wooden Crate 01",
+  "authors": [
+   "James Ray Cock"
+  ],
+  "url": "https://polyhaven.com/a/wooden_crate_01",
+  "license": "CC0"
+ }
+]
