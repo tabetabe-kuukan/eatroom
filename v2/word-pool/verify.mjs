@@ -24,7 +24,10 @@ const TIERS = {
     'ジョセフソン効果', '圧電効果', '量子ドット', 'カーボンナノチューブ', 'ゼオライト', '形状記憶合金', 'フォトリソグラフィ', 'ベンチュリ効果',
     'カルマン渦', 'レイノルズ数', 'マイスナー効果', 'ヒートパイプ', 'スターリングエンジン', '量子もつれ', '浮動小数点数', 'ハッシュ関数',
     '正規表現', 'ガベージコレクション', 'コンパイラ', '誘導加熱', 'レーザー冷却', '真空蒸着', 'ファラデーケージ', 'トンネル効果', '黒体放射',
-    '有機エレクトロルミネッセンス', 'ジャイロトロン'],
+    '有機エレクトロルミネッセンス', 'ジャイロトロン',
+    // 文系の専門用語（言語学・文学・哲学・経済学・美術・日本の美学）
+    '形態素', '換喩', '掛詞', '本歌取り', '異化', '間テクスト性', '記号論', '現象学', '止揚', '限界効用', '機会費用', '比較優位',
+    'キアロスクーロ', '幽玄', '序破急', '音韻論', '修辞学', '提喩', 'パラダイム', '解釈学'],
 };
 
 // 人物・出来事・事件・作品などを除く（collect.mjs と同じ方針）
@@ -46,10 +49,15 @@ function firstSentences(text, max = 3) {
 }
 
 // --retry: 前回の結果を読み、取得に失敗したもの（記事なし）だけをゆっくり取り直す
-const RETRY = process.argv.includes('--retry');
+const RETRY = process.argv.includes('--retry') || process.argv.includes('--add');
+const ADD = process.argv.includes('--add');
 const prev = RETRY ? JSON.parse((await import('node:fs')).readFileSync('v2/word-pool/verified.json', 'utf8')) : [];
 const out = RETRY ? prev.filter((r) => r.reason !== '記事なし') : [];
-const todo = RETRY ? prev.filter((r) => r.reason === '記事なし').map((r) => [r.tier, r.query]) : Object.entries(TIERS).flatMap(([t, ws]) => ws.map((w) => [t, w]));
+const known = new Set(prev.map((r) => r.query));
+const todo = ADD
+  ? Object.entries(TIERS).flatMap(([t, ws]) => ws.filter((w) => !known.has(w)).map((w) => [t, w]))
+  : RETRY ? prev.filter((r) => r.reason === '記事なし').map((r) => [r.tier, r.query]) : Object.entries(TIERS).flatMap(([t, ws]) => ws.map((w) => [t, w]));
+if (ADD) out.push(...prev.filter((r) => r.reason === '記事なし'));
 const TODO_BY_TIER = {};
 for (const [t, w] of todo) (TODO_BY_TIER[t] ||= []).push(w);
 for (const [tier, words] of Object.entries(TODO_BY_TIER)) {
