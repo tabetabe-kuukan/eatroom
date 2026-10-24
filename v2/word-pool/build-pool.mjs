@@ -24,7 +24,11 @@ for (const [title, zones] of Object.entries(SEARCH_WORDS)) {
   // リダイレクトは関連語も含むので使わず、answers.mjs で選んだ表記だけを認める
   const answers = [...new Set([display, v.query, v.reading, ...(ANSWERS[title] || [])].filter(Boolean))];
   const answerSet = new Set(answers.map(norm));
-  for (const w of zones.flat()) if (answerSet.has(norm(w))) problems.push(`${title}: 検索ワード「${w}」が答えと同じ`);
+  for (const w of zones.flat()) {
+    if (answerSet.has(norm(w))) problems.push(`${title}: 検索ワード「${w}」が答えと同じ`);
+    // 答えを含む語（例: パラダイムシフト）も、読んだだけで答えが分かるので使わない
+    else for (const a of answerSet) if (a.length >= 2 && norm(w).includes(a)) problems.push(`${title}: 検索ワード「${w}」が答え「${a}」を含む`);
+  }
   if (zones.length !== 3 || zones.some((z) => z.length !== 3)) problems.push(`${title}: 検索ワードの数が 3×3 ではない`);
   words.push({
     tier: v.tier,
