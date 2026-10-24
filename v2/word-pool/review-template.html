@@ -1,0 +1,74 @@
+<title>食べ食べ空間 単語プール</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  /* レイアウト: 説明 → 段階の目次 → 段階ごとの表（横に長い表だけ横スクロール） */
+  :root {
+    --bg: #eef1ef;
+    --surface: #ffffff;
+    --ink: #1c2422;
+    --muted: #5d6965;
+    --line: #d3dad7;
+    --accent: #1d6a63;
+    --chip: #e3ebe8;
+    --display: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    --body: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101615; --surface: #161e1c; --ink: #e2e9e6; --muted: #93a29d; --line: #2a3532; --accent: #6fc2b6; --chip: #1f2b28;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101615; --surface: #161e1c; --ink: #e2e9e6; --muted: #93a29d; --line: #2a3532; --accent: #6fc2b6; --chip: #1f2b28;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.7; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-block: 40px 80px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 5vw, 42px); letter-spacing: 0.08em; margin: 0 0 12px; text-wrap: balance; }
+  .lede { max-width: 62ch; color: var(--ink); margin: 0 0 8px; }
+  .rules { max-width: 62ch; color: var(--muted); font-size: 13px; margin: 0; padding-left: 1.2em; }
+  .rules li { margin: 2px 0; }
+  nav.tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin: 28px 0 8px; }
+  nav.tiers a { display: flex; gap: 10px; align-items: baseline; text-decoration: none; color: var(--ink); background: var(--surface);
+    border: 1px solid var(--line); padding: 10px 12px; border-radius: 6px; }
+  nav.tiers a:hover, nav.tiers a:focus-visible { border-color: var(--accent); outline: none; }
+  nav.tiers b { font-family: var(--display); font-size: 22px; color: var(--accent); min-width: 1ch; }
+  nav.tiers span { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .tier { margin-top: 44px; }
+  .tier-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; border-bottom: 2px solid var(--ink); padding-bottom: 8px; }
+  .tier-no { margin: 0; font-size: 12px; letter-spacing: 0.25em; color: var(--accent); font-weight: 700; }
+  .tier-head h2 { margin: 0; font-family: var(--display); font-size: 22px; font-weight: 800; }
+  .tier-meta { margin: 0 0 0 auto; font-size: 12px; color: var(--muted); }
+  .scroll { overflow-x: auto; }
+  table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 13px; }
+  thead th { text-align: left; font-weight: 700; font-size: 12px; color: var(--muted); padding: 10px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  thead small { display: block; font-weight: 400; font-size: 11px; letter-spacing: 0.1em; }
+  tbody th { text-align: left; padding: 10px 8px; vertical-align: top; width: 22%; font-weight: 500; }
+  tbody th a { color: var(--ink); font-family: var(--display); font-weight: 800; font-size: 16px; text-decoration: none; border-bottom: 1px solid var(--line); }
+  tbody th a:hover, tbody th a:focus-visible { color: var(--accent); border-color: var(--accent); outline: none; }
+  .alt { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; cursor: help; }
+  tbody td { padding: 10px 8px; vertical-align: top; }
+  tbody tr { border-bottom: 1px solid var(--line); }
+  .chip { display: inline-block; background: var(--chip); padding: 1px 8px; margin: 2px 4px 2px 0; border-radius: 3px; white-space: nowrap; }
+  footer { margin-top: 48px; font-size: 12px; color: var(--muted); max-width: 62ch; }
+  @media (max-width: 520px) { .tier-meta { margin-left: 0; } }
+</style>
+
+<div class="wrap">
+  <h1>単語プールの一覧</h1>
+  <p class="lede">遊ぶたびに、各段階の 30 語から 1 語ずつランダムに選んで空間1〜5を作ります。空間1が日常の一般名詞、空間5が専門用語です。全 <!--COUNT--> 語。</p>
+  <ul class="rules">
+    <li>すべて日本語版ウィキペディアに記事があることを確認済みです（単語をクリックすると記事が開きます）。</li>
+    <li>人物・実際の事件・不快になりうる話題・死に関わる記事は除いています。</li>
+    <li>検索ワードは各区画3語。答えそのものや、答えとして受け付ける別表記（「別表記」にマウスを乗せると表示）は入れていません。</li>
+  </ul>
+  <nav class="tiers" aria-label="段階">
+    <!--NAV-->
+  </nav>
+  <!--SECTIONS-->
+  <footer>単語の入れ替え・段階の移動・検索ワードの修正があれば、この一覧をもとに指示してください。リザルト画面の引用は各記事の冒頭（CC BY-SA 4.0）を使います。</footer>
+</div>
