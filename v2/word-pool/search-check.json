@@ -1,0 +1,9235 @@
+[
+ {
+  "tier": 1,
+  "answer": "洞窟",
+  "title": "洞窟",
+  "inArticle": [
+   {
+    "word": "暗闇",
+    "found": false
+   },
+   {
+    "word": "湿気",
+    "found": false
+   },
+   {
+    "word": "岩肌",
+    "found": false
+   },
+   {
+    "word": "懐中電灯",
+    "found": false
+   },
+   {
+    "word": "鍾乳石",
+    "found": true
+   },
+   {
+    "word": "コウモリ",
+    "found": true
+   },
+   {
+    "word": "地下空間",
+    "found": true
+   },
+   {
+    "word": "横穴",
+    "found": true
+   },
+   {
+    "word": "探検",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 2,
+   "total": 16
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 1,
+  "answer": "傘",
+  "title": "傘",
+  "inArticle": [
+   {
+    "word": "雨",
+    "found": true
+   },
+   {
+    "word": "梅雨",
+    "found": false
+   },
+   {
+    "word": "玄関",
+    "found": false
+   },
+   {
+    "word": "骨",
+    "found": true
+   },
+   {
+    "word": "柄",
+    "found": true
+   },
+   {
+    "word": "ビニール",
+    "found": true
+   },
+   {
+    "word": "開閉",
+    "found": true
+   },
+   {
+    "word": "頭上に広げる",
+    "found": false
+   },
+   {
+    "word": "雨よけ",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "ビニール"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "鏡",
+  "title": "鏡",
+  "inArticle": [
+   {
+    "word": "洗面所",
+    "found": false
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "姿",
+    "found": true
+   },
+   {
+    "word": "ガラス",
+    "found": true
+   },
+   {
+    "word": "銀",
+    "found": true
+   },
+   {
+    "word": "化粧台",
+    "found": true
+   },
+   {
+    "word": "反射",
+    "found": true
+   },
+   {
+    "word": "左右反転",
+    "found": false
+   },
+   {
+    "word": "映り込み",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 14
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "銀"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "時計",
+  "title": "時計",
+  "inArticle": [
+   {
+    "word": "秒",
+    "found": true
+   },
+   {
+    "word": "針の音",
+    "found": false
+   },
+   {
+    "word": "壁",
+    "found": true
+   },
+   {
+    "word": "文字盤",
+    "found": true
+   },
+   {
+    "word": "振り子",
+    "found": true
+   },
+   {
+    "word": "ぜんまい",
+    "found": true
+   },
+   {
+    "word": "時刻",
+    "found": true
+   },
+   {
+    "word": "長針",
+    "found": true
+   },
+   {
+    "word": "短針",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 18
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "文字盤"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "自転車",
+  "title": "自転車",
+  "inArticle": [
+   {
+    "word": "坂道",
+    "found": false
+   },
+   {
+    "word": "通学",
+    "found": true
+   },
+   {
+    "word": "風",
+    "found": true
+   },
+   {
+    "word": "ペダル",
+    "found": true
+   },
+   {
+    "word": "チェーン",
+    "found": true
+   },
+   {
+    "word": "サドル",
+    "found": true
+   },
+   {
+    "word": "二輪",
+    "found": true
+   },
+   {
+    "word": "ハンドル",
+    "found": true
+   },
+   {
+    "word": "ブレーキ",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 16,
+   "total": 223
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "風"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "雪だるま",
+  "title": "雪だるま",
+  "inArticle": [
+   {
+    "word": "冬",
+    "found": true
+   },
+   {
+    "word": "雪景色",
+    "found": false
+   },
+   {
+    "word": "子ども",
+    "found": false
+   },
+   {
+    "word": "バケツ",
+    "found": true
+   },
+   {
+    "word": "炭",
+    "found": true
+   },
+   {
+    "word": "木の枝",
+    "found": false
+   },
+   {
+    "word": "雪玉",
+    "found": true
+   },
+   {
+    "word": "二段",
+    "found": true
+   },
+   {
+    "word": "雪像",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 48
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "雪景色"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "風鈴",
+  "title": "風鈴",
+  "inArticle": [
+   {
+    "word": "夏",
+    "found": true
+   },
+   {
+    "word": "軒下",
+    "found": true
+   },
+   {
+    "word": "風",
+    "found": true
+   },
+   {
+    "word": "ガラス",
+    "found": true
+   },
+   {
+    "word": "短冊",
+    "found": true
+   },
+   {
+    "word": "金属",
+    "found": true
+   },
+   {
+    "word": "音色",
+    "found": true
+   },
+   {
+    "word": "涼",
+    "found": true
+   },
+   {
+    "word": "吊るす",
+    "found": true
+   }
+  ],
+  "found": 9,
+  "zone3": {
+   "rank": 1,
+   "total": 7
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "夏"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "提灯",
+  "title": "提灯",
+  "inArticle": [
+   {
+    "word": "夜祭り",
+    "found": false
+   },
+   {
+    "word": "灯り",
+    "found": true
+   },
+   {
+    "word": "縁日",
+    "found": false
+   },
+   {
+    "word": "和紙",
+    "found": false
+   },
+   {
+    "word": "竹ひご",
+    "found": true
+   },
+   {
+    "word": "蝋燭",
+    "found": true
+   },
+   {
+    "word": "伸縮",
+    "found": true
+   },
+   {
+    "word": "紙の灯り",
+    "found": false
+   },
+   {
+    "word": "屋号",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 1,
+  "answer": "キンギョ",
+  "title": "キンギョ",
+  "inArticle": [
+   {
+    "word": "夏祭り",
+    "found": false
+   },
+   {
+    "word": "水槽",
+    "found": true
+   },
+   {
+    "word": "縁日",
+    "found": true
+   },
+   {
+    "word": "ポイ",
+    "found": false
+   },
+   {
+    "word": "フナ",
+    "found": true
+   },
+   {
+    "word": "尾びれ",
+    "found": false
+   },
+   {
+    "word": "観賞魚",
+    "found": true
+   },
+   {
+    "word": "赤い魚",
+    "found": false
+   },
+   {
+    "word": "中国原産",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 1,
+  "answer": "炬燵",
+  "title": "炬燵",
+  "inArticle": [
+   {
+    "word": "冬",
+    "found": false
+   },
+   {
+    "word": "畳",
+    "found": false
+   },
+   {
+    "word": "みかん",
+    "found": false
+   },
+   {
+    "word": "布団",
+    "found": false
+   },
+   {
+    "word": "ヒーター",
+    "found": false
+   },
+   {
+    "word": "天板",
+    "found": false
+   },
+   {
+    "word": "暖房器具",
+    "found": false
+   },
+   {
+    "word": "足を入れる",
+    "found": false
+   },
+   {
+    "word": "局所暖房",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "局所暖房"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "うちわ",
+  "title": "うちわ",
+  "inArticle": [
+   {
+    "word": "夏",
+    "found": true
+   },
+   {
+    "word": "縁側",
+    "found": false
+   },
+   {
+    "word": "祭り",
+    "found": false
+   },
+   {
+    "word": "竹",
+    "found": true
+   },
+   {
+    "word": "和紙",
+    "found": true
+   },
+   {
+    "word": "柄",
+    "found": true
+   },
+   {
+    "word": "あおぐ",
+    "found": true
+   },
+   {
+    "word": "風を起こす",
+    "found": true
+   },
+   {
+    "word": "扇子",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "風を起こす"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "箸",
+  "title": "箸",
+  "inArticle": [
+   {
+    "word": "食卓",
+    "found": true
+   },
+   {
+    "word": "和食",
+    "found": true
+   },
+   {
+    "word": "茶碗",
+    "found": false
+   },
+   {
+    "word": "竹",
+    "found": true
+   },
+   {
+    "word": "漆",
+    "found": true
+   },
+   {
+    "word": "弁当",
+    "found": true
+   },
+   {
+    "word": "2本1対",
+    "found": true
+   },
+   {
+    "word": "つまむ",
+    "found": true
+   },
+   {
+    "word": "東アジア",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 38
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "2本1対"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "鍵",
+  "title": "鍵",
+  "inArticle": [
+   {
+    "word": "扉",
+    "found": true
+   },
+   {
+    "word": "留守",
+    "found": false
+   },
+   {
+    "word": "金庫",
+    "found": true
+   },
+   {
+    "word": "錠前",
+    "found": true
+   },
+   {
+    "word": "キーホルダー",
+    "found": true
+   },
+   {
+    "word": "南京錠",
+    "found": true
+   },
+   {
+    "word": "解錠",
+    "found": true
+   },
+   {
+    "word": "戸締まり",
+    "found": false
+   },
+   {
+    "word": "差し込む",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "南京錠"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "枕",
+  "title": "枕",
+  "inArticle": [
+   {
+    "word": "寝室",
+    "found": false
+   },
+   {
+    "word": "夜",
+    "found": true
+   },
+   {
+    "word": "眠り",
+    "found": false
+   },
+   {
+    "word": "綿",
+    "found": true
+   },
+   {
+    "word": "そば殻",
+    "found": false
+   },
+   {
+    "word": "カバー",
+    "found": true
+   },
+   {
+    "word": "寝具",
+    "found": true
+   },
+   {
+    "word": "頭を載せる",
+    "found": true
+   },
+   {
+    "word": "首を支える",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 6
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "そば殻"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "階段",
+  "title": "階段",
+  "inArticle": [
+   {
+    "word": "建物",
+    "found": true
+   },
+   {
+    "word": "上り下り",
+    "found": false
+   },
+   {
+    "word": "足音",
+    "found": false
+   },
+   {
+    "word": "手すり",
+    "found": true
+   },
+   {
+    "word": "踊り場",
+    "found": true
+   },
+   {
+    "word": "段差",
+    "found": true
+   },
+   {
+    "word": "昇降",
+    "found": true
+   },
+   {
+    "word": "一段ずつ",
+    "found": false
+   },
+   {
+    "word": "螺旋",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "手すり"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "井戸",
+  "title": "井戸",
+  "inArticle": [
+   {
+    "word": "古い家",
+    "found": false
+   },
+   {
+    "word": "庭",
+    "found": false
+   },
+   {
+    "word": "水",
+    "found": true
+   },
+   {
+    "word": "釣瓶",
+    "found": true
+   },
+   {
+    "word": "滑車",
+    "found": false
+   },
+   {
+    "word": "石組み",
+    "found": true
+   },
+   {
+    "word": "地下水",
+    "found": true
+   },
+   {
+    "word": "くみ上げる",
+    "found": true
+   },
+   {
+    "word": "縦穴",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "水"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "畳",
+  "title": "畳",
+  "inArticle": [
+   {
+    "word": "和室",
+    "found": true
+   },
+   {
+    "word": "旅館",
+    "found": false
+   },
+   {
+    "word": "香り",
+    "found": false
+   },
+   {
+    "word": "い草",
+    "found": true
+   },
+   {
+    "word": "縁",
+    "found": true
+   },
+   {
+    "word": "床",
+    "found": true
+   },
+   {
+    "word": "敷く",
+    "found": true
+   },
+   {
+    "word": "和室の床材",
+    "found": false
+   },
+   {
+    "word": "帖",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "旅館"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "障子",
+  "title": "障子",
+  "inArticle": [
+   {
+    "word": "和室",
+    "found": true
+   },
+   {
+    "word": "日差し",
+    "found": true
+   },
+   {
+    "word": "影",
+    "found": false
+   },
+   {
+    "word": "和紙",
+    "found": true
+   },
+   {
+    "word": "木の格子",
+    "found": false
+   },
+   {
+    "word": "張り替え",
+    "found": false
+   },
+   {
+    "word": "引き戸",
+    "found": true
+   },
+   {
+    "word": "明かり取り",
+    "found": false
+   },
+   {
+    "word": "指で穴",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "和室"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "花火",
+  "title": "花火",
+  "inArticle": [
+   {
+    "word": "夏の夜",
+    "found": true
+   },
+   {
+    "word": "河原",
+    "found": false
+   },
+   {
+    "word": "浴衣",
+    "found": false
+   },
+   {
+    "word": "火薬",
+    "found": true
+   },
+   {
+    "word": "打ち上げ",
+    "found": true
+   },
+   {
+    "word": "線香",
+    "found": true
+   },
+   {
+    "word": "夜空",
+    "found": true
+   },
+   {
+    "word": "大輪",
+    "found": true
+   },
+   {
+    "word": "玉屋",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 1,
+  "answer": "梯子",
+  "title": "梯子",
+  "inArticle": [
+   {
+    "word": "屋根",
+    "found": true
+   },
+   {
+    "word": "高所",
+    "found": true
+   },
+   {
+    "word": "倉庫",
+    "found": false
+   },
+   {
+    "word": "横木",
+    "found": true
+   },
+   {
+    "word": "足場",
+    "found": true
+   },
+   {
+    "word": "消防",
+    "found": true
+   },
+   {
+    "word": "登る",
+    "found": true
+   },
+   {
+    "word": "2本の柱",
+    "found": false
+   },
+   {
+    "word": "段",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 1,
+  "answer": "虹",
+  "title": "虹",
+  "inArticle": [
+   {
+    "word": "雨上がり",
+    "found": false
+   },
+   {
+    "word": "空",
+    "found": false
+   },
+   {
+    "word": "光",
+    "found": false
+   },
+   {
+    "word": "水滴",
+    "found": false
+   },
+   {
+    "word": "太陽の反対側",
+    "found": false
+   },
+   {
+    "word": "七色",
+    "found": false
+   },
+   {
+    "word": "アーチ",
+    "found": false
+   },
+   {
+    "word": "分光",
+    "found": false
+   },
+   {
+    "word": "雨後の空",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "雨後の空"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "鈴",
+  "title": "鈴",
+  "inArticle": [
+   {
+    "word": "神社",
+    "found": true
+   },
+   {
+    "word": "猫",
+    "found": true
+   },
+   {
+    "word": "お守り",
+    "found": false
+   },
+   {
+    "word": "金属",
+    "found": true
+   },
+   {
+    "word": "玉",
+    "found": true
+   },
+   {
+    "word": "紐",
+    "found": true
+   },
+   {
+    "word": "振ると鳴る",
+    "found": false
+   },
+   {
+    "word": "丸い金属",
+    "found": false
+   },
+   {
+    "word": "音",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 73
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "丸い金属"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "凧",
+  "title": "凧",
+  "inArticle": [
+   {
+    "word": "正月",
+    "found": true
+   },
+   {
+    "word": "空",
+    "found": true
+   },
+   {
+    "word": "河川敷",
+    "found": false
+   },
+   {
+    "word": "糸",
+    "found": true
+   },
+   {
+    "word": "竹ひご",
+    "found": false
+   },
+   {
+    "word": "和紙",
+    "found": true
+   },
+   {
+    "word": "風に揚げる",
+    "found": false
+   },
+   {
+    "word": "糸を引く",
+    "found": false
+   },
+   {
+    "word": "奴",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 39
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "風に揚げる"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "風呂",
+  "title": "風呂",
+  "inArticle": [
+   {
+    "word": "夜",
+    "found": false
+   },
+   {
+    "word": "湯気",
+    "found": false
+   },
+   {
+    "word": "家",
+    "found": true
+   },
+   {
+    "word": "湯船",
+    "found": true
+   },
+   {
+    "word": "桶",
+    "found": true
+   },
+   {
+    "word": "石鹸",
+    "found": false
+   },
+   {
+    "word": "入浴",
+    "found": true
+   },
+   {
+    "word": "浴槽",
+    "found": true
+   },
+   {
+    "word": "追い焚き",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 12
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "石鹸"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "図書館",
+  "title": "図書館",
+  "inArticle": [
+   {
+    "word": "静寂",
+    "found": false
+   },
+   {
+    "word": "本棚",
+    "found": true
+   },
+   {
+    "word": "閲覧室",
+    "found": true
+   },
+   {
+    "word": "貸出カード",
+    "found": false
+   },
+   {
+    "word": "司書",
+    "found": true
+   },
+   {
+    "word": "返却ポスト",
+    "found": false
+   },
+   {
+    "word": "蔵書",
+    "found": true
+   },
+   {
+    "word": "書籍の貸出",
+    "found": false
+   },
+   {
+    "word": "公共施設",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 238
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "司書"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "自動販売機",
+  "title": "自動販売機",
+  "inArticle": [
+   {
+    "word": "街角",
+    "found": false
+   },
+   {
+    "word": "夜",
+    "found": true
+   },
+   {
+    "word": "明かり",
+    "found": false
+   },
+   {
+    "word": "硬貨",
+    "found": true
+   },
+   {
+    "word": "缶",
+    "found": true
+   },
+   {
+    "word": "ボタン",
+    "found": true
+   },
+   {
+    "word": "無人販売",
+    "found": true
+   },
+   {
+    "word": "飲料",
+    "found": true
+   },
+   {
+    "word": "釣り銭",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "硬貨"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "冷蔵庫",
+  "title": "冷蔵庫",
+  "inArticle": [
+   {
+    "word": "台所",
+    "found": true
+   },
+   {
+    "word": "夜中",
+    "found": false
+   },
+   {
+    "word": "低いうなり",
+    "found": false
+   },
+   {
+    "word": "製氷",
+    "found": true
+   },
+   {
+    "word": "野菜室",
+    "found": true
+   },
+   {
+    "word": "冷凍",
+    "found": true
+   },
+   {
+    "word": "低温保存",
+    "found": false
+   },
+   {
+    "word": "家電",
+    "found": true
+   },
+   {
+    "word": "扉のポケット",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "低いうなり"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "踏切",
+  "title": "踏切",
+  "inArticle": [
+   {
+    "word": "線路",
+    "found": true
+   },
+   {
+    "word": "夕方",
+    "found": false
+   },
+   {
+    "word": "警報音",
+    "found": true
+   },
+   {
+    "word": "遮断機",
+    "found": true
+   },
+   {
+    "word": "警報灯",
+    "found": false
+   },
+   {
+    "word": "電車",
+    "found": true
+   },
+   {
+    "word": "カンカン",
+    "found": false
+   },
+   {
+    "word": "道路と鉄道の交差",
+    "found": false
+   },
+   {
+    "word": "一旦停止",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "夕方"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "眼鏡",
+  "title": "眼鏡",
+  "inArticle": [
+   {
+    "word": "視力",
+    "found": true
+   },
+   {
+    "word": "机",
+    "found": false
+   },
+   {
+    "word": "読書",
+    "found": true
+   },
+   {
+    "word": "レンズ",
+    "found": true
+   },
+   {
+    "word": "フレーム",
+    "found": true
+   },
+   {
+    "word": "つる",
+    "found": true
+   },
+   {
+    "word": "近視",
+    "found": true
+   },
+   {
+    "word": "視力矯正",
+    "found": true
+   },
+   {
+    "word": "掛ける",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 2,
+   "total": 10
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "視力"
+  ]
+ },
+ {
+  "tier": 1,
+  "answer": "布団",
+  "title": "布団",
+  "inArticle": [
+   {
+    "word": "寝室",
+    "found": true
+   },
+   {
+    "word": "冬",
+    "found": false
+   },
+   {
+    "word": "押し入れ",
+    "found": false
+   },
+   {
+    "word": "綿",
+    "found": true
+   },
+   {
+    "word": "シーツ",
+    "found": false
+   },
+   {
+    "word": "干す",
+    "found": true
+   },
+   {
+    "word": "寝具",
+    "found": true
+   },
+   {
+    "word": "敷き",
+    "found": true
+   },
+   {
+    "word": "掛け",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 2,
+   "total": 41
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 2,
+  "answer": "水車",
+  "title": "水車",
+  "inArticle": [
+   {
+    "word": "川辺",
+    "found": false
+   },
+   {
+    "word": "田舎",
+    "found": false
+   },
+   {
+    "word": "水音",
+    "found": false
+   },
+   {
+    "word": "羽根板",
+    "found": false
+   },
+   {
+    "word": "歯車",
+    "found": false
+   },
+   {
+    "word": "臼",
+    "found": true
+   },
+   {
+    "word": "水力",
+    "found": true
+   },
+   {
+    "word": "回転",
+    "found": true
+   },
+   {
+    "word": "製粉",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 2,
+  "answer": "砂時計",
+  "title": "砂時計",
+  "inArticle": [
+   {
+    "word": "机",
+    "found": false
+   },
+   {
+    "word": "静けさ",
+    "found": false
+   },
+   {
+    "word": "待つ",
+    "found": false
+   },
+   {
+    "word": "ガラス",
+    "found": false
+   },
+   {
+    "word": "くびれ",
+    "found": false
+   },
+   {
+    "word": "砂",
+    "found": false
+   },
+   {
+    "word": "時間計測",
+    "found": false
+   },
+   {
+    "word": "ひっくり返す",
+    "found": false
+   },
+   {
+    "word": "3分",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 37
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "3分"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "方位磁針",
+  "title": "方位磁針",
+  "inArticle": [
+   {
+    "word": "地図",
+    "found": true
+   },
+   {
+    "word": "野外",
+    "found": false
+   },
+   {
+    "word": "迷子",
+    "found": false
+   },
+   {
+    "word": "針",
+    "found": true
+   },
+   {
+    "word": "北",
+    "found": true
+   },
+   {
+    "word": "磁石",
+    "found": true
+   },
+   {
+    "word": "方角",
+    "found": true
+   },
+   {
+    "word": "コンパス",
+    "found": true
+   },
+   {
+    "word": "地磁気",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 7
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "コンパス"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "灯籠",
+  "title": "灯籠",
+  "inArticle": [
+   {
+    "word": "庭園",
+    "found": true
+   },
+   {
+    "word": "寺社",
+    "found": true
+   },
+   {
+    "word": "夜",
+    "found": true
+   },
+   {
+    "word": "石",
+    "found": true
+   },
+   {
+    "word": "火袋",
+    "found": true
+   },
+   {
+    "word": "灯り",
+    "found": true
+   },
+   {
+    "word": "灯火",
+    "found": true
+   },
+   {
+    "word": "献灯",
+    "found": true
+   },
+   {
+    "word": "石の照明",
+    "found": false
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "灯火"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "噴水",
+  "title": "噴水",
+  "inArticle": [
+   {
+    "word": "公園",
+    "found": true
+   },
+   {
+    "word": "広場",
+    "found": true
+   },
+   {
+    "word": "水しぶき",
+    "found": false
+   },
+   {
+    "word": "ポンプ",
+    "found": true
+   },
+   {
+    "word": "池",
+    "found": true
+   },
+   {
+    "word": "彫刻",
+    "found": true
+   },
+   {
+    "word": "水を噴き上げる",
+    "found": false
+   },
+   {
+    "word": "水景",
+    "found": true
+   },
+   {
+    "word": "吹き上げ",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "彫刻"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "観覧車",
+  "title": "観覧車",
+  "inArticle": [
+   {
+    "word": "遊園地",
+    "found": true
+   },
+   {
+    "word": "夜景",
+    "found": false
+   },
+   {
+    "word": "デート",
+    "found": false
+   },
+   {
+    "word": "ゴンドラ",
+    "found": true
+   },
+   {
+    "word": "車輪",
+    "found": true
+   },
+   {
+    "word": "鉄骨",
+    "found": false
+   },
+   {
+    "word": "回転",
+    "found": true
+   },
+   {
+    "word": "一周",
+    "found": false
+   },
+   {
+    "word": "高所からの眺め",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 9
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "車輪"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "吊橋",
+  "title": "吊橋",
+  "inArticle": [
+   {
+    "word": "渓谷",
+    "found": false
+   },
+   {
+    "word": "揺れ",
+    "found": true
+   },
+   {
+    "word": "高さ",
+    "found": true
+   },
+   {
+    "word": "ケーブル",
+    "found": true
+   },
+   {
+    "word": "主塔",
+    "found": true
+   },
+   {
+    "word": "床板",
+    "found": true
+   },
+   {
+    "word": "吊り構造",
+    "found": true
+   },
+   {
+    "word": "谷を渡る",
+    "found": false
+   },
+   {
+    "word": "揺れる橋",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 8
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "ケーブル"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "熱気球",
+  "title": "熱気球",
+  "inArticle": [
+   {
+    "word": "空",
+    "found": true
+   },
+   {
+    "word": "早朝",
+    "found": false
+   },
+   {
+    "word": "草原",
+    "found": false
+   },
+   {
+    "word": "バスケット",
+    "found": true
+   },
+   {
+    "word": "バーナー",
+    "found": true
+   },
+   {
+    "word": "球皮",
+    "found": true
+   },
+   {
+    "word": "熱した空気",
+    "found": true
+   },
+   {
+    "word": "浮力",
+    "found": true
+   },
+   {
+    "word": "有人飛行",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 19
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "草原"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "天文台",
+  "title": "天文台",
+  "inArticle": [
+   {
+    "word": "山頂",
+    "found": true
+   },
+   {
+    "word": "夜空",
+    "found": false
+   },
+   {
+    "word": "ドーム",
+    "found": true
+   },
+   {
+    "word": "望遠鏡",
+    "found": true
+   },
+   {
+    "word": "観測",
+    "found": true
+   },
+   {
+    "word": "星図",
+    "found": false
+   },
+   {
+    "word": "天体観測施設",
+    "found": false
+   },
+   {
+    "word": "開閉屋根",
+    "found": false
+   },
+   {
+    "word": "天文学",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "夜空"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "地球儀",
+  "title": "地球儀",
+  "inArticle": [
+   {
+    "word": "教室",
+    "found": false
+   },
+   {
+    "word": "書斎",
+    "found": false
+   },
+   {
+    "word": "世界",
+    "found": true
+   },
+   {
+    "word": "球体",
+    "found": true
+   },
+   {
+    "word": "経線",
+    "found": true
+   },
+   {
+    "word": "地軸",
+    "found": true
+   },
+   {
+    "word": "回す",
+    "found": false
+   },
+   {
+    "word": "縮尺模型",
+    "found": false
+   },
+   {
+    "word": "傾き23.4度",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "教室"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "扇子",
+  "title": "扇子",
+  "inArticle": [
+   {
+    "word": "夏",
+    "found": true
+   },
+   {
+    "word": "着物",
+    "found": false
+   },
+   {
+    "word": "舞踊",
+    "found": true
+   },
+   {
+    "word": "骨",
+    "found": true
+   },
+   {
+    "word": "和紙",
+    "found": true
+   },
+   {
+    "word": "要",
+    "found": true
+   },
+   {
+    "word": "折りたたみ",
+    "found": true
+   },
+   {
+    "word": "あおぐ",
+    "found": true
+   },
+   {
+    "word": "落語",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 2,
+  "answer": "こいのぼり",
+  "title": "こいのぼり",
+  "inArticle": [
+   {
+    "word": "5月",
+    "found": true
+   },
+   {
+    "word": "空",
+    "found": true
+   },
+   {
+    "word": "青空",
+    "found": true
+   },
+   {
+    "word": "吹き流し",
+    "found": true
+   },
+   {
+    "word": "矢車",
+    "found": true
+   },
+   {
+    "word": "竿",
+    "found": true
+   },
+   {
+    "word": "端午の節句",
+    "found": true
+   },
+   {
+    "word": "魚の形",
+    "found": false
+   },
+   {
+    "word": "男児",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 2,
+  "answer": "蚊帳",
+  "title": "蚊帳",
+  "inArticle": [
+   {
+    "word": "夏の夜",
+    "found": false
+   },
+   {
+    "word": "寝室",
+    "found": false
+   },
+   {
+    "word": "網",
+    "found": false
+   },
+   {
+    "word": "麻",
+    "found": false
+   },
+   {
+    "word": "吊り手",
+    "found": false
+   },
+   {
+    "word": "網目",
+    "found": false
+   },
+   {
+    "word": "虫よけ",
+    "found": false
+   },
+   {
+    "word": "寝床を覆う",
+    "found": false
+   },
+   {
+    "word": "吊る",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "吊る"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "風車",
+  "title": "風車",
+  "inArticle": [
+   {
+    "word": "丘",
+    "found": false
+   },
+   {
+    "word": "草原",
+    "found": false
+   },
+   {
+    "word": "オランダ",
+    "found": true
+   },
+   {
+    "word": "羽根",
+    "found": true
+   },
+   {
+    "word": "塔",
+    "found": false
+   },
+   {
+    "word": "風",
+    "found": true
+   },
+   {
+    "word": "風力",
+    "found": true
+   },
+   {
+    "word": "回転",
+    "found": true
+   },
+   {
+    "word": "粉ひき",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 3,
+   "total": 9
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "回転"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "公衆電話",
+  "title": "公衆電話",
+  "inArticle": [
+   {
+    "word": "街角",
+    "found": false
+   },
+   {
+    "word": "夜",
+    "found": false
+   },
+   {
+    "word": "待ち合わせ",
+    "found": false
+   },
+   {
+    "word": "硬貨",
+    "found": true
+   },
+   {
+    "word": "テレホンカード",
+    "found": true
+   },
+   {
+    "word": "受話器",
+    "found": false
+   },
+   {
+    "word": "緑の電話",
+    "found": false
+   },
+   {
+    "word": "公共",
+    "found": true
+   },
+   {
+    "word": "通話料",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 42
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "緑の電話"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "鉄塔",
+  "title": "鉄塔",
+  "inArticle": [
+   {
+    "word": "郊外",
+    "found": false
+   },
+   {
+    "word": "送電線",
+    "found": true
+   },
+   {
+    "word": "山",
+    "found": true
+   },
+   {
+    "word": "碍子",
+    "found": false
+   },
+   {
+    "word": "電線",
+    "found": true
+   },
+   {
+    "word": "鉄骨",
+    "found": false
+   },
+   {
+    "word": "送電",
+    "found": true
+   },
+   {
+    "word": "高圧",
+    "found": true
+   },
+   {
+    "word": "格子構造",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 16
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "鉄骨"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "棚田",
+  "title": "棚田",
+  "inArticle": [
+   {
+    "word": "山間",
+    "found": true
+   },
+   {
+    "word": "田園",
+    "found": false
+   },
+   {
+    "word": "水鏡",
+    "found": false
+   },
+   {
+    "word": "畦",
+    "found": false
+   },
+   {
+    "word": "稲",
+    "found": true
+   },
+   {
+    "word": "石垣",
+    "found": true
+   },
+   {
+    "word": "斜面",
+    "found": true
+   },
+   {
+    "word": "階段状",
+    "found": true
+   },
+   {
+    "word": "水田",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 44
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "稲"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "竹とんぼ",
+  "title": "竹とんぼ",
+  "inArticle": [
+   {
+    "word": "子ども",
+    "found": false
+   },
+   {
+    "word": "空き地",
+    "found": false
+   },
+   {
+    "word": "昔遊び",
+    "found": false
+   },
+   {
+    "word": "竹",
+    "found": true
+   },
+   {
+    "word": "羽根",
+    "found": false
+   },
+   {
+    "word": "軸",
+    "found": true
+   },
+   {
+    "word": "回して飛ばす",
+    "found": false
+   },
+   {
+    "word": "揚力",
+    "found": true
+   },
+   {
+    "word": "手作り",
+    "found": false
+   }
+  ],
+  "found": 3,
+  "zone3": {
+   "rank": null,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "竹"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "鳩時計",
+  "title": "鳩時計",
+  "inArticle": [
+   {
+    "word": "居間",
+    "found": false
+   },
+   {
+    "word": "正時",
+    "found": true
+   },
+   {
+    "word": "森の家",
+    "found": false
+   },
+   {
+    "word": "ふいご",
+    "found": true
+   },
+   {
+    "word": "振り子",
+    "found": true
+   },
+   {
+    "word": "おもり",
+    "found": false
+   },
+   {
+    "word": "鳴き声",
+    "found": true
+   },
+   {
+    "word": "小窓",
+    "found": false
+   },
+   {
+    "word": "鳥が飛び出す",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 28
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "森の家"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "轆轤",
+  "title": "轆轤",
+  "inArticle": [
+   {
+    "word": "陶芸",
+    "found": true
+   },
+   {
+    "word": "工房",
+    "found": true
+   },
+   {
+    "word": "粘土",
+    "found": true
+   },
+   {
+    "word": "回転台",
+    "found": true
+   },
+   {
+    "word": "器",
+    "found": true
+   },
+   {
+    "word": "窯",
+    "found": false
+   },
+   {
+    "word": "成形",
+    "found": false
+   },
+   {
+    "word": "回す",
+    "found": false
+   },
+   {
+    "word": "陶器作り",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 2
+  },
+  "zero": [
+   "工房"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "囲炉裏",
+  "title": "囲炉裏",
+  "inArticle": [
+   {
+    "word": "古民家",
+    "found": true
+   },
+   {
+    "word": "冬",
+    "found": false
+   },
+   {
+    "word": "煙",
+    "found": true
+   },
+   {
+    "word": "灰",
+    "found": true
+   },
+   {
+    "word": "鉄瓶",
+    "found": true
+   },
+   {
+    "word": "薪",
+    "found": true
+   },
+   {
+    "word": "床を四角く切る",
+    "found": false
+   },
+   {
+    "word": "暖房と調理",
+    "found": false
+   },
+   {
+    "word": "炉",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "古民家"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "蒸気機関車",
+  "title": "蒸気機関車",
+  "inArticle": [
+   {
+    "word": "鉄道",
+    "found": true
+   },
+   {
+    "word": "汽笛",
+    "found": true
+   },
+   {
+    "word": "煙",
+    "found": true
+   },
+   {
+    "word": "石炭",
+    "found": true
+   },
+   {
+    "word": "ボイラー",
+    "found": true
+   },
+   {
+    "word": "動輪",
+    "found": true
+   },
+   {
+    "word": "蒸気機関",
+    "found": true
+   },
+   {
+    "word": "機関士",
+    "found": true
+   },
+   {
+    "word": "汽車",
+    "found": true
+   }
+  ],
+  "found": 9,
+  "zone3": {
+   "rank": 1,
+   "total": 179
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 2,
+  "answer": "万華鏡",
+  "title": "万華鏡",
+  "inArticle": [
+   {
+    "word": "子ども",
+    "found": false
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "模様",
+    "found": true
+   },
+   {
+    "word": "筒",
+    "found": true
+   },
+   {
+    "word": "鏡",
+    "found": true
+   },
+   {
+    "word": "ビーズ",
+    "found": true
+   },
+   {
+    "word": "のぞく",
+    "found": false
+   },
+   {
+    "word": "回す",
+    "found": false
+   },
+   {
+    "word": "対称模様",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 2,
+  "answer": "風見鶏",
+  "title": "風見鶏",
+  "inArticle": [
+   {
+    "word": "屋根",
+    "found": false
+   },
+   {
+    "word": "洋館",
+    "found": false
+   },
+   {
+    "word": "風",
+    "found": false
+   },
+   {
+    "word": "金属",
+    "found": false
+   },
+   {
+    "word": "矢印",
+    "found": false
+   },
+   {
+    "word": "方角",
+    "found": false
+   },
+   {
+    "word": "風向き",
+    "found": false
+   },
+   {
+    "word": "回転",
+    "found": false
+   },
+   {
+    "word": "ニワトリ",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "ニワトリ"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "蓄音機",
+  "title": "蓄音機",
+  "inArticle": [
+   {
+    "word": "古い洋館",
+    "found": false
+   },
+   {
+    "word": "音楽",
+    "found": true
+   },
+   {
+    "word": "レトロ",
+    "found": false
+   },
+   {
+    "word": "ラッパ",
+    "found": false
+   },
+   {
+    "word": "針",
+    "found": true
+   },
+   {
+    "word": "レコード",
+    "found": true
+   },
+   {
+    "word": "再生",
+    "found": true
+   },
+   {
+    "word": "円盤",
+    "found": true
+   },
+   {
+    "word": "ぜんまい",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 13
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "円盤"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "オルゴール",
+  "title": "オルゴール",
+  "inArticle": [
+   {
+    "word": "子ども部屋",
+    "found": false
+   },
+   {
+    "word": "宝石箱",
+    "found": false
+   },
+   {
+    "word": "旋律",
+    "found": false
+   },
+   {
+    "word": "櫛歯",
+    "found": true
+   },
+   {
+    "word": "シリンダー",
+    "found": true
+   },
+   {
+    "word": "ぜんまい",
+    "found": true
+   },
+   {
+    "word": "自動演奏",
+    "found": true
+   },
+   {
+    "word": "箱",
+    "found": true
+   },
+   {
+    "word": "金属の音",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 3,
+   "total": 120
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "自動演奏"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "盆栽",
+  "title": "盆栽",
+  "inArticle": [
+   {
+    "word": "縁側",
+    "found": false
+   },
+   {
+    "word": "庭",
+    "found": true
+   },
+   {
+    "word": "趣味",
+    "found": true
+   },
+   {
+    "word": "鉢",
+    "found": true
+   },
+   {
+    "word": "針金",
+    "found": true
+   },
+   {
+    "word": "松",
+    "found": true
+   },
+   {
+    "word": "樹木",
+    "found": true
+   },
+   {
+    "word": "小さく育てる",
+    "found": false
+   },
+   {
+    "word": "剪定",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 37
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "松"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "招き猫",
+  "title": "招き猫",
+  "inArticle": [
+   {
+    "word": "商店",
+    "found": false
+   },
+   {
+    "word": "店先",
+    "found": true
+   },
+   {
+    "word": "縁起",
+    "found": true
+   },
+   {
+    "word": "陶器",
+    "found": true
+   },
+   {
+    "word": "小判",
+    "found": true
+   },
+   {
+    "word": "片手",
+    "found": true
+   },
+   {
+    "word": "手招き",
+    "found": true
+   },
+   {
+    "word": "商売繁盛",
+    "found": true
+   },
+   {
+    "word": "置物",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "小判"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "けん玉",
+  "title": "けん玉",
+  "inArticle": [
+   {
+    "word": "昔遊び",
+    "found": false
+   },
+   {
+    "word": "子ども",
+    "found": true
+   },
+   {
+    "word": "技",
+    "found": true
+   },
+   {
+    "word": "皿",
+    "found": true
+   },
+   {
+    "word": "玉",
+    "found": true
+   },
+   {
+    "word": "糸",
+    "found": true
+   },
+   {
+    "word": "剣先",
+    "found": false
+   },
+   {
+    "word": "大皿",
+    "found": true
+   },
+   {
+    "word": "穴に刺す",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "皿"
+  ]
+ },
+ {
+  "tier": 2,
+  "answer": "水族館",
+  "title": "水族館",
+  "inArticle": [
+   {
+    "word": "薄暗い",
+    "found": false
+   },
+   {
+    "word": "青い光",
+    "found": false
+   },
+   {
+    "word": "水槽",
+    "found": true
+   },
+   {
+    "word": "イルカ",
+    "found": true
+   },
+   {
+    "word": "クラゲ",
+    "found": false
+   },
+   {
+    "word": "トンネル",
+    "found": true
+   },
+   {
+    "word": "展示",
+    "found": true
+   },
+   {
+    "word": "海の生き物",
+    "found": false
+   },
+   {
+    "word": "飼育",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 197
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "水槽"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "蜃気楼",
+  "title": "蜃気楼",
+  "inArticle": [
+   {
+    "word": "砂漠",
+    "found": false
+   },
+   {
+    "word": "海辺",
+    "found": false
+   },
+   {
+    "word": "揺らめき",
+    "found": false
+   },
+   {
+    "word": "光の屈折",
+    "found": false
+   },
+   {
+    "word": "逆さの像",
+    "found": false
+   },
+   {
+    "word": "熱",
+    "found": true
+   },
+   {
+    "word": "大気",
+    "found": true
+   },
+   {
+    "word": "幻",
+    "found": true
+   },
+   {
+    "word": "富山湾",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": 2,
+   "total": 6
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "海辺"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "日時計",
+  "title": "日時計",
+  "inArticle": [
+   {
+    "word": "庭園",
+    "found": true
+   },
+   {
+    "word": "晴れ",
+    "found": false
+   },
+   {
+    "word": "太陽",
+    "found": true
+   },
+   {
+    "word": "影",
+    "found": true
+   },
+   {
+    "word": "針",
+    "found": true
+   },
+   {
+    "word": "文字盤",
+    "found": true
+   },
+   {
+    "word": "時刻",
+    "found": true
+   },
+   {
+    "word": "影の向き",
+    "found": true
+   },
+   {
+    "word": "古代",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 51
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "庭園"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "化石",
+  "title": "化石",
+  "inArticle": [
+   {
+    "word": "博物館",
+    "found": true
+   },
+   {
+    "word": "地層",
+    "found": true
+   },
+   {
+    "word": "太古",
+    "found": true
+   },
+   {
+    "word": "恐竜",
+    "found": true
+   },
+   {
+    "word": "骨",
+    "found": true
+   },
+   {
+    "word": "アンモナイト",
+    "found": true
+   },
+   {
+    "word": "石化",
+    "found": true
+   },
+   {
+    "word": "古生物",
+    "found": true
+   },
+   {
+    "word": "発掘",
+    "found": true
+   }
+  ],
+  "found": 9,
+  "zone3": {
+   "rank": 1,
+   "total": 58
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 3,
+  "answer": "鍾乳洞",
+  "title": "鍾乳洞",
+  "inArticle": [
+   {
+    "word": "洞窟",
+    "found": true
+   },
+   {
+    "word": "地下",
+    "found": true
+   },
+   {
+    "word": "滴る水",
+    "found": false
+   },
+   {
+    "word": "石灰岩",
+    "found": true
+   },
+   {
+    "word": "つらら状の石",
+    "found": false
+   },
+   {
+    "word": "石筍",
+    "found": true
+   },
+   {
+    "word": "鍾乳石",
+    "found": true
+   },
+   {
+    "word": "炭酸カルシウム",
+    "found": true
+   },
+   {
+    "word": "秋芳洞",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": []
+ },
+ {
+  "tier": 3,
+  "answer": "間欠泉",
+  "title": "間欠泉",
+  "inArticle": [
+   {
+    "word": "火山地帯",
+    "found": false
+   },
+   {
+    "word": "湯気",
+    "found": false
+   },
+   {
+    "word": "待つ",
+    "found": false
+   },
+   {
+    "word": "熱水",
+    "found": false
+   },
+   {
+    "word": "地下水",
+    "found": false
+   },
+   {
+    "word": "噴出口",
+    "found": false
+   },
+   {
+    "word": "周期的に噴き出す",
+    "found": false
+   },
+   {
+    "word": "イエローストーン",
+    "found": false
+   },
+   {
+    "word": "温泉",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "温泉"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "プリズム",
+  "title": "プリズム",
+  "inArticle": [
+   {
+    "word": "窓辺",
+    "found": false
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "虹色",
+    "found": false
+   },
+   {
+    "word": "ガラス",
+    "found": true
+   },
+   {
+    "word": "三角柱",
+    "found": true
+   },
+   {
+    "word": "白色光",
+    "found": false
+   },
+   {
+    "word": "分光",
+    "found": true
+   },
+   {
+    "word": "屈折",
+    "found": true
+   },
+   {
+    "word": "スペクトル",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 7,
+   "total": 95
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "屈折"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "顕微鏡",
+  "title": "顕微鏡",
+  "inArticle": [
+   {
+    "word": "理科室",
+    "found": false
+   },
+   {
+    "word": "観察",
+    "found": true
+   },
+   {
+    "word": "拡大",
+    "found": true
+   },
+   {
+    "word": "レンズ",
+    "found": true
+   },
+   {
+    "word": "プレパラート",
+    "found": true
+   },
+   {
+    "word": "接眼",
+    "found": true
+   },
+   {
+    "word": "微生物",
+    "found": true
+   },
+   {
+    "word": "細胞",
+    "found": true
+   },
+   {
+    "word": "倍率",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 4,
+   "total": 23
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "微生物"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "てこ",
+  "title": "てこ",
+  "inArticle": [
+   {
+    "word": "理科",
+    "found": false
+   },
+   {
+    "word": "重い物",
+    "found": true
+   },
+   {
+    "word": "持ち上げる",
+    "found": true
+   },
+   {
+    "word": "支点",
+    "found": true
+   },
+   {
+    "word": "力点",
+    "found": true
+   },
+   {
+    "word": "作用点",
+    "found": true
+   },
+   {
+    "word": "小さな力",
+    "found": false
+   },
+   {
+    "word": "棒",
+    "found": true
+   },
+   {
+    "word": "古代ギリシャ",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 134
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "作用点"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "滑車",
+  "title": "滑車",
+  "inArticle": [
+   {
+    "word": "井戸",
+    "found": true
+   },
+   {
+    "word": "工事現場",
+    "found": false
+   },
+   {
+    "word": "綱",
+    "found": true
+   },
+   {
+    "word": "ロープ",
+    "found": true
+   },
+   {
+    "word": "溝のある車輪",
+    "found": false
+   },
+   {
+    "word": "吊り下げ",
+    "found": false
+   },
+   {
+    "word": "力の向きを変える",
+    "found": false
+   },
+   {
+    "word": "動く車輪",
+    "found": false
+   },
+   {
+    "word": "組み合わせ",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 73
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "溝のある車輪"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "光合成",
+  "title": "光合成",
+  "inArticle": [
+   {
+    "word": "葉",
+    "found": true
+   },
+   {
+    "word": "日光",
+    "found": true
+   },
+   {
+    "word": "植物",
+    "found": true
+   },
+   {
+    "word": "葉緑体",
+    "found": true
+   },
+   {
+    "word": "二酸化炭素",
+    "found": true
+   },
+   {
+    "word": "水",
+    "found": true
+   },
+   {
+    "word": "酸素",
+    "found": true
+   },
+   {
+    "word": "ブドウ糖",
+    "found": false
+   },
+   {
+    "word": "クロロフィル",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": 9
+  },
+  "all": {
+   "rank": null,
+   "total": 2
+  },
+  "zero": [
+   "葉緑体"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "渡り鳥",
+  "title": "渡り鳥",
+  "inArticle": [
+   {
+    "word": "季節",
+    "found": false
+   },
+   {
+    "word": "空",
+    "found": false
+   },
+   {
+    "word": "群れ",
+    "found": false
+   },
+   {
+    "word": "ツバメ",
+    "found": true
+   },
+   {
+    "word": "ハクチョウ",
+    "found": true
+   },
+   {
+    "word": "干潟",
+    "found": false
+   },
+   {
+    "word": "移動",
+    "found": true
+   },
+   {
+    "word": "繁殖地",
+    "found": false
+   },
+   {
+    "word": "越冬",
+    "found": false
+   }
+  ],
+  "found": 3,
+  "zone3": {
+   "rank": null,
+   "total": 302
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "群れ"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "冬眠",
+  "title": "冬眠",
+  "inArticle": [
+   {
+    "word": "冬",
+    "found": true
+   },
+   {
+    "word": "森",
+    "found": true
+   },
+   {
+    "word": "巣穴",
+    "found": true
+   },
+   {
+    "word": "クマ",
+    "found": true
+   },
+   {
+    "word": "リス",
+    "found": true
+   },
+   {
+    "word": "体温",
+    "found": true
+   },
+   {
+    "word": "休眠",
+    "found": true
+   },
+   {
+    "word": "代謝",
+    "found": true
+   },
+   {
+    "word": "春に目覚める",
+    "found": false
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "森"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "琥珀",
+  "title": "琥珀",
+  "inArticle": [
+   {
+    "word": "宝石",
+    "found": true
+   },
+   {
+    "word": "古代",
+    "found": true
+   },
+   {
+    "word": "黄色",
+    "found": true
+   },
+   {
+    "word": "樹脂",
+    "found": true
+   },
+   {
+    "word": "化石",
+    "found": true
+   },
+   {
+    "word": "虫",
+    "found": true
+   },
+   {
+    "word": "閉じ込められた虫",
+    "found": false
+   },
+   {
+    "word": "松脂",
+    "found": false
+   },
+   {
+    "word": "アンバー",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "宝石"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "隕石",
+  "title": "隕石",
+  "inArticle": [
+   {
+    "word": "夜空",
+    "found": false
+   },
+   {
+    "word": "衝撃",
+    "found": true
+   },
+   {
+    "word": "博物館",
+    "found": true
+   },
+   {
+    "word": "流星",
+    "found": true
+   },
+   {
+    "word": "鉄",
+    "found": true
+   },
+   {
+    "word": "クレーター",
+    "found": true
+   },
+   {
+    "word": "宇宙から落下",
+    "found": false
+   },
+   {
+    "word": "小惑星",
+    "found": true
+   },
+   {
+    "word": "火球",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 51
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 3,
+  "answer": "彗星",
+  "title": "彗星",
+  "inArticle": [
+   {
+    "word": "夜空",
+    "found": true
+   },
+   {
+    "word": "長い尾",
+    "found": true
+   },
+   {
+    "word": "周期",
+    "found": true
+   },
+   {
+    "word": "氷",
+    "found": true
+   },
+   {
+    "word": "核",
+    "found": true
+   },
+   {
+    "word": "太陽",
+    "found": true
+   },
+   {
+    "word": "尾を引く天体",
+    "found": false
+   },
+   {
+    "word": "太陽系小天体",
+    "found": true
+   },
+   {
+    "word": "ハレー",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": 1,
+   "total": 3
+  },
+  "zero": []
+ },
+ {
+  "tier": 3,
+  "answer": "砂丘",
+  "title": "砂丘",
+  "inArticle": [
+   {
+    "word": "海岸",
+    "found": false
+   },
+   {
+    "word": "風",
+    "found": false
+   },
+   {
+    "word": "足跡",
+    "found": false
+   },
+   {
+    "word": "砂",
+    "found": false
+   },
+   {
+    "word": "風紋",
+    "found": false
+   },
+   {
+    "word": "ラクダ",
+    "found": false
+   },
+   {
+    "word": "鳥取",
+    "found": false
+   },
+   {
+    "word": "砂の丘",
+    "found": false
+   },
+   {
+    "word": "堆積",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 21
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "堆積"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "ホタル",
+  "title": "ホタル",
+  "inArticle": [
+   {
+    "word": "夏の夜",
+    "found": false
+   },
+   {
+    "word": "川辺",
+    "found": true
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "水辺",
+    "found": false
+   },
+   {
+    "word": "幼虫",
+    "found": true
+   },
+   {
+    "word": "カワニナ",
+    "found": true
+   },
+   {
+    "word": "発光",
+    "found": true
+   },
+   {
+    "word": "光る昆虫",
+    "found": false
+   },
+   {
+    "word": "ゲンジ",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "光る昆虫"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "擬態",
+  "title": "擬態",
+  "inArticle": [
+   {
+    "word": "森",
+    "found": true
+   },
+   {
+    "word": "隠れる",
+    "found": false
+   },
+   {
+    "word": "生き物",
+    "found": false
+   },
+   {
+    "word": "枝",
+    "found": true
+   },
+   {
+    "word": "葉",
+    "found": true
+   },
+   {
+    "word": "模様",
+    "found": true
+   },
+   {
+    "word": "他の物に似せる",
+    "found": false
+   },
+   {
+    "word": "ナナフシ",
+    "found": true
+   },
+   {
+    "word": "保護色",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "他の物に似せる"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "食物連鎖",
+  "title": "食物連鎖",
+  "inArticle": [
+   {
+    "word": "自然",
+    "found": true
+   },
+   {
+    "word": "生態系",
+    "found": true
+   },
+   {
+    "word": "草原",
+    "found": false
+   },
+   {
+    "word": "植物",
+    "found": true
+   },
+   {
+    "word": "草食動物",
+    "found": true
+   },
+   {
+    "word": "肉食動物",
+    "found": true
+   },
+   {
+    "word": "食べる・食べられる",
+    "found": true
+   },
+   {
+    "word": "生産者",
+    "found": true
+   },
+   {
+    "word": "分解者",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 3,
+   "total": 313
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "肉食動物"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "結晶",
+  "title": "結晶",
+  "inArticle": [
+   {
+    "word": "雪",
+    "found": false
+   },
+   {
+    "word": "宝石",
+    "found": false
+   },
+   {
+    "word": "規則",
+    "found": true
+   },
+   {
+    "word": "塩",
+    "found": true
+   },
+   {
+    "word": "氷",
+    "found": false
+   },
+   {
+    "word": "水晶",
+    "found": false
+   },
+   {
+    "word": "原子の並び",
+    "found": false
+   },
+   {
+    "word": "対称形",
+    "found": false
+   },
+   {
+    "word": "格子",
+    "found": true
+   }
+  ],
+  "found": 3,
+  "zone3": {
+   "rank": null,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "氷"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "静電気",
+  "title": "静電気",
+  "inArticle": [
+   {
+    "word": "冬",
+    "found": false
+   },
+   {
+    "word": "乾燥",
+    "found": true
+   },
+   {
+    "word": "ドアノブ",
+    "found": true
+   },
+   {
+    "word": "下敷き",
+    "found": false
+   },
+   {
+    "word": "髪の毛",
+    "found": false
+   },
+   {
+    "word": "セーター",
+    "found": false
+   },
+   {
+    "word": "帯電",
+    "found": true
+   },
+   {
+    "word": "パチッ",
+    "found": false
+   },
+   {
+    "word": "電荷",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "下敷き"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "地層",
+  "title": "地層",
+  "inArticle": [
+   {
+    "word": "崖",
+    "found": true
+   },
+   {
+    "word": "縞模様",
+    "found": true
+   },
+   {
+    "word": "堆積",
+    "found": true
+   },
+   {
+    "word": "化石",
+    "found": true
+   },
+   {
+    "word": "砂岩",
+    "found": true
+   },
+   {
+    "word": "泥岩",
+    "found": true
+   },
+   {
+    "word": "積み重なり",
+    "found": false
+   },
+   {
+    "word": "断層",
+    "found": true
+   },
+   {
+    "word": "年代",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 2,
+   "total": 43
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "堆積"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "三角州",
+  "title": "三角州",
+  "inArticle": [
+   {
+    "word": "河口",
+    "found": true
+   },
+   {
+    "word": "平野",
+    "found": true
+   },
+   {
+    "word": "地図",
+    "found": false
+   },
+   {
+    "word": "川",
+    "found": true
+   },
+   {
+    "word": "土砂",
+    "found": true
+   },
+   {
+    "word": "海",
+    "found": true
+   },
+   {
+    "word": "堆積",
+    "found": true
+   },
+   {
+    "word": "デルタ",
+    "found": true
+   },
+   {
+    "word": "扇形",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "平野"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "偏西風",
+  "title": "偏西風",
+  "inArticle": [
+   {
+    "word": "空",
+    "found": true
+   },
+   {
+    "word": "天気",
+    "found": false
+   },
+   {
+    "word": "上空",
+    "found": true
+   },
+   {
+    "word": "気流",
+    "found": true
+   },
+   {
+    "word": "飛行機",
+    "found": false
+   },
+   {
+    "word": "雲",
+    "found": true
+   },
+   {
+    "word": "西から東",
+    "found": true
+   },
+   {
+    "word": "中緯度",
+    "found": true
+   },
+   {
+    "word": "ジェット気流",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 41
+  },
+  "all": {
+   "rank": null,
+   "total": 4
+  },
+  "zero": [
+   "空"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "月食",
+  "title": "月食",
+  "inArticle": [
+   {
+    "word": "夜空",
+    "found": false
+   },
+   {
+    "word": "満月",
+    "found": true
+   },
+   {
+    "word": "赤い月",
+    "found": false
+   },
+   {
+    "word": "地球",
+    "found": true
+   },
+   {
+    "word": "影",
+    "found": true
+   },
+   {
+    "word": "太陽",
+    "found": true
+   },
+   {
+    "word": "欠ける",
+    "found": false
+   },
+   {
+    "word": "皆既",
+    "found": true
+   },
+   {
+    "word": "天体の並び",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 3,
+  "answer": "日食",
+  "title": "日食",
+  "inArticle": [
+   {
+    "word": "昼",
+    "found": false
+   },
+   {
+    "word": "暗くなる",
+    "found": true
+   },
+   {
+    "word": "空",
+    "found": true
+   },
+   {
+    "word": "月",
+    "found": true
+   },
+   {
+    "word": "太陽",
+    "found": true
+   },
+   {
+    "word": "黒い円",
+    "found": false
+   },
+   {
+    "word": "皆既",
+    "found": true
+   },
+   {
+    "word": "コロナ",
+    "found": true
+   },
+   {
+    "word": "金環",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": []
+ },
+ {
+  "tier": 3,
+  "answer": "潮汐",
+  "title": "潮汐",
+  "inArticle": [
+   {
+    "word": "海",
+    "found": false
+   },
+   {
+    "word": "浜辺",
+    "found": false
+   },
+   {
+    "word": "時刻表",
+    "found": false
+   },
+   {
+    "word": "月",
+    "found": false
+   },
+   {
+    "word": "引力",
+    "found": false
+   },
+   {
+    "word": "干潟",
+    "found": false
+   },
+   {
+    "word": "満ち引き",
+    "found": false
+   },
+   {
+    "word": "満潮",
+    "found": false
+   },
+   {
+    "word": "潮位",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 7
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "潮位"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "サンゴ礁",
+  "title": "サンゴ礁",
+  "inArticle": [
+   {
+    "word": "南の海",
+    "found": false
+   },
+   {
+    "word": "透明な海",
+    "found": false
+   },
+   {
+    "word": "熱帯",
+    "found": true
+   },
+   {
+    "word": "熱帯魚",
+    "found": false
+   },
+   {
+    "word": "石灰質",
+    "found": true
+   },
+   {
+    "word": "ポリプ",
+    "found": true
+   },
+   {
+    "word": "礁",
+    "found": true
+   },
+   {
+    "word": "白化",
+    "found": true
+   },
+   {
+    "word": "環礁",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 11
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "白化"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "氷河",
+  "title": "氷河",
+  "inArticle": [
+   {
+    "word": "山岳",
+    "found": true
+   },
+   {
+    "word": "寒冷地",
+    "found": false
+   },
+   {
+    "word": "青い氷",
+    "found": false
+   },
+   {
+    "word": "雪",
+    "found": true
+   },
+   {
+    "word": "岩",
+    "found": true
+   },
+   {
+    "word": "クレバス",
+    "found": true
+   },
+   {
+    "word": "流れる氷",
+    "found": false
+   },
+   {
+    "word": "U字谷",
+    "found": true
+   },
+   {
+    "word": "氷床",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 41
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "流れる氷"
+  ]
+ },
+ {
+  "tier": 3,
+  "answer": "磁石",
+  "title": "磁石",
+  "inArticle": [
+   {
+    "word": "冷蔵庫",
+    "found": false
+   },
+   {
+    "word": "理科",
+    "found": false
+   },
+   {
+    "word": "くっつく",
+    "found": false
+   },
+   {
+    "word": "鉄",
+    "found": true
+   },
+   {
+    "word": "砂鉄",
+    "found": true
+   },
+   {
+    "word": "方位",
+    "found": true
+   },
+   {
+    "word": "極",
+    "found": true
+   },
+   {
+    "word": "引き合う",
+    "found": false
+   },
+   {
+    "word": "磁力",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 2,
+   "total": 12
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "方位"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "活版印刷",
+  "title": "活版印刷",
+  "inArticle": [
+   {
+    "word": "印刷所",
+    "found": true
+   },
+   {
+    "word": "インクの匂い",
+    "found": false
+   },
+   {
+    "word": "古書",
+    "found": true
+   },
+   {
+    "word": "活字",
+    "found": true
+   },
+   {
+    "word": "組版",
+    "found": true
+   },
+   {
+    "word": "鉛",
+    "found": true
+   },
+   {
+    "word": "15世紀",
+    "found": false
+   },
+   {
+    "word": "凸版",
+    "found": true
+   },
+   {
+    "word": "文字を並べる",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 7
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "組版"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "天球儀",
+  "title": "天球儀 (恒星)",
+  "inArticle": [
+   {
+    "word": "書斎",
+    "found": false
+   },
+   {
+    "word": "星空",
+    "found": true
+   },
+   {
+    "word": "球",
+    "found": true
+   },
+   {
+    "word": "星座",
+    "found": true
+   },
+   {
+    "word": "赤道",
+    "found": true
+   },
+   {
+    "word": "黄道",
+    "found": true
+   },
+   {
+    "word": "天球",
+    "found": true
+   },
+   {
+    "word": "恒星の位置",
+    "found": false
+   },
+   {
+    "word": "外側から見る",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 69
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "星座"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "アストロラーベ",
+  "title": "アストロラーベ",
+  "inArticle": [
+   {
+    "word": "中世",
+    "found": false
+   },
+   {
+    "word": "航海",
+    "found": true
+   },
+   {
+    "word": "天文学者",
+    "found": true
+   },
+   {
+    "word": "円盤",
+    "found": true
+   },
+   {
+    "word": "目盛り",
+    "found": true
+   },
+   {
+    "word": "指針",
+    "found": true
+   },
+   {
+    "word": "天体の高度",
+    "found": false
+   },
+   {
+    "word": "星の位置計算",
+    "found": false
+   },
+   {
+    "word": "イスラム天文学",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 3,
+   "total": 19
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "天文学者"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "テルミン",
+  "title": "テルミン",
+  "inArticle": [
+   {
+    "word": "演奏会",
+    "found": false
+   },
+   {
+    "word": "不思議な音",
+    "found": false
+   },
+   {
+    "word": "SF映画",
+    "found": true
+   },
+   {
+    "word": "アンテナ",
+    "found": true
+   },
+   {
+    "word": "電子楽器",
+    "found": true
+   },
+   {
+    "word": "音程",
+    "found": false
+   },
+   {
+    "word": "触れずに演奏",
+    "found": false
+   },
+   {
+    "word": "手の位置",
+    "found": true
+   },
+   {
+    "word": "静電容量",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 12
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "不思議な音"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "真空管",
+  "title": "真空管",
+  "inArticle": [
+   {
+    "word": "古いラジオ",
+    "found": false
+   },
+   {
+    "word": "温かい音",
+    "found": false
+   },
+   {
+    "word": "アンプ",
+    "found": true
+   },
+   {
+    "word": "ガラス",
+    "found": true
+   },
+   {
+    "word": "フィラメント",
+    "found": true
+   },
+   {
+    "word": "電極",
+    "found": true
+   },
+   {
+    "word": "増幅",
+    "found": true
+   },
+   {
+    "word": "電子",
+    "found": true
+   },
+   {
+    "word": "整流",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 88
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "古いラジオ"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "ダゲレオタイプ",
+  "title": "ダゲレオタイプ",
+  "inArticle": [
+   {
+    "word": "古写真",
+    "found": false
+   },
+   {
+    "word": "肖像",
+    "found": true
+   },
+   {
+    "word": "19世紀",
+    "found": false
+   },
+   {
+    "word": "銀板",
+    "found": true
+   },
+   {
+    "word": "水銀",
+    "found": true
+   },
+   {
+    "word": "ヨウ素",
+    "found": true
+   },
+   {
+    "word": "写真術",
+    "found": false
+   },
+   {
+    "word": "19世紀フランス",
+    "found": false
+   },
+   {
+    "word": "一点もの",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 67
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 4,
+  "answer": "カメラ・オブスクラ",
+  "title": "カメラ・オブスクラ",
+  "inArticle": [
+   {
+    "word": "暗い部屋",
+    "found": true
+   },
+   {
+    "word": "小さな穴",
+    "found": true
+   },
+   {
+    "word": "逆さの像",
+    "found": false
+   },
+   {
+    "word": "ピンホール",
+    "found": true
+   },
+   {
+    "word": "レンズ",
+    "found": true
+   },
+   {
+    "word": "スクリーン",
+    "found": true
+   },
+   {
+    "word": "光学",
+    "found": true
+   },
+   {
+    "word": "写生",
+    "found": true
+   },
+   {
+    "word": "カメラの原型",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 4,
+  "answer": "からくり",
+  "title": "からくり",
+  "inArticle": [
+   {
+    "word": "江戸",
+    "found": false
+   },
+   {
+    "word": "見世物",
+    "found": false
+   },
+   {
+    "word": "祭り",
+    "found": false
+   },
+   {
+    "word": "歯車",
+    "found": false
+   },
+   {
+    "word": "ぜんまい",
+    "found": false
+   },
+   {
+    "word": "糸",
+    "found": false
+   },
+   {
+    "word": "自動人形",
+    "found": false
+   },
+   {
+    "word": "茶運び",
+    "found": false
+   },
+   {
+    "word": "仕掛け",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 39
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "仕掛け"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "風洞",
+  "title": "風洞",
+  "inArticle": [
+   {
+    "word": "研究所",
+    "found": true
+   },
+   {
+    "word": "気流",
+    "found": true
+   },
+   {
+    "word": "実験",
+    "found": true
+   },
+   {
+    "word": "送風機",
+    "found": true
+   },
+   {
+    "word": "模型",
+    "found": true
+   },
+   {
+    "word": "煙",
+    "found": true
+   },
+   {
+    "word": "空気抵抗",
+    "found": true
+   },
+   {
+    "word": "空力",
+    "found": true
+   },
+   {
+    "word": "流れの可視化",
+    "found": true
+   }
+  ],
+  "found": 9,
+  "zone3": {
+   "rank": 1,
+   "total": 8
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "空力"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "六分儀",
+  "title": "六分儀",
+  "inArticle": [
+   {
+    "word": "航海",
+    "found": true
+   },
+   {
+    "word": "船",
+    "found": true
+   },
+   {
+    "word": "水平線",
+    "found": true
+   },
+   {
+    "word": "鏡",
+    "found": true
+   },
+   {
+    "word": "目盛り弧",
+    "found": false
+   },
+   {
+    "word": "望遠鏡",
+    "found": true
+   },
+   {
+    "word": "天体の高度",
+    "found": true
+   },
+   {
+    "word": "位置測定",
+    "found": false
+   },
+   {
+    "word": "60度",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 7,
+   "total": 117
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "天体の高度"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "渾天儀",
+  "title": "渾天儀",
+  "inArticle": [
+   {
+    "word": "古代中国",
+    "found": false
+   },
+   {
+    "word": "天文",
+    "found": true
+   },
+   {
+    "word": "環",
+    "found": true
+   },
+   {
+    "word": "環",
+    "found": true
+   },
+   {
+    "word": "子午線",
+    "found": true
+   },
+   {
+    "word": "赤道",
+    "found": true
+   },
+   {
+    "word": "天体の運行",
+    "found": false
+   },
+   {
+    "word": "天球模型",
+    "found": false
+   },
+   {
+    "word": "アーミラリ",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "赤道"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "計算尺",
+  "title": "計算尺",
+  "inArticle": [
+   {
+    "word": "技術者",
+    "found": true
+   },
+   {
+    "word": "製図",
+    "found": false
+   },
+   {
+    "word": "昭和",
+    "found": false
+   },
+   {
+    "word": "目盛り",
+    "found": true
+   },
+   {
+    "word": "滑り尺",
+    "found": false
+   },
+   {
+    "word": "カーソル",
+    "found": true
+   },
+   {
+    "word": "対数",
+    "found": true
+   },
+   {
+    "word": "掛け算",
+    "found": true
+   },
+   {
+    "word": "アナログ計算",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "滑り尺"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "テスラコイル",
+  "title": "テスラコイル",
+  "inArticle": [
+   {
+    "word": "実験室",
+    "found": false
+   },
+   {
+    "word": "稲妻",
+    "found": false
+   },
+   {
+    "word": "放電",
+    "found": true
+   },
+   {
+    "word": "コイル",
+    "found": true
+   },
+   {
+    "word": "コンデンサ",
+    "found": false
+   },
+   {
+    "word": "火花",
+    "found": true
+   },
+   {
+    "word": "高電圧",
+    "found": true
+   },
+   {
+    "word": "共振",
+    "found": true
+   },
+   {
+    "word": "変圧器",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 3,
+   "total": 42
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "コイル"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "回転のぞき絵",
+  "title": "回転のぞき絵",
+  "inArticle": [
+   {
+    "word": "映画の始まり",
+    "found": false
+   },
+   {
+    "word": "動く絵",
+    "found": false
+   },
+   {
+    "word": "玩具",
+    "found": false
+   },
+   {
+    "word": "円筒",
+    "found": true
+   },
+   {
+    "word": "スリット",
+    "found": true
+   },
+   {
+    "word": "連続画",
+    "found": false
+   },
+   {
+    "word": "残像",
+    "found": false
+   },
+   {
+    "word": "回して覗く",
+    "found": false
+   },
+   {
+    "word": "動画の原理",
+    "found": false
+   }
+  ],
+  "found": 2,
+  "zone3": {
+   "rank": null,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "玩具"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "幻灯機",
+  "title": "幻灯機",
+  "inArticle": [
+   {
+    "word": "暗い部屋",
+    "found": false
+   },
+   {
+    "word": "映写",
+    "found": true
+   },
+   {
+    "word": "昔の上映会",
+    "found": false
+   },
+   {
+    "word": "ガラス板",
+    "found": false
+   },
+   {
+    "word": "レンズ",
+    "found": true
+   },
+   {
+    "word": "光源",
+    "found": false
+   },
+   {
+    "word": "投影",
+    "found": true
+   },
+   {
+    "word": "スライド",
+    "found": true
+   },
+   {
+    "word": "映写機の祖先",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "映写"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "金継ぎ",
+  "title": "金継ぎ",
+  "inArticle": [
+   {
+    "word": "器",
+    "found": true
+   },
+   {
+    "word": "工房",
+    "found": false
+   },
+   {
+    "word": "修復",
+    "found": true
+   },
+   {
+    "word": "漆",
+    "found": true
+   },
+   {
+    "word": "金粉",
+    "found": true
+   },
+   {
+    "word": "割れた陶器",
+    "found": false
+   },
+   {
+    "word": "継ぐ",
+    "found": false
+   },
+   {
+    "word": "欠けを直す",
+    "found": false
+   },
+   {
+    "word": "侘び",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "器"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "寄木細工",
+  "title": "寄木細工",
+  "inArticle": [
+   {
+    "word": "箱根",
+    "found": true
+   },
+   {
+    "word": "工芸",
+    "found": true
+   },
+   {
+    "word": "木の香り",
+    "found": false
+   },
+   {
+    "word": "木片",
+    "found": true
+   },
+   {
+    "word": "模様",
+    "found": true
+   },
+   {
+    "word": "秘密箱",
+    "found": true
+   },
+   {
+    "word": "色の違う木を組む",
+    "found": false
+   },
+   {
+    "word": "幾何学模様",
+    "found": false
+   },
+   {
+    "word": "ずく",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 4,
+  "answer": "江戸切子",
+  "title": "江戸切子",
+  "inArticle": [
+   {
+    "word": "下町",
+    "found": true
+   },
+   {
+    "word": "硝子",
+    "found": true
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "カットガラス",
+    "found": true
+   },
+   {
+    "word": "色被せ",
+    "found": true
+   },
+   {
+    "word": "グラス",
+    "found": true
+   },
+   {
+    "word": "伝統工芸",
+    "found": true
+   },
+   {
+    "word": "矢来",
+    "found": true
+   },
+   {
+    "word": "菊つなぎ",
+    "found": false
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 4,
+  "answer": "枯山水",
+  "title": "枯山水",
+  "inArticle": [
+   {
+    "word": "禅寺",
+    "found": false
+   },
+   {
+    "word": "静寂",
+    "found": false
+   },
+   {
+    "word": "庭",
+    "found": false
+   },
+   {
+    "word": "白砂",
+    "found": false
+   },
+   {
+    "word": "石",
+    "found": false
+   },
+   {
+    "word": "砂紋",
+    "found": false
+   },
+   {
+    "word": "水を使わない",
+    "found": false
+   },
+   {
+    "word": "龍安寺",
+    "found": false
+   },
+   {
+    "word": "禅の庭",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 12
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "禅の庭"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "根付",
+  "title": "根付",
+  "inArticle": [
+   {
+    "word": "江戸",
+    "found": true
+   },
+   {
+    "word": "着物",
+    "found": true
+   },
+   {
+    "word": "印籠",
+    "found": true
+   },
+   {
+    "word": "象牙",
+    "found": true
+   },
+   {
+    "word": "木彫り",
+    "found": false
+   },
+   {
+    "word": "紐",
+    "found": true
+   },
+   {
+    "word": "留め具",
+    "found": true
+   },
+   {
+    "word": "帯",
+    "found": true
+   },
+   {
+    "word": "小さな彫刻",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 39
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "帯"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "モールス符号",
+  "title": "モールス符号",
+  "inArticle": [
+   {
+    "word": "電信",
+    "found": true
+   },
+   {
+    "word": "無線",
+    "found": true
+   },
+   {
+    "word": "船",
+    "found": true
+   },
+   {
+    "word": "電鍵",
+    "found": true
+   },
+   {
+    "word": "短点",
+    "found": true
+   },
+   {
+    "word": "長点",
+    "found": true
+   },
+   {
+    "word": "点と線",
+    "found": false
+   },
+   {
+    "word": "SOS",
+    "found": true
+   },
+   {
+    "word": "符号化",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": 25
+  },
+  "all": {
+   "rank": null,
+   "total": 3
+  },
+  "zero": [
+   "点と線"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "鉱石ラジオ",
+  "title": "鉱石ラジオ",
+  "inArticle": [
+   {
+    "word": "昭和の少年",
+    "found": false
+   },
+   {
+    "word": "工作",
+    "found": true
+   },
+   {
+    "word": "イヤホン",
+    "found": false
+   },
+   {
+    "word": "鉱石検波器",
+    "found": true
+   },
+   {
+    "word": "コイル",
+    "found": false
+   },
+   {
+    "word": "アンテナ",
+    "found": true
+   },
+   {
+    "word": "電源不要",
+    "found": false
+   },
+   {
+    "word": "方鉛鉱",
+    "found": true
+   },
+   {
+    "word": "受信",
+    "found": true
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "アンテナ"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "ホログラフィー",
+  "title": "ホログラフィー",
+  "inArticle": [
+   {
+    "word": "未来的",
+    "found": false
+   },
+   {
+    "word": "立体像",
+    "found": true
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "レーザー",
+    "found": true
+   },
+   {
+    "word": "干渉",
+    "found": true
+   },
+   {
+    "word": "乾板",
+    "found": false
+   },
+   {
+    "word": "三次元記録",
+    "found": false
+   },
+   {
+    "word": "干渉縞",
+    "found": true
+   },
+   {
+    "word": "角度で変わる",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "干渉"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "和時計",
+  "title": "和時計",
+  "inArticle": [
+   {
+    "word": "江戸",
+    "found": true
+   },
+   {
+    "word": "時刻",
+    "found": true
+   },
+   {
+    "word": "寺",
+    "found": false
+   },
+   {
+    "word": "文字盤",
+    "found": true
+   },
+   {
+    "word": "錘",
+    "found": true
+   },
+   {
+    "word": "割駒",
+    "found": true
+   },
+   {
+    "word": "不定時法",
+    "found": true
+   },
+   {
+    "word": "一刻",
+    "found": true
+   },
+   {
+    "word": "十二支",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 2,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "文字盤"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "音叉",
+  "title": "音叉",
+  "inArticle": [
+   {
+    "word": "音楽室",
+    "found": false
+   },
+   {
+    "word": "調律",
+    "found": false
+   },
+   {
+    "word": "響き",
+    "found": false
+   },
+   {
+    "word": "金属",
+    "found": true
+   },
+   {
+    "word": "U字",
+    "found": true
+   },
+   {
+    "word": "共鳴箱",
+    "found": true
+   },
+   {
+    "word": "440ヘルツ",
+    "found": false
+   },
+   {
+    "word": "基準音",
+    "found": false
+   },
+   {
+    "word": "振動",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "響き"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "ジャイロスコープ",
+  "title": "ジャイロスコープ",
+  "inArticle": [
+   {
+    "word": "回転",
+    "found": true
+   },
+   {
+    "word": "宇宙船",
+    "found": false
+   },
+   {
+    "word": "姿勢",
+    "found": true
+   },
+   {
+    "word": "ロータ",
+    "found": true
+   },
+   {
+    "word": "支持環",
+    "found": false
+   },
+   {
+    "word": "軸",
+    "found": true
+   },
+   {
+    "word": "角速度",
+    "found": true
+   },
+   {
+    "word": "慣性",
+    "found": true
+   },
+   {
+    "word": "姿勢制御",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 22
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "宇宙船"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "潜望鏡",
+  "title": "潜望鏡",
+  "inArticle": [
+   {
+    "word": "潜水艦",
+    "found": true
+   },
+   {
+    "word": "海面",
+    "found": false
+   },
+   {
+    "word": "のぞく",
+    "found": false
+   },
+   {
+    "word": "鏡",
+    "found": true
+   },
+   {
+    "word": "筒",
+    "found": true
+   },
+   {
+    "word": "プリズム",
+    "found": true
+   },
+   {
+    "word": "視点を上げる",
+    "found": false
+   },
+   {
+    "word": "隠れて見る",
+    "found": false
+   },
+   {
+    "word": "反射を利用",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 160
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "潜水艦"
+  ]
+ },
+ {
+  "tier": 4,
+  "answer": "水琴窟",
+  "title": "水琴窟",
+  "inArticle": [
+   {
+    "word": "日本庭園",
+    "found": true
+   },
+   {
+    "word": "静寂",
+    "found": false
+   },
+   {
+    "word": "水音",
+    "found": false
+   },
+   {
+    "word": "甕",
+    "found": false
+   },
+   {
+    "word": "手水鉢",
+    "found": true
+   },
+   {
+    "word": "砂利",
+    "found": true
+   },
+   {
+    "word": "地中の甕",
+    "found": false
+   },
+   {
+    "word": "水滴の反響",
+    "found": false
+   },
+   {
+    "word": "琴のような音",
+    "found": false
+   }
+  ],
+  "found": 3,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 4,
+  "answer": "ししおどし",
+  "title": "ししおどし",
+  "inArticle": [
+   {
+    "word": "日本庭園",
+    "found": true
+   },
+   {
+    "word": "静けさ",
+    "found": false
+   },
+   {
+    "word": "竹",
+    "found": true
+   },
+   {
+    "word": "竹筒",
+    "found": true
+   },
+   {
+    "word": "水",
+    "found": true
+   },
+   {
+    "word": "石",
+    "found": true
+   },
+   {
+    "word": "カコン",
+    "found": false
+   },
+   {
+    "word": "獣よけ",
+    "found": false
+   },
+   {
+    "word": "竹の音",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 4,
+  "answer": "オートマタ",
+  "title": "オートマタ",
+  "inArticle": [
+   {
+    "word": "西洋",
+    "found": false
+   },
+   {
+    "word": "人形",
+    "found": false
+   },
+   {
+    "word": "18世紀",
+    "found": false
+   },
+   {
+    "word": "歯車",
+    "found": false
+   },
+   {
+    "word": "カム",
+    "found": false
+   },
+   {
+    "word": "ぜんまい",
+    "found": false
+   },
+   {
+    "word": "機械人形",
+    "found": false
+   },
+   {
+    "word": "機械仕掛け",
+    "found": false
+   },
+   {
+    "word": "文字を書く人形",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 275
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "文字を書く人形"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "アセンブリ言語",
+  "title": "アセンブリ言語",
+  "inArticle": [
+   {
+    "word": "コンピュータ",
+    "found": true
+   },
+   {
+    "word": "黒い画面",
+    "found": false
+   },
+   {
+    "word": "低水準",
+    "found": true
+   },
+   {
+    "word": "CPU",
+    "found": true
+   },
+   {
+    "word": "命令",
+    "found": true
+   },
+   {
+    "word": "レジスタ",
+    "found": true
+   },
+   {
+    "word": "命令の略記",
+    "found": false
+   },
+   {
+    "word": "機械語",
+    "found": true
+   },
+   {
+    "word": "アセンブラ",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 6
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "機械語"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ペルティエ素子",
+  "title": "ペルティエ素子",
+  "inArticle": [
+   {
+    "word": "冷却",
+    "found": true
+   },
+   {
+    "word": "電子機器",
+    "found": false
+   },
+   {
+    "word": "小型冷蔵庫",
+    "found": false
+   },
+   {
+    "word": "半導体",
+    "found": true
+   },
+   {
+    "word": "電流",
+    "found": true
+   },
+   {
+    "word": "ヒートシンク",
+    "found": true
+   },
+   {
+    "word": "熱電効果",
+    "found": true
+   },
+   {
+    "word": "吸熱と発熱",
+    "found": false
+   },
+   {
+    "word": "熱電素子",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "熱電効果"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "トライボロジー",
+  "title": "トライボロジー",
+  "inArticle": [
+   {
+    "word": "機械",
+    "found": true
+   },
+   {
+    "word": "摩耗",
+    "found": true
+   },
+   {
+    "word": "工学",
+    "found": true
+   },
+   {
+    "word": "潤滑油",
+    "found": true
+   },
+   {
+    "word": "軸受",
+    "found": false
+   },
+   {
+    "word": "歯車",
+    "found": false
+   },
+   {
+    "word": "摩擦",
+    "found": true
+   },
+   {
+    "word": "潤滑",
+    "found": true
+   },
+   {
+    "word": "表面",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 6,
+   "total": 142
+  },
+  "all": {
+   "rank": null,
+   "total": 10
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "ゼーベック効果",
+  "title": "ゼーベック効果",
+  "inArticle": [
+   {
+    "word": "温度",
+    "found": true
+   },
+   {
+    "word": "金属",
+    "found": true
+   },
+   {
+    "word": "実験",
+    "found": false
+   },
+   {
+    "word": "熱電対",
+    "found": true
+   },
+   {
+    "word": "温度差",
+    "found": true
+   },
+   {
+    "word": "電圧",
+    "found": true
+   },
+   {
+    "word": "温度差発電",
+    "found": false
+   },
+   {
+    "word": "熱電効果",
+    "found": true
+   },
+   {
+    "word": "温度計測",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 2
+  },
+  "zero": [
+   "熱電対"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "超伝導",
+  "title": "超伝導",
+  "inArticle": [
+   {
+    "word": "極低温",
+    "found": false
+   },
+   {
+    "word": "実験室",
+    "found": false
+   },
+   {
+    "word": "磁力",
+    "found": true
+   },
+   {
+    "word": "液体ヘリウム",
+    "found": true
+   },
+   {
+    "word": "磁石",
+    "found": true
+   },
+   {
+    "word": "リニア",
+    "found": true
+   },
+   {
+    "word": "電気抵抗ゼロ",
+    "found": false
+   },
+   {
+    "word": "臨界温度",
+    "found": true
+   },
+   {
+    "word": "磁場の排除",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 5
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "磁力"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ジョセフソン効果",
+  "title": "ジョセフソン効果",
+  "inArticle": [
+   {
+    "word": "量子",
+    "found": true
+   },
+   {
+    "word": "極低温",
+    "found": false
+   },
+   {
+    "word": "精密測定",
+    "found": false
+   },
+   {
+    "word": "超伝導体",
+    "found": true
+   },
+   {
+    "word": "薄い絶縁膜",
+    "found": false
+   },
+   {
+    "word": "SQUID",
+    "found": true
+   },
+   {
+    "word": "トンネル電流",
+    "found": false
+   },
+   {
+    "word": "電圧標準",
+    "found": true
+   },
+   {
+    "word": "ノーベル賞",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "極低温"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "圧電効果",
+  "title": "圧電効果",
+  "inArticle": [
+   {
+    "word": "ライター",
+    "found": true
+   },
+   {
+    "word": "センサー",
+    "found": true
+   },
+   {
+    "word": "時計",
+    "found": false
+   },
+   {
+    "word": "水晶",
+    "found": true
+   },
+   {
+    "word": "セラミックス",
+    "found": true
+   },
+   {
+    "word": "振動子",
+    "found": true
+   },
+   {
+    "word": "圧力で電圧",
+    "found": false
+   },
+   {
+    "word": "ピエゾ",
+    "found": true
+   },
+   {
+    "word": "逆効果",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "ライター"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "量子ドット",
+  "title": "量子ドット",
+  "inArticle": [
+   {
+    "word": "ナノ",
+    "found": true
+   },
+   {
+    "word": "ディスプレイ",
+    "found": true
+   },
+   {
+    "word": "発光",
+    "found": true
+   },
+   {
+    "word": "半導体",
+    "found": true
+   },
+   {
+    "word": "粒子",
+    "found": true
+   },
+   {
+    "word": "色",
+    "found": true
+   },
+   {
+    "word": "量子閉じ込め",
+    "found": true
+   },
+   {
+    "word": "粒径で色が変わる",
+    "found": false
+   },
+   {
+    "word": "ナノ結晶",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "カーボンナノチューブ",
+  "title": "カーボンナノチューブ",
+  "inArticle": [
+   {
+    "word": "ナノ",
+    "found": true
+   },
+   {
+    "word": "素材",
+    "found": true
+   },
+   {
+    "word": "軽量",
+    "found": false
+   },
+   {
+    "word": "炭素",
+    "found": true
+   },
+   {
+    "word": "筒",
+    "found": true
+   },
+   {
+    "word": "グラフェン",
+    "found": true
+   },
+   {
+    "word": "円筒構造",
+    "found": false
+   },
+   {
+    "word": "高強度",
+    "found": true
+   },
+   {
+    "word": "炭素の同素体",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "ゼオライト",
+  "title": "ゼオライト",
+  "inArticle": [
+   {
+    "word": "鉱物",
+    "found": false
+   },
+   {
+    "word": "吸着",
+    "found": false
+   },
+   {
+    "word": "洗剤",
+    "found": false
+   },
+   {
+    "word": "アルミノケイ酸塩",
+    "found": false
+   },
+   {
+    "word": "細孔",
+    "found": false
+   },
+   {
+    "word": "触媒",
+    "found": false
+   },
+   {
+    "word": "分子ふるい",
+    "found": false
+   },
+   {
+    "word": "イオン交換",
+    "found": false
+   },
+   {
+    "word": "多孔質鉱物",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "多孔質鉱物"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "形状記憶合金",
+  "title": "形状記憶合金",
+  "inArticle": [
+   {
+    "word": "金属",
+    "found": true
+   },
+   {
+    "word": "温度",
+    "found": true
+   },
+   {
+    "word": "眼鏡のフレーム",
+    "found": false
+   },
+   {
+    "word": "ニッケル",
+    "found": true
+   },
+   {
+    "word": "チタン",
+    "found": true
+   },
+   {
+    "word": "ばね",
+    "found": true
+   },
+   {
+    "word": "元の形に戻る",
+    "found": false
+   },
+   {
+    "word": "変態温度",
+    "found": false
+   },
+   {
+    "word": "超弾性",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "変態温度"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "フォトリソグラフィ",
+  "title": "フォトリソグラフィ",
+  "inArticle": [
+   {
+    "word": "クリーンルーム",
+    "found": false
+   },
+   {
+    "word": "半導体工場",
+    "found": false
+   },
+   {
+    "word": "黄色い光",
+    "found": false
+   },
+   {
+    "word": "フォトマスク",
+    "found": true
+   },
+   {
+    "word": "レジスト",
+    "found": true
+   },
+   {
+    "word": "露光",
+    "found": true
+   },
+   {
+    "word": "微細加工",
+    "found": false
+   },
+   {
+    "word": "パターン転写",
+    "found": false
+   },
+   {
+    "word": "ウェハー",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 7
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "微細加工"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "スターリングエンジン",
+  "title": "スターリングエンジン",
+  "inArticle": [
+   {
+    "word": "熱機関",
+    "found": true
+   },
+   {
+    "word": "模型",
+    "found": false
+   },
+   {
+    "word": "静か",
+    "found": true
+   },
+   {
+    "word": "ピストン",
+    "found": false
+   },
+   {
+    "word": "再生器",
+    "found": false
+   },
+   {
+    "word": "フライホイール",
+    "found": false
+   },
+   {
+    "word": "外燃機関",
+    "found": true
+   },
+   {
+    "word": "温度差で動く",
+    "found": false
+   },
+   {
+    "word": "作動ガス",
+    "found": false
+   }
+  ],
+  "found": 3,
+  "zone3": {
+   "rank": null,
+   "total": 28
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "フライホイール"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "量子もつれ",
+  "title": "量子もつれ",
+  "inArticle": [
+   {
+    "word": "量子",
+    "found": true
+   },
+   {
+    "word": "遠く離れた",
+    "found": false
+   },
+   {
+    "word": "不思議",
+    "found": false
+   },
+   {
+    "word": "光子",
+    "found": true
+   },
+   {
+    "word": "観測",
+    "found": true
+   },
+   {
+    "word": "状態",
+    "found": true
+   },
+   {
+    "word": "エンタングルメント",
+    "found": true
+   },
+   {
+    "word": "ベル不等式",
+    "found": false
+   },
+   {
+    "word": "非局所相関",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "観測"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "浮動小数点数",
+  "title": "浮動小数点数",
+  "inArticle": [
+   {
+    "word": "コンピュータ",
+    "found": true
+   },
+   {
+    "word": "計算",
+    "found": true
+   },
+   {
+    "word": "誤差",
+    "found": true
+   },
+   {
+    "word": "仮数",
+    "found": true
+   },
+   {
+    "word": "指数",
+    "found": true
+   },
+   {
+    "word": "符号",
+    "found": true
+   },
+   {
+    "word": "IEEE 754",
+    "found": true
+   },
+   {
+    "word": "丸め誤差",
+    "found": true
+   },
+   {
+    "word": "倍精度",
+    "found": true
+   }
+  ],
+  "found": 9,
+  "zone3": {
+   "rank": 2,
+   "total": 10
+  },
+  "all": {
+   "rank": 1,
+   "total": 3
+  },
+  "zero": [
+   "仮数"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ハッシュ関数",
+  "title": "ハッシュ関数",
+  "inArticle": [
+   {
+    "word": "暗号",
+    "found": true
+   },
+   {
+    "word": "データ",
+    "found": true
+   },
+   {
+    "word": "照合",
+    "found": false
+   },
+   {
+    "word": "入力",
+    "found": true
+   },
+   {
+    "word": "固定長",
+    "found": true
+   },
+   {
+    "word": "ダイジェスト",
+    "found": false
+   },
+   {
+    "word": "衝突",
+    "found": true
+   },
+   {
+    "word": "SHA-256",
+    "found": false
+   },
+   {
+    "word": "一方向",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 3,
+   "total": 10
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "照合"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "正規表現",
+  "title": "正規表現",
+  "inArticle": [
+   {
+    "word": "プログラミング",
+    "found": true
+   },
+   {
+    "word": "検索",
+    "found": true
+   },
+   {
+    "word": "文字列",
+    "found": true
+   },
+   {
+    "word": "パターン",
+    "found": true
+   },
+   {
+    "word": "メタ文字",
+    "found": true
+   },
+   {
+    "word": "ワイルドカード",
+    "found": false
+   },
+   {
+    "word": "置換",
+    "found": false
+   },
+   {
+    "word": "量指定子",
+    "found": true
+   },
+   {
+    "word": "文字クラス",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 27
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "検索"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ガベージコレクション",
+  "title": "ガベージコレクション",
+  "inArticle": [
+   {
+    "word": "プログラム",
+    "found": true
+   },
+   {
+    "word": "メモリ",
+    "found": true
+   },
+   {
+    "word": "自動",
+    "found": true
+   },
+   {
+    "word": "ヒープ",
+    "found": false
+   },
+   {
+    "word": "参照",
+    "found": true
+   },
+   {
+    "word": "オブジェクト",
+    "found": true
+   },
+   {
+    "word": "不要領域の回収",
+    "found": false
+   },
+   {
+    "word": "マーク・アンド・スイープ",
+    "found": true
+   },
+   {
+    "word": "参照カウント",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "プログラム"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "コンパイラ",
+  "title": "コンパイラ",
+  "inArticle": [
+   {
+    "word": "プログラミング",
+    "found": true
+   },
+   {
+    "word": "ソースコード",
+    "found": true
+   },
+   {
+    "word": "ビルド",
+    "found": false
+   },
+   {
+    "word": "構文解析",
+    "found": true
+   },
+   {
+    "word": "字句解析",
+    "found": true
+   },
+   {
+    "word": "最適化",
+    "found": true
+   },
+   {
+    "word": "機械語に翻訳",
+    "found": false
+   },
+   {
+    "word": "実行ファイル",
+    "found": true
+   },
+   {
+    "word": "インタプリタ",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 2,
+   "total": 22
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "誘導加熱",
+  "title": "誘導加熱",
+  "inArticle": [
+   {
+    "word": "台所",
+    "found": false
+   },
+   {
+    "word": "鍋",
+    "found": false
+   },
+   {
+    "word": "炎がない",
+    "found": false
+   },
+   {
+    "word": "コイル",
+    "found": true
+   },
+   {
+    "word": "交流",
+    "found": true
+   },
+   {
+    "word": "渦電流",
+    "found": true
+   },
+   {
+    "word": "電磁誘導",
+    "found": true
+   },
+   {
+    "word": "ジュール熱",
+    "found": true
+   },
+   {
+    "word": "磁性体",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "レーザー冷却",
+  "title": "レーザー冷却",
+  "inArticle": [
+   {
+    "word": "量子",
+    "found": false
+   },
+   {
+    "word": "極低温",
+    "found": false
+   },
+   {
+    "word": "原子",
+    "found": false
+   },
+   {
+    "word": "レーザー光",
+    "found": false
+   },
+   {
+    "word": "原子",
+    "found": false
+   },
+   {
+    "word": "光子",
+    "found": false
+   },
+   {
+    "word": "ドップラー冷却",
+    "found": false
+   },
+   {
+    "word": "絶対零度近く",
+    "found": false
+   },
+   {
+    "word": "光の圧力",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": 1,
+   "total": 1
+  },
+  "zero": [
+   "光の圧力"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ジャイロトロン",
+  "title": "ジャイロトロン",
+  "inArticle": [
+   {
+    "word": "核融合",
+    "found": true
+   },
+   {
+    "word": "研究所",
+    "found": false
+   },
+   {
+    "word": "高出力",
+    "found": true
+   },
+   {
+    "word": "電子ビーム",
+    "found": true
+   },
+   {
+    "word": "磁場",
+    "found": true
+   },
+   {
+    "word": "共振器",
+    "found": true
+   },
+   {
+    "word": "ミリ波",
+    "found": true
+   },
+   {
+    "word": "プラズマ加熱",
+    "found": true
+   },
+   {
+    "word": "サイクロトロン共鳴",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 3
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "プラズマ加熱"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "エアロゲル",
+  "title": "エアロゲル",
+  "inArticle": [
+   {
+    "word": "宇宙",
+    "found": true
+   },
+   {
+    "word": "軽い",
+    "found": false
+   },
+   {
+    "word": "煙のよう",
+    "found": false
+   },
+   {
+    "word": "シリカ",
+    "found": true
+   },
+   {
+    "word": "空隙",
+    "found": false
+   },
+   {
+    "word": "断熱材",
+    "found": true
+   },
+   {
+    "word": "世界一軽い固体",
+    "found": false
+   },
+   {
+    "word": "ゲル",
+    "found": true
+   },
+   {
+    "word": "多孔質",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "世界一軽い固体"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "スピントロニクス",
+  "title": "スピントロニクス",
+  "inArticle": [
+   {
+    "word": "電子",
+    "found": true
+   },
+   {
+    "word": "磁気",
+    "found": true
+   },
+   {
+    "word": "次世代",
+    "found": false
+   },
+   {
+    "word": "スピン",
+    "found": true
+   },
+   {
+    "word": "磁気抵抗",
+    "found": true
+   },
+   {
+    "word": "ハードディスク",
+    "found": true
+   },
+   {
+    "word": "スピン流",
+    "found": false
+   },
+   {
+    "word": "MRAM",
+    "found": false
+   },
+   {
+    "word": "巨大磁気抵抗",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "ハードディスク"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "射出成形",
+  "title": "射出成形",
+  "inArticle": [
+   {
+    "word": "工場",
+    "found": true
+   },
+   {
+    "word": "プラスチック",
+    "found": true
+   },
+   {
+    "word": "量産",
+    "found": false
+   },
+   {
+    "word": "金型",
+    "found": true
+   },
+   {
+    "word": "ペレット",
+    "found": false
+   },
+   {
+    "word": "樹脂",
+    "found": true
+   },
+   {
+    "word": "溶かして注入",
+    "found": false
+   },
+   {
+    "word": "成形機",
+    "found": true
+   },
+   {
+    "word": "冷却固化",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "ペレット"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ホール効果",
+  "title": "ホール効果",
+  "inArticle": [
+   {
+    "word": "磁場",
+    "found": true
+   },
+   {
+    "word": "半導体",
+    "found": true
+   },
+   {
+    "word": "センサー",
+    "found": false
+   },
+   {
+    "word": "電流",
+    "found": true
+   },
+   {
+    "word": "電圧",
+    "found": true
+   },
+   {
+    "word": "磁界",
+    "found": false
+   },
+   {
+    "word": "ローレンツ力",
+    "found": true
+   },
+   {
+    "word": "キャリア",
+    "found": true
+   },
+   {
+    "word": "横方向の電圧",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "電流"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ヒートパイプ",
+  "title": "ヒートパイプ",
+  "inArticle": [
+   {
+    "word": "パソコン",
+    "found": false
+   },
+   {
+    "word": "冷却",
+    "found": true
+   },
+   {
+    "word": "ノート",
+    "found": true
+   },
+   {
+    "word": "銅管",
+    "found": false
+   },
+   {
+    "word": "作動液",
+    "found": true
+   },
+   {
+    "word": "ウィック",
+    "found": true
+   },
+   {
+    "word": "潜熱",
+    "found": true
+   },
+   {
+    "word": "蒸発と凝縮",
+    "found": false
+   },
+   {
+    "word": "熱輸送",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 7
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "ノート"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "ファラデーケージ",
+  "title": "ファラデーケージ",
+  "inArticle": [
+   {
+    "word": "電磁波",
+    "found": true
+   },
+   {
+    "word": "実験",
+    "found": false
+   },
+   {
+    "word": "雷",
+    "found": true
+   },
+   {
+    "word": "金網",
+    "found": false
+   },
+   {
+    "word": "導体",
+    "found": true
+   },
+   {
+    "word": "電子レンジ",
+    "found": true
+   },
+   {
+    "word": "電場の遮蔽",
+    "found": false
+   },
+   {
+    "word": "静電遮蔽",
+    "found": false
+   },
+   {
+    "word": "箱",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "実験"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "トンネル効果",
+  "title": "トンネル効果",
+  "inArticle": [
+   {
+    "word": "量子力学",
+    "found": true
+   },
+   {
+    "word": "粒子",
+    "found": true
+   },
+   {
+    "word": "壁",
+    "found": true
+   },
+   {
+    "word": "障壁",
+    "found": true
+   },
+   {
+    "word": "波動関数",
+    "found": true
+   },
+   {
+    "word": "電子",
+    "found": true
+   },
+   {
+    "word": "通り抜け",
+    "found": true
+   },
+   {
+    "word": "透過確率",
+    "found": false
+   },
+   {
+    "word": "古典では不可能",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "量子力学"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "黒体放射",
+  "title": "黒体放射",
+  "inArticle": [
+   {
+    "word": "物理学",
+    "found": true
+   },
+   {
+    "word": "熱",
+    "found": true
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "溶鉱炉",
+    "found": false
+   },
+   {
+    "word": "温度",
+    "found": true
+   },
+   {
+    "word": "色",
+    "found": true
+   },
+   {
+    "word": "量子仮説",
+    "found": false
+   },
+   {
+    "word": "放射スペクトル",
+    "found": false
+   },
+   {
+    "word": "量子論の始まり",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": null,
+   "total": 9
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "形態素",
+  "title": "形態素",
+  "inArticle": [
+   {
+    "word": "言語学",
+    "found": true
+   },
+   {
+    "word": "単語",
+    "found": false
+   },
+   {
+    "word": "分解",
+    "found": true
+   },
+   {
+    "word": "語幹",
+    "found": true
+   },
+   {
+    "word": "接辞",
+    "found": true
+   },
+   {
+    "word": "活用",
+    "found": true
+   },
+   {
+    "word": "意味の最小単位",
+    "found": false
+   },
+   {
+    "word": "形態素解析",
+    "found": true
+   },
+   {
+    "word": "モーフィーム",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "モーフィーム"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "換喩",
+  "title": "換喩",
+  "inArticle": [
+   {
+    "word": "比喩",
+    "found": false
+   },
+   {
+    "word": "言葉",
+    "found": false
+   },
+   {
+    "word": "文学",
+    "found": false
+   },
+   {
+    "word": "隣接性",
+    "found": false
+   },
+   {
+    "word": "連想",
+    "found": false
+   },
+   {
+    "word": "言い換え",
+    "found": false
+   },
+   {
+    "word": "近さに基づく比喩",
+    "found": false
+   },
+   {
+    "word": "修辞技法",
+    "found": false
+   },
+   {
+    "word": "「鍋が煮える」",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "「鍋が煮える」"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "掛詞",
+  "title": "掛詞",
+  "inArticle": [
+   {
+    "word": "和歌",
+    "found": true
+   },
+   {
+    "word": "平安",
+    "found": false
+   },
+   {
+    "word": "言葉遊び",
+    "found": true
+   },
+   {
+    "word": "同音異義",
+    "found": true
+   },
+   {
+    "word": "古今和歌集",
+    "found": true
+   },
+   {
+    "word": "序詞",
+    "found": true
+   },
+   {
+    "word": "一語に二つの意味",
+    "found": false
+   },
+   {
+    "word": "修辞技法",
+    "found": true
+   },
+   {
+    "word": "「松」と「待つ」",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 4
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "修辞技法"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "本歌取",
+  "title": "本歌取",
+  "inArticle": [
+   {
+    "word": "和歌",
+    "found": true
+   },
+   {
+    "word": "中世",
+    "found": false
+   },
+   {
+    "word": "古歌",
+    "found": true
+   },
+   {
+    "word": "新古今和歌集",
+    "found": false
+   },
+   {
+    "word": "歌学",
+    "found": true
+   },
+   {
+    "word": "引用",
+    "found": false
+   },
+   {
+    "word": "古歌の句を取り入れる",
+    "found": false
+   },
+   {
+    "word": "重層的な表現",
+    "found": false
+   },
+   {
+    "word": "作歌技法",
+    "found": false
+   }
+  ],
+  "found": 3,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "古歌の句を取り入れる"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "異化",
+  "title": "異化",
+  "inArticle": [
+   {
+    "word": "文学理論",
+    "found": true
+   },
+   {
+    "word": "日常",
+    "found": true
+   },
+   {
+    "word": "違和感",
+    "found": false
+   },
+   {
+    "word": "ロシア・フォルマリズム",
+    "found": true
+   },
+   {
+    "word": "知覚",
+    "found": true
+   },
+   {
+    "word": "演劇",
+    "found": true
+   },
+   {
+    "word": "見慣れたものを奇妙に",
+    "found": false
+   },
+   {
+    "word": "自動化を避ける",
+    "found": false
+   },
+   {
+    "word": "非日常化",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "演劇"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "間テクスト性",
+  "title": "間テクスト性",
+  "inArticle": [
+   {
+    "word": "文学",
+    "found": true
+   },
+   {
+    "word": "読書",
+    "found": false
+   },
+   {
+    "word": "引用",
+    "found": true
+   },
+   {
+    "word": "テクスト",
+    "found": true
+   },
+   {
+    "word": "パロディ",
+    "found": true
+   },
+   {
+    "word": "オマージュ",
+    "found": true
+   },
+   {
+    "word": "他のテクストとの関係",
+    "found": false
+   },
+   {
+    "word": "インターテクスチュアリティ",
+    "found": true
+   },
+   {
+    "word": "記号論",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "パロディ"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "記号学",
+  "title": "記号学",
+  "inArticle": [
+   {
+    "word": "意味",
+    "found": true
+   },
+   {
+    "word": "文化",
+    "found": true
+   },
+   {
+    "word": "しるし",
+    "found": false
+   },
+   {
+    "word": "シニフィアン",
+    "found": true
+   },
+   {
+    "word": "シニフィエ",
+    "found": true
+   },
+   {
+    "word": "言語",
+    "found": true
+   },
+   {
+    "word": "記号の学問",
+    "found": true
+   },
+   {
+    "word": "セミオティクス",
+    "found": true
+   },
+   {
+    "word": "構造主義",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 1,
+   "total": 2
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "シニフィアン"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "現象学",
+  "title": "現象学",
+  "inArticle": [
+   {
+    "word": "哲学",
+    "found": true
+   },
+   {
+    "word": "意識",
+    "found": true
+   },
+   {
+    "word": "経験",
+    "found": true
+   },
+   {
+    "word": "志向性",
+    "found": true
+   },
+   {
+    "word": "エポケー",
+    "found": true
+   },
+   {
+    "word": "還元",
+    "found": true
+   },
+   {
+    "word": "事象そのものへ",
+    "found": true
+   },
+   {
+    "word": "現れの学",
+    "found": false
+   },
+   {
+    "word": "20世紀哲学",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 128
+  },
+  "all": {
+   "rank": 1,
+   "total": 2
+  },
+  "zero": [
+   "経験"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "止揚",
+  "title": "止揚",
+  "inArticle": [
+   {
+    "word": "哲学",
+    "found": true
+   },
+   {
+    "word": "矛盾",
+    "found": true
+   },
+   {
+    "word": "発展",
+    "found": true
+   },
+   {
+    "word": "弁証法",
+    "found": true
+   },
+   {
+    "word": "正・反・合",
+    "found": false
+   },
+   {
+    "word": "ドイツ観念論",
+    "found": false
+   },
+   {
+    "word": "矛盾を乗り越える",
+    "found": false
+   },
+   {
+    "word": "否定しつつ保存",
+    "found": false
+   },
+   {
+    "word": "高次の統一",
+    "found": false
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": null,
+   "total": 6
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "矛盾"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "限界効用",
+  "title": "限界効用",
+  "inArticle": [
+   {
+    "word": "経済学",
+    "found": true
+   },
+   {
+    "word": "満足",
+    "found": true
+   },
+   {
+    "word": "消費",
+    "found": true
+   },
+   {
+    "word": "効用",
+    "found": true
+   },
+   {
+    "word": "財",
+    "found": true
+   },
+   {
+    "word": "追加の1単位",
+    "found": false
+   },
+   {
+    "word": "逓減",
+    "found": true
+   },
+   {
+    "word": "ミクロ経済学",
+    "found": true
+   },
+   {
+    "word": "限界革命",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 3,
+   "total": 5
+  },
+  "all": {
+   "rank": 1,
+   "total": 2
+  },
+  "zero": [
+   "経済学"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "比較優位",
+  "title": "比較優位",
+  "inArticle": [
+   {
+    "word": "貿易",
+    "found": true
+   },
+   {
+    "word": "国",
+    "found": true
+   },
+   {
+    "word": "経済",
+    "found": true
+   },
+   {
+    "word": "生産費",
+    "found": true
+   },
+   {
+    "word": "分業",
+    "found": true
+   },
+   {
+    "word": "特化",
+    "found": true
+   },
+   {
+    "word": "機会費用",
+    "found": true
+   },
+   {
+    "word": "国際貿易論",
+    "found": true
+   },
+   {
+    "word": "相対的な得意",
+    "found": false
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": 2,
+   "total": 13
+  },
+  "all": {
+   "rank": null,
+   "total": null
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "キアロスクーロ",
+  "title": "キアロスクーロ",
+  "inArticle": [
+   {
+    "word": "絵画",
+    "found": true
+   },
+   {
+    "word": "光",
+    "found": true
+   },
+   {
+    "word": "影",
+    "found": true
+   },
+   {
+    "word": "ルネサンス",
+    "found": true
+   },
+   {
+    "word": "バロック",
+    "found": true
+   },
+   {
+    "word": "明暗",
+    "found": true
+   },
+   {
+    "word": "明暗の対比",
+    "found": false
+   },
+   {
+    "word": "立体感",
+    "found": true
+   },
+   {
+    "word": "イタリア語",
+    "found": true
+   }
+  ],
+  "found": 8,
+  "zone3": {
+   "rank": null,
+   "total": null
+  },
+  "all": {
+   "rank": 1,
+   "total": 2
+  },
+  "zero": []
+ },
+ {
+  "tier": 5,
+  "answer": "幽玄",
+  "title": "幽玄",
+  "inArticle": [
+   {
+    "word": "能",
+    "found": false
+   },
+   {
+    "word": "和歌",
+    "found": false
+   },
+   {
+    "word": "奥深さ",
+    "found": false
+   },
+   {
+    "word": "中世",
+    "found": false
+   },
+   {
+    "word": "余情",
+    "found": false
+   },
+   {
+    "word": "歌論",
+    "found": false
+   },
+   {
+    "word": "日本の美意識",
+    "found": false
+   },
+   {
+    "word": "言葉に表れない趣",
+    "found": false
+   },
+   {
+    "word": "侘び寂び",
+    "found": false
+   }
+  ],
+  "found": 0,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "侘び寂び"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "序破急",
+  "title": "序破急",
+  "inArticle": [
+   {
+    "word": "能",
+    "found": true
+   },
+   {
+    "word": "雅楽",
+    "found": true
+   },
+   {
+    "word": "構成",
+    "found": true
+   },
+   {
+    "word": "舞楽",
+    "found": true
+   },
+   {
+    "word": "連歌",
+    "found": true
+   },
+   {
+    "word": "浄瑠璃",
+    "found": true
+   },
+   {
+    "word": "三段の展開",
+    "found": false
+   },
+   {
+    "word": "緩やかな始まり",
+    "found": false
+   },
+   {
+    "word": "芸能の原理",
+    "found": false
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "緩やかな始まり"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "音韻論",
+  "title": "音韻論",
+  "inArticle": [
+   {
+    "word": "言語学",
+    "found": true
+   },
+   {
+    "word": "発音",
+    "found": false
+   },
+   {
+    "word": "音",
+    "found": true
+   },
+   {
+    "word": "音素",
+    "found": true
+   },
+   {
+    "word": "アクセント",
+    "found": true
+   },
+   {
+    "word": "最小対",
+    "found": false
+   },
+   {
+    "word": "言語音の機能",
+    "found": true
+   },
+   {
+    "word": "音声学との違い",
+    "found": false
+   },
+   {
+    "word": "音素体系",
+    "found": false
+   }
+  ],
+  "found": 5,
+  "zone3": {
+   "rank": 3,
+   "total": 49
+  },
+  "all": {
+   "rank": null,
+   "total": 5
+  },
+  "zero": [
+   "言語音の機能"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "修辞学",
+  "title": "修辞学",
+  "inArticle": [
+   {
+    "word": "弁論",
+    "found": true
+   },
+   {
+    "word": "古代ギリシャ",
+    "found": false
+   },
+   {
+    "word": "説得",
+    "found": true
+   },
+   {
+    "word": "比喩",
+    "found": false
+   },
+   {
+    "word": "演説",
+    "found": true
+   },
+   {
+    "word": "文体",
+    "found": false
+   },
+   {
+    "word": "レトリック",
+    "found": true
+   },
+   {
+    "word": "雄弁",
+    "found": true
+   },
+   {
+    "word": "修辞技法",
+    "found": true
+   }
+  ],
+  "found": 6,
+  "zone3": {
+   "rank": 1,
+   "total": 7
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "文体"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "提喩",
+  "title": "提喩",
+  "inArticle": [
+   {
+    "word": "比喩",
+    "found": false
+   },
+   {
+    "word": "言葉",
+    "found": false
+   },
+   {
+    "word": "文学",
+    "found": false
+   },
+   {
+    "word": "上位概念",
+    "found": true
+   },
+   {
+    "word": "下位概念",
+    "found": true
+   },
+   {
+    "word": "言い換え",
+    "found": false
+   },
+   {
+    "word": "シネクドキー",
+    "found": true
+   },
+   {
+    "word": "「花見」の花",
+    "found": false
+   },
+   {
+    "word": "転義",
+    "found": true
+   }
+  ],
+  "found": 4,
+  "zone3": {
+   "rank": 1,
+   "total": 1
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "下位概念"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "パラダイム",
+  "title": "パラダイム",
+  "inArticle": [
+   {
+    "word": "科学",
+    "found": true
+   },
+   {
+    "word": "考え方",
+    "found": false
+   },
+   {
+    "word": "時代",
+    "found": true
+   },
+   {
+    "word": "科学革命",
+    "found": true
+   },
+   {
+    "word": "通常科学",
+    "found": true
+   },
+   {
+    "word": "転換",
+    "found": false
+   },
+   {
+    "word": "パラダイムシフト",
+    "found": true
+   },
+   {
+    "word": "科学哲学",
+    "found": true
+   },
+   {
+    "word": "模範",
+    "found": true
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": 1,
+   "total": 9
+  },
+  "all": {
+   "rank": null,
+   "total": 1
+  },
+  "zero": [
+   "科学革命"
+  ]
+ },
+ {
+  "tier": 5,
+  "answer": "解釈学",
+  "title": "解釈学",
+  "inArticle": [
+   {
+    "word": "哲学",
+    "found": true
+   },
+   {
+    "word": "テクスト",
+    "found": true
+   },
+   {
+    "word": "理解",
+    "found": true
+   },
+   {
+    "word": "聖書解釈",
+    "found": true
+   },
+   {
+    "word": "文献学",
+    "found": true
+   },
+   {
+    "word": "解釈学的循環",
+    "found": true
+   },
+   {
+    "word": "ヘルメノイティク",
+    "found": false
+   },
+   {
+    "word": "理解の理論",
+    "found": true
+   },
+   {
+    "word": "地平の融合",
+    "found": false
+   }
+  ],
+  "found": 7,
+  "zone3": {
+   "rank": null,
+   "total": 0
+  },
+  "all": {
+   "rank": null,
+   "total": 0
+  },
+  "zero": [
+   "理解"
+  ]
+ }
+]

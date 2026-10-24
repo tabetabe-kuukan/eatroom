@@ -2,6 +2,7 @@
 // ゲームが読む単語プール v2/src/data/pool.json を作る。
 //   node v2/word-pool/build-pool.mjs
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { ANSWERS } from './answers.mjs';
 import { SEARCH_WORDS, TIER_LABELS } from './search-words.mjs';
 
 const verified = JSON.parse(readFileSync('v2/word-pool/verified.json', 'utf8'));
@@ -19,7 +20,9 @@ for (const [title, zones] of Object.entries(SEARCH_WORDS)) {
   const v = byTitle.get(title);
   if (!v) { problems.push(`${title}: 検証済みの記事にない`); continue; }
   const display = title.replace(/\s*\(.+\)$/, '');
-  const answers = [...new Set([display, v.query, v.reading, ...(v.redirects || [])].filter(Boolean))];
+  if (!(title in ANSWERS)) problems.push(`${title}: answers.mjs に正解の表記がない`);
+  // リダイレクトは関連語も含むので使わず、answers.mjs で選んだ表記だけを認める
+  const answers = [...new Set([display, v.query, v.reading, ...(ANSWERS[title] || [])].filter(Boolean))];
   const answerSet = new Set(answers.map(norm));
   for (const w of zones.flat()) if (answerSet.has(norm(w))) problems.push(`${title}: 検索ワード「${w}」が答えと同じ`);
   if (zones.length !== 3 || zones.some((z) => z.length !== 3)) problems.push(`${title}: 検索ワードの数が 3×3 ではない`);
