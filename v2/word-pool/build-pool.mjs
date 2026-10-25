@@ -24,7 +24,8 @@ for (const [title, zones] of Object.entries(SEARCH_WORDS)) {
   // リダイレクトは関連語も含むので使わず、answers.mjs で選んだ表記だけを認める
   const answers = [...new Set([display, v.query, v.reading, ...(ANSWERS[title] || [])].filter(Boolean))];
   const answerSet = new Set(answers.map(norm));
-  for (const w of zones.flat()) {
+  // 「竹　羽　手」のように全角スペースで並べた語は、1語ずつ確かめる
+  for (const w of zones.flat().flatMap((s) => s.split(/[\s　]+/).filter(Boolean))) {
     // 長音の有無だけ違う語（例: インターテクスチュアリティ）も答えと同じとみなす
     const noBar = (s) => s.replace(/ー/g, '');
     if (answerSet.has(norm(w)) || [...answerSet].some((a) => noBar(a) === noBar(norm(w)))) problems.push(`${title}: 検索ワード「${w}」が答えと同じ`);
