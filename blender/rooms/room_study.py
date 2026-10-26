@@ -8,14 +8,14 @@ import random
 
 import kit
 from kit import box, mat_color, mat_image, mat_pbr
-from room import H, W, X0, Room, boxes
+from room import H, L, W, X0, Y, Room, boxes
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEX = os.path.join(HERE, "textures", "generated")
 rnd = random.Random(9)
 
 r = Room("room_study")
-YA, YB = 1.0, 14.0
+YA, YB = 1.0, L - 1.0
 SH, SD = min(3.3, H - 0.6), 0.38   # 本棚の高さ・奥行き
 r.shell()
 M_shelf = mat_pbr("study_shelf", "dark_wood", tile=1.0)
@@ -63,9 +63,9 @@ while y < YB:
     planks.append(((x1 - X0, 0.18, 0.02), ((X0 + x1) / 2, y + 0.09, 0.01), (0, 0, 0)))
     y += 0.18
 boxes("study_floor", planks, M_floor)
-box("study_rug", (min(1.8, W * 0.22), 2.6, 0.012), (X0 + 1.9, 10.2, 0.025), M_rug)
+box("study_rug", (min(1.8, W * 0.22), 2.6, 0.012), (X0 + 1.9, Y(10.2), 0.025), M_rug)
 # 書き物机・椅子・ランプ
-DX, DY = X0 + 1.8, 10.4
+DX, DY = X0 + 1.8, Y(10.4)
 box("study_desk_top", (0.75, 1.4, 0.05), (DX, DY, 0.76), M_shelf, bevel=0.01)
 for dx in (-0.32, 0.32):
     for dy in (-0.64, 0.64):
@@ -82,10 +82,10 @@ r.meta.rect(DX - 0.45, DY - 0.75, DX + 1.0, DY + 0.75)
 # 本棚に立てかけた梯子
 rails = []
 for dy in (-0.22, 0.22):
-    rails.append(((0.05, 0.05, SH - 0.1), (X0 + SD + 0.35, 6.5 + dy, (SH - 0.1) / 2), (0, -10, 0)))
+    rails.append(((0.05, 0.05, SH - 0.1), (X0 + SD + 0.35, Y(6.5) + dy, (SH - 0.1) / 2), (0, -10, 0)))
 for k in range(int((SH - 0.4) / 0.34)):
     z = 0.3 + k * 0.34
-    rails.append(((0.04, 0.44, 0.04), (X0 + SD + 0.35 + ((SH - 0.1) / 2 - z) * 0.176, 6.5, z), (0, 0, 0)))
+    rails.append(((0.04, 0.44, 0.04), (X0 + SD + 0.35 + ((SH - 0.1) / 2 - z) * 0.176, Y(6.5), z), (0, 0, 0)))
 boxes("study_ladder", rails, M_shelf)
 
 

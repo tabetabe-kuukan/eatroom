@@ -8,14 +8,14 @@ import random
 
 import kit
 from kit import box, mat_color, mat_image, mat_pbr
-from room import H, W, X1, Room, boxes
+from room import H, W, X1, Y, Room, boxes
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEX = os.path.join(HERE, "textures", "generated")
 rnd = random.Random(12)
 
 r = Room("room_kids")
-XA, YA, YB = X1 - min(3.1, W * 0.38), 7.4, 14.5
+XA, YA, YB = X1 - min(3.1, W * 0.38), Y(7.4), Y(14.5)
 r.shell()
 M_paper = mat_image("kids_wallpaper", os.path.join(TEX, "room_kids_wallpaper.png"), rough=0.85, tile=1.3)
 M_floor = mat_pbr("kids_floor", "plywood", tile=1.5, tint=(1.0, 0.92, 0.8))
@@ -47,10 +47,10 @@ while y < YB - 0.05:
     y += 0.15
 boxes("kids_floor", planks, M_floor)
 # 丸いラグ
-kit.cyl("kids_rug", 1.15, 0.012, (X1 - 1.8, 9.6, 0.02), M_rug, segs=40)
-kit.cyl("kids_rug2", 0.7, 0.014, (X1 - 1.8, 9.6, 0.02), M_rug2, segs=40)
+kit.cyl("kids_rug", 1.15, 0.012, (X1 - 1.8, Y(9.6), 0.02), M_rug, segs=40)
+kit.cyl("kids_rug2", 0.7, 0.014, (X1 - 1.8, Y(9.6), 0.02), M_rug2, segs=40)
 # 小さなベッド（右の壁際）
-BX, BY = X1 - 0.55, 13.3
+BX, BY = X1 - 0.55, Y(14.5) - 1.0
 box("kids_bed_frame", (1.0, 1.75, 0.3), (BX, BY, 0.18), M_trim, bevel=0.02)
 box("kids_bed_head", (1.0, 0.06, 0.85), (BX, BY + 0.9, 0.43), M_trim, bevel=0.02)
 box("kids_mattress", (0.92, 1.65, 0.14), (BX, BY, 0.4), M_white, bevel=0.04)
@@ -58,14 +58,14 @@ box("kids_blanket", (0.96, 1.1, 0.06), (BX, BY - 0.27, 0.49), M_blanket, bevel=0
 box("kids_pillow", (0.55, 0.3, 0.1), (BX, BY + 0.6, 0.52), M_white, bevel=0.04)
 r.meta.rect(BX - 0.55, BY - 0.95, X1, BY + 0.95)
 # おもちゃ箱
-box("kids_toybox", (0.7, 0.45, 0.45), (X1 - 2.5, 13.9, 0.23), M_blocks[1], bevel=0.02)
-box("kids_toybox_lid", (0.72, 0.47, 0.05), (X1 - 2.5, 13.9, 0.48), M_blocks[2], bevel=0.01)
-r.meta.rect(X1 - 2.9, 13.6, X1 - 2.1, 14.2)
+box("kids_toybox", (0.7, 0.45, 0.45), (X1 - 2.5, Y(14.5) - 0.5, 0.23), M_blocks[1], bevel=0.02)
+box("kids_toybox_lid", (0.72, 0.47, 0.05), (X1 - 2.5, Y(14.5) - 0.5, 0.48), M_blocks[2], bevel=0.01)
+r.meta.rect(X1 - 2.9, Y(14.5) - 0.8, X1 - 2.1, Y(14.5) - 0.2)
 # 積み木（積んだもの・崩れたもの）
 for k in range(4):
-    box("toy_block", (0.12, 0.12, 0.12), (X1 - 2.2, 8.8, 0.08 + k * 0.12), M_blocks[k % 5], rot=(0, 0, rnd.uniform(-12, 12)))
+    box("toy_block", (0.12, 0.12, 0.12), (X1 - 2.2, Y(8.8), 0.08 + k * 0.12), M_blocks[k % 5], rot=(0, 0, rnd.uniform(-12, 12)))
 for k in range(9):
-    box("toy_block", (0.12, 0.12, 0.12), (rnd.uniform(X1 - 2.5, X1 - 0.9), rnd.uniform(8.6, 10.6), 0.08),
+    box("toy_block", (0.12, 0.12, 0.12), (rnd.uniform(X1 - 2.5, X1 - 0.9), rnd.uniform(Y(8.6), Y(10.6)), 0.08),
         M_blocks[rnd.randrange(5)], rot=(0, 0, rnd.uniform(0, 90)))
 try:
     duck = kit.model_template("rubber_duck_toy")
@@ -78,8 +78,8 @@ for k in range(40):
             M_star, segs=5)
 # 枕元の小さな常夜灯
 M_night = mat_color("kids_nightlight", (1.0, 0.85, 0.6), 0.5, emit=(1.0, 0.7, 0.35), emit_strength=2.0)
-kit.cyl("kids_nightlight", 0.07, 0.12, (X1 - 0.12, 14.3, 0.75), M_night, segs=12)
-kit.point_light((X1 - 0.25, 14.2, 0.9), power=4, color=(1.0, 0.7, 0.4), radius=0.08, name="kids_nightlight")
+kit.cyl("kids_nightlight", 0.07, 0.12, (X1 - 0.12, Y(14.5) - 0.15, 0.75), M_night, segs=12)
+kit.point_light((X1 - 0.25, Y(14.5) - 0.25, 0.9), power=4, color=(1.0, 0.7, 0.4), radius=0.08, name="kids_nightlight")
 
 
 def night():

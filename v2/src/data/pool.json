@@ -245,40 +245,6 @@
   },
   {
    "tier": 1,
-   "answerName": "花火",
-   "answers": [
-    "花火",
-    "はなび",
-    "煙火"
-   ],
-   "zones": [
-    [
-     "夏　夜",
-     "河原",
-     "浴衣"
-    ],
-    [
-     "火薬",
-     "打ち上げ",
-     "線香"
-    ],
-    [
-     "夜空",
-     "大輪",
-     "玉屋"
-    ]
-   ],
-   "wiki": {
-    "title": "花火",
-    "extract": "",
-    "url": "https://ja.wikipedia.org/wiki/%E8%8A%B1%E7%81%AB",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 1,
    "answerName": "虹",
    "answers": [
     "虹",
@@ -305,40 +271,6 @@
     "title": "虹",
     "extract": "虹（にじ、英: rainbow）とは、大気中に浮遊する水滴の中を光が通過する際に、分散することで特徴的な模様が見られる大気光学現象である。",
     "url": "https://ja.wikipedia.org/wiki/%E8%99%B9",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "風呂",
-   "answers": [
-    "風呂",
-    "ふろ",
-    "お風呂"
-   ],
-   "zones": [
-    [
-     "夜",
-     "湯気",
-     "家"
-    ],
-    [
-     "湯船",
-     "桶",
-     "石鹸"
-    ],
-    [
-     "入浴",
-     "浴槽",
-     "追い焚き"
-    ]
-   ],
-   "wiki": {
-    "title": "風呂",
-    "extract": "風呂（ふろ、アイヌ語: トンプリ / Tonpuri、英語: Bath）とは、身体の洗浄や温浴・入浴するための設備。浴室・浴場ともいう。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E5%91%82",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -918,39 +850,6 @@
    }
   },
   {
-   "tier": 2,
-   "answerName": "水族館",
-   "answers": [
-    "水族館",
-    "すいぞくかん"
-   ],
-   "zones": [
-    [
-     "薄暗い",
-     "青い　光",
-     "水槽"
-    ],
-    [
-     "イルカ",
-     "クラゲ",
-     "トンネル"
-    ],
-    [
-     "大水槽",
-     "ペンギン",
-     "イルカショー"
-    ]
-   ],
-   "wiki": {
-    "title": "水族館",
-    "extract": "水族館（すいぞくかん、英: aquarium）とは、主として海や河川・湖沼などの水中や水辺で生活する生物（水族）を展示・収集している施設である。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E6%97%8F%E9%A4%A8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
    "tier": 3,
    "answerName": "きさらぎ駅",
    "answers": [
@@ -1271,6 +1170,40 @@
    }
   },
   {
+   "tier": 1,
+   "answerName": "カラオケ",
+   "answers": [
+    "カラオケ",
+    "からおけ",
+    "karaoke"
+   ],
+   "zones": [
+    [
+     "歌",
+     "マイク",
+     "個室"
+    ],
+    [
+     "歌詞",
+     "採点",
+     "タンバリン"
+    ],
+    [
+     "伴奏",
+     "十八番",
+     "デュエット"
+    ]
+   ],
+   "wiki": {
+    "title": "カラオケ",
+    "extract": "カラオケ とは、歌唱またはメロディパート（主旋律）を担う楽器を演奏する際に、事前に制作された伴奏を再生して歌唱・演奏する行為をいう。対語として生演奏を生オケと言う。また、事前に制作された伴奏の録音も「カラオケ」と呼ぶ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
    "tier": 3,
    "answerName": "蜃気楼",
    "answers": [
@@ -1499,74 +1432,6 @@
     "title": "琥珀",
     "extract": "琥珀（こはく）またはコハク（英: amber、アンバー）は、天然樹脂の化石であり、宝石である。半化石の琥珀はコーパル（英: Copal）、加熱圧縮成形した再生コハクはアンブロイド（英: ambroid）という。 西洋でも東洋でも宝飾品として珍重されてきた。",
     "url": "https://ja.wikipedia.org/wiki/%E7%90%A5%E7%8F%80",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "彗星",
-   "answers": [
-    "彗星",
-    "すいせい",
-    "ほうき星",
-    "箒星"
-   ],
-   "zones": [
-    [
-     "夜空",
-     "長い　尾",
-     "周期"
-    ],
-    [
-     "氷",
-     "核",
-     "太陽"
-    ],
-    [
-     "コマ",
-     "太陽系小天体",
-     "ハレー"
-    ]
-   ],
-   "wiki": {
-    "title": "彗星",
-    "extract": "彗星（すいせい、英語: comet）は、太陽系小天体のうち、主に氷や固体微粒子でできており、太陽に近づいた際に一時的な大気であるコマや、コマの物質である塵やガス、イオンの尾（テイル）を生じるものを指す。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%BD%97%E6%98%9F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "砂丘",
-   "answers": [
-    "砂丘",
-    "さきゅう"
-   ],
-   "zones": [
-    [
-     "海岸",
-     "風",
-     "足跡"
-    ],
-    [
-     "砂",
-     "風紋",
-     "ラクダ"
-    ],
-    [
-     "鳥取",
-     "砂山",
-     "堆積"
-    ]
-   ],
-   "wiki": {
-    "title": "砂丘",
-    "extract": "砂丘（さきゅう）は、風によって運ばれた砂（風成砂、aeolian sand）が堆積して形成された地形。波や流水によって運ばれた砂が堆積して形成されたものは含めない。波（波浪）の作用によって形成された微高地は浜堤、波（波浪）と風の作用によって形成された微高地は砂堤という。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%A0%82%E4%B8%98",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -2072,39 +1937,6 @@
     "title": "六分儀",
     "extract": "六分儀（ろくぶんぎ、英語: sextant）は、2つの視認可能な物体間の角距離を測定し、主に海上にて現在地(緯度・経度)を求めるために用いられる道具。測角器の一種であり、反射計器の一種である。 六分儀の主な用途は、天測航法のために天体と地平線との間の角度を測定することである。",
     "url": "https://ja.wikipedia.org/wiki/%E5%85%AD%E5%88%86%E5%84%80",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "計算尺",
-   "answers": [
-    "計算尺",
-    "けいさんじゃく"
-   ],
-   "zones": [
-    [
-     "技術者",
-     "製図",
-     "昭和"
-    ],
-    [
-     "目盛り",
-     "カーソル",
-     "竹製"
-    ],
-    [
-     "滑り尺",
-     "対数",
-     "アナログ計算"
-    ]
-   ],
-   "wiki": {
-    "title": "計算尺",
-    "extract": "計算尺（けいさんじゃく）とは対数の原理を利用したアナログ式の計算用具である。棒状や円盤状のものがある。円盤状のものは目盛りがループしているため目外れが生じないというメリットがあるが、滑尺のスライドがしづらく内周の尺は目盛りが荒くなるというデメリットがある。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E5%B0%BA",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -2753,39 +2585,6 @@
   },
   {
    "tier": 5,
-   "answerName": "ホール効果",
-   "answers": [
-    "ホール効果",
-    "ホールこうか"
-   ],
-   "zones": [
-    [
-     "磁場",
-     "半導体",
-     "センサー"
-    ],
-    [
-     "電流",
-     "電圧",
-     "磁界"
-    ],
-    [
-     "ローレンツ力",
-     "キャリア",
-     "起電力"
-    ]
-   ],
-   "wiki": {
-    "title": "ホール効果",
-    "extract": "ホール効果（ホールこうか、英: Hall effect）とは、電流の流れているものに対し、電流に垂直に磁場をかけると、電流と磁場の両方に直交する方向に起電力が現れる現象。主に半導体素子で応用される。1879年、米国の物理学者エドウィン・ホール（英: Edwin Herbert Hall, 1855-1938）によって発見されたことから、このように呼ばれる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%BC%E3%83%AB%E5%8A%B9%E6%9E%9C",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 5,
    "answerName": "ファラデーケージ",
    "answers": [
     "ファラデーケージ",
@@ -2812,40 +2611,6 @@
     "title": "ファラデーケージ",
     "extract": "ファラデーケージ（英語: Faraday cage）とは、導体に囲まれた空間、またはそのような空間を作り出すために用いられる導体製の籠や器そのものを指す。",
     "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "黒体放射",
-   "answers": [
-    "黒体放射",
-    "こくたいほうしゃ",
-    "黒体輻射"
-   ],
-   "zones": [
-    [
-     "物理学",
-     "熱",
-     "光"
-    ],
-    [
-     "溶鉱炉",
-     "温度",
-     "色"
-    ],
-    [
-     "完全吸収体",
-     "スペクトル",
-     "空洞放射"
-    ]
-   ],
-   "wiki": {
-    "title": "黒体放射",
-    "extract": "黒体放射（こくたいほうしゃ、英: black body radiation）とは、黒体が放出する熱放射である。熱した物質や恒星の発する光が、比較的温度が低いときは赤っぽく、温度が高いほど青白くなる理由は、黒体放射の温度特性によるものである。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%BB%92%E4%BD%93%E6%94%BE%E5%B0%84",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"

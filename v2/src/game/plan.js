@@ -25,7 +25,7 @@ export function kindsFor(tokens) {
   let kinds = null;
   for (const t of tokens) {
     let k = null;
-    if (t.special) k = { paint: ['wall', 'end'], silver: ['wall', 'end', 'floor'], sunbeam: ['floor'], water: ['floor'], peephole: ['wall', 'end'] }[t.special];
+    if (t.special) k = { paint: ['wall'], wallpaper: ['wall'], silver: ['wall', 'end', 'floor'], sunbeam: ['floor'], water: ['floor'], peephole: ['wall', 'end'], treehollow: ['floor'] }[t.special];
     else if (t.object) {
       const o = OBJ_BY_ID.get(t.object);
       k = o.fill === 'ceiling' || o.giant === 'always' ? ['floor'] : PLACE_KINDS[o.place] || null;

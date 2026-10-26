@@ -3,7 +3,6 @@
 // 部屋の形（和室の障子、書斎の本棚、縁側の開口など）に合わせて面が見つかる。
 import * as THREE from 'three';
 
-const L = 15;
 const ray = new THREE.Raycaster();
 const rnd = (a, b) => a + Math.random() * (b - a);
 
@@ -19,7 +18,10 @@ function weighted(list) {
 export function placeInRoom(room, mod, wants, { table = null, avoid = [], spawnZ = null } = {}) {
   const meshes = [];
   mod.group.traverse((o) => { if (o.isMesh) meshes.push(o); });
-  const z0 = -L * room; const zc = z0 - L / 2;
+  // 部屋の始まりは部屋のモジュールの位置、長さは部屋ごと（第3区画は短い）
+  const L = mod.meta.module?.length ?? 15;
+  const z0 = mod.group.position.z; const zc = z0 - L / 2;
+  const reach = L / 2 - 1.5;   // 部屋の中央から端までの、置いてよい範囲
   // 部屋の大きさ（区画が進むほど狭く低い）
   const dims = mod.meta.module || { width: 9, height: 4.6 };
   const half = dims.width / 2; const H = dims.height;
@@ -52,7 +54,7 @@ export function placeInRoom(room, mod, wants, { table = null, avoid = [], spawnZ
       const sideSign = Math.random() < 0.5 ? -1 : 1;
       const r = Math.random();
       const y = r < 0.6 ? rnd(1.0, Math.min(2.2, H - 1.0)) : r < 0.85 ? rnd(Math.min(2.5, H - 1.2), H - 0.9) : rnd(0.35, 0.8);
-      const z = zc + rnd(-6.0, 6.0);
+      const z = zc + rnd(-reach, reach);
       const ox = sideSign * Math.max(0.3, half - 2.0);
       const h = cast(new THREE.Vector3(ox, y, z), new THREE.Vector3(sideSign, 0, 0), 2.4);
       if (h && h.d > 0.6 && Math.abs(h.n.x) > 0.7) slot = { pos: h.p.toArray(), normal: h.n.toArray(), kind: 'wall' };
@@ -67,7 +69,7 @@ export function placeInRoom(room, mod, wants, { table = null, avoid = [], spawnZ
       const h = cast(new THREE.Vector3(x, y, zEnd - dir.z * 2.5), dir, 3.0);
       if (h && Math.abs(h.n.z) > 0.7) slot = { pos: h.p.toArray(), normal: h.n.toArray(), kind: 'wall' };
     } else if (kind === 'floor') {
-      const x = rnd(-(half - 0.9), half - 0.9); const z = zc + rnd(-6.0, 6.0);
+      const x = rnd(-(half - 0.9), half - 0.9); const z = zc + rnd(-reach, reach);
       const h = cast(new THREE.Vector3(x, 2.0, z), new THREE.Vector3(0, -1, 0), 2.6);
       // 家具の上や穴（谷）は避ける。出入り口の通り道もふさがない
       const doorway = Math.abs(x) < 1.8 && (z > z0 - 1.6 || z < z0 - L + 1.6);
@@ -75,14 +77,15 @@ export function placeInRoom(room, mod, wants, { table = null, avoid = [], spawnZ
         slot = { pos: h.p.toArray(), normal: [0, 1, 0], kind: 'floor', up: [0, 0, -1] };
       }
     } else if (kind === 'ceiling') {
-      const x = rnd(-(half - 1.1), half - 1.1); const z = zc + rnd(-5.5, 5.5);
+      const x = rnd(-(half - 1.1), half - 1.1); const z = zc + rnd(-(reach - 0.5), reach - 0.5);
       const h = cast(new THREE.Vector3(x, 2.0, z), new THREE.Vector3(0, 1, 0), 3.0);
       if (h && h.p.y > H - 0.8 && h.n.y < -0.8) slot = { pos: h.p.toArray(), normal: [0, -1, 0], kind: 'ceiling', up: [0, 0, 1] };
     }
     if (!slot) continue;
     const p = new THREE.Vector3().fromArray(slot.pos);
     if (spawnZ !== null && room === 0 && p.z > spawnZ - 2.5 && slot.kind !== 'ceiling') continue;
-    if (!far(p, slot.kind === 'table' ? 1.0 : 2.6)) continue;
+    // 狭い部屋では見つかりにくいので、何度も失敗したら間隔を少し詰める
+    if (!far(p, slot.kind === 'table' ? 1.0 : tries < 60 ? 2.6 : 1.6)) continue;
     // 台のすぐそばの床は避ける
     if (slot.kind === 'floor' && table && (table.pos[0] - p.x) ** 2 + (table.pos[2] - p.z) ** 2 < 1.4) continue;
     found = { ...slot, zone: room + 1, room, w: 1.8, h: 1.4, ceil: H, roomW: dims.width, radius: slot.kind === 'ceiling' ? 2.4 : 2.6 };

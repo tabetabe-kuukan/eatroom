@@ -141,9 +141,7 @@
 | [炬燵](https://ja.wikipedia.org/wiki/%E7%82%AC%E7%87%B5) | CC BY-SA 4.0 | 2026-10-26 |
 | [箸](https://ja.wikipedia.org/wiki/%E7%AE%B8) | CC BY-SA 4.0 | 2026-10-26 |
 | [井戸](https://ja.wikipedia.org/wiki/%E4%BA%95%E6%88%B8) | CC BY-SA 4.0 | 2026-10-26 |
-| [花火](https://ja.wikipedia.org/wiki/%E8%8A%B1%E7%81%AB) | CC BY-SA 4.0 | 2026-10-26 |
 | [虹](https://ja.wikipedia.org/wiki/%E8%99%B9) | CC BY-SA 4.0 | 2026-10-26 |
-| [風呂](https://ja.wikipedia.org/wiki/%E9%A2%A8%E5%91%82) | CC BY-SA 4.0 | 2026-10-26 |
 | [自動販売機](https://ja.wikipedia.org/wiki/%E8%87%AA%E5%8B%95%E8%B2%A9%E5%A3%B2%E6%A9%9F) | CC BY-SA 4.0 | 2026-10-26 |
 | [方位磁針](https://ja.wikipedia.org/wiki/%E6%96%B9%E4%BD%8D%E7%A3%81%E9%87%9D) | CC BY-SA 4.0 | 2026-10-26 |
 | [灯籠](https://ja.wikipedia.org/wiki/%E7%81%AF%E7%B1%A0) | CC BY-SA 4.0 | 2026-10-26 |
@@ -161,7 +159,6 @@
 | [オルゴール](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB) | CC BY-SA 4.0 | 2026-10-26 |
 | [盆栽](https://ja.wikipedia.org/wiki/%E7%9B%86%E6%A0%BD) | CC BY-SA 4.0 | 2026-10-26 |
 | [けん玉](https://ja.wikipedia.org/wiki/%E3%81%91%E3%82%93%E7%8E%89) | CC BY-SA 4.0 | 2026-10-26 |
-| [水族館](https://ja.wikipedia.org/wiki/%E6%B0%B4%E6%97%8F%E9%A4%A8) | CC BY-SA 4.0 | 2026-10-26 |
 | [きさらぎ駅](https://ja.wikipedia.org/wiki/%E3%81%8D%E3%81%95%E3%82%89%E3%81%8E%E9%A7%85) | CC BY-SA 4.0 | 2026-10-26 |
 | [ブラックボックス](https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9) | CC BY-SA 4.0 | 2026-10-26 |
 | [クイーンズ・ギャンビット・アクセプテッド](https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%B3%E3%83%93%E3%83%83%E3%83%88%E3%83%BB%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%97%E3%83%86%E3%83%83%E3%83%89) | CC BY-SA 4.0 | 2026-10-26 |
@@ -171,6 +168,7 @@
 | [メリーさんの電話](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AA%E3%83%BC%E3%81%95%E3%82%93%E3%81%AE%E9%9B%BB%E8%A9%B1) | CC BY-SA 4.0 | 2026-10-26 |
 | [ベリリウム](https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AA%E3%83%AA%E3%82%A6%E3%83%A0) | CC BY-SA 4.0 | 2026-10-26 |
 | [ロジスティック写像](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B8%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E5%86%99%E5%83%8F) | CC BY-SA 4.0 | 2026-10-26 |
+| [カラオケ](https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1) | CC BY-SA 4.0 | 2026-10-26 |
 | [蜃気楼](https://ja.wikipedia.org/wiki/%E8%9C%83%E6%B0%97%E6%A5%BC) | CC BY-SA 4.0 | 2026-10-26 |
 | [化石](https://ja.wikipedia.org/wiki/%E5%8C%96%E7%9F%B3) | CC BY-SA 4.0 | 2026-10-26 |
 | [プリズム](https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0) | CC BY-SA 4.0 | 2026-10-26 |
@@ -178,8 +176,6 @@
 | [てこ](https://ja.wikipedia.org/wiki/%E3%81%A6%E3%81%93) | CC BY-SA 4.0 | 2026-10-26 |
 | [光合成](https://ja.wikipedia.org/wiki/%E5%85%89%E5%90%88%E6%88%90) | CC BY-SA 4.0 | 2026-10-26 |
 | [琥珀](https://ja.wikipedia.org/wiki/%E7%90%A5%E7%8F%80) | CC BY-SA 4.0 | 2026-10-26 |
-| [彗星](https://ja.wikipedia.org/wiki/%E5%BD%97%E6%98%9F) | CC BY-SA 4.0 | 2026-10-26 |
-| [砂丘](https://ja.wikipedia.org/wiki/%E7%A0%82%E4%B8%98) | CC BY-SA 4.0 | 2026-10-26 |
 | [ホタル](https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%BF%E3%83%AB) | CC BY-SA 4.0 | 2026-10-26 |
 | [擬態](https://ja.wikipedia.org/wiki/%E6%93%AC%E6%85%8B) | CC BY-SA 4.0 | 2026-10-26 |
 | [結晶](https://ja.wikipedia.org/wiki/%E7%B5%90%E6%99%B6) | CC BY-SA 4.0 | 2026-10-26 |
@@ -195,7 +191,6 @@
 | [からくり](https://ja.wikipedia.org/wiki/%E3%81%8B%E3%82%89%E3%81%8F%E3%82%8A) | CC BY-SA 4.0 | 2026-10-26 |
 | [風洞](https://ja.wikipedia.org/wiki/%E9%A2%A8%E6%B4%9E) | CC BY-SA 4.0 | 2026-10-26 |
 | [六分儀](https://ja.wikipedia.org/wiki/%E5%85%AD%E5%88%86%E5%84%80) | CC BY-SA 4.0 | 2026-10-26 |
-| [計算尺](https://ja.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E5%B0%BA) | CC BY-SA 4.0 | 2026-10-26 |
 | [テスラコイル](https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%B9%E3%83%A9%E3%82%B3%E3%82%A4%E3%83%AB) | CC BY-SA 4.0 | 2026-10-26 |
 | [幻灯機](https://ja.wikipedia.org/wiki/%E5%B9%BB%E7%81%AF%E6%A9%9F) | CC BY-SA 4.0 | 2026-10-26 |
 | [金継ぎ](https://ja.wikipedia.org/wiki/%E9%87%91%E7%B6%99%E3%81%8E) | CC BY-SA 4.0 | 2026-10-26 |
@@ -215,9 +210,7 @@
 | [正規表現](https://ja.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE) | CC BY-SA 4.0 | 2026-10-26 |
 | [ガベージコレクション](https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%99%E3%83%BC%E3%82%B8%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3) | CC BY-SA 4.0 | 2026-10-26 |
 | [誘導加熱](https://ja.wikipedia.org/wiki/%E8%AA%98%E5%B0%8E%E5%8A%A0%E7%86%B1) | CC BY-SA 4.0 | 2026-10-26 |
-| [ホール効果](https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%BC%E3%83%AB%E5%8A%B9%E6%9E%9C) | CC BY-SA 4.0 | 2026-10-26 |
 | [ファラデーケージ](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B8) | CC BY-SA 4.0 | 2026-10-26 |
-| [黒体放射](https://ja.wikipedia.org/wiki/%E9%BB%92%E4%BD%93%E6%94%BE%E5%B0%84) | CC BY-SA 4.0 | 2026-10-26 |
 | [掛詞](https://ja.wikipedia.org/wiki/%E6%8E%9B%E8%A9%9E) | CC BY-SA 4.0 | 2026-10-26 |
 | [止揚](https://ja.wikipedia.org/wiki/%E6%AD%A2%E6%8F%9A) | CC BY-SA 4.0 | 2026-10-26 |
 | [キアロスクーロ](https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A2%E3%83%AD%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AD) | CC BY-SA 4.0 | 2026-10-26 |

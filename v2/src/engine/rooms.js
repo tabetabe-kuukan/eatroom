@@ -5,7 +5,8 @@ import * as THREE from 'three';
 import { applyBakedLight, lightmapReader } from './embed.js';
 import { loadSpace } from './world.js';
 
-const L = 15;
+// 部屋の長さは部屋ごとに違う（第3区画は短い）。meta.module.length を使う
+const lengthOf = (m) => m.meta.module?.length ?? 15;
 
 // 空：昼は青空と雲、夜は紺の空と星。霧はかけない（部屋の上だけに見える）
 function skyDome(night) {
@@ -63,8 +64,14 @@ export async function loadRooms(variants, look, renderer, { night = false, onPro
     colliders: meta.colliders,
     dispose() { for (const m of mods) m.dispose(); },
   };
+  // 各部屋の始まりの位置（奥へ -z）
+  const starts = [];
+  let acc = 0;
+  for (const m of mods) { starts.push(acc); acc += lengthOf(m); }
+  world.starts = starts;
+  world.totalLength = acc;
   mods.forEach((m, i) => {
-    const dz = -L * i;
+    const dz = -starts[i];
     m.group.position.z = dz;
     group.add(m.group);
     const mm = m.meta;
@@ -72,7 +79,7 @@ export async function loadRooms(variants, look, renderer, { night = false, onPro
     for (const c of mm.colliders || []) meta.colliders.push({ ...c, z: c.z + dz });
     for (const f of mm.floors || []) meta.floors.push({ ...f, z0: f.z0 + dz, z1: f.z1 + dz });
     for (const l of mm.lights || []) meta.lights.push({ ...l, pos: [l.pos[0], l.pos[1], l.pos[2] + dz] });
-    if (i > 0) meta.zones.push(-(L * i - 0.5));
+    if (i > 0) meta.zones.push(-(starts[i] - 0.5));
     world.lmMaterials.push(...m.lmMaterials);
     world.vlitMaterials.push(...m.vlitMaterials);
     world.flickerMaterials.push(...m.flickerMaterials);
@@ -89,7 +96,7 @@ export async function loadRooms(variants, look, renderer, { night = false, onPro
     if (v !== 'sky') return;
     const dims = mods[i].meta.module || { width: 9, height: 4.6 };
     const sky = skyDome(night);
-    sky.position.set(0, dims.height, -L * i - L / 2);
+    sky.position.set(0, dims.height, -starts[i] - lengthOf(mods[i]) / 2);
     group.add(sky);
   });
   meta.spawn = mods[0].meta.spawn;
@@ -97,7 +104,7 @@ export async function loadRooms(variants, look, renderer, { night = false, onPro
 
   // 最初と最後の部屋の外側の開口をふさぐ
   const capMat = new THREE.MeshStandardMaterial({ color: new THREE.Color(0.88, 0.88, 0.87), roughness: 0.85 });
-  for (const [i, z, nz] of [[0, -0.075, -1], [mods.length - 1, -L * mods.length + 0.075, 1]]) {
+  for (const [i, z, nz] of [[0, -0.075, -1], [mods.length - 1, -acc + 0.075, 1]]) {
     const mod = mods[i].meta.module || { door: 2.6, doorH: 3.7 };
     const cap = new THREE.Mesh(new THREE.BoxGeometry(mod.door, mod.doorH, 0.15), capMat);
     cap.position.set(0, mod.doorH / 2, z);

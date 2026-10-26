@@ -7,11 +7,11 @@ import random
 
 import kit
 from kit import box, mat_color, mat_pbr
-from room import X1, Room, boxes
+from room import X1, Y, Room, boxes
 
 rnd = random.Random(14)
 r = Room("room_engawa")
-OY0, OY1, OZ = 1.6, 9.6, 2.9          # 開口（y の範囲と上端の高さ）
+OY0, OY1, OZ = Y(1.6), Y(9.6), 2.9    # 開口（y の範囲と上端の高さ）
 GX1 = X1 + 4.2                         # 庭の奥（土塀）
 GZ = -0.35                             # 庭の地面の高さ
 r.shell(right_open=(OY0, OY1, OZ))
@@ -47,20 +47,20 @@ box("garden_wall_cap", (0.6, OY1 - OY0 + 1.4, 0.12), (GX1 + 0.15, (OY0 + OY1) / 
 for y in (OY0 - 0.6, OY1 + 0.6):
     kit.floor_box("garden_side", X1 + 0.3, y - 0.15, GX1 + 0.3, y + 0.15, GZ, 2.3, M_clay)
 # 沓脱石・飛び石・苔・石・植え込み
-box("kutsunugi", (0.6, 0.9, 0.3), (X1 + 1.35, 5.6, GZ + 0.1), M_stone, bevel=0.05)
+box("kutsunugi", (0.6, 0.9, 0.3), (X1 + 1.35, Y(5.6), GZ + 0.1), M_stone, bevel=0.05)
 for k in range(7):
-    kit.cyl("stepping_stone", rnd.uniform(0.22, 0.3), 0.06, (X1 + 1.9 + k * 0.35, 5.6 + (k % 2) * 0.4 - 0.2, GZ - 0.02), M_stone, segs=9)
+    kit.cyl("stepping_stone", rnd.uniform(0.22, 0.3), 0.06, (X1 + 1.9 + k * 0.35, Y(5.6) + (k % 2) * 0.4 - 0.2, GZ - 0.02), M_stone, segs=9)
 for k in range(5):
     kit.cyl("moss", rnd.uniform(0.4, 0.8), 0.03, (rnd.uniform(X1 + 1.5, GX1 - 0.5), rnd.uniform(OY0, OY1), GZ), M_moss, segs=14)
 for k, tpl_id in enumerate(("mossy_rock", "stone_01", "shrub_02", "shrub_02")):
     try:
         tpl = kit.model_template(tpl_id, decimate=0.08)
-        pos = [(GX1 - 0.9, 3.0), (GX1 - 1.4, 7.8), (GX1 - 0.6, 5.2), (X1 + 2.0, 8.6)][k]
+        pos = [(GX1 - 0.9, Y(3.0)), (GX1 - 1.4, Y(7.8)), (GX1 - 0.6, Y(5.2)), (X1 + 2.0, Y(8.6))][k]
         kit.place(tpl, (pos[0], pos[1], GZ), rot_z=rnd.uniform(0, 360), scale=[0.35, 0.8, 2.2, 1.6][k])
     except Exception as e:  # noqa: BLE001
         kit.log("garden model skipped", tpl_id, e)
 # 縁側の座布団と盆
-box("engawa_zabuton", (0.55, 0.6, 0.07), (X1 + 0.3, 4.2, 0.075), M_zabuton, rot=(0, 0, 6), bevel=0.02)
+box("engawa_zabuton", (0.55, 0.6, 0.07), (X1 + 0.3, Y(4.2), 0.075), M_zabuton, rot=(0, 0, 6), bevel=0.02)
 # 日差し（昼）。庭の上は空
 sun = kit.sun(rot_deg=(48, 0, 110), strength=3.0, color=(1.0, 0.95, 0.85))
 kit.world_color((0.75, 0.85, 1.0), 0.6)
@@ -69,7 +69,7 @@ r.meta.floor(X1 + 0.3, OY0 - 0.45, GX1, OY1 + 0.45, GZ)
 r.meta.rect(GX1, OY0 - 0.6, GX1 + 0.3, OY1 + 0.6)
 r.meta.rect(X1 + 0.3, OY0 - 0.75, GX1, OY0 - 0.45)
 r.meta.rect(X1 + 0.3, OY1 + 0.45, GX1, OY1 + 0.75)
-r.meta.rect(X1 + 1.05, 5.15, X1 + 1.65, 6.05)
+r.meta.rect(X1 + 1.05, Y(5.6) - 0.45, X1 + 1.65, Y(5.6) + 0.45)
 
 
 def night():

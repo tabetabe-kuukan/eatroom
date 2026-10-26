@@ -213,6 +213,13 @@ function place(o, size) {
 // ---------------------------------------------------------------- 1つの痕跡を組み立てる
 const freeRay = new THREE.Raycaster();
 
+// 面に重ねて貼る半透明の層は、描く順番を固定する（カメラが動くたびに順番が入れ替わると、ちらつく）
+// 1: 光だまり 2: 膨らみ・滲み 3: インクの染み 4: 文字・特別な見せ方
+function layer(obj, order) {
+  obj.traverse((o) => { o.renderOrder = order; });
+  return obj;
+}
+
 // スポットライトの光だまり（面に貼る、外へぼける明るい楕円）
 let poolTex = null;
 function lightPool(pos, normal, strength) {
@@ -260,7 +267,7 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
   irr.albedo = base;
   const keyDir = new THREE.Vector3(0, 1, 0).addScaledVector(normal, 0.9).normalize();
   const s = GROWTH[(slot.zone || 1) - 1];
-  group.add(lightPool(pos, normal, opts.night ? 1.0 : 0.35));
+  group.add(layer(lightPool(pos, normal, opts.night ? 1.0 : 0.35), 1));
 
   const objs = entry.tokens.filter((t) => t.object);
   const specials = entry.tokens.filter((t) => t.special);
@@ -363,7 +370,7 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
       const pAt = giant && slot.kind === 'table' ? at : at.clone();
       orient(patch, pAt, giant && slot.kind === 'table' ? WORLD_UP : normal, flat || (giant && slot.kind === 'table') ? up : WORLD_UP, Math.random() * Math.PI * 2);
       applyBakedLight(patch, world, irr, keyDir);
-      group.add(patch);
+      group.add(layer(patch, 2));
     } else if (part.type === 'special') {
       const { sp } = part;
       if (sp.place === 'surface') {
@@ -372,7 +379,8 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
         orient(sp.mesh, p, normal, up, 0);
       }
       if (sp.lit) applyBakedLight(sp.mesh, world, irr, keyDir);
-      group.add(sp.mesh);
+      else for (const lp of sp.litParts || []) applyBakedLight(lp, world, irr, keyDir);
+      group.add(layer(sp.mesh, 4));
       if (sp.update) updaters.push(sp.update);
     } else if (part.art.style === '3d') {
       // 立体の文字：床では立てて少し沈める（奥へ進む人の方を向く）。壁・天井からは突き出す
@@ -390,7 +398,7 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
         if (slot.kind !== 'wall') m.translateY(-art.height / 2);
       }
       applyBakedLight(m, world, irr, keyDir);
-      group.add(m);
+      group.add(layer(m, 4));
     } else {
       const { art } = part;
       const m = art.mesh;
@@ -402,7 +410,7 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
       // 発光する物（ネオン・電光掲示板）は焼いた光を当てない。枠や箱だけ当てる
       if (art.lit) applyBakedLight(m, world, irr, keyDir);
       else for (const lp of art.litParts || []) applyBakedLight(lp, world, irr, keyDir);
-      group.add(m);
+      group.add(layer(m, 4));
       if (art.update) updaters.push(art.update);
       // 切り文字・張り紙は、言葉のインクが壁・床に染み出して流れる
       if (art.style === 'vinyl' || art.style.startsWith('paper')) {
@@ -412,7 +420,7 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
         ink.material.opacity = 0.3 + 0.5 * s;
         orient(ink, at.clone().addScaledVector(normal, 0.003), normal, up, 0);
         applyBakedLight(ink, world, irr, keyDir);
-        group.add(ink);
+        group.add(layer(ink, 3));
       }
     }
   }

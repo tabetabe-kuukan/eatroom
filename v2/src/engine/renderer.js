@@ -81,7 +81,8 @@ export function createRenderer(canvas) {
   const composer = new EffectComposer(renderer, rt);
   composer.setPixelRatio(scale);
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(70, innerWidth / innerHeight, 0.05, 400);
+  // 奥行きの範囲を空間の大きさ（長さ 45m・空の板まで）に合わせて狭め、重なった面のちらつきを防ぐ
+  const camera = new THREE.PerspectiveCamera(70, innerWidth / innerHeight, 0.1, 200);
 
   const renderPass = new RenderPass(scene, camera);
   const bloomScale = isMobile ? 0.25 : 0.4;
@@ -117,12 +118,15 @@ export function createRenderer(canvas) {
     const avg = acc / frames;
     acc = 0; frames = 0;
     let next = scale;
-    if (avg > 1 / 50) next = Math.max(minScale, scale * Math.min(0.9, Math.sqrt((1 / 58) / avg)));
-    else if (avg < 1 / 75) next = Math.min(maxScale, scale + 0.1);
+    // 下げる・上げるの境目を離して、行ったり来たりしないようにする（解像度が変わるたびに画面がちらつく）
+    if (avg > 1 / 45) next = Math.max(minScale, scale * Math.min(0.9, Math.sqrt((1 / 55) / avg)));
+    else if (avg < 1 / 90 && scale < maxScale) next = Math.min(maxScale, scale + 0.1);
     if (Math.abs(next - scale) > 0.02) {
+      const down = next < scale;
       scale = next;
       resize();
-      cooldown = 1.5;
+      // 一度下げたら、しばらく上げない
+      cooldown = down ? 8 : 3;
     }
   }
 

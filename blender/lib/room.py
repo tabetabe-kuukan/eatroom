@@ -17,7 +17,15 @@ FAST = "fast" in OPTS
 # 区画が進むほど部屋は狭く、天井は低くなる（size1 = 第1区画 … size3 = 第3区画）
 SIZE = next((int(o[4:]) for o in OPTS if o.startswith("size") and o[4:].isdigit()), 1)
 W, H = {1: (9.0, 4.6), 2: (7.0, 4.0), 3: (5.4, 3.5)}[SIZE]
-L = 15.0
+# 第3区画の部屋はさらに短い
+L = {1: 15.0, 2: 15.0, 3: 9.0}[SIZE]
+
+
+def Y(v):
+    """長さ 15m の部屋で決めた奥行き方向の位置を、この部屋の長さに合わせる"""
+    return v * L / 15.0
+
+
 X0, X1 = -W / 2, W / 2
 DOOR = 2.6
 DOOR_H = min(3.7, H - 0.7)
@@ -25,9 +33,9 @@ T = 0.15                    # 端の壁の厚さ（隣の部屋の壁と合わ�
 
 # 検索ワードを置く場所（区画ごとに 3 つ）。部屋ごとに位置・向きを変えられる
 SLOTS = {
-    "left": dict(x=X0 + 0.01, y=4.5, z=1.55, kind="wall", normal=(1, 0, 0), w=1.8, h=1.4),
-    "table": dict(x=0.0, y=8.0, z=0.9, kind="table", normal=(0, 0, 1), up=(0, 1, 0), w=0.55, h=0.55),
-    "right": dict(x=X1 - 0.01, y=11.0, z=1.55, kind="wall", normal=(-1, 0, 0), w=1.8, h=1.4),
+    "left": dict(x=X0 + 0.01, y=Y(4.5), z=1.55, kind="wall", normal=(1, 0, 0), w=1.8, h=1.4),
+    "table": dict(x=0.0, y=Y(8.0), z=0.9, kind="table", normal=(0, 0, 1), up=(0, 1, 0), w=0.55, h=0.55),
+    "right": dict(x=X1 - 0.01, y=Y(11.0), z=1.55, kind="wall", normal=(-1, 0, 0), w=1.8, h=1.4),
 }
 
 
@@ -57,16 +65,17 @@ class Room:
         # 床
         if floor_hole:
             hx0, hy0, hx1, hy1 = floor_hole
-            kit.floor_box("floor", X0 - 0.3, -0.05, X1 + 0.3, hy0, -0.2, 0, M.M_floor)
-            kit.floor_box("floor", X0 - 0.3, hy1, X1 + 0.3, L + 0.05, -0.2, 0, M.M_floor)
+            kit.floor_box("floor", X0 - 0.3, 0, X1 + 0.3, hy0, -0.2, 0, M.M_floor)
+            kit.floor_box("floor", X0 - 0.3, hy1, X1 + 0.3, L, -0.2, 0, M.M_floor)
             if hx0 > X0:
                 kit.floor_box("floor", X0 - 0.3, hy0, hx0, hy1, -0.2, 0, M.M_floor)
             if hx1 < X1:
                 kit.floor_box("floor", hx1, hy0, X1 + 0.3, hy1, -0.2, 0, M.M_floor)
         else:
-            kit.floor_box("floor", X0 - 0.3, -0.05, X1 + 0.3, L + 0.05, -0.2, 0, M.M_floor)
+            # 床は部屋の長さちょうど（隣の部屋の床と重なると、出入り口でちらつく）
+            kit.floor_box("floor", X0 - 0.3, 0, X1 + 0.3, L, -0.2, 0, M.M_floor)
         if ceiling:
-            box("ceiling", (W + 0.6, L + 0.1, 0.2), (0, L / 2, H + 0.1), M.M_ceil)
+            box("ceiling", (W + 0.6, L, 0.2), (0, L / 2, H + 0.1), M.M_ceil)
         # 左右の壁
         kit.floor_box("wall_side", X0 - 0.3, 0, X0, L, 0, H, M.M_wall)
         self.meta.rect(X0 - 0.3, 0, X0, L)
@@ -99,13 +108,16 @@ class Room:
         if not ceiling:
             return
         PS = min(2.4, W * 0.36)
-        for k in range(3):
-            y = 2.3 + k * (L - 4.6) / 2
+        # 短い部屋は 2 列にし、天井の低い部屋は弱める（同じ数だと光が詰まって白く飛ぶ）
+        rows = 3 if L >= 12 else 2
+        dim_k = H / 4.6
+        for k in range(rows):
+            y = 2.3 + k * (L - 4.6) / max(1, rows - 1)
             for x in (-W * 0.27, W * 0.27):
                 if skip(x, y):
                     continue
                 box("light_panel", (PS, 2.4, 0.04), (x, y, H - 0.02), M.M_panel)
-                kit.area_light((x, y, H - 0.06), size=(PS, 2.4), power=300 * PS / 2.4, color=(1.0, 0.98, 0.95), name="panel")
+                kit.area_light((x, y, H - 0.06), size=(PS, 2.4), power=300 * PS / 2.4 * dim_k, color=(1.0, 0.98, 0.95), name="panel")
         box("track", (0.04, L - 1.0, 0.04), (0, L / 2, H - 0.25), M.M_track)
 
     # ------------------------------------------------------------ 検索ワードの場所

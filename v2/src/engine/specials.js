@@ -287,7 +287,116 @@ function caption({ words }) {
   return { mesh: m, width: 0.5, height: 0.31, lit: true, place: 'surface' };
 }
 
-const BUILDERS = { paint, silver, sunbeam, water, peephole, caption };
+// ---------------------------------------------------------------- 万華鏡の壁紙（幾何学模様が壁一面に貼られている）
+function wallpaper({ ceil }) {
+  const H = ceil - 0.06;
+  const W = 3.6;
+  // 1 枚の柄：12 回対称の万華鏡の模様
+  const tile = document.createElement('canvas');
+  tile.width = tile.height = 256;
+  const t = tile.getContext('2d');
+  const PAL = ['#e2394f', '#f7b32b', '#2e86de', '#2bb673', '#8e44ad', '#f0e6d2'];
+  t.fillStyle = '#1b1430'; t.fillRect(0, 0, 256, 256);
+  t.translate(128, 128);
+  for (let k = 0; k < 12; k++) {
+    t.save();
+    t.rotate((k / 12) * Math.PI * 2);
+    if (k % 2) t.scale(1, -1);   // 鏡に映したように左右を反転
+    t.fillStyle = PAL[0]; t.beginPath(); t.moveTo(0, 0); t.lineTo(30, 100); t.lineTo(-6, 118); t.closePath(); t.fill();
+    t.fillStyle = PAL[1]; t.beginPath(); t.ellipse(18, 60, 9, 22, 0.3, 0, Math.PI * 2); t.fill();
+    t.fillStyle = PAL[2]; t.beginPath(); t.moveTo(10, 20); t.lineTo(26, 34); t.lineTo(8, 44); t.closePath(); t.fill();
+    t.fillStyle = PAL[3]; t.beginPath(); t.arc(22, 100, 7, 0, Math.PI * 2); t.fill();
+    t.fillStyle = PAL[4]; t.fillRect(4, 76, 10, 10);
+    t.fillStyle = PAL[5]; t.beginPath(); t.arc(6, 12, 4, 0, Math.PI * 2); t.fill();
+    t.restore();
+  }
+  const tex = canvasTex(1024, Math.round(1024 * (H / W)), (g, w, h) => {
+    g.fillStyle = g.createPattern(tile, 'repeat');
+    g.fillRect(0, 0, w, h);
+    // 左右の端は破れてめくれている
+    g.globalCompositeOperation = 'destination-out';
+    for (const side of [0, 1]) {
+      g.beginPath();
+      g.moveTo(side ? w : 0, 0);
+      for (let y = 0; y <= h; y += 24) g.lineTo(side ? w - (10 + Math.random() * 60) : 10 + Math.random() * 60, y);
+      g.lineTo(side ? w : 0, h);
+      g.closePath(); g.fill();
+    }
+    g.globalCompositeOperation = 'source-over';
+  });
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(W, H), new THREE.MeshStandardMaterial({
+    map: tex, transparent: true, alphaTest: 0.05, roughness: 0.7, polygonOffset: true, polygonOffsetFactor: -2,
+  }));
+  return { mesh: m, width: W, height: H, lit: true, yCenter: H / 2 + 0.03, place: 'surface' };
+}
+
+// ---------------------------------------------------------------- 大きな木の幹のうろ（中に言葉が琥珀色に光っている）
+function treehollow({ pos, ceil, words }) {
+  const g = new THREE.Group();
+  const R = 0.85;
+  // 樹皮：茶色の地に、縦に走る深い溝と明るい稜線（色は茶色だけ）
+  const bark = canvasTex(256, 512, (c, w, h) => {
+    c.fillStyle = '#5b4030'; c.fillRect(0, 0, w, h);
+    for (let i = 0; i < 70; i++) {
+      const x = Math.random() * w;
+      const dark = Math.random() < 0.6;
+      c.strokeStyle = dark ? `rgba(30,20,12,${0.5 + Math.random() * 0.4})` : `rgba(140,108,80,${0.3 + Math.random() * 0.3})`;
+      c.lineWidth = dark ? 3 + Math.random() * 6 : 1 + Math.random() * 2;
+      c.beginPath(); c.moveTo(x, 0);
+      for (let y = 0; y <= h; y += 16) c.lineTo(x + Math.sin(y * 0.02 + i * 1.7) * 4 + (Math.random() - 0.5) * 2, y);
+      c.stroke();
+    }
+  });
+  bark.wrapS = bark.wrapT = THREE.RepeatWrapping;
+  bark.repeat.set(2, 1.5);
+  const barkMat = new THREE.MeshStandardMaterial({ map: bark, roughness: 0.95 });
+  const y0 = 1.0; const y1 = 1.95;       // うろの高さ
+  const open = (80 * Math.PI) / 180;      // うろの開き（正面 +Z）
+  const lower = new THREE.Mesh(new THREE.CylinderGeometry(R, R * 1.18, y0, 40), barkMat);
+  lower.position.y = y0 / 2;
+  const mid = new THREE.Mesh(new THREE.CylinderGeometry(R, R, y1 - y0, 40, 1, true, open / 2, Math.PI * 2 - open), barkMat);
+  mid.position.y = (y0 + y1) / 2;
+  const upper = new THREE.Mesh(new THREE.CylinderGeometry(R * 0.92, R, ceil - y1, 40), barkMat);
+  upper.position.y = y1 + (ceil - y1) / 2;
+  g.add(lower, mid, upper);
+  // 根元は床に向かって大きく広がる
+  const flare = new THREE.Mesh(new THREE.CylinderGeometry(R * 1.18, R * 1.55, 0.35, 40), barkMat);
+  flare.position.y = 0.175;
+  g.add(flare);
+  // うろの中（暗い空洞）
+  const dark = new THREE.MeshStandardMaterial({ color: 0x1c120a, roughness: 1, side: THREE.BackSide });
+  const cavity = new THREE.Mesh(new THREE.CylinderGeometry(R * 0.82, R * 0.82, y1 - y0 - 0.04, 32), dark);
+  cavity.position.y = (y0 + y1) / 2;
+  g.add(cavity);
+  // 奥に、琥珀色に光る言葉（樹脂が垂れている）
+  const text = words.join('　');
+  const amber = canvasTex(512, 360, (c, w, h) => {
+    c.clearRect(0, 0, w, h);
+    c.fillStyle = '#ffb43a';
+    c.shadowColor = '#ff9a1a'; c.shadowBlur = 24;
+    let size = 170;
+    c.font = `bold ${size}px "TabetabeDocSerif","Hiragino Mincho ProN","Yu Mincho",serif`;
+    while (c.measureText(text).width > w * 0.9 && size > 50) { size -= 8; c.font = `bold ${size}px "TabetabeDocSerif","Hiragino Mincho ProN","Yu Mincho",serif`; }
+    c.textAlign = 'center'; c.textBaseline = 'middle';
+    c.fillText(text, w / 2, h * 0.42);
+    // 垂れる樹脂
+    c.shadowBlur = 10;
+    for (let i = 0; i < 9; i++) {
+      const x = w * 0.2 + Math.random() * w * 0.6; const len = 30 + Math.random() * 110;
+      c.fillRect(x, h * 0.55, 5 + Math.random() * 5, len);
+      c.beginPath(); c.arc(x + 4, h * 0.55 + len, 8, 0, Math.PI * 2); c.fill();
+    }
+  });
+  const glow = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 0.7), new THREE.MeshBasicMaterial({ map: amber, transparent: true, toneMapped: false, depthWrite: false }));
+  glow.position.set(0, (y0 + y1) / 2 + 0.05, -R * 0.55);
+  g.add(glow);
+  // うろの口を、奥へ進んでくる人の方へ少し向ける
+  g.position.set(pos[0], 0, pos[2]);
+  g.rotation.y = Math.atan2(-pos[0], 3.5);
+  return { mesh: g, width: 2 * R, height: ceil, lit: false, litParts: [lower, mid, upper, cavity, flare], place: 'world' };
+}
+
+const BUILDERS = { paint, silver, sunbeam, water, peephole, caption, wallpaper, treehollow };
 export function buildSpecial(type, ctx) {
   return (BUILDERS[type] || paint)(ctx);
 }

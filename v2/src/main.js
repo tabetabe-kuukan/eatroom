@@ -8,6 +8,7 @@ import { createPlayer } from './engine/player.js';
 import { createRenderer } from './engine/renderer.js';
 import { loadRooms } from './engine/rooms.js';
 import { placeInRoom } from './engine/placer.js';
+import { specialFor } from '../objects/specials.mjs';
 import { updateFlicker } from './engine/world.js';
 import { isCorrect } from './game/answer.js';
 import { decorateFinal } from './game/finale.js';
@@ -136,6 +137,15 @@ async function buildRooms(progress) {
   let done = 0;
   const placed = [];
   for (const [zi, z] of def.zones.entries()) {
+    // 特別な見せ方（黄色い壁・壁紙・木のうろなど）は、いまの定義から決め直す（保存したプレイにも効くように）
+    for (const it of z.items) {
+      it.tokens = it.tokens.map((t) => {
+        if (t.object || t.special) return t;
+        const sp = specialFor(t.word, def.answers || []);
+        if (!sp) return t;
+        return sp.type === 'text' ? { ...t, color: sp.color, style: sp.style } : { word: t.word, special: sp.type };
+      });
+    }
     const shown = z.items.filter((it) => !it.byRoom && !it.fixed);
     for (const it of z.items) if (it.byRoom) traces.push({ zone: zi + 1, words: [it.text], room: z.room });
     // 置き場所は毎回ランダム（壁の高い所・低い所・床・天井・台）
@@ -145,7 +155,13 @@ async function buildRooms(progress) {
     const slots = placeInRoom(zi, world.modules[zi], shown.map((it) => kindsFor(it.tokens)), { table, avoid: placed, spawnZ: world.meta.spawn.pos[2] });
     // 見つからなかった分は、部屋の決まった場所に置く
     const fixed = world.meta.slots.filter((sl) => sl.zone === zi + 1);
-    for (const [k, sl] of slots.entries()) if (!sl) slots[k] = fixed[k % fixed.length] || null;
+    // 置ける面に合う予備の場所を選ぶ（壁しか置けない物を台に置かない）
+    const wants = shown.map((it) => kindsFor(it.tokens));
+    for (const [k, sl] of slots.entries()) {
+      if (sl) continue;
+      const ok = fixed.filter((f) => !wants[k] || wants[k].includes(f.kind === 'wall' ? 'wall' : f.kind));
+      slots[k] = ok[k % (ok.length || 1)] || fixed[k % fixed.length] || null;
+    }
     for (const [k, it] of shown.entries()) {
       const slot = slots[k];
       if (!slot) continue;
@@ -166,7 +182,7 @@ async function buildRooms(progress) {
     const dm = last.meta.module || { door: 2.6, height: 3.5, width: 5.4 };
     for (const [zi, z] of def.zones.entries()) {
       for (const it of z.items.filter((x) => x.fixed === 'mirror')) {
-        const slot = { pos: [0.98, 1.4, -45 + 0.152], normal: [0, 0, 1], kind: 'wall', zone: zi + 1, room: 2, ceil: dm.height, roomW: dm.width, radius: 2.4 };
+        const slot = { pos: [0.98, 1.4, -world.totalLength + 0.152], normal: [0, 0, 1], kind: 'wall', zone: zi + 1, room: 2, ceil: dm.height, roomW: dm.width, radius: 2.4 };
         const g = await buildTrace(last, slot, { tokens: it.tokens }, readers[2], { night: false });
         world.group.add(g);
         traces.push({ zone: zi + 1, words: [it.text], pos: slot.pos, radius: slot.radius });
@@ -181,7 +197,7 @@ async function buildRooms(progress) {
       footprints_end: { pos: [-1.7, 0, -14] },
       writing: { pos: [-(world.modules[1].meta.module?.width ?? 9) / 2, 1.7, -22.5] },
       // 最後の部屋の出口は、ふさがれて鏡になっている
-      mirror: { pos: [0, 1.35, -44.82] },
+      mirror: { pos: [0, 1.35, -world.totalLength + 0.18] },
     };
     extras = decorateFinal(world, R.scene, st.getState(), spaces());
   }
@@ -419,7 +435,8 @@ if (import.meta.env.DEV) {
       const t = traces.find((x) => x.pos && x.words[0] === word);
       if (!t) return `no trace: ${word}`;
       const [x, y, z] = t.pos;
-      const cz = -15 * (t.zone - 1) - 7.5;
+      const m = world.modules[t.zone - 1];
+      const cz = m.group.position.z - (m.meta.module?.length ?? 15) / 2;
       // 部屋の中央寄り・手前（奥へ進む人の目線）から見る
       const cx = x * 0.25; const czz = Math.min(z + dist, cz + 7.2);
       return this.shot(name, cx, czz, x, Math.max(y, 0.6), z);

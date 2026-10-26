@@ -6,7 +6,7 @@
 """
 import kit
 from kit import box, mat_color, mat_pbr
-from room import X0, X1, Room, boxes
+from room import H, X0, X1, Y, Room, boxes
 
 r = Room("room_door")
 r.shell()
@@ -52,15 +52,15 @@ def door(side, y, w=0.92, h=2.1, ajar=0.0, panels=2, knob=True):
 
 # 右の壁：両開きの大きな扉（2 枚）
 for dy, aj in ((-0.62, 0), (0.62, 0)):
-    door(1, 6.6 + dy, w=1.2, h=3.2, ajar=aj, panels=2, knob=False)
-box("big_door_ring", (0.03, 0.18, 0.18), (X1 - 0.12, 6.45, 1.6), M_brass)
-box("big_door_ring", (0.03, 0.18, 0.18), (X1 - 0.12, 6.75, 1.6), M_brass)
+    door(1, Y(6.6) + dy, w=1.2, h=min(3.2, H - 0.3), ajar=aj, panels=2, knob=False)
+box("big_door_ring", (0.03, 0.18, 0.18), (X1 - 0.12, Y(6.6) - 0.15, 1.6), M_brass)
+box("big_door_ring", (0.03, 0.18, 0.18), (X1 - 0.12, Y(6.6) + 0.15, 1.6), M_brass)
 # 左の壁：普通の扉。奥の 1 枚は少し開いている
-door(-1, 8.6)
-door(-1, 11.8, ajar=24)
+door(-1, Y(8.6))
+door(-1, Y(11.8), ajar=24)
 # 床の近くの小さな扉
-door(-1, 2.4, w=0.26, h=0.4, panels=1)
-door(1, 13.2, w=0.3, h=0.46, panels=1)
+door(-1, Y(2.4), w=0.26, h=0.4, panels=1)
+door(1, Y(13.2), w=0.3, h=0.46, panels=1)
 
 r.place_slots()
 r.finish()

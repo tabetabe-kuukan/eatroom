@@ -103,7 +103,7 @@
  "markers": {},
  "lightmap": {
   "file": "room_engawa_s1_lm.webp",
-  "scale": 8.0023
+  "scale": 8.016
  },
  "floors": [
   {
@@ -198,6 +198,6 @@
  "hdri": null,
  "lightmap_night": {
   "file": "room_engawa_s1_lm_night.webp",
-  "scale": 0.2905
+  "scale": 0.2894
  }
 }

@@ -82,7 +82,7 @@
  "markers": {},
  "lightmap": {
   "file": "room_kids_s2_lm.webp",
-  "scale": 8.1944
+  "scale": 8.185
  },
  "slots": [
   {
@@ -167,6 +167,6 @@
  "hdri": null,
  "lightmap_night": {
   "file": "room_kids_s2_lm_night.webp",
-  "scale": 0.7644
+  "scale": 0.6365
  }
 }

@@ -8,7 +8,7 @@ import random
 
 import kit
 from kit import box, mat_color, mat_image, mat_pbr
-from room import H, L, W, X0, Room, boxes
+from room import H, L, W, X0, Y, Room, boxes
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEX = os.path.join(HERE, "textures", "generated")
@@ -16,7 +16,7 @@ rnd = random.Random(8)
 
 r = Room("room_washitsu")
 XA, XB = X0, X0 + max(1.9, W * 0.42)   # 和室の範囲（x）。部屋が狭いほど細くなる
-YA, YB = 1.4, 13.6          # 和室の範囲（y）
+YA, YB = Y(1.4), Y(13.6)    # 和室の範囲（y）
 r.shell(panel_skip=lambda x, y: x < 0)
 
 M_tatami = mat_image("tatami", os.path.join(TEX, "room_tatami.png"), rough=0.85, tile=1.82)
@@ -82,7 +82,7 @@ for k in range(n):
 boxes("shoji_frame", bars, M_wood)
 boxes("shoji_paper", paper, M_paper)
 posts = []
-for y in (YA, YA + 3.6, YA + 7.2, YA + 10.8, YB):
+for y in (YA, YA + (YB - YA) * 0.3, YA + (YB - YA) * 0.6, YA + (YB - YA) * 0.9, YB):
     posts.append(((0.12, 0.12, H), (X0 + 0.06, y, H / 2), (0, 0, 0)))
 posts.append(((0.12, YB - YA + 0.12, 0.12), (X0 + 0.06, (YA + YB) / 2, SH + 0.06), (0, 0, 0)))     # 鴨居
 posts.append(((0.08, YB - YA + 0.12, 0.1), (X0 + 0.07, (YA + YB) / 2, SH + 0.45), (0, 0, 0)))      # 長押
@@ -102,20 +102,20 @@ boxes("wa_ceiling_rods", rods, M_dark)
 
 # 和紙の吊り照明
 M_lamp = mat_color("washi_lamp", (0.95, 0.9, 0.8), 0.9, emit=(1.0, 0.82, 0.55), emit_strength=2.0)
-for y in (4.6, 10.4):
+for y in (Y(4.6), Y(10.4)):
     kit.cyl("washi_lamp", 0.26, 0.36, (X0 + (XB - X0) * 0.55, y, H - 1.25), M_lamp, segs=20)
     kit.cyl("lamp_cord", 0.006, 0.9, (X0 + (XB - X0) * 0.55, y, H - 0.89), M_dark, segs=6)
     kit.point_light((X0 + (XB - X0) * 0.55, y, H - 1.08), power=160, color=(1.0, 0.8, 0.55), radius=0.25, name="washi_light")
 
 # ちゃぶ台と座布団
 CX = X0 + (XB - X0) * 0.55
-kit.cyl("chabudai_top", 0.48, 0.035, (CX, 9.6, 0.3), M_dark, segs=32)
+kit.cyl("chabudai_top", 0.48, 0.035, (CX, Y(9.6), 0.3), M_dark, segs=32)
 for dx, dy in ((-0.3, -0.3), (0.3, -0.3), (-0.3, 0.3), (0.3, 0.3)):
-    box("chabudai_leg", (0.04, 0.04, 0.25), (CX + dx, 9.6 + dy, TH + 0.12), M_dark)
+    box("chabudai_leg", (0.04, 0.04, 0.25), (CX + dx, Y(9.6) + dy, TH + 0.12), M_dark)
 M_zabuton = mat_color("zabuton", (0.45, 0.12, 0.1), 0.85)
 for dx, dy, rz in ((-0.85, 0.1, 8), (0.8, -0.2, -12)):
-    box("zabuton", (0.55, 0.6, 0.07), (CX + dx, 9.6 + dy, TH + 0.035), M_zabuton, rot=(0, 0, rz), bevel=0.02)
-r.meta.rect(CX - 0.6, 9.0, CX + 0.6, 10.2)
+    box("zabuton", (0.55, 0.6, 0.07), (CX + dx, Y(9.6) + dy, TH + 0.035), M_zabuton, rot=(0, 0, rz), bevel=0.02)
+r.meta.rect(CX - 0.6, Y(9.6) - 0.6, CX + 0.6, Y(9.6) + 0.6)
 
 
 def night():
