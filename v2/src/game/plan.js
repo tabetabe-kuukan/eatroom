@@ -111,8 +111,41 @@ export const FINAL = {
   ],
 };
 
+// 段階ごとに「山札」を作って順に引く。山札が尽きるまで同じ単語は出ないので、すべての単語がまんべんなく出る。
+// 山札はブラウザに保存する（はじめからを繰り返しても続きから引く）。単語プールが変わった分は入れ直す
+const BAG_KEY = 'tabetabe-kukan:v2:bag';
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function loadBags() {
+  try { return JSON.parse(localStorage.getItem(BAG_KEY)) || {}; } catch { return {}; }
+}
+function saveBags(bags) {
+  try { localStorage.setItem(BAG_KEY, JSON.stringify(bags)); } catch { /* 保存できなくても遊べる */ }
+}
+function draw(bags, tier) {
+  const names = pool.words.filter((w) => w.tier === tier).map((w) => w.answerName);
+  const bag = (bags[tier] || { deck: [], last: null });
+  bag.deck = bag.deck.filter((n) => names.includes(n));   // プールから外した単語は捨てる
+  if (!bag.deck.length) {
+    bag.deck = shuffle([...names]);
+    // 山札の切れ目で、直前と同じ単語が続かないようにする
+    if (bag.deck.length > 1 && bag.deck[0] === bag.last) bag.deck.push(bag.deck.shift());
+  }
+  const name = bag.deck.shift();
+  bag.last = name;
+  bags[tier] = bag;
+  return pool.words.find((w) => w.answerName === name);
+}
+
 export function makePlan() {
-  const spaces = [1, 2, 3, 4, 5].map((t, i) => planSpace(pick(pool.words.filter((w) => w.tier === t)), i));
+  const bags = loadBags();
+  const spaces = [1, 2, 3, 4, 5].map((t, i) => planSpace(draw(bags, t), i));
+  saveBags(bags);
   return [...spaces, FINAL];
 }
 
