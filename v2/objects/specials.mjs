@@ -8,6 +8,7 @@ export const SPECIALS = {
   北: { type: 'text', color: '#c8102e', style: 'vinyl', answer: '方位磁針' },
   日光: { type: 'sunbeam', kinds: ['floor'] },
   水: { type: 'water', kinds: ['floor'] },
+  雨上がり: { type: 'puddle', kinds: ['floor'] },
   のぞく: { type: 'peephole', kinds: ['wall', 'end'] },
   覗く: { type: 'peephole', kinds: ['wall', 'end'] },
   幾何学模様: { type: 'wallpaper', kinds: ['wall'], answer: '万華鏡' },

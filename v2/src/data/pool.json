@@ -9,40 +9,6 @@
  "words": [
   {
    "tier": 1,
-   "answerName": "雪だるま",
-   "answers": [
-    "雪だるま",
-    "ゆきだるま",
-    "雪達磨"
-   ],
-   "zones": [
-    [
-     "冬",
-     "雪景色",
-     "子ども"
-    ],
-    [
-     "バケツ",
-     "炭",
-     "木　枝"
-    ],
-    [
-     "雪玉",
-     "二段",
-     "雪像"
-    ]
-   ],
-   "wiki": {
-    "title": "雪だるま",
-    "extract": "雪だるま（ゆきだるま、雪達磨）は、雪を固めて作られる「だるま」の（ような）形をした雪像。日本以外にも同様のものはあり、「雪人」または「雪男」（英・独・仏など）、「雪人形」（伊・蘭など）などを意味する名称で呼ばれている（日本語で「雪男」というときは、いわゆる「インドやアメリカの雪山に棲む未確認生物の巨人」を指すのが一般的である。これについては、イエティの項も参照されたい）。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9B%AA%E3%81%A0%E3%82%8B%E3%81%BE",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 1,
    "answerName": "風鈴",
    "answers": [
     "風鈴",
@@ -103,39 +69,6 @@
     "title": "提灯",
     "extract": "提灯（ちょうちん）は、伸縮自在な構造で細い割竹等でできた枠に紙を貼り底に蝋燭を立てて光源とするもの。現代では蝋燭ではなく電気による光源のものもある。",
     "url": "https://ja.wikipedia.org/wiki/%E6%8F%90%E7%81%AF",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "キンギョ",
-   "answers": [
-    "キンギョ",
-    "金魚"
-   ],
-   "zones": [
-    [
-     "夏祭り",
-     "水槽",
-     "縁日"
-    ],
-    [
-     "ポイ",
-     "フナ",
-     "尾びれ"
-    ],
-    [
-     "観賞魚",
-     "琉金",
-     "中国原産"
-    ]
-   ],
-   "wiki": {
-    "title": "キンギョ",
-    "extract": "キンギョ（金魚、学名: Carassius auratus）は、フナの突然変異を人為的に選択し、観賞用に交配を重ねた結果生まれた観賞魚。飼育が容易であるため、世界中で親しまれている。 原産地は中国。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%B3%E3%82%AE%E3%83%A7",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -212,39 +145,6 @@
   },
   {
    "tier": 1,
-   "answerName": "井戸",
-   "answers": [
-    "井戸",
-    "いど"
-   ],
-   "zones": [
-    [
-     "古い　家",
-     "庭",
-     "水"
-    ],
-    [
-     "釣瓶",
-     "滑車",
-     "石組み"
-    ],
-    [
-     "地下水",
-     "くみ上げる",
-     "縦穴"
-    ]
-   ],
-   "wiki": {
-    "title": "井戸",
-    "extract": "井戸（いど）は、広義には地下資源（地下水、温泉、石油、天然ガス、地熱など）の採取や調査・観測などのために地中に向かって掘った設備。これには地下の高温の水を採取する熱水井や、噴気を出す水蒸気井などが含まれるが、通常「井戸」という場合は地下水を採取して利用するための水井戸のことである。以下、地下水を汲む井戸を中心に説明する。",
-    "url": "https://ja.wikipedia.org/wiki/%E4%BA%95%E6%88%B8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 1,
    "answerName": "虹",
    "answers": [
     "虹",
@@ -312,78 +212,6 @@
   },
   {
    "tier": 2,
-   "answerName": "方位磁針",
-   "answers": [
-    "方位磁針",
-    "羅針盤",
-    "ほういじしん",
-    "方位磁石"
-   ],
-   "zones": [
-    [
-     "地図",
-     "野外",
-     "迷子"
-    ],
-    [
-     "針",
-     "北",
-     "磁石"
-    ],
-    [
-     "方角",
-     "コンパス",
-     "地磁気"
-    ]
-   ],
-   "wiki": {
-    "title": "方位磁針",
-    "extract": "方位磁針（ほういじしん）またはコンパス（英: compass）は、磁石を用いて方位を知るための道具。方位磁石（ほういじしゃく）、あるいは単に磁針（じしん）とも呼ばれる。 ナビゲーション（航海術）などに使うための道具として仕立てられた方位磁針は伝統的には羅針盤（らしんばん）と呼ばれた。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%96%B9%E4%BD%8D%E7%A3%81%E9%87%9D",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "灯籠",
-   "answers": [
-    "灯籠",
-    "とうろう",
-    "燈籠",
-    "灯篭",
-    "燈篭",
-    "灯ろう"
-   ],
-   "zones": [
-    [
-     "庭園",
-     "寺社",
-     "夜"
-    ],
-    [
-     "石",
-     "火袋",
-     "灯り"
-    ],
-    [
-     "灯火",
-     "献灯",
-     "春日"
-    ]
-   ],
-   "wiki": {
-    "title": "灯籠",
-    "extract": "灯籠（とうろう）は、東アジアの伝統的な照明器具の一種であり、日本・中国・朝鮮半島・ベトナムなどの国々に広く分布している。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%81%AF%E7%B1%A0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
    "answerName": "噴水",
    "answers": [
     "噴水",
@@ -417,105 +245,6 @@
   },
   {
    "tier": 2,
-   "answerName": "観覧車",
-   "answers": [
-    "観覧車",
-    "かんらんしゃ"
-   ],
-   "zones": [
-    [
-     "遊園地",
-     "夜景",
-     "デート"
-    ],
-    [
-     "ゴンドラ",
-     "車輪",
-     "鉄骨"
-    ],
-    [
-     "スポーク",
-     "一周",
-     "大車輪"
-    ]
-   ],
-   "wiki": {
-    "title": "観覧車",
-    "extract": "観覧車（かんらんしゃ、英語: Ferris wheel）は、大きな車輪状のフレームの周囲にゴンドラを取り付け、人を乗せて低速で回転させることで、高所からの眺望を楽しめるようにした乗り物。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%A6%B3%E8%A6%A7%E8%BB%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "熱気球",
-   "answers": [
-    "熱気球",
-    "ねつききゅう"
-   ],
-   "zones": [
-    [
-     "空",
-     "早朝",
-     "草原"
-    ],
-    [
-     "バスケット",
-     "バーナー",
-     "球皮"
-    ],
-    [
-     "熱気",
-     "浮力",
-     "有人飛行"
-    ]
-   ],
-   "wiki": {
-    "title": "熱気球",
-    "extract": "熱気球（ねつききゅう、英語: hot air balloon, フランス語: Montgolfière）とは、気球の一種で、気密性の袋の中に下方から熱した空気を送りこみ、その浮力で浮揚して飛行するもの。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%86%B1%E6%B0%97%E7%90%83",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "天文台",
-   "answers": [
-    "天文台",
-    "てんもんだい"
-   ],
-   "zones": [
-    [
-     "山頂",
-     "夜空",
-     "ドーム"
-    ],
-    [
-     "望遠鏡",
-     "観測",
-     "星図"
-    ],
-    [
-     "天体観測施設",
-     "開閉屋根",
-     "天文学"
-    ]
-   ],
-   "wiki": {
-    "title": "天文台",
-    "extract": "天文台（てんもんだい、英語: Astronomical observatory）は、天体や天文現象の観測を行ったり、観測結果を解析して天文学の研究を行うための施設。現代では学術研究目的以外に、宇宙の観察や学習といった天文教育・普及活動の拠点としての性格を持つ天文台もある。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E6%96%87%E5%8F%B0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
    "answerName": "地球儀",
    "answers": [
     "地球儀",
@@ -542,40 +271,6 @@
     "title": "地球儀",
     "extract": "地球儀（ちきゅうぎ）は、地球を球体によって表現した模型である。",
     "url": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E5%84%80",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "こいのぼり",
-   "answers": [
-    "こいのぼり",
-    "鯉のぼり",
-    "鯉幟"
-   ],
-   "zones": [
-    [
-     "5月",
-     "空",
-     "青空"
-    ],
-    [
-     "吹き流し",
-     "矢車",
-     "竿"
-    ],
-    [
-     "端午",
-     "真鯉",
-     "こどもの日"
-    ]
-   ],
-   "wiki": {
-    "title": "こいのぼり",
-    "extract": "こいのぼり（鯉幟）は、日本の風習で、江戸時代に武家で始まった端午の節句に男児の健やかな成長を願って家庭の庭先に飾る鯉の形に模して作ったのぼり。紙・布・不織布などに鯉の絵柄を描いたもので、風を受けてたなびくようになっている。皐幟（さつきのぼり）、鯉の吹き流しとも言う。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%81%93%E3%81%84%E3%81%AE%E3%81%BC%E3%82%8A",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -650,39 +345,6 @@
   },
   {
    "tier": 2,
-   "answerName": "鳩時計",
-   "answers": [
-    "鳩時計",
-    "はとどけい"
-   ],
-   "zones": [
-    [
-     "居間",
-     "正時",
-     "森　家"
-    ],
-    [
-     "ふいご",
-     "振り子",
-     "おもり"
-    ],
-    [
-     "カッコウ",
-     "黒い森",
-     "松かさ"
-    ]
-   ],
-   "wiki": {
-    "title": "鳩時計",
-    "extract": "鳩時計（はとどけい、独: Kuckucksuhr、英: cuckoo clock、カッコウ時計）は、壁掛け時計の一種である。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%B3%A9%E6%99%82%E8%A8%88",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
    "answerName": "万華鏡",
    "answers": [
     "万華鏡",
@@ -716,41 +378,6 @@
   },
   {
    "tier": 2,
-   "answerName": "蓄音機",
-   "answers": [
-    "蓄音機",
-    "ちくおんき",
-    "蓄音器",
-    "フォノグラフ"
-   ],
-   "zones": [
-    [
-     "古い　洋館",
-     "音楽",
-     "レトロ"
-    ],
-    [
-     "ラッパ",
-     "針",
-     "レコード"
-    ],
-    [
-     "再生",
-     "円盤",
-     "ぜんまい"
-    ]
-   ],
-   "wiki": {
-    "title": "蓄音機",
-    "extract": "蓄音機、蓄音器（ちくおんき、アメリカ英語: Phonograph、イギリス英語: Gramophone）は、狭義には、駆動や再生、増幅機構に電気を一切使わない機械式蓄音機をいう。広義には、駆動や音の増幅を電気で行う電気式蓄音機を含める。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%93%84%E9%9F%B3%E6%A9%9F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
    "answerName": "オルゴール",
    "answers": [
     "オルゴール",
@@ -777,39 +404,6 @@
     "title": "オルゴール",
     "extract": "「オルゴール」は、機械仕掛けにより自動的に楽曲を演奏する楽器の一つ。名称はオランダ語由来の和製外来語で、自鳴琴（じめいきん）とも呼ばれた。",
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "盆栽",
-   "answers": [
-    "盆栽",
-    "ぼんさい"
-   ],
-   "zones": [
-    [
-     "縁側",
-     "庭",
-     "趣味"
-    ],
-    [
-     "鉢",
-     "針金",
-     "松"
-    ],
-    [
-     "鉢植え",
-     "針金かけ",
-     "剪定"
-    ]
-   ],
-   "wiki": {
-    "title": "盆栽",
-    "extract": "盆栽（ぼんさい）は、広義（原義）では鉢植えをいうが、一般的には狭義で花盆などの器物に草木を栽植して樹姿を整えて盆中に景を表現するもの。剪定や針金掛け等を施して樹の成長を抑制して整え、盆型の鉢植えで栽培されたものをいう。日本国外でも、日本語の発音を基にした「bonsai」で通じることが多い。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%9B%86%E6%A0%BD",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -1238,39 +832,6 @@
   },
   {
    "tier": 3,
-   "answerName": "化石",
-   "answers": [
-    "化石",
-    "かせき"
-   ],
-   "zones": [
-    [
-     "博物館",
-     "地層",
-     "太古"
-    ],
-    [
-     "恐竜",
-     "骨",
-     "アンモナイト"
-    ],
-    [
-     "石化",
-     "古生物",
-     "発掘"
-    ]
-   ],
-   "wiki": {
-    "title": "化石",
-    "extract": "化石（かせき、英語: fossil、ギリシャ語：απολίθωμα）とは、地質時代に生息していた生物が死骸となって長く残っていたもの、もしくはその活動の痕跡を指す。 多くは、古い地層の中の堆積岩において発見される。化石の存在によって知られる生物のことを古生物といい、化石を素材として、過去の生物のことを研究する学問分野を古生物学という。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%8C%96%E7%9F%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
    "answerName": "プリズム",
    "answers": [
     "プリズム",
@@ -1297,74 +858,6 @@
     "title": "プリズム",
     "extract": "プリズム（英語: prism）とは、光を分散・屈折・全反射・複屈折させるための光学素子であり、ガラス・水晶などの透明な媒質でできた多面体で、その面のうち少なくとも一組が平行でないものである。三角柱の形状をしたものが一般的である。 もとは「角柱」という意味の言葉であり、数学用語では角柱を意味する。",
     "url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "顕微鏡",
-   "answers": [
-    "顕微鏡",
-    "けんびきょう",
-    "マイクロスコープ"
-   ],
-   "zones": [
-    [
-     "理科室",
-     "観察",
-     "拡大"
-    ],
-    [
-     "レンズ",
-     "プレパラート",
-     "接眼"
-    ],
-    [
-     "微生物",
-     "細胞",
-     "倍率"
-    ]
-   ],
-   "wiki": {
-    "title": "顕微鏡",
-    "extract": "顕微鏡（けんびきょう、英: microscope）は、肉眼で見るには小さく観察できない物体を調べるために使われる実験器具である。古代ギリシャ語の μικρός（mikrós）「小さい」と σκοπέω（skopéō）「見る、検査する」に由来する。顕微鏡検査法（microscopy）は、顕微鏡を使用して小さな物体や構造を調べる科学をいう。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%A1%95%E5%BE%AE%E9%8F%A1",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "てこ",
-   "answers": [
-    "てこ",
-    "梃子",
-    "てこの原理"
-   ],
-   "zones": [
-    [
-     "理科",
-     "重い　物",
-     "持ち上げる"
-    ],
-    [
-     "支点",
-     "力点",
-     "作用点"
-    ],
-    [
-     "小さな力",
-     "棒",
-     "古代ギリシャ"
-    ]
-   ],
-   "wiki": {
-    "title": "てこ",
-    "extract": "てこ（梃子、梃，英語: lever）とは、弱い力で重たいものを動かしたり、微小な運動を大規模な運動に変換する道具のこと。単純機械の一つであり、あらゆる機械の基礎となっている。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%81%A6%E3%81%93",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -1466,73 +959,6 @@
     "title": "ホタル",
     "extract": "ホタル（蛍、螢、丹良、黄鳥、燭夜）は、コウチュウ目（鞘翅目）・ホタル科 Lampyridae に分類される昆虫の総称。発光することで知られる昆虫であり、ホタルという名もその様から「火（ホ）を垂（ル）」として呼ばれるようになったが、ほとんど光らない種が多い。",
     "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%BF%E3%83%AB",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "擬態",
-   "answers": [
-    "擬態",
-    "ぎたい",
-    "ミミクリー"
-   ],
-   "zones": [
-    [
-     "森",
-     "隠れる",
-     "生き物"
-    ],
-    [
-     "枝",
-     "葉",
-     "模様"
-    ],
-    [
-     "模倣",
-     "ナナフシ",
-     "保護色"
-    ]
-   ],
-   "wiki": {
-    "title": "擬態",
-    "extract": "擬態（ぎたい、mimicry, mimesis）とは、 他のものに、ようすや姿を似せること。 生物が自分以外の何物かに外見やにおい、動きなどを似せることにより、生存上の利益を得る現象。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%93%AC%E6%85%8B",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "結晶",
-   "answers": [
-    "結晶",
-    "けっしょう"
-   ],
-   "zones": [
-    [
-     "雪",
-     "宝石",
-     "規則"
-    ],
-    [
-     "塩",
-     "氷",
-     "水晶"
-    ],
-    [
-     "原子配列",
-     "対称形",
-     "格子"
-    ]
-   ],
-   "wiki": {
-    "title": "結晶",
-    "extract": "結晶（けっしょう、（英: crystal）とは、原子、分子、またはイオンが、規則正しく配列している固体である。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%B5%90%E6%99%B6",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -1642,40 +1068,6 @@
    }
   },
   {
-   "tier": 3,
-   "answerName": "磁石",
-   "answers": [
-    "磁石",
-    "じしゃく",
-    "マグネット"
-   ],
-   "zones": [
-    [
-     "冷蔵庫",
-     "理科",
-     "くっつく"
-    ],
-    [
-     "鉄",
-     "砂鉄",
-     "方位"
-    ],
-    [
-     "極",
-     "引き合う",
-     "磁力"
-    ]
-   ],
-   "wiki": {
-    "title": "磁石",
-    "extract": "磁石（じしゃく、英語: magnet、マグネット）は、2つの極（磁極）を持ち、双極性の磁場を発生させる源となる物体。鉄などの強磁性体を引き寄せる性質を持つ。磁石同士を近づけると、異なる極は引き合い、同じ極は反発しあう。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%A3%81%E7%9F%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
    "tier": 4,
    "answerName": "活版印刷",
    "answers": [
@@ -1744,39 +1136,6 @@
   },
   {
    "tier": 4,
-   "answerName": "真空管",
-   "answers": [
-    "真空管",
-    "しんくうかん"
-   ],
-   "zones": [
-    [
-     "古い　ラジオ",
-     "温かい　音",
-     "アンプ"
-    ],
-    [
-     "ガラス",
-     "フィラメント",
-     "電極"
-    ],
-    [
-     "三極管",
-     "熱電子放出",
-     "管球"
-    ]
-   ],
-   "wiki": {
-    "title": "真空管",
-    "extract": "真空管（しんくうかん、米: vacuum tube、英: radio valve）とは、内部を高度な真空とし、電極を封入した中空の管（管球）のことである。陰極から陽極に流れる電子流を制御することによって増幅、検波、整流、発振などを行うことができる。 電子管あるいは熱電子管などと呼ばれる。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%A9%BA%E7%AE%A1",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
    "answerName": "ダゲレオタイプ",
    "answers": [
     "ダゲレオタイプ",
@@ -1837,73 +1196,6 @@
     "title": "カメラ・オブスクラ",
     "extract": "カメラ・オブスクラ（ラテン語: camera obscura、「暗い部屋」の意味。カメラ・オブスキュラ、カメラ・オブスクーラとも）は、写真の原理による投影像を得る装置で、実用的な用途としてはもっぱら素描などのために使われた。写真術の歴史においても重要で、写真機を「カメラ」と呼ぶのはカメラ・オブスクラに由来する。",
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A1%E3%83%A9%E3%83%BB%E3%82%AA%E3%83%96%E3%82%B9%E3%82%AF%E3%83%A9",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "からくり",
-   "answers": [
-    "からくり",
-    "からくり人形",
-    "絡繰"
-   ],
-   "zones": [
-    [
-     "江戸",
-     "見世物",
-     "祭り"
-    ],
-    [
-     "歯車",
-     "ぜんまい",
-     "糸"
-    ],
-    [
-     "自動人形",
-     "茶運び",
-     "仕掛け"
-    ]
-   ],
-   "wiki": {
-    "title": "からくり",
-    "extract": "からくりは、 仕組み、システム全般の俗称。 日本における古い時代の機械的仕組みのこと。漢字では絡繰、唐繰、機巧、機関、機、械、関など。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%81%8B%E3%82%89%E3%81%8F%E3%82%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "風洞",
-   "answers": [
-    "風洞",
-    "ふうどう"
-   ],
-   "zones": [
-    [
-     "研究所",
-     "気流",
-     "実験"
-    ],
-    [
-     "送風機",
-     "模型",
-     "煙"
-    ],
-    [
-     "風速",
-     "空気抵抗",
-     "揚力"
-    ]
-   ],
-   "wiki": {
-    "title": "風洞",
-    "extract": "風洞（ふうどう、英: wind tunnel, WT）は、人工的に小規模な流れを発生させ、実際の流れ場を再現・観測する装置ないし施設。発生させた流れの中に縮小模型などの試験体を置き、局所的な風速や圧力の分布・力・トルクの計測、流れの可視化などを行う。 風洞を用いたこのような実験は風洞実験あるいは風洞試験と呼ばれ、航空機・鉄道車両・自動車など高速で移動する輸送機械や、高層ビル・橋梁など風の影響を受け易い建築物の設計に用いられている。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E6%B4%9E",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -2011,139 +1303,6 @@
   },
   {
    "tier": 4,
-   "answerName": "金継ぎ",
-   "answers": [
-    "金継ぎ",
-    "きんつぎ"
-   ],
-   "zones": [
-    [
-     "器",
-     "工房",
-     "修復"
-    ],
-    [
-     "漆",
-     "金粉",
-     "割れる　陶器"
-    ],
-    [
-     "継ぐ",
-     "繕い",
-     "侘び"
-    ]
-   ],
-   "wiki": {
-    "title": "金継ぎ",
-    "extract": "金継ぎ（きんつぎ）は漆芸修復師によって主に陶磁器などの破損部分を漆を用いて修繕する技法であり、古来から行われる日本固有の伝統的な修復方法の一つである。古くは金繕い（きんつくろい）と言われた。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%87%91%E7%B6%99%E3%81%8E",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "寄木細工",
-   "answers": [
-    "寄木細工",
-    "よせぎざいく",
-    "寄せ木細工"
-   ],
-   "zones": [
-    [
-     "箱根",
-     "工芸",
-     "木　香り"
-    ],
-    [
-     "木片",
-     "模様",
-     "秘密箱"
-    ],
-    [
-     "象嵌",
-     "幾何学模様",
-     "ずく"
-    ]
-   ],
-   "wiki": {
-    "title": "寄木細工",
-    "extract": "寄木細工（よせぎざいく）は、様々な種類の木材を組み合わせ、それぞれの色合いの違いを利用して模様を描く木工技術である。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%AF%84%E6%9C%A8%E7%B4%B0%E5%B7%A5",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "江戸切子",
-   "answers": [
-    "江戸切子",
-    "えどきりこ"
-   ],
-   "zones": [
-    [
-     "下町",
-     "硝子",
-     "光"
-    ],
-    [
-     "カットガラス",
-     "色被せ",
-     "グラス"
-    ],
-    [
-     "伝統工芸",
-     "矢来",
-     "菊つなぎ"
-    ]
-   ],
-   "wiki": {
-    "title": "江戸切子",
-    "extract": "江戸切子（えどきりこ）とは江戸時代末期から江戸、東京都において生産されているガラス細工である。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B1%9F%E6%88%B8%E5%88%87%E5%AD%90",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "枯山水",
-   "answers": [
-    "枯山水",
-    "かれさんすい"
-   ],
-   "zones": [
-    [
-     "禅寺",
-     "静寂",
-     "庭"
-    ],
-    [
-     "白砂",
-     "石",
-     "砂紋"
-    ],
-    [
-     "石庭",
-     "龍安寺",
-     "禅"
-    ]
-   ],
-   "wiki": {
-    "title": "枯山水",
-    "extract": "枯山水（かれさんすい）とは、水を用いずに岩や砂などで山水を表現した日本庭園の様式の一つ。石庭。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%9E%AF%E5%B1%B1%E6%B0%B4",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
    "answerName": "根付",
    "answers": [
     "根付",
@@ -2171,40 +1330,6 @@
     "title": "根付",
     "extract": "根付（ねつけ、ねづけ）とは、日本の江戸時代に使われた留め具。印籠、巾着や小型の革製鞄（お金、食べ物、筆記用具、薬、煙草などを入れた）、矢立などを紐で帯から吊るし持ち歩く時に用いた。江戸時代から近代にかけての古根付と、昭和・平成以降の現代根付に大別される。",
     "url": "https://ja.wikipedia.org/wiki/%E6%A0%B9%E4%BB%98",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "モールス符号",
-   "answers": [
-    "モールス符号",
-    "モールスふごう",
-    "モールス信号"
-   ],
-   "zones": [
-    [
-     "電信",
-     "無線",
-     "船"
-    ],
-    [
-     "電鍵",
-     "短点",
-     "長点"
-    ],
-    [
-     "トンツー",
-     "SOS",
-     "符号化"
-    ]
-   ],
-   "wiki": {
-    "title": "モールス符号",
-    "extract": "モールス符号（モールスふごう、英語: Morse code）は、電信などで用いられている可変長符号化された文字コード。モールス符号を使った信号はモールス信号と呼ばれる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%BC%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -2273,41 +1398,6 @@
     "title": "潜望鏡",
     "extract": "潜望鏡（せんぼうきょう）は、反射鏡などを利用して視点の位置を変える光学装置のことである。ペリスコープ（periscope）とも呼ばれる。反射鏡ないしプリズムを2回使って光路を折り曲げる他、レンズにより望遠鏡の機能も持たせたものが一般的である。",
     "url": "https://ja.wikipedia.org/wiki/%E6%BD%9C%E6%9C%9B%E9%8F%A1",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "ししおどし",
-   "answers": [
-    "ししおどし",
-    "鹿威し",
-    "鹿おどし",
-    "添水"
-   ],
-   "zones": [
-    [
-     "日本庭園",
-     "静けさ",
-     "竹"
-    ],
-    [
-     "竹筒",
-     "水",
-     "石"
-    ],
-    [
-     "カコン",
-     "獣よけ",
-     "水受け"
-    ]
-   ],
-   "wiki": {
-    "title": "ししおどし",
-    "extract": "ししおどし（鹿威し）とは、田畑を荒らす鳥獣を威嚇し追い払うために設けられる装置類の総称。かかし・鳴子・添水（そうず）。「鹿脅し」「獅子脅し」「獅子威し」とも書かれるが本来は「鹿威し」である（ニホンジカ#名前を参照）。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%81%97%E3%81%97%E3%81%8A%E3%81%A9%E3%81%97",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"
@@ -2411,39 +1501,6 @@
     "title": "圧電効果",
     "extract": "圧電効果（あつでんこうか 英: piezoelectric effect）とは、物質（特に水晶や特定のセラミックス）に圧力（力）を加えると、圧力に比例した分極（表面電荷）が現れる現象。また、逆に電界を印加すると物質が変形する現象は逆圧電効果と言う。なお、これらの現象をまとめて圧電効果と呼ぶ場合もある。",
     "url": "https://ja.wikipedia.org/wiki/%E5%9C%A7%E9%9B%BB%E5%8A%B9%E6%9E%9C",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-26"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "量子ドット",
-   "answers": [
-    "量子ドット",
-    "りょうしドット"
-   ],
-   "zones": [
-    [
-     "ナノ",
-     "ディスプレイ",
-     "発光"
-    ],
-    [
-     "半導体",
-     "粒子",
-     "色"
-    ],
-    [
-     "量子閉じ込め",
-     "粒径",
-     "ナノ結晶"
-    ]
-   ],
-   "wiki": {
-    "title": "量子ドット",
-    "extract": "量子ドット（りょうしドット、英: quantum dot (QD)、古くは量子箱）とは、3次元全ての方向から移動方向が制限された電子の状態のことである。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E3%83%89%E3%83%83%E3%83%88",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "retrieved": "2026-10-26"

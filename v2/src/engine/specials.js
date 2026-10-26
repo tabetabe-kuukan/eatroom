@@ -138,10 +138,11 @@ function sunbeam({ pos, ceil, night }) {
 }
 
 // ---------------------------------------------------------------- 水（天井から流れ落ちる、または滴って水たまりになる）
-function water({ pos, ceil }) {
+// puddleOnly: 雨上がりの水たまりだけ（天井から流れたり滴ったりしない）
+function water({ pos, ceil, puddleOnly = false }) {
   const g = new THREE.Group();
   const [x, , z] = pos;
-  const stream = Math.random() < 0.6;
+  const stream = !puddleOnly && Math.random() < 0.6;
   // 水たまり
   const R = stream ? 1.1 : 0.85;
   const shape = new THREE.Shape();
@@ -152,15 +153,39 @@ function water({ pos, ceil }) {
     if (i === 0) shape.moveTo(px, pz); else shape.lineTo(px, pz);
   }
   const puddle = new THREE.Mesh(new THREE.ShapeGeometry(shape, 2).rotateX(Math.PI / 2), new THREE.MeshStandardMaterial({
-    color: 0x24323b, roughness: 0.03, metalness: 0.3, transparent: true, opacity: 0.6, envMapIntensity: 1.8,
+    color: puddleOnly ? 0x3a5a78 : 0x24323b, roughness: 0.02, metalness: 0.4, transparent: true, opacity: puddleOnly ? 0.72 : 0.6, envMapIntensity: 2.4,
     polygonOffset: true, polygonOffsetFactor: -2, side: THREE.DoubleSide,
   }));
   puddle.position.set(x, 0.004, z);
+  if (puddleOnly) {
+    // 雨上がりの水たまりは、空を映した明るい水色（縁ほど濃く、ところどころ光る）
+    const sky = canvasTex(256, 256, (c, w, h) => {
+      const gr = c.createRadialGradient(w * 0.45, h * 0.4, 10, w / 2, h / 2, w * 0.6);
+      gr.addColorStop(0, '#d8ebfa'); gr.addColorStop(0.6, '#8fb6dc'); gr.addColorStop(1, '#4f7398');
+      c.fillStyle = gr; c.fillRect(0, 0, w, h);
+      c.fillStyle = 'rgba(255,255,255,0.55)';
+      for (let i = 0; i < 6; i++) { c.beginPath(); c.ellipse(60 + Math.random() * 140, 60 + Math.random() * 140, 18 + Math.random() * 30, 3, -0.4, 0, Math.PI * 2); c.fill(); }
+    });
+    puddle.geometry.computeBoundingBox();
+    const bb = puddle.geometry.boundingBox;
+    const uv = [];
+    const pa = puddle.geometry.attributes.position;
+    for (let i = 0; i < pa.count; i++) uv.push((pa.getX(i) - bb.min.x) / (bb.max.x - bb.min.x), (pa.getZ(i) - bb.min.z) / (bb.max.z - bb.min.z));
+    puddle.geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+    puddle.material = new THREE.MeshBasicMaterial({ map: sky, transparent: true, opacity: 0.8, polygonOffset: true, polygonOffsetFactor: -2, side: THREE.DoubleSide });
+  }
   g.add(puddle);
+  // 水たまりのまわりの、濡れて色が濃くなった縁
+  const wetEdge = new THREE.Mesh(new THREE.ShapeGeometry(shape, 2).rotateX(Math.PI / 2), new THREE.MeshBasicMaterial({
+    color: 0x2a3640, transparent: true, opacity: 0.18, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1, side: THREE.DoubleSide,
+  }));
+  wetEdge.scale.setScalar(1.18);
+  wetEdge.position.set(x, 0.003, z);
+  g.add(wetEdge);
   // 天井の濡れたしみ
   const wet = new THREE.Mesh(new THREE.CircleGeometry(0.35, 24).rotateX(Math.PI / 2), new THREE.MeshBasicMaterial({ color: 0x8c9399, transparent: true, opacity: 0.5 }));
   wet.position.set(x, ceil - 0.005, z);
-  g.add(wet);
+  if (!puddleOnly) g.add(wet);
   // 波紋
   const rings = [];
   const ringMat = () => new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0, depthWrite: false });
@@ -191,7 +216,7 @@ function water({ pos, ceil }) {
       p.rotation.y = rot;
       g.add(p);
     }
-  } else {
+  } else if (!puddleOnly) {
     drop.position.set(x, ceil - 0.05, z);
     g.add(drop);
   }
@@ -199,7 +224,10 @@ function water({ pos, ceil }) {
   const update = (t) => {
     const dt = last === null ? 0 : Math.min(0.05, t - last);
     last = t;
-    if (streamTex) {
+    if (puddleOnly) {
+      // ときどき、どこからか落ちた雫で小さな波紋が立つ
+      if (t > nextRing) { const r = rings[ri++ % rings.length]; r.userData.t0 = t; r.position.x = x + (Math.random() - 0.5) * R; r.position.z = z + (Math.random() - 0.5) * R * 0.6; nextRing = t + 1.5 + Math.random() * 3; }
+    } else if (streamTex) {
       streamTex.offset.y = (streamTex.offset.y + dt * 1.8) % 1;
       if (t > nextRing) { const r = rings[ri++ % rings.length]; r.userData.t0 = t; r.position.x = x + (Math.random() - 0.5) * 0.1; nextRing = t + 0.22; }
     } else {
@@ -396,7 +424,8 @@ function treehollow({ pos, ceil, words }) {
   return { mesh: g, width: 2 * R, height: ceil, lit: false, litParts: [lower, mid, upper, cavity, flare], place: 'world' };
 }
 
-const BUILDERS = { paint, silver, sunbeam, water, peephole, caption, wallpaper, treehollow };
+const puddle = (ctx) => water({ ...ctx, puddleOnly: true });
+const BUILDERS = { paint, silver, sunbeam, water, puddle, peephole, caption, wallpaper, treehollow };
 export function buildSpecial(type, ctx) {
   return (BUILDERS[type] || paint)(ctx);
 }
