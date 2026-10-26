@@ -10,3 +10,7 @@ __pycache__/
 # 中間ファイル（blender/spaces/*.py から再生成できる。最適化後の版は public/models にある）
 blender/export/*.glb
 .claude/
+
+# v2 の確認用スクリーンショット
+v2/.shots/
+v2/dist/

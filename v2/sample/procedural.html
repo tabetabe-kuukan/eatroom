@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>手続き生成の空間（サンプル）</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; color: #ddd; font-family: system-ui, sans-serif; overflow: hidden; }
+  canvas { display: block; }
+  #info { position: fixed; left: 16px; top: 14px; max-width: 520px; font-size: 13px; line-height: 1.6; background: rgba(0,0,0,.55); padding: 10px 14px; border-radius: 6px; }
+  #info b { color: #fff; }
+  #hit { position: fixed; left: 50%; bottom: 40px; transform: translateX(-50%); font-size: 15px; background: rgba(0,0,0,.6); padding: 8px 16px; border-radius: 6px; opacity: 0; transition: opacity .4s; }
+  #hit.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="info">
+  <b>サンプル：three.js だけで作るシンプルな空間</b><br>
+  壁・床・天井・照明をすべてプログラムで生成しています（Blender なし、ライトマップなし）。<br>
+  名詞はオブジェクトを壁や床に埋め込み、抽象的な言葉は張り紙・新聞の中の言葉として置いています。<br>
+  クリックで操作開始 / WASD で移動 / マウスで視点
+</div>
+<div id="hit"></div>
+<script type="module" src="./procedural.js"></script>
+</body>
+</html>

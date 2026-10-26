@@ -1,0 +1,12 @@
+[
+ {
+  "id": "plywood",
+  "kind": "texture",
+  "name": "Plywood",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/plywood",
+  "license": "CC0"
+ }
+]

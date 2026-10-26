@@ -1,0 +1,22 @@
+[
+ {
+  "id": "plywood",
+  "kind": "texture",
+  "name": "Plywood",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/plywood",
+  "license": "CC0"
+ },
+ {
+  "id": "rubber_duck_toy",
+  "kind": "model",
+  "name": "Rubber Duck Toy",
+  "authors": [
+   "Plat251"
+  ],
+  "url": "https://polyhaven.com/a/rubber_duck_toy",
+  "license": "CC0"
+ }
+]

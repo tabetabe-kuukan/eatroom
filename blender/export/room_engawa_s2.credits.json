@@ -1,0 +1,67 @@
+[
+ {
+  "id": "weathered_planks",
+  "kind": "texture",
+  "name": "Weathered Planks",
+  "authors": [
+   "Dario Barresi",
+   "Dimitrios Savva"
+  ],
+  "url": "https://polyhaven.com/a/weathered_planks",
+  "license": "CC0"
+ },
+ {
+  "id": "dark_wood",
+  "kind": "texture",
+  "name": "Dark Wood",
+  "authors": [
+   "Dario Barresi",
+   "Dimitrios Savva",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/dark_wood",
+  "license": "CC0"
+ },
+ {
+  "id": "gravel_floor_02",
+  "kind": "texture",
+  "name": "Gravel Floor 02",
+  "authors": [
+   "Jenelle van Heerden",
+   "Dimitrios Savva"
+  ],
+  "url": "https://polyhaven.com/a/gravel_floor_02",
+  "license": "CC0"
+ },
+ {
+  "id": "mossy_rock",
+  "kind": "model",
+  "name": "Mossy Rock",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/mossy_rock",
+  "license": "CC0"
+ },
+ {
+  "id": "stone_01",
+  "kind": "model",
+  "name": "Stone 01",
+  "authors": [
+   "Dario Barresi",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/stone_01",
+  "license": "CC0"
+ },
+ {
+  "id": "shrub_02",
+  "kind": "model",
+  "name": "Shrub 02",
+  "authors": [
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/shrub_02",
+  "license": "CC0"
+ }
+]

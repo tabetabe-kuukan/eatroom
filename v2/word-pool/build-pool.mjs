@@ -4,6 +4,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { ANSWERS } from './answers.mjs';
 import { SEARCH_WORDS, TIER_LABELS } from './search-words.mjs';
+import { SELECTED } from './selection.mjs';
 
 const verified = JSON.parse(readFileSync('v2/word-pool/verified.json', 'utf8'));
 const byTitle = new Map(verified.filter((r) => r.ok).map((r) => [r.title, r]));
@@ -19,7 +20,10 @@ const problems = [];
 for (const [title, zones] of Object.entries(SEARCH_WORDS)) {
   const v = byTitle.get(title);
   if (!v) { problems.push(`${title}: 検証済みの記事にない`); continue; }
-  const display = title.replace(/\s*\(.+\)$/, '');
+  // 「天球儀 (恒星)」の後ろの括弧や「(90) アンティオペ」の頭の番号は表示しない
+  const display = title.replace(/\s*\(.+\)$/, '').replace(/^\(\d+\)\s*/, '');
+  // ゲームで使うのは selection.mjs で選んだ 100 語だけ
+  if (!SELECTED[v.tier]?.includes(display)) continue;
   if (!(title in ANSWERS)) problems.push(`${title}: answers.mjs に正解の表記がない`);
   // リダイレクトは関連語も含むので使わず、answers.mjs で選んだ表記だけを認める
   const answers = [...new Set([display, v.query, v.reading, ...(ANSWERS[title] || [])].filter(Boolean))];
@@ -47,6 +51,9 @@ for (const [title, zones] of Object.entries(SEARCH_WORDS)) {
       retrieved: today,
     },
   });
+}
+for (const [t, list] of Object.entries(SELECTED)) {
+  for (const n of list) if (!words.some((w) => w.answerName === n && w.tier === +t)) problems.push(`selection.mjs: 段階${t}の「${n}」が見つからない`);
 }
 mkdirSync('v2/src/data', { recursive: true });
 writeFileSync('v2/src/data/pool.json', JSON.stringify({ tiers: TIER_LABELS, words }, null, 1));

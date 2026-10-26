@@ -23,7 +23,11 @@ import kit  # noqa: E402
 kit.OPTS = set(args[1:])
 code = 0
 try:
-    script = glob.glob(os.path.join(BL, "spaces", f"space{sid}_*.py"))[0]
+    # 部屋のモジュール（room_xxx）は blender/rooms/ にある
+    if sid.startswith("room_"):
+        script = os.path.join(BL, "rooms", f"{sid}.py")
+    else:
+        script = glob.glob(os.path.join(BL, "spaces", f"space{sid}_*.py"))[0]
     runpy.run_path(script, run_name="__main__")
 except Exception:
     traceback.print_exc()

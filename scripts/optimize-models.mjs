@@ -13,14 +13,18 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, statSyn
 import { join } from 'node:path';
 
 const EXP = 'blender/export';
-const OUT = 'public/models';
-const HDRI = 'public/hdri';
+// --out=v2/public で v2 用に書き出す（その下に models/ と hdri/ を作る）
+const outArg = process.argv.find((a) => a.startsWith('--out='));
+const OUTROOT = outArg ? outArg.slice(6) : 'public';
+const OUT = join(OUTROOT, 'models');
+const HDRI = join(OUTROOT, 'hdri');
 const CACHE = 'blender/cache/polyhaven';
 mkdirSync(OUT, { recursive: true });
 mkdirSync(HDRI, { recursive: true });
 
-const ids = process.argv.slice(2).length
-  ? process.argv.slice(2)
+const argIds = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+const ids = argIds.length
+  ? argIds
   : readdirSync(EXP).filter((f) => /^space\d\d\.glb$/.test(f)).map((f) => f.slice(5, 7));
 
 const io = new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({
@@ -39,7 +43,7 @@ function findHdri(file) {
 }
 
 for (const id of ids) {
-  const tag = `space${id}`;
+  const tag = id.startsWith('room_') ? id : `space${id}`;
   const src = join(EXP, `${tag}.glb`);
   const meta = JSON.parse(readFileSync(join(EXP, `${tag}.json`), 'utf8'));
   const doc = await io.read(src);
@@ -54,10 +58,11 @@ for (const id of ids) {
   let total = statSync(dst).size;
   const files = [`${tag}.glb ${mb(dst)}`];
 
-  if (meta.lightmap) {
-    // AO は glb の occlusion スロットに入っている。ライトマップだけ別ファイル
+  // AO は glb の occlusion スロットに入っている。ライトマップ（昼・夜）だけ別ファイル
+  for (const lmKey of ['lightmap', 'lightmap_night']) {
+    if (!meta[lmKey]) continue;
     for (const [key, q] of [['file', 88]]) {
-      const name = meta.lightmap[key];
+      const name = meta[lmKey][key];
       const png = join(EXP, name.replace('.webp', '.png'));
       const out = join(OUT, name);
       await sharp(png).webp({ quality: q, effort: 6 }).toFile(out);

@@ -1,0 +1,85 @@
+[
+ {
+  "id": "courtyard",
+  "kind": "hdri",
+  "name": "Courtyard",
+  "authors": [
+   "Greg Zaal"
+  ],
+  "url": "https://polyhaven.com/a/courtyard",
+  "license": "CC0"
+ },
+ {
+  "id": "white_stucco",
+  "kind": "texture",
+  "name": "White Stucco",
+  "authors": [
+   "Amal Kumar"
+  ],
+  "url": "https://polyhaven.com/a/white_stucco",
+  "license": "CC0"
+ },
+ {
+  "id": "floor_klinkers_01",
+  "kind": "texture",
+  "name": "Floor Klinkers 01",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/floor_klinkers_01",
+  "license": "CC0"
+ },
+ {
+  "id": "white_plaster_02",
+  "kind": "texture",
+  "name": "White Plaster 02",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/white_plaster_02",
+  "license": "CC0"
+ },
+ {
+  "id": "large_sandstone_blocks_01",
+  "kind": "texture",
+  "name": "Large Sandstone Blocks 01",
+  "authors": [
+   "Rob Tuytel"
+  ],
+  "url": "https://polyhaven.com/a/large_sandstone_blocks_01",
+  "license": "CC0"
+ },
+ {
+  "id": "gravel_floor_02",
+  "kind": "texture",
+  "name": "Gravel Floor 02",
+  "authors": [
+   "Jenelle van Heerden",
+   "Dimitrios Savva"
+  ],
+  "url": "https://polyhaven.com/a/gravel_floor_02",
+  "license": "CC0"
+ },
+ {
+  "id": "dark_wood",
+  "kind": "texture",
+  "name": "Dark Wood",
+  "authors": [
+   "Dario Barresi",
+   "Dimitrios Savva",
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/dark_wood",
+  "license": "CC0"
+ },
+ {
+  "id": "shrub_02",
+  "kind": "model",
+  "name": "Shrub 02",
+  "authors": [
+   "Rico Cilliers"
+  ],
+  "url": "https://polyhaven.com/a/shrub_02",
+  "license": "CC0"
+ }
+]

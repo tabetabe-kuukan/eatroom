@@ -9,176 +9,6 @@
  "words": [
   {
    "tier": 1,
-   "answerName": "洞窟",
-   "answers": [
-    "洞窟",
-    "どうくつ",
-    "洞穴",
-    "ほら穴"
-   ],
-   "zones": [
-    [
-     "暗闇",
-     "湿気",
-     "岩肌"
-    ],
-    [
-     "懐中電灯",
-     "鍾乳石",
-     "コウモリ"
-    ],
-    [
-     "地下空間",
-     "横穴",
-     "探検"
-    ]
-   ],
-   "wiki": {
-    "title": "洞窟",
-    "extract": "洞窟（どうくつ、英: cave, grotto, cavern）とは、地中にある一定の大きさの空間。洞穴（どうけつ、ほらあな）とも言う。一般には地下空間のうち人間が入ることが可能なものをいい、洞口の長径が奥行きよりも小さければ洞長2m程度でも洞窟と呼ばれる。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B4%9E%E7%AA%9F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "傘",
-   "answers": [
-    "傘",
-    "かさ",
-    "雨傘",
-    "からかさ",
-    "唐傘"
-   ],
-   "zones": [
-    [
-     "雨",
-     "梅雨",
-     "玄関"
-    ],
-    [
-     "持ち手",
-     "ビニール",
-     "留め具"
-    ],
-    [
-     "雨具　差す",
-     "柄　開く",
-     "置き忘れ"
-    ]
-   ],
-   "wiki": {
-    "title": "傘",
-    "extract": "傘（簦・かさ、からかさ）は、雨・雪・日光などが体に当たらないよう、頭上に広げ差しかざすもの。竹や金属などの骨に紙や布、合成樹脂（ビニール）などを張り、柄を据えて開閉ができるようにしたもの。頭部に直接かぶって使う用具である「笠」と区別するために「さしがさ」「てがさ」ともいう。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%82%98",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "鏡",
-   "answers": [
-    "鏡",
-    "かがみ"
-   ],
-   "zones": [
-    [
-     "洗面所",
-     "光",
-     "姿"
-    ],
-    [
-     "ガラス",
-     "銀",
-     "化粧台"
-    ],
-    [
-     "反射",
-     "左右反転",
-     "映り込み"
-    ]
-   ],
-   "wiki": {
-    "title": "鏡",
-    "extract": "鏡（かがみ）は、通常、主な可視光線を反射する部分を持つ物体。また、その性質を利用して光を反射させる器具を指す。 光の反射には光が一方向にはね返る鏡反射と四方八方にはね返る乱反射があり、通常、鏡は鏡反射する滑らかな表面をもつ光をほぼ全反射するものをいう（特殊な鏡にはレフ板のような乱反射鏡もある）。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%8F%A1",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "時計",
-   "answers": [
-    "時計",
-    "とけい"
-   ],
-   "zones": [
-    [
-     "秒",
-     "針　音",
-     "壁"
-    ],
-    [
-     "文字盤",
-     "振り子",
-     "ぜんまい"
-    ],
-    [
-     "時刻",
-     "長針",
-     "短針"
-    ]
-   ],
-   "wiki": {
-    "title": "時計",
-    "extract": "時計（とけい、携帯しないものは英: clock、携帯するものはwatch、timepiece）とは、時刻を示す装置、あるいは時間を測定する装置。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%99%82%E8%A8%88",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "自転車",
-   "answers": [
-    "自転車",
-    "じてんしゃ"
-   ],
-   "zones": [
-    [
-     "坂道",
-     "通学",
-     "風"
-    ],
-    [
-     "ペダル",
-     "チェーン",
-     "サドル"
-    ],
-    [
-     "ペダル　こぐ　進む",
-     "補助輪",
-     "駐輪場"
-    ]
-   ],
-   "wiki": {
-    "title": "自転車",
-    "extract": "自転車（じてんしゃ、英: bicycle、bike）は、一般には、ふたつの車輪を前後に一直線に並べた構造をもち、乗り手の力によって駆動し、かつ乗り手の操縦（運転）によって地上を走行する二輪車のこと。広義には、「三輪車」や四輪車など二輪車でないもの、水上自転車や氷上自転車など地上以外を走行するものも含む。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%87%AA%E8%BB%A2%E8%BB%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
    "answerName": "雪だるま",
    "answers": [
     "雪だるま",
@@ -208,7 +38,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%9B%AA%E3%81%A0%E3%82%8B%E3%81%BE",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -241,7 +71,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E9%88%B4",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -264,9 +94,9 @@
      "蝋燭"
     ],
     [
-     "祭り　赤い　灯り",
-     "折りたたむ　紙　照明",
-     "居酒屋　軒先"
+     "折りたたむ",
+     "居酒屋",
+     "紙"
     ]
    ],
    "wiki": {
@@ -275,7 +105,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%8F%90%E7%81%AF",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -298,7 +128,7 @@
     ],
     [
      "観賞魚",
-     "赤い　魚",
+     "琉金",
      "中国原産"
     ]
    ],
@@ -308,7 +138,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%B3%E3%82%AE%E3%83%A7",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -332,9 +162,9 @@
      "天板"
     ],
     [
-     "やぐら　布団　かける",
-     "日本　冬　座卓",
-     "入る　出られない"
+     "やぐら",
+     "座卓",
+     "猫"
     ]
    ],
    "wiki": {
@@ -343,40 +173,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%82%AC%E7%87%B5",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "うちわ",
-   "answers": [
-    "うちわ",
-    "団扇"
-   ],
-   "zones": [
-    [
-     "夏",
-     "縁側",
-     "祭り"
-    ],
-    [
-     "竹",
-     "和紙",
-     "柄"
-    ],
-    [
-     "あおぐ",
-     "風　起こす",
-     "扇子"
-    ]
-   ],
-   "wiki": {
-    "title": "うちわ",
-    "extract": "うちわ（団扇）とは、手で扇いで風を起こす道具の一種。似たものとして扇子がある。折りたたんで持ち運べるものを「扇」や「扇子」、和紙や布などを丸く貼った折りたためないものを「団扇」と呼ぶことが多い。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%A1%E3%82%8F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -410,107 +207,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%AE%B8",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "鍵",
-   "answers": [
-    "鍵",
-    "かぎ",
-    "キー"
-   ],
-   "zones": [
-    [
-     "扉",
-     "留守",
-     "金庫"
-    ],
-    [
-     "錠前",
-     "シリンダー",
-     "南京錠"
-    ],
-    [
-     "解錠",
-     "戸締まり",
-     "差し込む"
-    ]
-   ],
-   "wiki": {
-    "title": "鍵",
-    "extract": "鍵（かぎ、キー、Key）とは、錠（ロック、Lock、扉などを閉ざす目的で取り付けられている機器）を解錠操作により開閉するための器具。錠前（じょうまえ）は錠（じょう）とそれと対となっている鍵（かぎ）をセットにしたものの総称をいう。 典型的な鍵（右図）は、錠の鍵穴に差し込まれる個々に形状の異なるブレード部分と、鍵穴には入らず手でつまんでブレードを回転させるのに使う頭部から成る。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%8D%B5",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "枕",
-   "answers": [
-    "枕",
-    "まくら"
-   ],
-   "zones": [
-    [
-     "寝室",
-     "夜",
-     "眠り"
-    ],
-    [
-     "綿",
-     "そば殻",
-     "カバー"
-    ],
-    [
-     "寝具",
-     "頭　載せる",
-     "首　支える"
-    ]
-   ],
-   "wiki": {
-    "title": "枕",
-    "extract": "枕（まくら）は、就寝時に頭部を載せて支持するための寝具である。一般には、数センチから十数センチ程度の厚みをもつ小型の寝具で、頭部から首にかけてを支える。柔らかい布袋に綿、羽毛、ポリエステル、ウレタン、蕎麦殻、籾殻、小型の合成樹脂パイプなどを詰めたもののほか、木材・竹・陶磁器・石など硬質の素材で作られたものもある。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%9E%95",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "階段",
-   "answers": [
-    "階段",
-    "かいだん"
-   ],
-   "zones": [
-    [
-     "建物",
-     "上り下り",
-     "足音"
-    ],
-    [
-     "手すり",
-     "踊り場",
-     "段差"
-    ],
-    [
-     "昇降",
-     "一段ずつ",
-     "螺旋"
-    ]
-   ],
-   "wiki": {
-    "title": "階段",
-    "extract": "階段（かいだん）は、高低差のある場所への移動を行うための通路で、人間の脚で昇降可能な高さの蹴上げをもち、多数の水平な段（踏みづら）を備えている。建物、斜面、乗り物、その他（岸壁など）に用いられる。古語および雅語ではきざはし（階）。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9A%8E%E6%AE%B5",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -543,73 +240,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E4%BA%95%E6%88%B8",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "畳",
-   "answers": [
-    "畳",
-    "たたみ"
-   ],
-   "zones": [
-    [
-     "和室",
-     "旅館",
-     "香り"
-    ],
-    [
-     "い草",
-     "縁",
-     "床"
-    ],
-    [
-     "敷く",
-     "和室　床材",
-     "帖"
-    ]
-   ],
-   "wiki": {
-    "title": "畳",
-    "extract": "畳（たたみ）は、日本で利用されている伝統的な床材。表面の畳表（たたみおもて）と芯材となる畳床（たたみどこ）で主に構成され、一般的にはこれらを畳縁（たたみべり）とともに縫いつけたものである。畳表には特殊用途のものを除いてイグサ（藺草）が用いられる。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%95%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "障子",
-   "answers": [
-    "障子",
-    "しょうじ"
-   ],
-   "zones": [
-    [
-     "和室",
-     "日差し",
-     "影"
-    ],
-    [
-     "和紙",
-     "木　格子",
-     "張り替え"
-    ],
-    [
-     "和紙　貼る　建具",
-     "桟　紙　張る",
-     "和室　窓辺"
-    ]
-   ],
-   "wiki": {
-    "title": "障子",
-    "extract": "障子（しょうじ）は、現在の和風建築では明かりを通すように木枠に紙、主に和紙を貼っているパネル状の建具を指し、建具としての機能上は一般に引き戸の形式となっている。元々はさえぎる道具の意味で、現在のドア、戸、カーテン、ブラインド、衝立、屏風、襖までも含む。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9A%9C%E5%AD%90",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -643,40 +274,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%8A%B1%E7%81%AB",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "梯子",
-   "answers": [
-    "梯子",
-    "はしご"
-   ],
-   "zones": [
-    [
-     "屋根",
-     "高所",
-     "倉庫"
-    ],
-    [
-     "横木",
-     "足場",
-     "消防"
-    ],
-    [
-     "立てかける　登る",
-     "踏みざん",
-     "出初式"
-    ]
-   ],
-   "wiki": {
-    "title": "梯子",
-    "extract": "梯子（はしご、ていし、英語: Ladder）とは、昇降のための道具。はしごに「梯」や「階子」の字をあてることもある。 壁の表面などに立てかけて使う固い材質（木・竹・金属など）で出来たものと、頂上から吊るして使う縄などでできたものがある。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%A2%AF%E5%AD%90",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -700,7 +298,7 @@
     [
      "アーチ",
      "分光",
-     "雨後　空"
+     "架け橋"
     ]
    ],
    "wiki": {
@@ -709,74 +307,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%99%B9",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "鈴",
-   "answers": [
-    "鈴",
-    "すず"
-   ],
-   "zones": [
-    [
-     "神社",
-     "猫",
-     "お守り"
-    ],
-    [
-     "金属",
-     "玉",
-     "紐"
-    ],
-    [
-     "振る　鳴る",
-     "猫　首輪",
-     "神楽"
-    ]
-   ],
-   "wiki": {
-    "title": "鈴",
-    "extract": "鈴（すず）とは、音を出す道具のひとつ。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%88%B4",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "凧",
-   "answers": [
-    "凧",
-    "たこ",
-    "いかのぼり"
-   ],
-   "zones": [
-    [
-     "正月",
-     "空",
-     "河川敷"
-    ],
-    [
-     "糸",
-     "竹ひご",
-     "和紙"
-    ],
-    [
-     "正月　外遊び",
-     "糸　空　揚げる",
-     "骨組み　和紙　張る"
-    ]
-   ],
-   "wiki": {
-    "title": "凧",
-    "extract": "凧（たこ）とは、糸で牽引して揚力を起こし、空中に飛揚させる物。木や竹などの骨組みに紙、布、ビニールなどを張って、紐で反りや形を整えて作られる。世界各地にある。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%87%A7",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -810,40 +341,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E5%91%82",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "図書館",
-   "answers": [
-    "図書館",
-    "としょかん"
-   ],
-   "zones": [
-    [
-     "静寂",
-     "本棚",
-     "閲覧室"
-    ],
-    [
-     "貸出カード",
-     "司書",
-     "返却ポスト"
-    ],
-    [
-     "蔵書",
-     "書籍　貸出",
-     "公共施設"
-    ]
-   ],
-   "wiki": {
-    "title": "図書館",
-    "extract": "図書館（としょかん、英: library）とは、図書（書籍や図版など）その他の資料を収集・保存し、利用者のため、閲覧、貸出、調査などのサービスを提供する機関（あるいは施設）である。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%9B%B3%E6%9B%B8%E9%A4%A8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -877,210 +375,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%87%AA%E5%8B%95%E8%B2%A9%E5%A3%B2%E6%A9%9F",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "冷蔵庫",
-   "answers": [
-    "冷蔵庫",
-    "れいぞうこ"
-   ],
-   "zones": [
-    [
-     "台所",
-     "夜中",
-     "低い　うなり"
-    ],
-    [
-     "製氷",
-     "野菜室",
-     "冷凍"
-    ],
-    [
-     "低温保存",
-     "家電",
-     "扉　ポケット"
-    ]
-   ],
-   "wiki": {
-    "title": "冷蔵庫",
-    "extract": "冷蔵庫（れいぞうこ、英語: refrigerator）とは、飲食物、その他の物品を低温で保管することを目的とした箱（箱状の装置）あるいは部屋。 なお、英語圏の家庭の日常語としてはfridge（フリッジ）と呼ばれている。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%86%B7%E8%94%B5%E5%BA%AB",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "踏切",
-   "answers": [
-    "踏切",
-    "ふみきり",
-    "踏み切り",
-    "踏切道"
-   ],
-   "zones": [
-    [
-     "線路",
-     "夕方",
-     "警報音"
-    ],
-    [
-     "遮断機",
-     "警報灯",
-     "電車"
-    ],
-    [
-     "カンカン",
-     "道路　鉄道　交差",
-     "一旦停止"
-    ]
-   ],
-   "wiki": {
-    "title": "踏切",
-    "extract": "踏切（ふみきり、英: level crossing）とは、鉄道と道路の平面交差。 踏切は、国によって一般的な状態が異なり、オーストラリアの鉄道・道路では踏切の存在を示すだけの道路標識が一般的だが、日本では鉄道車両と自動車・歩行者との事故（踏切障害事故）を防いで安全を確保するため踏切警報機や遮断機が併設されていることが多く、このほかに交通信号機が追加されている個所もある。日本の法令上の名称では、平面交差する道路自体は踏切道といい（踏切道改良促進法など）、併設の保安用設備は踏切保安装置という。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%B8%8F%E5%88%87",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "眼鏡",
-   "answers": [
-    "眼鏡",
-    "めがね",
-    "目がね",
-    "眼がね"
-   ],
-   "zones": [
-    [
-     "視力",
-     "机",
-     "読書"
-    ],
-    [
-     "レンズ",
-     "フレーム",
-     "つる"
-    ],
-    [
-     "近視",
-     "視力矯正",
-     "掛ける"
-    ]
-   ],
-   "wiki": {
-    "title": "眼鏡",
-    "extract": "眼鏡（めがね、メガネ、がんきょう）とは、ヒトの眼（目）に装着して、レンズにより、屈折異常や視力の矯正、目の保護あるいは装身具として使う器具。コンタクトレンズと違い、角膜など眼球には直接触れさせずかける。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%9C%BC%E9%8F%A1",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 1,
-   "answerName": "布団",
-   "answers": [
-    "布団",
-    "ふとん",
-    "蒲団"
-   ],
-   "zones": [
-    [
-     "寝室",
-     "冬",
-     "押し入れ"
-    ],
-    [
-     "綿",
-     "シーツ",
-     "干す"
-    ],
-    [
-     "寝具",
-     "敷き",
-     "掛け"
-    ]
-   ],
-   "wiki": {
-    "title": "布団",
-    "extract": "布団（ふとん）は、平たい袋状に縫製した布（側地）の中に繊維の詰め物をした繊維製品。広義には炬燵ふとん（こたつふとん）や座布団を含める（日本産業規格における「ふとん」の種類）。狭義には寝具の一種で「寝ぶとん」と呼ばれ、人が上に横たわるための敷き布団（しきぶとん）や、人の上に被せる掛け布団（かけぶとん） に分けられる。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%B8%83%E5%9B%A3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "水車",
-   "answers": [
-    "水車",
-    "すいしゃ"
-   ],
-   "zones": [
-    [
-     "川辺",
-     "田舎",
-     "水音"
-    ],
-    [
-     "羽根板",
-     "歯車",
-     "臼"
-    ],
-    [
-     "水力",
-     "回転",
-     "製粉"
-    ]
-   ],
-   "wiki": {
-    "title": "水車",
-    "extract": "水車（すいしゃ、みずぐるま、英: water wheel）は、水のエネルギーを機械的エネルギーに変える回転機械。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E8%BB%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "砂時計",
-   "answers": [
-    "砂時計",
-    "すなどけい"
-   ],
-   "zones": [
-    [
-     "机",
-     "静けさ",
-     "待つ"
-    ],
-    [
-     "ガラス",
-     "くびれ",
-     "砂"
-    ],
-    [
-     "時間計測",
-     "ひっくり返す",
-     "3分"
-    ]
-   ],
-   "wiki": {
-    "title": "砂時計",
-    "extract": "砂時計（すなどけい、英: hourglass あるいはsandglass、sand timer、sand clockなど）は、中央のくびれた容器の中に微細な砂を入れ、上側から下側への砂の移動によって経過時間を計る器具。 透明な中空の管に入れた砂の落下量で経過時間を計る器具。時刻は計れず、測定開始から一定の時間を計測するタイマーとしてのみ機能する。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%A0%82%E6%99%82%E8%A8%88",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1115,7 +410,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%96%B9%E4%BD%8D%E7%A3%81%E9%87%9D",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1143,7 +438,7 @@
     [
      "灯火",
      "献灯",
-     "石　照明"
+     "春日"
     ]
    ],
    "wiki": {
@@ -1152,7 +447,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%81%AF%E7%B1%A0",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1174,7 +469,7 @@
      "彫刻"
     ],
     [
-     "水　噴き上げる",
+     "ノズル",
      "水景",
      "吹き上げ"
     ]
@@ -1185,7 +480,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%99%B4%E6%B0%B4",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1207,9 +502,9 @@
      "鉄骨"
     ],
     [
-     "遊園地　ゴンドラ",
-     "一周　15分",
-     "大きな　車輪　乗り物"
+     "スポーク",
+     "一周",
+     "大車輪"
     ]
    ],
    "wiki": {
@@ -1218,42 +513,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%A6%B3%E8%A6%A7%E8%BB%8A",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "吊橋",
-   "answers": [
-    "吊橋",
-    "吊り橋",
-    "つりばし",
-    "つり橋"
-   ],
-   "zones": [
-    [
-     "渓谷",
-     "揺れ",
-     "高さ"
-    ],
-    [
-     "ケーブル",
-     "主塔",
-     "床板"
-    ],
-    [
-     "吊り構造",
-     "谷　渡る",
-     "揺れる　橋"
-    ]
-   ],
-   "wiki": {
-    "title": "吊橋",
-    "extract": "吊橋、吊り橋（つりばし）は、橋の形式の一種で、綱などの張力で吊り下げ支える形式のもの。釣り橋、釣橋とも書くが、この表記は狭義には、日本の江戸期以前の古典的な形式に対して用いられる（後述）。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%90%8A%E6%A9%8B",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1275,7 +535,7 @@
      "球皮"
     ],
     [
-     "熱する　空気",
+     "熱気",
      "浮力",
      "有人飛行"
     ]
@@ -1286,7 +546,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%86%B1%E6%B0%97%E7%90%83",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1319,7 +579,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E6%96%87%E5%8F%B0",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1352,40 +612,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E5%84%80",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "扇子",
-   "answers": [
-    "扇子",
-    "せんす"
-   ],
-   "zones": [
-    [
-     "夏",
-     "着物",
-     "舞踊"
-    ],
-    [
-     "骨",
-     "和紙",
-     "要"
-    ],
-    [
-     "折りたたみ",
-     "あおぐ",
-     "落語"
-    ]
-   ],
-   "wiki": {
-    "title": "扇子",
-    "extract": "扇子（せんす）とは、扇（あお）いで風を起こす道具の一つ。また、儀礼や芸能で用いられる。古くは扇（おうぎ）と呼ぶのが普通だった。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%89%87%E5%AD%90",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1408,9 +635,9 @@
      "竿"
     ],
     [
-     "五月　空　泳ぐ",
-     "真鯉　緋鯉",
-     "庭先　立てる　竿"
+     "端午",
+     "真鯉",
+     "こどもの日"
     ]
    ],
    "wiki": {
@@ -1419,7 +646,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%81%93%E3%81%84%E3%81%AE%E3%81%BC%E3%82%8A",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1443,7 +670,7 @@
     ],
     [
      "虫よけ",
-     "寝床　覆う",
+     "蚊",
      "吊る"
     ]
    ],
@@ -1453,40 +680,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%9A%8A%E5%B8%B3",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "風車",
-   "answers": [
-    "風車",
-    "ふうしゃ"
-   ],
-   "zones": [
-    [
-     "丘",
-     "草原",
-     "オランダ"
-    ],
-    [
-     "羽根",
-     "塔",
-     "風"
-    ],
-    [
-     "風力",
-     "回転",
-     "粉ひき"
-    ]
-   ],
-   "wiki": {
-    "title": "風車",
-    "extract": "風車（ふうしゃ、かざぐるま）は、羽根車に風を受けて回転し、風力から動力を得るための装置。灌漑・発電・製粉・風速計などに使われる。「かざぐるま」と読むと、羽根車に柄を付け、風の力で回して遊ぶ玩具も含まれる（風車 (玩具)参照）。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E8%BB%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1508,7 +702,7 @@
      "受話器"
     ],
     [
-     "緑　電話",
+     "電話ボックス",
      "公共",
      "通話料"
     ]
@@ -1519,108 +713,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%85%AC%E8%A1%86%E9%9B%BB%E8%A9%B1",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "鉄塔",
-   "answers": [
-    "鉄塔",
-    "てっとう"
-   ],
-   "zones": [
-    [
-     "郊外",
-     "送電線",
-     "山"
-    ],
-    [
-     "碍子",
-     "電線",
-     "鉄骨"
-    ],
-    [
-     "送電",
-     "高圧",
-     "格子構造"
-    ]
-   ],
-   "wiki": {
-    "title": "鉄塔",
-    "extract": "鉄塔（てっとう、英語: Lattice tower）は、鉄製の骨組み構造から構成される細長い建造物である。特に送電鉄塔は基礎が各脚に設けられトラス構造が特徴であり、基礎が一体型の「鉄柱」とは区別される場合もある（本項では「鉄柱」に分類されるものについても記す）。 一体型送電線やアンテナの支持（携帯電話などの基地局、放送局の送信所など）、気象の観測、灯台、消防の望楼などに用いられる。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%89%84%E5%A1%94",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "棚田",
-   "answers": [
-    "棚田",
-    "たなだ",
-    "千枚田"
-   ],
-   "zones": [
-    [
-     "山間",
-     "田園",
-     "水鏡"
-    ],
-    [
-     "畦",
-     "稲",
-     "石垣"
-    ],
-    [
-     "斜面",
-     "階段状",
-     "水田"
-    ]
-   ],
-   "wiki": {
-    "title": "棚田",
-    "extract": "棚田（たなだ、英：rice terraces）とは、傾斜地に作られた水田のこと。傾斜がきつく耕作単位が狭い状態において、水平に保たれた田が規則的に集積し、それらが一望の下にある場合は千枚田（せんまいだ）とも呼ばれる。棚田と同様に傾斜地を段状にした畑は段々畑（だんだんばたけ）という。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%A3%9A%E7%94%B0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "竹とんぼ",
-   "answers": [
-    "竹とんぼ",
-    "たけとんぼ",
-    "竹蜻蛉"
-   ],
-   "zones": [
-    [
-     "子ども",
-     "空き地",
-     "昔遊び"
-    ],
-    [
-     "竹",
-     "羽根",
-     "軸"
-    ],
-    [
-     "竹　羽　手　回す　飛ばす",
-     "昔　おもちゃ",
-     "プロペラ"
-    ]
-   ],
-   "wiki": {
-    "title": "竹とんぼ",
-    "extract": "竹とんぼ（たけとんぼ、竹蜻蛉）とは、回転翼と翼をまわすための軸によって構成される中国の伝統的な飛翔玩具である。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%AB%B9%E3%81%A8%E3%82%93%E3%81%BC",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1642,9 +735,9 @@
      "おもり"
     ],
     [
-     "毎正時　鳥　鳴く　時計",
-     "黒い森　木彫り",
-     "松かさ形　重り"
+     "カッコウ",
+     "黒い森",
+     "松かさ"
     ]
    ],
    "wiki": {
@@ -1653,107 +746,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%B3%A9%E6%99%82%E8%A8%88",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "轆轤",
-   "answers": [
-    "轆轤",
-    "ろくろ"
-   ],
-   "zones": [
-    [
-     "陶芸",
-     "工房",
-     "粘土"
-    ],
-    [
-     "回転台",
-     "器",
-     "窯"
-    ],
-    [
-     "成形",
-     "回す",
-     "陶器作り"
-    ]
-   ],
-   "wiki": {
-    "title": "轆轤",
-    "extract": "轆轤（ろくろ）は、回転する構造を持つ各種の装置。 滑車を利用して重い物を吊り上げたり引いたりするための人力万力。小型のものは車地（しゃち）、滑車のみのものは飛蝉（とびせみ）という。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%BD%86%E8%BD%A4",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "囲炉裏",
-   "answers": [
-    "囲炉裏",
-    "いろり"
-   ],
-   "zones": [
-    [
-     "古民家",
-     "冬",
-     "煙"
-    ],
-    [
-     "灰",
-     "鉄瓶",
-     "薪"
-    ],
-    [
-     "古民家　炉端",
-     "自在鉤",
-     "暖房　調理"
-    ]
-   ],
-   "wiki": {
-    "title": "囲炉裏",
-    "extract": "囲炉裏（いろり、居炉裏とも表記）は、屋内に恒久的に設けられる炉の一種。伝統的な日本の家屋において、床を四角く切り下げて灰を敷き詰め、薪や炭火などを燃やすために設けられた一角のことである。天井・梁から吊るした自在鉤（じざいかぎ）に鍋や鉄瓶を掛けて調理・炊事に使うとともに、暖房や照明の役割を担った。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%9B%B2%E7%82%89%E8%A3%8F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "蒸気機関車",
-   "answers": [
-    "蒸気機関車",
-    "じょうききかんしゃ",
-    "SL"
-   ],
-   "zones": [
-    [
-     "鉄道",
-     "汽笛",
-     "煙"
-    ],
-    [
-     "石炭",
-     "ボイラー",
-     "動輪"
-    ],
-    [
-     "蒸気機関",
-     "機関士",
-     "汽車"
-    ]
-   ],
-   "wiki": {
-    "title": "蒸気機関車",
-    "extract": "蒸気機関車（じょうききかんしゃ）は、蒸気機関を動力とする機関車のことである。 日本では Steam Locomotive の頭文字をとって、SL（エスエル）とも呼ばれる。また、蒸気機関車、または蒸気機関車が牽引する列車のことを、汽車（きしゃ）とも言う。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%92%B8%E6%B0%97%E6%A9%9F%E9%96%A2%E8%BB%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1775,9 +768,9 @@
      "ビーズ"
     ],
     [
-     "筒　のぞく　回す",
-     "三枚　鏡",
-     "ビーズ　模様"
+     "のぞく",
+     "対称",
+     "幾何学模様"
     ]
    ],
    "wiki": {
@@ -1786,40 +779,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E4%B8%87%E8%8F%AF%E9%8F%A1",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "風見鶏",
-   "answers": [
-    "風見鶏",
-    "かざみどり"
-   ],
-   "zones": [
-    [
-     "屋根",
-     "洋館",
-     "風"
-    ],
-    [
-     "金属",
-     "矢印",
-     "方角"
-    ],
-    [
-     "風向き",
-     "回転",
-     "ニワトリ"
-    ]
-   ],
-   "wiki": {
-    "title": "風見鶏",
-    "extract": "風見鶏（かざみどり）は、鶏をかたどった風向計。主にヨーロッパの教会堂や住宅の屋根の上に取り付けられている。また、風向計としてよりも魔除けとして取り付けられることが多い。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E8%A6%8B%E9%B6%8F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1854,7 +814,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%93%84%E9%9F%B3%E6%A9%9F",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1878,7 +838,7 @@
     [
      "自動演奏",
      "箱",
-     "金属　音"
+     "音色"
     ]
    ],
    "wiki": {
@@ -1887,7 +847,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1909,9 +869,9 @@
      "松"
     ],
     [
-     "鉢　小さな　松",
+     "鉢植え",
      "針金かけ",
-     "樹形　整える"
+     "剪定"
     ]
    ],
    "wiki": {
@@ -1920,41 +880,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%9B%86%E6%A0%BD",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 2,
-   "answerName": "招き猫",
-   "answers": [
-    "招き猫",
-    "まねきねこ",
-    "まねき猫"
-   ],
-   "zones": [
-    [
-     "商店",
-     "店先",
-     "縁起"
-    ],
-    [
-     "陶器",
-     "小判",
-     "片手"
-    ],
-    [
-     "手招き",
-     "商売繁盛",
-     "置物"
-    ]
-   ],
-   "wiki": {
-    "title": "招き猫",
-    "extract": "招き猫（まねきねこ）は、前足で人を招く猫の形の置物。 猫は農作物や蚕を食べるネズミを駆除するため、古くは養蚕の縁起物でもあったが、養蚕が衰退してからは商売繁盛の縁起物とされている。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%8B%9B%E3%81%8D%E7%8C%AB",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -1979,7 +905,7 @@
     [
      "剣先",
      "大皿",
-     "穴　刺す"
+     "穴"
     ]
    ],
    "wiki": {
@@ -1988,7 +914,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%81%91%E3%82%93%E7%8E%89",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2011,7 +937,7 @@
     ],
     [
      "大水槽",
-     "ペンギン　展示",
+     "ペンギン",
      "イルカショー"
     ]
    ],
@@ -2021,7 +947,327 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E6%97%8F%E9%A4%A8",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 3,
+   "answerName": "きさらぎ駅",
+   "answers": [
+    "きさらぎ駅",
+    "きさらぎえき",
+    "如月駅",
+    "きさらぎ",
+    "キサラギ駅"
+   ],
+   "zones": [
+    [
+     "深夜",
+     "終電",
+     "電車"
+    ],
+    [
+     "無人駅",
+     "太鼓",
+     "圏外"
+    ],
+    [
+     "異界",
+     "トンネル",
+     "2ちゃんねる"
+    ]
+   ],
+   "wiki": {
+    "title": "きさらぎ駅",
+    "extract": "きさらぎ駅（きさらぎえき）は、日本のインターネットコミュニティ等において、都市伝説として語られている架空の鉄道駅である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%81%8D%E3%81%95%E3%82%89%E3%81%8E%E9%A7%85",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 3,
+   "answerName": "ブラックボックス",
+   "answers": [
+    "ブラックボックス",
+    "ぶらっくぼっくす",
+    "black box",
+    "blackbox"
+   ],
+   "zones": [
+    [
+     "謎",
+     "仕組み",
+     "装置"
+    ],
+    [
+     "入力",
+     "出力",
+     "密閉"
+    ],
+    [
+     "フライトレコーダー",
+     "中身",
+     "システム工学"
+    ]
+   ],
+   "wiki": {
+    "title": "ブラックボックス",
+    "extract": "ブラックボックス とは、内部の動作原理や構造を理解していなくても、外部から見た機能や使い方のみを知っていれば十分に得られる結果を利用する事のできる装置や機構の概念。転じて、内部機構を見ることができないよう密閉された機械装置を指してこう呼ぶ。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 5,
+   "answerName": "クイーンズ・ギャンビット・アクセプテッド",
+   "answers": [
+    "クイーンズ・ギャンビット・アクセプテッド",
+    "QGA",
+    "Queen's Gambit Accepted",
+    "クイーンズギャンビットアクセプテッド"
+   ],
+   "zones": [
+    [
+     "チェス",
+     "盤",
+     "対局"
+    ],
+    [
+     "オープニング",
+     "ポーン",
+     "定跡"
+    ],
+    [
+     "d4",
+     "c4",
+     "捨て駒"
+    ]
+   ],
+   "wiki": {
+    "title": "クイーンズ・ギャンビット・アクセプテッド",
+    "extract": "クイーンズ・ギャンビット・アクセプテッド は、チェスのオープニングの1つで、広義のクイーンズ・ギャンビット（1．d4　d5　2．c4）の一変化である。QGAと省略されることもある。右図にある基本形までの手順は1．d4　d5　2．c4　dcである。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%B3%E3%83%93%E3%83%83%E3%83%88%E3%83%BB%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%97%E3%83%86%E3%83%83%E3%83%89",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 5,
+   "answerName": "アンティオペ",
+   "answers": [
+    "アンティオペ",
+    "アンティオーペ",
+    "90アンティオペ",
+    "(90)アンティオペ",
+    "Antiope"
+   ],
+   "zones": [
+    [
+     "夜空",
+     "小惑星帯",
+     "望遠鏡"
+    ],
+    [
+     "二重小惑星",
+     "衛星",
+     "1866年"
+    ],
+    [
+     "ギリシア神話",
+     "第90番",
+     "連星"
+    ]
+   ],
+   "wiki": {
+    "title": "(90) アンティオペ",
+    "extract": "(90) アンティオペ またはアンティオーペ は、小惑星帯に位置する小惑星の一つ。1866年10月1日にドイツの天文学者、ロベルト・ルター により発見された。ギリシア神話から命名されたが、ギリシア神話に2人登場するアンティオペーのどちらが語源になっているかで論争になっている。",
+    "url": "https://ja.wikipedia.org/wiki/(90)_%E3%82%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%82%AA%E3%83%9A",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 1,
+   "answerName": "ばね",
+   "answers": [
+    "ばね",
+    "バネ",
+    "発条",
+    "スプリング",
+    "spring"
+   ],
+   "zones": [
+    [
+     "弾む",
+     "トランポリン",
+     "おもちゃ"
+    ],
+    [
+     "コイル",
+     "鋼線",
+     "伸び縮み"
+    ],
+    [
+     "弾性",
+     "復元力",
+     "圧縮"
+    ]
+   ],
+   "wiki": {
+    "title": "ばね",
+    "extract": "ばね（バネ、発条、弾機、撥条）とは、力が加わると変形して力を取り除くと元に戻るという、物体の弾性という性質を利用する機械要素である。広義には、弾性の利用を主な目的とするものの総称ともいえる。英語名は spring で、日本語でもスプリングという名でよく呼ばれる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%81%B0%E3%81%AD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 2,
+   "answerName": "アメダス",
+   "answers": [
+    "アメダス",
+    "あめだす",
+    "AMeDAS",
+    "地域気象観測システム"
+   ],
+   "zones": [
+    [
+     "天気予報",
+     "雨",
+     "気温"
+    ],
+    [
+     "観測所",
+     "雨量計",
+     "風速計"
+    ],
+    [
+     "気象庁",
+     "無人",
+     "観測網"
+    ]
+   ],
+   "wiki": {
+    "title": "アメダス",
+    "extract": "アメダス は、日本国内約1,300か所の気象観測所で構成される気象庁の無人観測施設「地域気象観測システム」の略称である。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A1%E3%83%80%E3%82%B9",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 2,
+   "answerName": "メリーさんの電話",
+   "answers": [
+    "メリーさんの電話",
+    "めりーさんのでんわ",
+    "メリーさん",
+    "メリー",
+    "メリーさん電話",
+    "メリーさんからの電話"
+   ],
+   "zones": [
+    [
+     "ゴミ",
+     "引っ越し",
+     "人形"
+    ],
+    [
+     "公衆電話",
+     "西洋人形",
+     "着信"
+    ],
+    [
+     "後ろ",
+     "接近",
+     "怪談"
+    ]
+   ],
+   "wiki": {
+    "title": "メリーさんの電話",
+    "extract": "『メリーさんの電話』（メリーさんのでんわ）は、怪談系都市伝説の一種。またそれをもとにした日本映画。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AA%E3%83%BC%E3%81%95%E3%82%93%E3%81%AE%E9%9B%BB%E8%A9%B1",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 2,
+   "answerName": "ベリリウム",
+   "answers": [
+    "ベリリウム",
+    "べりりうむ",
+    "Be",
+    "beryllium"
+   ],
+   "zones": [
+    [
+     "金属",
+     "軽い",
+     "毒性"
+    ],
+    [
+     "緑柱石",
+     "エメラルド",
+     "X線"
+    ],
+    [
+     "元素記号",
+     "原子番号",
+     "第2族"
+    ]
+   ],
+   "wiki": {
+    "title": "ベリリウム",
+    "extract": "ベリリウム は、原子番号4の元素である。元素記号はBe。原子量は9.01218。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AA%E3%83%AA%E3%82%A6%E3%83%A0",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
+   }
+  },
+  {
+   "tier": 4,
+   "answerName": "ロジスティック写像",
+   "answers": [
+    "ロジスティック写像",
+    "ろじすてぃっくしゃぞう",
+    "ロジスティックマップ",
+    "logistic map"
+   ],
+   "zones": [
+    [
+     "人口",
+     "増殖",
+     "数学"
+    ],
+    [
+     "カオス",
+     "分岐",
+     "反復"
+    ],
+    [
+     "周期倍分岐",
+     "差分方程式",
+     "漸化式"
+    ]
+   ],
+   "wiki": {
+    "title": "ロジスティック写像",
+    "extract": "ロジスティック写像 とは、xn+1 = axn(1 − xn) という2次関数の差分方程式（漸化式）で定められた離散力学系である。単純な2次関数の式でありながら、驚くような複雑な振る舞いを生み出すことで知られる。",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B8%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E5%86%99%E5%83%8F",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2054,40 +1300,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%9C%83%E6%B0%97%E6%A5%BC",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "日時計",
-   "answers": [
-    "日時計",
-    "ひどけい"
-   ],
-   "zones": [
-    [
-     "庭園",
-     "晴れ",
-     "太陽"
-    ],
-    [
-     "影",
-     "針",
-     "文字盤"
-    ],
-    [
-     "時刻",
-     "影　向き",
-     "古代"
-    ]
-   ],
-   "wiki": {
-    "title": "日時計",
-    "extract": "日時計（ひどけい、英: sundial）は、太陽の日周運動を利用して、太陽の時角の推移から時刻を定める装置。影を利用して視太陽時を計測する。日晷儀（にっきぎ）、晷針（きしん）ともいう。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%99%82%E8%A8%88",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2120,75 +1333,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%8C%96%E7%9F%B3",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "鍾乳洞",
-   "answers": [
-    "鍾乳洞",
-    "しょうにゅうどう",
-    "石灰洞"
-   ],
-   "zones": [
-    [
-     "洞窟",
-     "地下",
-     "滴る水"
-    ],
-    [
-     "石灰岩",
-     "つらら状　石",
-     "石筍"
-    ],
-    [
-     "鍾乳石",
-     "炭酸カルシウム",
-     "秋芳洞"
-    ]
-   ],
-   "wiki": {
-    "title": "鍾乳洞",
-    "extract": "鍾乳洞（しょうにゅうどう、英: solutional cave、solution cave）または石灰洞（せっかいどう、英: karst cave）は、石灰岩が地表水、地下水などによって侵食（溶食）されてできた洞窟であり、一般的に石灰岩地帯に存在する。 「鍾乳洞」が洞窟内に生じた鍾乳石などの洞窟生成物（二次生成物）に視点をおいた用語であるのに対し、「石灰洞」は洞窟を胚胎する地質的な母岩の種類に視点をおいた用語である。 広義には、石灰洞以外でも鍾乳石類が生じている洞窟を鍾乳洞と呼んでいる（例: 長崎県の七ツ釜鍾乳洞）。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%8D%BE%E4%B9%B3%E6%B4%9E",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "間欠泉",
-   "answers": [
-    "間欠泉",
-    "かんけつせん",
-    "間歇泉"
-   ],
-   "zones": [
-    [
-     "火山地帯",
-     "湯気",
-     "待つ"
-    ],
-    [
-     "熱水",
-     "地下水",
-     "噴出口"
-    ],
-    [
-     "周期的　噴き出す",
-     "イエローストーン",
-     "温泉"
-    ]
-   ],
-   "wiki": {
-    "title": "間欠泉",
-    "extract": "間欠泉、間歇泉（かんけつせん、英語: geyser）とは、一定周期で水蒸気や熱湯を噴出する温泉のことである。アイスランドや、アメリカ合衆国のイエローストーンの間欠泉が世界的に有名。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%96%93%E6%AC%A0%E6%B3%89",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2210,9 +1355,9 @@
      "白色光"
     ],
     [
-     "光　七色　分ける",
-     "ガラス　三角柱",
-     "白色光　分散"
+     "分光",
+     "ニュートン",
+     "分散"
     ]
    ],
    "wiki": {
@@ -2221,7 +1366,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2255,7 +1400,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%A1%95%E5%BE%AE%E9%8F%A1",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2289,40 +1434,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%81%A6%E3%81%93",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "滑車",
-   "answers": [
-    "滑車",
-    "かっしゃ"
-   ],
-   "zones": [
-    [
-     "井戸",
-     "工事現場",
-     "綱"
-    ],
-    [
-     "ロープ",
-     "溝　車輪",
-     "吊り下げ"
-    ],
-    [
-     "ロープ　溝　車輪",
-     "吊り上げる",
-     "力　向き　変える"
-    ]
-   ],
-   "wiki": {
-    "title": "滑車",
-    "extract": "滑車（かっしゃ、英: pulley）とは、中央に1本の軸を持つ自由回転可能な円盤（索輪）と、その円盤を支持して他の物体に接続するための構造部とで構成される機構であり、円盤外周部に接する棒状物または索状物の方向を案内する目的のほか、索状物の張力を他の物体に伝達したり 索状物へ張力を与える目的に用いる器具である。 ロープ、ケーブル、ベルト、あるいは鎖などの柔軟性を持った索状物を円盤の周囲にかけて使う場合には、円盤外周に沿って2つのフランジとその間に溝を設けて索状物が逸脱しないようにするのが一般的である。力の方向を変えたり、引張力を伝達するだけではなく、機械的倍率を向上させるのにも多用されている。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%BB%91%E8%BB%8A",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2345,8 +1457,8 @@
      "水"
     ],
     [
-     "日光　養分　作る",
-     "酸素　出す",
+     "デンプン",
+     "酸素",
      "葉緑体"
     ]
    ],
@@ -2356,73 +1468,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%85%89%E5%90%88%E6%88%90",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "渡り鳥",
-   "answers": [
-    "渡り鳥",
-    "わたりどり"
-   ],
-   "zones": [
-    [
-     "季節",
-     "空",
-     "群れ"
-    ],
-    [
-     "ツバメ",
-     "ハクチョウ",
-     "干潟"
-    ],
-    [
-     "移動",
-     "繁殖地",
-     "越冬"
-    ]
-   ],
-   "wiki": {
-    "title": "渡り鳥",
-    "extract": "渡り鳥（わたりどり）とは、食糧、環境、繁殖などの事情に応じて定期的に長い距離を移動（渡り）する鳥のこと。翻って、1年を通じて同一の地域やその周辺で繁殖も含めた生活を行う鳥を留鳥という。 鳥の渡り（英語：Bird migration）の解明は、鳥類学の研究テーマのひとつで、鳥を捕獲して刻印のついた足環を付ける鳥類標識調査（バンディング）が日本を含め世界各国で行われている。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B8%A1%E3%82%8A%E9%B3%A5",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "冬眠",
-   "answers": [
-    "冬眠",
-    "とうみん"
-   ],
-   "zones": [
-    [
-     "冬",
-     "森",
-     "巣穴"
-    ],
-    [
-     "クマ",
-     "リス",
-     "体温"
-    ],
-    [
-     "クマ　巣穴",
-     "体温　低下",
-     "春　目覚める"
-    ]
-   ],
-   "wiki": {
-    "title": "冬眠",
-    "extract": "冬眠（とうみん、英: hibernation）とは、寒冷や餌の枯渇が生じる冬季に動物が代謝を下げて体温が低下する現象。狭義には恒温動物である哺乳類と鳥類の一部が活動を停止し、体温を低下させて食料の少ない冬季間を過ごす生態のことである。広義では変温性の魚類、両生類、爬虫類、昆虫などの節足動物や陸生貝などの無脊椎動物が冬季に極めて不活発な状態で過ごす「冬越し」のことも指す。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%86%AC%E7%9C%A0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2444,7 +1490,7 @@
      "虫"
     ],
     [
-     "閉じ込める　虫",
+     "虫入り",
      "松脂",
      "アンバー"
     ]
@@ -2455,40 +1501,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%90%A5%E7%8F%80",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "隕石",
-   "answers": [
-    "隕石",
-    "いんせき"
-   ],
-   "zones": [
-    [
-     "夜空",
-     "衝撃",
-     "博物館"
-    ],
-    [
-     "流星",
-     "鉄",
-     "クレーター"
-    ],
-    [
-     "宇宙から落下",
-     "小惑星",
-     "火球"
-    ]
-   ],
-   "wiki": {
-    "title": "隕石",
-    "extract": "隕石（いんせき、meteorite）とは、惑星間空間に存在する固体物質が地球などの惑星の表面に落下してきた物体のこと。 「隕」が常用漢字に含まれていないため、「いん石」とまぜ書きされることもある。昔は「天隕石」「天降石」あるいは「星石」などと書かれたこともある。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9A%95%E7%9F%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2512,7 +1525,7 @@
      "太陽"
     ],
     [
-     "尾　引く　天体",
+     "コマ",
      "太陽系小天体",
      "ハレー"
     ]
@@ -2523,7 +1536,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%BD%97%E6%98%9F",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2546,7 +1559,7 @@
     ],
     [
      "鳥取",
-     "砂　丘",
+     "砂山",
      "堆積"
     ]
    ],
@@ -2556,7 +1569,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%A0%82%E4%B8%98",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2580,7 +1593,7 @@
     ],
     [
      "発光",
-     "光る　昆虫",
+     "甲虫",
      "ゲンジ"
     ]
    ],
@@ -2590,7 +1603,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%BF%E3%83%AB",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2613,7 +1626,7 @@
      "模様"
     ],
     [
-     "他の物　似せる",
+     "模倣",
      "ナナフシ",
      "保護色"
     ]
@@ -2624,40 +1637,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%93%AC%E6%85%8B",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "食物連鎖",
-   "answers": [
-    "食物連鎖",
-    "しょくもつれんさ"
-   ],
-   "zones": [
-    [
-     "自然",
-     "生態系",
-     "草原"
-    ],
-    [
-     "植物",
-     "草食動物",
-     "肉食動物"
-    ],
-    [
-     "食べる　食べられる",
-     "生産者",
-     "分解者"
-    ]
-   ],
-   "wiki": {
-    "title": "食物連鎖",
-    "extract": "食物連鎖（しょくもつれんさ、英: food chain）とは、生物群集内での生物の捕食（食べる）・被食（食べられる）という点に着目し、それぞれの生物群集における生物種間の関係を表すことである。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%A3%9F%E7%89%A9%E9%80%A3%E9%8E%96",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2679,7 +1659,7 @@
      "水晶"
     ],
     [
-     "原子　並び",
+     "原子配列",
      "対称形",
      "格子"
     ]
@@ -2690,140 +1670,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%B5%90%E6%99%B6",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "静電気",
-   "answers": [
-    "静電気",
-    "せいでんき"
-   ],
-   "zones": [
-    [
-     "冬",
-     "乾燥",
-     "ドアノブ"
-    ],
-    [
-     "下敷き",
-     "髪の毛",
-     "セーター"
-    ],
-    [
-     "帯電",
-     "パチッ",
-     "電荷"
-    ]
-   ],
-   "wiki": {
-    "title": "静電気",
-    "extract": "静電気（せいでんき、英: static electricity）とは、摩擦電気など、物体にたまったまま動かない電気のことである。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9D%99%E9%9B%BB%E6%B0%97",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "地層",
-   "answers": [
-    "地層",
-    "ちそう"
-   ],
-   "zones": [
-    [
-     "崖",
-     "縞模様",
-     "堆積"
-    ],
-    [
-     "化石",
-     "砂岩",
-     "泥岩"
-    ],
-    [
-     "縞模様　崖",
-     "堆積岩",
-     "整合　不整合"
-    ]
-   ],
-   "wiki": {
-    "title": "地層",
-    "extract": "地層（ちそう、英: stratum）は、砂礫・火山灰などが平坦に堆積してできた堆積岩の層である。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E5%B1%A4",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "三角州",
-   "answers": [
-    "三角州",
-    "さんかくす",
-    "三角洲"
-   ],
-   "zones": [
-    [
-     "河口",
-     "平野",
-     "地図"
-    ],
-    [
-     "川",
-     "土砂",
-     "海"
-    ],
-    [
-     "堆積",
-     "デルタ",
-     "扇形"
-    ]
-   ],
-   "wiki": {
-    "title": "三角州",
-    "extract": "三角州（さんかくす、三角洲とも）とは、河口付近において、河川によって運ばれた物質が堆積することにより形成された地形である。河口において河川流が分流し、枝分かれした分流路と海岸線のなす形がギリシア文字のデルタ（Δ）に似ていることから、デルタ（英語: delta）とも呼ばれる。",
-    "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E5%B7%9E",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "偏西風",
-   "answers": [
-    "偏西風",
-    "へんせいふう"
-   ],
-   "zones": [
-    [
-     "空",
-     "天気",
-     "上空"
-    ],
-    [
-     "気流",
-     "飛行機",
-     "雲"
-    ],
-    [
-     "西から東",
-     "中緯度",
-     "ジェット気流"
-    ]
-   ],
-   "wiki": {
-    "title": "偏西風",
-    "extract": "偏西風（へんせいふう、英語: Westerlies）とは、広義には極を中心に西から東に吹く地球規模の帯状風をいい、成層圏や熱帯の上空にみられる西風も含む。 一般的には南北両半球の中緯度帯の対流圏を年間を通して吹く西風をいう。平均的に30度から65度の緯度帯にかけてみられる西から東に向かって流れる気流である。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%81%8F%E8%A5%BF%E9%A2%A8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2848,7 +1695,7 @@
     [
      "欠ける",
      "皆既",
-     "天体　並び"
+     "赤銅色"
     ]
    ],
    "wiki": {
@@ -2857,41 +1704,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%9C%88%E9%A3%9F",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "日食",
-   "answers": [
-    "日食",
-    "にっしょく",
-    "日蝕"
-   ],
-   "zones": [
-    [
-     "昼",
-     "暗くなる",
-     "空"
-    ],
-    [
-     "月",
-     "太陽",
-     "黒い　円"
-    ],
-    [
-     "皆既",
-     "コロナ",
-     "金環"
-    ]
-   ],
-   "wiki": {
-    "title": "日食",
-    "extract": "日食（にっしょく、英語: solar eclipse）とは、太陽が月によって覆われ、太陽が欠けて見えたり、或いは全く見えなくなる天文現象である。日蝕と表記する場合もある（「食 (天文)#表記」を参照）。 朔すなわち新月の時に起こる。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%A3%9F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2925,7 +1738,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%BD%AE%E6%B1%90",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -2960,40 +1773,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%82%B4%E7%A4%81",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 3,
-   "answerName": "氷河",
-   "answers": [
-    "氷河",
-    "ひょうが"
-   ],
-   "zones": [
-    [
-     "山岳",
-     "寒冷地",
-     "青い　氷"
-    ],
-    [
-     "雪",
-     "岩",
-     "クレバス"
-    ],
-    [
-     "流れる　氷",
-     "U字谷",
-     "氷床"
-    ]
-   ],
-   "wiki": {
-    "title": "氷河",
-    "extract": "氷河（ひょうが、英: glacier）は、地球表面にあって重力などの力によって継続的に流動する氷体。狭義には山岳地域の氷河を指す山岳氷河のことであり、広義には氷帽や氷床を含めた概念である（後述）。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B0%B7%E6%B2%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3027,7 +1807,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%A3%81%E7%9F%B3",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3052,7 +1832,7 @@
     [
      "15世紀",
      "凸版",
-     "文字　並べる"
+     "植字"
     ]
    ],
    "wiki": {
@@ -3061,7 +1841,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%B4%BB%E7%89%88%E5%8D%B0%E5%88%B7",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3083,9 +1863,9 @@
      "黄道"
     ],
     [
-     "星座　描く　球",
-     "地球儀　星空版",
-     "恒星　位置　示す　模型"
+     "天文模型",
+     "星図",
+     "恒星"
     ]
    ],
    "wiki": {
@@ -3094,74 +1874,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%90%83%E5%84%80_(%E6%81%92%E6%98%9F)",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "アストロラーベ",
-   "answers": [
-    "アストロラーベ",
-    "アストロラベ",
-    "アストロラーブ"
-   ],
-   "zones": [
-    [
-     "中世",
-     "航海",
-     "天文学者"
-    ],
-    [
-     "円盤",
-     "目盛り",
-     "指針"
-    ],
-    [
-     "観象儀",
-     "イスラム天文学",
-     "天体　高度　測る"
-    ]
-   ],
-   "wiki": {
-    "title": "アストロラーベ",
-    "extract": "アストロラーベ（アストロラベ、Astrolabe）は、平面アストロラーベとも呼ばれ、古代の天文学者や占星術者が用いた天体観測用の機器。紀元前から用いられていた垂直角を測るための測角器である。用途は多岐にわたり、太陽・月・惑星・恒星の位置測定および予測、ある経度と現地時刻の変換、測量、三角測量に使われた。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%83%88%E3%83%AD%E3%83%A9%E3%83%BC%E3%83%99",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "テルミン",
-   "answers": [
-    "テルミン",
-    "テレミン"
-   ],
-   "zones": [
-    [
-     "演奏会",
-     "不思議　音",
-     "SF映画"
-    ],
-    [
-     "アンテナ",
-     "電子楽器",
-     "音程"
-    ],
-    [
-     "電子楽器",
-     "手　かざす　演奏",
-     "アンテナ　二本"
-    ]
-   ],
-   "wiki": {
-    "title": "テルミン",
-    "extract": "テルミン（ロシア語:Терменвоксチルミンヴォークス）は、1920年にロシアの発明家レフ・セルゲーエヴィチ・テルミンが発明した世界初の電子楽器である。ロシア語や英語では「テルミンの声」という意味のテルミンヴォクス（Терменвокс；Thereminvox）とも呼ばれる。英語ではThereminあるいはTheraminと綴られる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%AB%E3%83%9F%E3%83%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3185,7 +1898,7 @@
     [
      "三極管",
      "熱電子放出",
-     "ガラス管　アンプ"
+     "管球"
     ]
    ],
    "wiki": {
@@ -3194,7 +1907,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%A9%BA%E7%AE%A1",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3217,7 +1930,7 @@
     ],
     [
      "写真術",
-     "19世紀　フランス",
+     "フランス",
      "一点もの"
     ]
    ],
@@ -3227,7 +1940,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%B2%E3%83%AC%E3%82%AA%E3%82%BF%E3%82%A4%E3%83%97",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3252,7 +1965,7 @@
     [
      "光学",
      "写生",
-     "カメラ　原型"
+     "暗箱"
     ]
    ],
    "wiki": {
@@ -3261,7 +1974,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A1%E3%83%A9%E3%83%BB%E3%82%AA%E3%83%96%E3%82%B9%E3%82%AF%E3%83%A9",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3295,7 +2008,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%81%8B%E3%82%89%E3%81%8F%E3%82%8A",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3317,9 +2030,9 @@
      "煙"
     ],
     [
-     "送風　実験",
-     "模型　風　当てる",
-     "空気抵抗　測定"
+     "風速",
+     "空気抵抗",
+     "揚力"
     ]
    ],
    "wiki": {
@@ -3328,7 +2041,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E6%B4%9E",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3351,8 +2064,8 @@
     ],
     [
      "天測航法",
-     "航海用　測角器",
-     "水平線　太陽　角度"
+     "測角器",
+     "仰角"
     ]
    ],
    "wiki": {
@@ -3361,40 +2074,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%85%AD%E5%88%86%E5%84%80",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "渾天儀",
-   "answers": [
-    "渾天儀",
-    "こんてんぎ"
-   ],
-   "zones": [
-    [
-     "古代中国",
-     "天文",
-     "環"
-    ],
-    [
-     "環",
-     "子午線",
-     "赤道"
-    ],
-    [
-     "天体　運行",
-     "天球模型",
-     "アーミラリ"
-    ]
-   ],
-   "wiki": {
-    "title": "渾天儀",
-    "extract": "渾天儀（こんてんぎ）、またはアーミラリ天球儀 (英: Armillary sphere) は、天球上の天体の動きを模した機器である。加えてアストロラーベの機能を備えた天測儀も存在する。古代のギリシアと中国で独自に発明・発展した。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B8%BE%E5%A4%A9%E5%84%80",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3417,8 +2097,8 @@
     ],
     [
      "滑り尺",
-     "対数目盛り　物差し",
-     "電卓以前　計算道具"
+     "対数",
+     "アナログ計算"
     ]
    ],
    "wiki": {
@@ -3427,7 +2107,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E5%B0%BA",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3448,7 +2128,7 @@
      "共振"
     ],
     [
-     "人工　雷　作る　装置",
+     "人工雷",
      "二次コイル",
      "空中放電"
     ]
@@ -3459,42 +2139,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%B9%E3%83%A9%E3%82%B3%E3%82%A4%E3%83%AB",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "回転のぞき絵",
-   "answers": [
-    "回転のぞき絵",
-    "ゾートロープ",
-    "かいてんのぞきえ",
-    "ゾエトロープ"
-   ],
-   "zones": [
-    [
-     "映画　始まり",
-     "動く絵",
-     "玩具"
-    ],
-    [
-     "円筒",
-     "スリット",
-     "連続画"
-    ],
-    [
-     "残像",
-     "回す　覗く",
-     "動画　原理"
-    ]
-   ],
-   "wiki": {
-    "title": "回転のぞき絵",
-    "extract": "回転のぞき絵（かいてんのぞきえ、英: Zoetrope、仏: Zootrope）とは、静止画を素早く入れ替えることで、あたかも動いているかのように見せる器具。ゾエトロープ、ゾートロープとも。zoetrope とは、ギリシア語の zoe（生命）と trope（回転）を組み合わせた言葉で、「生命の輪」あるいは「生きている輪」という意味がある。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E8%BB%A2%E3%81%AE%E3%81%9E%E3%81%8D%E7%B5%B5",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3519,8 +2164,8 @@
     ],
     [
      "写し絵",
-     "ガラス板　絵　映す",
-     "明治　映写装置"
+     "スライド",
+     "投影"
     ]
    ],
    "wiki": {
@@ -3529,7 +2174,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%B9%BB%E7%81%AF%E6%A9%9F",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3552,7 +2197,7 @@
     ],
     [
      "継ぐ",
-     "欠け　直す",
+     "繕い",
      "侘び"
     ]
    ],
@@ -3562,7 +2207,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%87%91%E7%B6%99%E3%81%8E",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3585,7 +2230,7 @@
      "秘密箱"
     ],
     [
-     "色　違う　木　組む",
+     "象嵌",
      "幾何学模様",
      "ずく"
     ]
@@ -3596,7 +2241,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%AF%84%E6%9C%A8%E7%B4%B0%E5%B7%A5",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3629,7 +2274,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%B1%9F%E6%88%B8%E5%88%87%E5%AD%90",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3651,9 +2296,9 @@
      "砂紋"
     ],
     [
-     "水　使わない",
+     "石庭",
      "龍安寺",
-     "禅　庭"
+     "禅"
     ]
    ],
    "wiki": {
@@ -3662,7 +2307,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%9E%AF%E5%B1%B1%E6%B0%B4",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3696,7 +2341,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%A0%B9%E4%BB%98",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3719,7 +2364,7 @@
      "長点"
     ],
     [
-     "点　線",
+     "トンツー",
      "SOS",
      "符号化"
     ]
@@ -3730,7 +2375,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%BC%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3764,140 +2409,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%89%B1%E7%9F%B3%E3%83%A9%E3%82%B8%E3%82%AA",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "ホログラフィー",
-   "answers": [
-    "ホログラフィー",
-    "ホログラム",
-    "ホログラフィ"
-   ],
-   "zones": [
-    [
-     "未来的",
-     "立体像",
-     "光"
-    ],
-    [
-     "レーザー",
-     "干渉",
-     "乾板"
-    ],
-    [
-     "三次元記録",
-     "干渉縞",
-     "角度　変わる"
-    ]
-   ],
-   "wiki": {
-    "title": "ホログラフィー",
-    "extract": "ホログラフィー（英: holography, ギリシア語の ὅλος (全体の) + γραφή (記録) から）は、3次元像を記録した写真であるホログラム (hologram) の製造技術のことである。ホログラフィーは情報の記録にも利用することができる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%BC",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "和時計",
-   "answers": [
-    "和時計",
-    "わどけい"
-   ],
-   "zones": [
-    [
-     "江戸",
-     "時刻",
-     "寺"
-    ],
-    [
-     "文字盤",
-     "錘",
-     "割駒"
-    ],
-    [
-     "江戸時代　時計",
-     "不定時法",
-     "割駒式文字盤"
-    ]
-   ],
-   "wiki": {
-    "title": "和時計",
-    "extract": "和時計（わどけい）とは、日本の江戸時代から明治初期にかけて製作・使用された時計のこと。不定時法を用いるための機構を持つ世界でも珍しい時計である。昔時計、日本時計、大名時計とも呼称する。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%99%82%E8%A8%88",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "音叉",
-   "answers": [
-    "音叉",
-    "おんさ"
-   ],
-   "zones": [
-    [
-     "音楽室",
-     "調律",
-     "響き"
-    ],
-    [
-     "金属",
-     "U字",
-     "共鳴箱"
-    ],
-    [
-     "U字形　金属",
-     "叩く　鳴る",
-     "調律　基準"
-    ]
-   ],
-   "wiki": {
-    "title": "音叉",
-    "extract": "音叉（おんさ、英: Tuning fork）とは、正弦波を描く特定の周波数の音または固有の振動数を発するU字状（ふたまた）に別れた金属製の器具である。音叉の素材は鋼（炭素鋼）、軽量化のためにアルミニウムやジュラルミンが用いられることもある。全体的にU字形をしており、底部に柄が付いている。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9F%B3%E5%8F%89",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "ジャイロスコープ",
-   "answers": [
-    "ジャイロスコープ",
-    "ジャイロ"
-   ],
-   "zones": [
-    [
-     "回転",
-     "宇宙船",
-     "姿勢"
-    ],
-    [
-     "ロータ",
-     "支持環",
-     "軸"
-    ],
-    [
-     "回転　コマ　姿勢保持",
-     "航空機　姿勢計測",
-     "角速度センサー"
-    ]
-   ],
-   "wiki": {
-    "title": "ジャイロスコープ",
-    "extract": "ジャイロスコープ（英: gyroscope）とは、物体の角度（姿勢）や角速度あるいは角加速度を検出する計測器ないし装置。ジャイロ、またはジャイロセンサと呼ばれることもある）。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3920,9 +2432,9 @@
      "プリズム"
     ],
     [
-     "潜水艦　海上　見る",
-     "二枚　鏡",
-     "筒　上下　反射"
+     "海上",
+     "反射鏡",
+     "視界"
     ]
    ],
    "wiki": {
@@ -3931,40 +2443,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%BD%9C%E6%9C%9B%E9%8F%A1",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "水琴窟",
-   "answers": [
-    "水琴窟",
-    "すいきんくつ"
-   ],
-   "zones": [
-    [
-     "日本庭園",
-     "静寂",
-     "水音"
-    ],
-    [
-     "甕",
-     "手水鉢",
-     "砂利"
-    ],
-    [
-     "地中　甕",
-     "水滴　反響",
-     "琴　音"
-    ]
-   ],
-   "wiki": {
-    "title": "水琴窟",
-    "extract": "水琴窟（すいきんくつ）は、日本庭園の装飾の一つで、手水鉢の近くの地中に作りだした空洞の中に水滴を落下させ、その際に発せられる音を反響させる仕掛けで、手水鉢の排水を処理する機能をもつ。水琴窟という名称の由来は不明である。同系統もしくは同義の言葉に洞水門（とうすいもん、どうすいもん、ほらすいもん）がある。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%90%B4%E7%AA%9F",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -3990,7 +2469,7 @@
     [
      "カコン",
      "獣よけ",
-     "竹　音"
+     "水受け"
     ]
    ],
    "wiki": {
@@ -3999,75 +2478,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%81%97%E3%81%97%E3%81%8A%E3%81%A9%E3%81%97",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 4,
-   "answerName": "オートマタ",
-   "answers": [
-    "オートマタ",
-    "オートマータ"
-   ],
-   "zones": [
-    [
-     "西洋",
-     "人形",
-     "18世紀"
-    ],
-    [
-     "歯車",
-     "カム",
-     "ぜんまい"
-    ],
-    [
-     "機械人形",
-     "機械仕掛け",
-     "文字　書く　人形"
-    ]
-   ],
-   "wiki": {
-    "title": "オートマタ",
-    "extract": "オートマタ（英: Automata [ɔːˈtɑmətə] 複数形）、オートマトン（Automaton [ɔːˈtɑməˌtɑn] 単数形）は、主に12世紀から19世紀にかけてヨーロッパ等で作られた機械人形ないしは自動人形のこと。 本項で述べる人形は、日本の伝統的な機械仕掛けの人形をからくりと呼ぶのに倣うと、いわゆる「西洋からくり人形」に該当する。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%82%BF",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "アセンブリ言語",
-   "answers": [
-    "アセンブリ言語",
-    "アセンブリげんご",
-    "アセンブラ言語",
-    "アセンブリ"
-   ],
-   "zones": [
-    [
-     "コンピュータ",
-     "黒い　画面",
-     "低水準"
-    ],
-    [
-     "CPU",
-     "命令",
-     "レジスタ"
-    ],
-    [
-     "命令　略記",
-     "機械語",
-     "アセンブラ"
-    ]
-   ],
-   "wiki": {
-    "title": "アセンブリ言語",
-    "extract": "アセンブリ言語（アセンブリげんご、英: assembly language）とは、特定のコンピュータのCPUが実行する機械語命令を、人間が読み書き可能な記号（ニーモニック）で表現した低水準言語の総称である。 各命令は通常、対象となる命令セットとほぼ一対一で対応し、アセンブラと呼ばれる翻訳プログラムによって機械語へ変換される。コンピュータのハードウェア構造に強く依存する点を特徴とする。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AA%E8%A8%80%E8%AA%9E",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4091,7 +2502,7 @@
      "ヒートシンク"
     ],
     [
-     "電流　冷やす　半導体",
+     "熱電冷却",
      "ポータブル冷温庫",
      "電子冷却"
     ]
@@ -4102,73 +2513,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%83%86%E3%82%A3%E3%82%A8%E7%B4%A0%E5%AD%90",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "トライボロジー",
-   "answers": [
-    "トライボロジー",
-    "摩擦学"
-   ],
-   "zones": [
-    [
-     "機械",
-     "摩耗",
-     "工学"
-    ],
-    [
-     "潤滑油",
-     "軸受",
-     "歯車"
-    ],
-    [
-     "摩擦　摩耗　潤滑",
-     "学問",
-     "表面工学"
-    ]
-   ],
-   "wiki": {
-    "title": "トライボロジー",
-    "extract": "トライボロジー（摩擦学、英: tribology）とは、2つの物体が互いに滑り合うような相対運動を行った場合の相互作用を及ぼしあう接触面、および、それに関連するすべての現象についての科学技術の一分野である。ギリシア語で「摩擦する」を意味するτριβωを語源とし、初期において重要な研究を提示したのが、流体潤滑理論の生みの親、ゾンマーフェルト（ドイツの物理学者）であるが、後に1966年にイギリスでまとめられた、摩擦や摩耗による損害を推定した報告書（ジョスト報告）でこの用語が提唱されたことが契機となり、発展を促した。トライボロジーに関わる人物をトライボロジスト（tribologist）と呼ぶ。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%82%A4%E3%83%9C%E3%83%AD%E3%82%B8%E3%83%BC",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "ゼーベック効果",
-   "answers": [
-    "ゼーベック効果",
-    "ゼーベックこうか"
-   ],
-   "zones": [
-    [
-     "温度",
-     "金属",
-     "実験"
-    ],
-    [
-     "熱電対",
-     "温度差",
-     "電圧"
-    ],
-    [
-     "温度差発電",
-     "熱電効果",
-     "温度計測"
-    ]
-   ],
-   "wiki": {
-    "title": "ゼーベック効果",
-    "extract": "ゼーベック効果（ゼーベックこうか、英: Seebeck effect）は物体の温度差が電圧に直接変換される現象で、熱電効果の一種。逆に電圧を温度差に変換するペルティエ効果もある。類似の現象としてトムソン効果やジュール熱がある。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%BC%E3%83%99%E3%83%83%E3%82%AF%E5%8A%B9%E6%9E%9C",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4193,7 +2538,7 @@
     [
      "電気抵抗ゼロ",
      "臨界温度",
-     "磁場　排除"
+     "完全反磁性"
     ]
    ],
    "wiki": {
@@ -4202,41 +2547,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%B6%85%E4%BC%9D%E5%B0%8E",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "ジョセフソン効果",
-   "answers": [
-    "ジョセフソン効果",
-    "ジョセフソンこうか",
-    "ジョゼフソン効果"
-   ],
-   "zones": [
-    [
-     "量子",
-     "極低温",
-     "精密測定"
-    ],
-    [
-     "超伝導体",
-     "薄い　絶縁膜",
-     "SQUID"
-    ],
-    [
-     "トンネル電流",
-     "電圧標準",
-     "ノーベル賞"
-    ]
-   ],
-   "wiki": {
-    "title": "ジョセフソン効果",
-    "extract": "ジョセフソン効果（ジョセフソンこうか、英: Josephson effect）は、弱く結合した2つの超伝導体の間に、超伝導電子対のトンネル効果によって超伝導電流が流れる現象である。1962年に、当時ケンブリッジ大学の大学院生だったブライアン・ジョセフソンによって理論的に導かれ、ベル研究所のアンダーソンとローウェルによって実験的に検証された。 波動関数の位相というミクロな量をマクロに観測できるという点で、超伝導の特徴を最も端的に示す現象と言うことができる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%82%BB%E3%83%95%E3%82%BD%E3%83%B3%E5%8A%B9%E6%9E%9C",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4259,7 +2570,7 @@
      "振動子"
     ],
     [
-     "圧力　電圧",
+     "点火",
      "ピエゾ",
      "逆効果"
     ]
@@ -4270,7 +2581,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%9C%A7%E9%9B%BB%E5%8A%B9%E6%9E%9C",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4293,7 +2604,7 @@
     ],
     [
      "量子閉じ込め",
-     "粒径　色　変わる",
+     "粒径",
      "ナノ結晶"
     ]
    ],
@@ -4303,72 +2614,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E3%83%89%E3%83%83%E3%83%88",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "カーボンナノチューブ",
-   "answers": [
-    "カーボンナノチューブ"
-   ],
-   "zones": [
-    [
-     "ナノ",
-     "素材",
-     "軽量"
-    ],
-    [
-     "炭素",
-     "筒",
-     "グラフェン"
-    ],
-    [
-     "円筒構造",
-     "高強度",
-     "炭素　同素体"
-    ]
-   ],
-   "wiki": {
-    "title": "カーボンナノチューブ",
-    "extract": "カーボンナノチューブ（英: carbon nanotube、略称CNT）は、炭素によって作られる六員環ネットワーク（グラフェンシート）が単層あるいは多層の同軸管状になった物質。炭素の同素体で、フラーレンの一種に分類されることもある。 単層のものをシングルウォールナノチューブ (SWNT)、多層のものをマルチウォールナノチューブ (MWNT) という。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3%E3%83%8A%E3%83%8E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "ゼオライト",
-   "answers": [
-    "ゼオライト",
-    "沸石"
-   ],
-   "zones": [
-    [
-     "鉱物",
-     "吸着",
-     "洗剤"
-    ],
-    [
-     "アルミノケイ酸塩",
-     "細孔",
-     "触媒"
-    ],
-    [
-     "分子ふるい",
-     "イオン交換",
-     "多孔質鉱物"
-    ]
-   ],
-   "wiki": {
-    "title": "ゼオライト",
-    "extract": "ゼオライト（沸石〈ふっせき〉、英: zeolite）は、ミクロ多孔性の結晶性アルミノケイ酸塩であり、細孔径は0.3～1 ナノメートル (nm) である。分子ふるい、イオン交換材料、触媒および吸着材料として利用され、工業的に重要な物質である。組成式はMn+1/n(AlO2)−(SiO2)x･yH2Oで表される。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%82%AA%E3%83%A9%E3%82%A4%E3%83%88",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4390,7 +2636,7 @@
      "ばね"
     ],
     [
-     "元　形　戻る",
+     "復元",
      "変態温度",
      "超弾性"
     ]
@@ -4401,174 +2647,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%BD%A2%E7%8A%B6%E8%A8%98%E6%86%B6%E5%90%88%E9%87%91",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "フォトリソグラフィ",
-   "answers": [
-    "フォトリソグラフィ",
-    "フォトリソグラフィー"
-   ],
-   "zones": [
-    [
-     "クリーンルーム",
-     "半導体工場",
-     "黄色い　光"
-    ],
-    [
-     "フォトマスク",
-     "レジスト",
-     "露光"
-    ],
-    [
-     "微細加工",
-     "パターン転写",
-     "ウェハー"
-    ]
-   ],
-   "wiki": {
-    "title": "フォトリソグラフィ",
-    "extract": "フォトリソグラフィ（英語: photolithography）は、感光性の物質を塗布した物質の表面を、パターン状に露光（パターン露光、像様露光などともいう）することで、露光された部分と露光されていない部分からなるパターンを生成する技術。光リソグラフィとも呼ばれる。主に、集積回路、プリント基板、印刷版、液晶ディスプレイパネル、プラズマディスプレイパネルなどの製造に用いられる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%88%E3%83%AA%E3%82%BD%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "スターリングエンジン",
-   "answers": [
-    "スターリングエンジン",
-    "スターリング機関"
-   ],
-   "zones": [
-    [
-     "熱機関",
-     "模型",
-     "静か"
-    ],
-    [
-     "ピストン",
-     "再生器",
-     "フライホイール"
-    ],
-    [
-     "外燃機関",
-     "温度差　動く",
-     "作動ガス"
-    ]
-   ],
-   "wiki": {
-    "title": "スターリングエンジン",
-    "extract": "スターリングエンジン（英: Stirling engine）とは、熱機関の形式のひとつで、シリンダー内のガス（もしくは空気等）を外部から加熱・冷却し、その体積の変化（加熱による膨張・冷却による収縮）により仕事を得る外燃機関である。熱交換をすることによってカルノーサイクルと同じ理論熱効率となる。スコットランドの牧師、ロバート・スターリングが1816年に発明し、名称はこれに由来する。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "量子もつれ",
-   "answers": [
-    "量子もつれ",
-    "りょうしもつれ",
-    "量子エンタングルメント"
-   ],
-   "zones": [
-    [
-     "量子",
-     "遠く　離れる",
-     "不思議"
-    ],
-    [
-     "光子",
-     "観測",
-     "状態"
-    ],
-    [
-     "エンタングルメント",
-     "ベル不等式",
-     "非局所相関"
-    ]
-   ],
-   "wiki": {
-    "title": "量子もつれ",
-    "extract": "量子もつれ（りょうしもつれ、英: quantum entanglement）とは、複合量子系において、全体の量子状態が各部分系の量子状態の積として表せない性質である。このとき、それぞれの部分系は独立した状態ではなく、全体として一つのまとまった状態になっている。量子もつれ状態にある粒子同士は、互いに空間的に遠く離れていても、測定結果の間に古典物理学では説明できない強い相関が現れる。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E3%82%82%E3%81%A4%E3%82%8C",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "浮動小数点数",
-   "answers": [
-    "浮動小数点数",
-    "ふどうしょうすうてんすう",
-    "浮動小数点"
-   ],
-   "zones": [
-    [
-     "コンピュータ",
-     "計算",
-     "誤差"
-    ],
-    [
-     "仮数",
-     "指数",
-     "符号"
-    ],
-    [
-     "IEEE 754",
-     "丸め誤差",
-     "倍精度"
-    ]
-   ],
-   "wiki": {
-    "title": "浮動小数点数",
-    "extract": "浮動小数点数（ふどうしょうすうてんすう、英: floating-point number）は、実数をコンピュータで処理（演算や記憶、通信）するために有限桁の小数で近似値として扱う方式であり、人間が多く用いる十進法での計算や表記に加えて、コンピュータの数値表現で多く用いる二進法でも採用されている。多くの場合、符号部、固定長の指数部、固定長の仮数部、の3つの部分を組み合わせて、数値を表現する。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "ハッシュ関数",
-   "answers": [
-    "ハッシュ関数",
-    "ハッシュかんすう"
-   ],
-   "zones": [
-    [
-     "暗号",
-     "データ",
-     "照合"
-    ],
-    [
-     "入力",
-     "固定長",
-     "ダイジェスト"
-    ],
-    [
-     "衝突",
-     "SHA-256",
-     "一方向"
-    ]
-   ],
-   "wiki": {
-    "title": "ハッシュ関数",
-    "extract": "ハッシュ関数 (ハッシュかんすう、英語: hash function) あるいは要約関数とは、任意のデータから、別の（多くの場合は短い固定長の）値を得るための操作、または、その様な値を得るための関数のこと。ハッシュ関数から得られた値のことを要約値やハッシュ値または単にハッシュという。 ハッシュ関数は、主に検索の高速化やデータ比較処理の高速化、さらには改竄の検出に使われる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E9%96%A2%E6%95%B0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4601,7 +2680,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4624,7 +2703,7 @@
      "オブジェクト"
     ],
     [
-     "不要領域　回収",
+     "メモリ解放",
      "マーク・アンド・スイープ",
      "参照カウント"
     ]
@@ -4635,39 +2714,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%99%E3%83%BC%E3%82%B8%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "コンパイラ",
-   "answers": [
-    "コンパイラ"
-   ],
-   "zones": [
-    [
-     "プログラミング",
-     "ソースコード",
-     "ビルド"
-    ],
-    [
-     "構文解析",
-     "字句解析",
-     "最適化"
-    ],
-    [
-     "機械語　翻訳",
-     "実行ファイル",
-     "インタプリタ"
-    ]
-   ],
-   "wiki": {
-    "title": "コンパイラ",
-    "extract": "コンパイラ（英: compiler）は、高水準言語で書かれたコンピュータプログラムを、 コンピュータが実行や解釈できる形式に、一括して変換するソフトウェア。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4701,172 +2748,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E8%AA%98%E5%B0%8E%E5%8A%A0%E7%86%B1",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "レーザー冷却",
-   "answers": [
-    "レーザー冷却",
-    "レーザーれいきゃく"
-   ],
-   "zones": [
-    [
-     "量子",
-     "極低温",
-     "原子"
-    ],
-    [
-     "レーザー光",
-     "原子",
-     "光子"
-    ],
-    [
-     "ドップラー冷却",
-     "絶対零度　近く",
-     "光　圧力"
-    ]
-   ],
-   "wiki": {
-    "title": "レーザー冷却",
-    "extract": "レーザー冷却（レーザーれいきゃく）とは、レーザー光を用いて、気体分子の温度を絶対零度近くまで冷却する方法のこと。おもに、単原子分子、もしくは単原子イオンに用いられる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC%E5%86%B7%E5%8D%B4",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "ジャイロトロン",
-   "answers": [
-    "ジャイロトロン"
-   ],
-   "zones": [
-    [
-     "核融合",
-     "研究所",
-     "高出力"
-    ],
-    [
-     "電子ビーム",
-     "磁場",
-     "共振器"
-    ],
-    [
-     "ミリ波",
-     "プラズマ加熱",
-     "サイクロトロン共鳴"
-    ]
-   ],
-   "wiki": {
-    "title": "ジャイロトロン",
-    "extract": "ジャイロトロン（Gyrotron）とは、サイクロトロン共鳴メーザー原理を応用したマイクロ波、ミリ波用真空管の一種。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E3%83%88%E3%83%AD%E3%83%B3",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "エアロゲル",
-   "answers": [
-    "エアロゲル",
-    "エアロジェル"
-   ],
-   "zones": [
-    [
-     "宇宙",
-     "軽い",
-     "煙"
-    ],
-    [
-     "シリカ",
-     "空隙",
-     "断熱材"
-    ],
-    [
-     "世界一　軽い　固体",
-     "ゲル",
-     "多孔質"
-    ]
-   ],
-   "wiki": {
-    "title": "エアロゲル",
-    "extract": "エアロゲル（英: aerogel）は、ゲル中に含まれる溶媒を超臨界乾燥により気体に置換した多孔性の物質である。 エアロゲルのうち、よく知られているシリカエアロゲルは非常に低密度の固体で、高い断熱性など際だった特性をもつ。半透明な外見から「凍った煙」や「固体の煙」などと呼ばれることもある。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A2%E3%83%AD%E3%82%B2%E3%83%AB",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "スピントロニクス",
-   "answers": [
-    "スピントロニクス",
-    "スピンエレクトロニクス"
-   ],
-   "zones": [
-    [
-     "電子",
-     "磁気",
-     "次世代"
-    ],
-    [
-     "スピン",
-     "磁気抵抗",
-     "ハードディスク"
-    ],
-    [
-     "スピン流",
-     "MRAM",
-     "巨大磁気抵抗"
-    ]
-   ],
-   "wiki": {
-    "title": "スピントロニクス",
-    "extract": "スピントロニクス（英: spintronics）とは、固体中の電子が持つ電荷とスピンの両方を工学的に利用、応用する分野のこと。 スピンとエレクトロニクス（電子工学）から生まれた造語である。マグネットエレクトロニクス（英: magnetoelectronics）とも呼ばれるが、スピントロニクスの呼称の方が一般的である。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%94%E3%83%B3%E3%83%88%E3%83%AD%E3%83%8B%E3%82%AF%E3%82%B9",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "射出成形",
-   "answers": [
-    "射出成形",
-    "しゃしゅつせいけい",
-    "射出成型"
-   ],
-   "zones": [
-    [
-     "工場",
-     "プラスチック",
-     "量産"
-    ],
-    [
-     "金型",
-     "ペレット",
-     "樹脂"
-    ],
-    [
-     "溶かす　注入",
-     "成形機",
-     "冷却固化"
-    ]
-   ],
-   "wiki": {
-    "title": "射出成形",
-    "extract": "射出成形（しゃしゅつせいけい）はプラスチックなどの合成樹脂の加工法である。インジェクション成形ともよばれる。熱可塑性樹脂の場合が典型的で、軟化する温度に加熱したプラスチック（プラ湯）を射出圧 (10 - 3000 kgf/cm2) を加えて金型に押込み、型に充填して成形する。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%B0%84%E5%87%BA%E6%88%90%E5%BD%A2",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4890,7 +2772,7 @@
     [
      "ローレンツ力",
      "キャリア",
-     "横方向　電圧"
+     "起電力"
     ]
    ],
    "wiki": {
@@ -4899,39 +2781,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%BC%E3%83%AB%E5%8A%B9%E6%9E%9C",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "ヒートパイプ",
-   "answers": [
-    "ヒートパイプ"
-   ],
-   "zones": [
-    [
-     "パソコン",
-     "冷却",
-     "ノート"
-    ],
-    [
-     "銅管",
-     "作動液",
-     "ウィック"
-    ],
-    [
-     "潜熱",
-     "蒸発　凝縮",
-     "熱輸送"
-    ]
-   ],
-   "wiki": {
-    "title": "ヒートパイプ",
-    "extract": "ヒートパイプ（英語：heat pipe）とは、熱の移動効率を上げる技術・仕組みの一つ。単に効率を上げるだけでなく、一方の温度が高い場合にのみ移動効率を発揮する熱ダイオードとしての使用法もある。なおメカニズム的には、熱伝導を上げているわけではなく、作動液の移動を用いて熱を移動させる仕組みである。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%BC%E3%83%88%E3%83%91%E3%82%A4%E3%83%97",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -4953,9 +2803,9 @@
      "電子レンジ"
     ],
     [
-     "金属　網　電磁波　遮る",
-     "電子レンジ　扉　網",
-     "車　中　雷　安全"
+     "電磁遮蔽",
+     "シールドルーム",
+     "避雷"
     ]
    ],
    "wiki": {
@@ -4964,41 +2814,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B8",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "トンネル効果",
-   "answers": [
-    "トンネル効果",
-    "トンネルこうか",
-    "量子トンネル効果"
-   ],
-   "zones": [
-    [
-     "量子力学",
-     "粒子",
-     "壁"
-    ],
-    [
-     "障壁",
-     "波動関数",
-     "電子"
-    ],
-    [
-     "通り抜け",
-     "透過確率",
-     "古典　不可能"
-    ]
-   ],
-   "wiki": {
-    "title": "トンネル効果",
-    "extract": "トンネル効果（トンネルこうか、英: tunnelling effect）は、量子力学において、波動関数がポテンシャル障壁を超えて伝播する現象である。 20世紀初頭に予言され、20世紀半ばには広く認知される物理現象となった。トンネル効果は、ハイゼンベルクの不確定性原理と、物質における粒子と波動の二重性を用いて説明できる。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB%E5%8A%B9%E6%9E%9C",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -5021,8 +2837,8 @@
      "色"
     ],
     [
-     "すべて　光　吸収　物体",
-     "放射　スペクトル分布",
+     "完全吸収体",
+     "スペクトル",
      "空洞放射"
     ]
    ],
@@ -5032,74 +2848,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E9%BB%92%E4%BD%93%E6%94%BE%E5%B0%84",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "形態素",
-   "answers": [
-    "形態素",
-    "けいたいそ"
-   ],
-   "zones": [
-    [
-     "言語学",
-     "単語",
-     "分解"
-    ],
-    [
-     "語幹",
-     "接辞",
-     "活用"
-    ],
-    [
-     "意味　最小単位",
-     "単語　分解",
-     "モーフィーム"
-    ]
-   ],
-   "wiki": {
-    "title": "形態素",
-    "extract": "形態素（けいたいそ、英: morpheme）とは、言語学の用語で、意味をもつ表現要素の最小単位。ある言語においてそれ以上分解したら意味をなさなくなるところまで分割して抽出された、音素のまとまりの一つ一つを指す。 形態素の一般的な性質や、形態素間の結びつきなどを明らかにする言語学の領域は、形態論と呼ばれる。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%BD%A2%E6%85%8B%E7%B4%A0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "換喩",
-   "answers": [
-    "換喩",
-    "かんゆ",
-    "メトニミー"
-   ],
-   "zones": [
-    [
-     "比喩",
-     "言葉",
-     "文学"
-    ],
-    [
-     "隣接性",
-     "連想",
-     "言い換え"
-    ],
-    [
-     "近さ　基づく　比喩",
-     "修辞技法",
-     "鍋　煮える"
-    ]
-   ],
-   "wiki": {
-    "title": "換喩",
-    "extract": "換喩（かんゆ）、メトニミー（英: metonymy）は、修辞学の修辞技法の一つで、概念の隣接性あるいは近接性に基づいて、語句の意味を拡張して用いる、比喩の一種である。また、そうして用いられる語句そのものをもいう。 文字通りの意味の語句で言い換える換称とは異なる。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%8F%9B%E5%96%A9",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -5122,9 +2871,9 @@
      "序詞"
     ],
     [
-     "一語　二つ　意味",
+     "両義",
      "修辞技法",
-     "松　待つ"
+     "松"
     ]
    ],
    "wiki": {
@@ -5133,176 +2882,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%8E%9B%E8%A9%9E",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "本歌取",
-   "answers": [
-    "本歌取",
-    "本歌取り",
-    "ほんかどり"
-   ],
-   "zones": [
-    [
-     "和歌",
-     "中世",
-     "古歌"
-    ],
-    [
-     "新古今和歌集",
-     "歌学",
-     "引用"
-    ],
-    [
-     "古歌　句　取り入れる",
-     "重層的　表現",
-     "作歌技法"
-    ]
-   ],
-   "wiki": {
-    "title": "本歌取",
-    "extract": "本歌取（ほんかどり）とは、歌学における和歌の作成技法の1つで、有名な古歌（本歌）の1句もしくは2句を自作に取り入れて作歌を行う方法。主に本歌を背景として用いることで奥行きを与えて表現効果の重層化を図る際に用いた。 例えば、 『古今和歌集』巻2 94番歌 紀貫之 「三輪山を しかも隠すか 春霞 人に知られぬ 花や咲くらむ」 『万葉集』巻1 18番歌 額田王 「三輪山を しかも隠すか 雲だにも 心あらなも かくさふべしや」 この2作品を比較すれば明らかなように、貫之は額田王の第1句・第2句をそのまま採用して第3句以後を自作としている。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%9C%AC%E6%AD%8C%E5%8F%96",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "異化",
-   "answers": [
-    "異化",
-    "いか"
-   ],
-   "zones": [
-    [
-     "文学理論",
-     "日常",
-     "違和感"
-    ],
-    [
-     "演劇",
-     "前衛",
-     "詩　言葉"
-    ],
-    [
-     "見慣れる　もの　奇妙",
-     "知覚　自動化",
-     "ロシア・フォルマリズム　用語"
-    ]
-   ],
-   "wiki": {
-    "title": "異化",
-    "extract": "異化（いか、 ロシア語: остранение, ostranenie）は、慣れ親しんだ日常的な事物を奇異で非日常的なものとして表現するための言語上の手法である。知覚の「自動化」を避けるためのものとされる。ソ連の文学理論家であるヴィクトル・シクロフスキーによって概念化された。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%95%B0%E5%8C%96",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "間テクスト性",
-   "answers": [
-    "間テクスト性",
-    "かんテクストせい",
-    "インターテクスチュアリティー",
-    "相互テクスト性"
-   ],
-   "zones": [
-    [
-     "文学",
-     "読書",
-     "引用"
-    ],
-    [
-     "テクスト",
-     "パロディ",
-     "オマージュ"
-    ],
-    [
-     "引用　モザイク",
-     "ポスト構造主義　文学理論",
-     "作品どうし　相互関係"
-    ]
-   ],
-   "wiki": {
-    "title": "間テクスト性",
-    "extract": "間テクスト性（かんテクストせい）は、テクストの意味を他のテクストとの関連によって見つけ出すことである。テクスト間相互関連性と訳されたり、英語からインターテクスチュアリティーと呼ばれたりすることもある。 ある著者が先行テクストから借用したり変形したりすることや、ある読者がテクストを読み取る際に別のテクストを参照したりすることをいう。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%96%93%E3%83%86%E3%82%AF%E3%82%B9%E3%83%88%E6%80%A7",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "記号学",
-   "answers": [
-    "記号学",
-    "記号論",
-    "きごうがく"
-   ],
-   "zones": [
-    [
-     "意味",
-     "文化",
-     "しるし"
-    ],
-    [
-     "シニフィアン",
-     "シニフィエ",
-     "言語"
-    ],
-    [
-     "記号　学問",
-     "セミオティクス",
-     "構造主義"
-    ]
-   ],
-   "wiki": {
-    "title": "記号学",
-    "extract": "記号学（きごうがく、英: semiotics、独: semiotik、仏: sémiotique）は、記号の学問である。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%A8%98%E5%8F%B7%E5%AD%A6",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "現象学",
-   "answers": [
-    "現象学",
-    "げんしょうがく"
-   ],
-   "zones": [
-    [
-     "哲学",
-     "意識",
-     "経験"
-    ],
-    [
-     "志向性",
-     "エポケー",
-     "還元"
-    ],
-    [
-     "事象　そのもの",
-     "現れ　学",
-     "20世紀　哲学"
-    ]
-   ],
-   "wiki": {
-    "title": "現象学",
-    "extract": "現象学（げんしょうがく、独: Phänomenologie〈フェノメノロギー〉）は、哲学的学問およびそれに付随する方法論を意味する。",
-    "url": "https://ja.wikipedia.org/wiki/%E7%8F%BE%E8%B1%A1%E5%AD%A6",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -5326,9 +2906,9 @@
      "矛盾"
     ],
     [
-     "弁証法　用語",
-     "否定　保存　同時",
-     "ドイツ語　哲学用語"
+     "弁証法",
+     "保存",
+     "ドイツ語"
     ]
    ],
    "wiki": {
@@ -5337,73 +2917,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E6%AD%A2%E6%8F%9A",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "限界効用",
-   "answers": [
-    "限界効用",
-    "げんかいこうよう"
-   ],
-   "zones": [
-    [
-     "経済学",
-     "満足",
-     "消費"
-    ],
-    [
-     "効用",
-     "財",
-     "追加　1単位"
-    ],
-    [
-     "逓減",
-     "ミクロ経済学",
-     "限界革命"
-    ]
-   ],
-   "wiki": {
-    "title": "限界効用",
-    "extract": "限界効用（げんかいこうよう、英: marginal utility）とは、財（モノ、およびサービス）を1単位追加して消費することによる効用（財から得られる満足度）の増加分のこと。ミクロ経済学の消費者理論で用いられる概念である。 「限界」の意味については限界 (経済学)を参照のこと。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%99%90%E7%95%8C%E5%8A%B9%E7%94%A8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "比較優位",
-   "answers": [
-    "比較優位",
-    "ひかくゆうい"
-   ],
-   "zones": [
-    [
-     "貿易",
-     "国",
-     "経済"
-    ],
-    [
-     "生産費",
-     "分業",
-     "特化"
-    ],
-    [
-     "機会費用",
-     "国際貿易論",
-     "相対的　得意"
-    ]
-   ],
-   "wiki": {
-    "title": "比較優位",
-    "extract": "比較優位（ひかくゆうい、英: comparative advantage）とは、経済学者であったデヴィッド・リカードが提唱した概念で、比較生産費説やリカード理論と呼ばれる学説・理論の柱となる、貿易理論における最も基本的な概念である。アダム・スミスが提唱した絶対優位（absolute advantage）の概念を柱とする学説・理論を修正する形で提唱された。 これは、自由貿易において各経済主体が（複数あり得る自身の優位分野の中から）自身の最も優位な分野（より機会費用の少ない、自身の利益・収益性を最大化できる財の生産）に特化・集中することで、それぞれの労働生産性が増大され、互いにより高品質の財やサービスと高い利益・収益を享受・獲得できるようになることを説明する概念である。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%AF%94%E8%BC%83%E5%84%AA%E4%BD%8D",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -5425,7 +2939,7 @@
      "明暗"
     ],
     [
-     "明暗　対比",
+     "コントラスト",
      "立体感",
      "イタリア語"
     ]
@@ -5436,7 +2950,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A2%E3%83%AD%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AD",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   },
   {
@@ -5458,9 +2972,9 @@
      "歌論"
     ],
     [
-     "能　美　理念",
-     "深い　静か　余韻",
-     "中世和歌　理想"
+     "美意識",
+     "余韻",
+     "中世和歌"
     ]
    ],
    "wiki": {
@@ -5469,205 +2983,7 @@
     "url": "https://ja.wikipedia.org/wiki/%E5%B9%BD%E7%8E%84",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "序破急",
-   "answers": [
-    "序破急",
-    "じょはきゅう"
-   ],
-   "zones": [
-    [
-     "能",
-     "雅楽",
-     "構成"
-    ],
-    [
-     "舞楽",
-     "連歌",
-     "浄瑠璃"
-    ],
-    [
-     "三段　展開",
-     "緩やか　始まり",
-     "芸能　原理"
-    ]
-   ],
-   "wiki": {
-    "title": "序破急",
-    "extract": "序破急（じょはきゅう）は、日本の文芸・芸能における時間的な構成・進行の原理を表す語である。もとは雅楽の舞楽における当曲の楽章名「序」「破」「急」に関わる概念で、中世以降、蹴鞠、連歌、能などに取り入れられ、近世には浄瑠璃、歌舞伎、三味線音楽などにも用いられた。各段階の内容や速度、適用される範囲は分野や時代によって異なり、常に固定した三部構成や一様な加速を意味するわけではない。",
-    "url": "https://ja.wikipedia.org/wiki/%E5%BA%8F%E7%A0%B4%E6%80%A5",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "音韻論",
-   "answers": [
-    "音韻論",
-    "おんいんろん"
-   ],
-   "zones": [
-    [
-     "言語学",
-     "発音",
-     "音"
-    ],
-    [
-     "音素",
-     "アクセント",
-     "最小対"
-    ],
-    [
-     "言語音　機能",
-     "音声学　違い",
-     "音素体系"
-    ]
-   ],
-   "wiki": {
-    "title": "音韻論",
-    "extract": "音韻論（おんいんろん、英: phonology）は、言語学の一分野。言語の構成要素である音声（言語音）の機能を研究対象とする。音声学に依拠するが、音声学が言語音の物理的側面に焦点をあてるのに対し、音韻論では言語音の機能面に着目して抽象化をおこなう。",
-    "url": "https://ja.wikipedia.org/wiki/%E9%9F%B3%E9%9F%BB%E8%AB%96",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "修辞学",
-   "answers": [
-    "修辞学",
-    "しゅうじがく"
-   ],
-   "zones": [
-    [
-     "弁論",
-     "古代ギリシャ",
-     "説得"
-    ],
-    [
-     "比喩",
-     "演説",
-     "文体"
-    ],
-    [
-     "レトリック",
-     "雄弁",
-     "修辞技法"
-    ]
-   ],
-   "wiki": {
-    "title": "修辞学",
-    "extract": "修辞学（しゅうじがく、希: ρητορική、ギリシア語ラテン翻字: rhētorikē、羅: rhetorica、英: rhetoric）は、弁論・演説・説得の技術に関する学問分野。弁論術、雄弁術、説得術、レートリケー、レトリックともいう。 西洋に古くからある学問分野で、その起源は古代ギリシアにさかのぼる。",
-    "url": "https://ja.wikipedia.org/wiki/%E4%BF%AE%E8%BE%9E%E5%AD%A6",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "提喩",
-   "answers": [
-    "提喩",
-    "ていゆ",
-    "シネクドキ"
-   ],
-   "zones": [
-    [
-     "比喩",
-     "言葉",
-     "文学"
-    ],
-    [
-     "上位概念",
-     "下位概念",
-     "言い換え"
-    ],
-    [
-     "部分　全体　表す",
-     "花見　花",
-     "転義"
-    ]
-   ],
-   "wiki": {
-    "title": "提喩",
-    "extract": "提喩（ていゆ、シネクドキー、英: synecdoche）は、転義の一種。上位概念を下位概念で表す、また逆に下位概念を上位概念によって表す修辞技法。",
-    "url": "https://ja.wikipedia.org/wiki/%E6%8F%90%E5%96%A9",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "パラダイム",
-   "answers": [
-    "パラダイム"
-   ],
-   "zones": [
-    [
-     "科学",
-     "考え方",
-     "時代"
-    ],
-    [
-     "科学革命",
-     "通常科学",
-     "転換"
-    ],
-    [
-     "科学　枠組み　転換",
-     "科学哲学",
-     "模範"
-    ]
-   ],
-   "wiki": {
-    "title": "パラダイム",
-    "extract": "パラダイム (paradigm) とは、科学史家・科学哲学者のトーマス・クーンによって提唱された、科学史及び科学哲学上の概念。一般には「模範」「範」を意味する語だが、1962年に刊行されたクーンの『科学革命の構造（The structure of scientific revolutions）』で科学史の特別な用語として用いられたことで有名になった。しかし、同時に多くの誤解釈や誤解に基づく非難に直面したこと、また、概念の曖昧さなどの問題があったために、8年後の1970年に公刊された改訂版では撤回が宣言され、別の用語で問題意識を再定式化することが目指された。",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
-   }
-  },
-  {
-   "tier": 5,
-   "answerName": "解釈学",
-   "answers": [
-    "解釈学",
-    "かいしゃくがく"
-   ],
-   "zones": [
-    [
-     "哲学",
-     "テクスト",
-     "理解"
-    ],
-    [
-     "聖書解釈",
-     "文献学",
-     "部分　全体"
-    ],
-    [
-     "ヘルメノイティク",
-     "理解　理論",
-     "地平　融合"
-    ]
-   ],
-   "wiki": {
-    "title": "解釈学",
-    "extract": "解釈学（かいしゃくがく、英：hermeneutics 仏：herméneutique 独：Hermeneutik）は、様々なテクストを解釈する文献学的な技法の理論、あるいは「解釈する」「理解する」「読む」という事柄に関する体系的な理論、哲学のことである。 現代の解釈学的哲学の代表的人物としてはヴィルヘルム・ディルタイ、マルティン・ハイデガー、ガダマー、ポール・リクールなどがいる。ドナルド・デイヴィッドソンやミシェル・フーコーが含められることもある。",
-    "url": "https://ja.wikipedia.org/wiki/%E8%A7%A3%E9%87%88%E5%AD%A6",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-    "retrieved": "2026-10-25"
+    "retrieved": "2026-10-26"
    }
   }
  ]

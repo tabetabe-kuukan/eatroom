@@ -665,6 +665,14 @@ class Meta:
         self.d["lights"].append({"pos": to3(x, y, z), "color": list(color), "intensity": intensity,
                                  "distance": distance, "flicker": flicker, "kind": kind})
 
+    def slot(self, zone, x, y, z, kind, normal=(0, -1, 0), up=(0, 0, 1), w=2.4, h=0.8, radius=2.6, **extra):
+        """（v2）検索ワードを立体物として出す場所。three 側で、その回に選ばれた単語の形に組み立てる。
+        normal: 面の向き（文字が向く方向）、up: 文字の上方向。どちらも Blender 座標"""
+        n, u = Vector(normal).normalized(), Vector(up).normalized()
+        self.d.setdefault("slots", []).append({
+            "zone": zone, "pos": to3(x, y, z), "normal": to3(*n), "up": to3(*u), "kind": kind,
+            "w": w, "h": h, "radius": radius, **extra})
+
     def sound(self, sid, x, y, z=1.0):
         self.d["sounds"][sid] = to3(x, y, z)
 
@@ -915,8 +923,10 @@ def export_glb(path, objs):
 
 
 def finalize(space_id, meta, hdri_file=None, lm_size=2048, lm_samples=512, ao_size=1024, ao_samples=96,
-             bake=True):
-    tag = f"space{space_id}"
+             bake=True, night=None):
+    """night: 夜の照明に切り替える関数。渡すと、昼のライトマップを書き出した後に夜のライトマップも焼く
+    （同じ UV なので three.js 側でライトマップを差し替えるだけで夜になる）"""
+    tag = space_id if str(space_id).startswith("room_") else f"space{space_id}"
     static = [o for o in coll("static").all_objects if o.type == "MESH"]
     log("static objects", len(static))
     prep_lightmap_uv(static)
@@ -949,5 +959,10 @@ def finalize(space_id, meta, hdri_file=None, lm_size=2048, lm_samples=512, ao_si
     with open(os.path.join(EXPORT, f"{tag}.credits.json"), "w", encoding="utf-8") as f:
         json.dump(list(ph.USED.values()), f, ensure_ascii=False, indent=1)
     # 生成スクリプトから再現できる .blend も残す
+    if night and bake:
+        night()
+        nscale = bake_lightmap(lm_obj, lm_size, lm_samples, os.path.join(EXPORT, f"{tag}_lm_night.png"))
+        meta.d["lightmap_night"] = {"file": f"{tag}_lm_night.webp", "scale": round(nscale, 4)}
+        meta.save(os.path.join(EXPORT, f"{tag}.json"))
     bpy.ops.wm.save_as_mainfile(filepath=os.path.join(BL, f"{tag}.blend"), compress=True)
     log("done", tag)
