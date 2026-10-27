@@ -297,8 +297,42 @@ function renderMemo() {
       return `<div class="word locked"><b style="width:${Math.max(2, [...w].length) * 15}px"></b><span>未発見</span></div>`;
     }).join('');
     return `<div class="zone-block"><h3>${z.name}</h3>${items}</div>`;
-  }).join('');
+  }).join('') + renderNotes();
 }
+
+// 自分のメモ（調べたこと・思いついた答えの候補などを書き足せる）
+function renderNotes() {
+  const list = st.notes(def.id).map((n, i) => `<div class="word note"><span dir="auto">${esc(n)}</span><button class="note-del" data-i="${i}" aria-label="このメモを消す">×</button></div>`).join('');
+  // ふだんは「検索メモを追加」ボタンだけ。押すと書く欄が開く
+  const form = noteOpen
+    ? `<form id="note-form" class="note-row" autocomplete="off">
+      <input id="note-input" type="text" maxlength="80" placeholder="調べたこと・気づいたことを書く" enterkeyhint="done" />
+      <button type="submit" class="primary">追加</button>
+      <button type="button" id="note-cancel">やめる</button>
+    </form>`
+    : '<button type="button" id="note-open" class="note-open">＋ 検索メモを追加</button>';
+  return `<div class="zone-block notes"><h3>自分のメモ</h3>${list}${form}</div>`;
+}
+let noteOpen = false;
+function setNoteOpen(open) {
+  noteOpen = open;
+  renderMemo();
+  if (open) { $('note-input').focus(); $('memo-list').scrollTop = $('memo-list').scrollHeight; }
+}
+$('memo-list').addEventListener('submit', (e) => {
+  if (e.target.id !== 'note-form') return;
+  e.preventDefault();
+  // 書いたら欄を閉じて、ボタンに戻す（空のときは閉じない）
+  if (st.addNote(def.id, $('note-input').value)) setNoteOpen(false);
+});
+$('memo-list').addEventListener('click', (e) => {
+  if (e.target.closest('#note-open')) return setNoteOpen(true);
+  if (e.target.closest('#note-cancel')) return setNoteOpen(false);
+  const b = e.target.closest('.note-del');
+  if (!b) return;
+  st.removeNote(def.id, Number(b.dataset.i));
+  renderMemo();
+});
 
 function openMemo() {
   if (mode !== 'play' && mode !== 'pause') return;
@@ -308,6 +342,8 @@ function openMemo() {
 }
 function closeMemo() {
   if (mode !== 'memo') return;
+  // 書きかけの欄は閉じて、次に開いたときはボタンに戻っている
+  if (noteOpen) { noteOpen = false; renderMemo(); }
   $('answer').blur();
   setMode('play');
   player.lock();

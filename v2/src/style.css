@@ -122,3 +122,15 @@ body.void #void { display: block; }
 .intro-inner { background: rgba(10, 10, 12, 0.72); padding: 28px 36px; backdrop-filter: blur(8px); text-shadow: none; border-radius: 2px; max-width: 560px; }
 .intro-tier { font-size: 12px; letter-spacing: 0.3em; color: var(--accent); margin: -4px 0 14px; }
 #stick { background: rgba(10, 10, 12, 0.35); }
+
+/* ---- 検索メモ：自分のメモ ---- */
+.notes h3 { color: var(--accent); }
+.word.note span { font-size: 14px; line-height: 1.6; word-break: break-all; }
+.note-del { border: none; padding: 2px 8px; font-size: 16px; color: var(--dim); }
+.note-del:hover { color: var(--fg); }
+.note-row { display: flex; gap: 8px; margin-top: 10px; }
+.note-row input { flex: 1; min-width: 0; font: inherit; font-size: 14px; padding: 0.5em 0.6em; background: rgba(255, 255, 255, 0.06); border: 1px solid var(--line); color: var(--fg); border-radius: 2px; }
+.note-row input:focus { outline: none; border-color: var(--fg); }
+.note-row button { padding: 0.5em 1em; font-size: 13px; }
+.note-open { width: 100%; margin-top: 10px; padding: 0.6em 1em; font-size: 13px; border-style: dashed; }
+.note-row button.primary { padding: 0.5em 1em; }

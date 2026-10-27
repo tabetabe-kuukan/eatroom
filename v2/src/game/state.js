@@ -56,6 +56,24 @@ export function addWord(id, word) {
   return true;
 }
 
+// 自分で書き足したメモ（空間ごと）
+export function notes(id) {
+  const s = state.spaces[id];
+  if (!s.notes) s.notes = [];
+  return s.notes;
+}
+export function addNote(id, text) {
+  const t = text.trim().slice(0, 80);
+  if (!t) return false;
+  notes(id).push(t);
+  save(true);
+  return true;
+}
+export function removeNote(id, index) {
+  notes(id).splice(index, 1);
+  save(true);
+}
+
 export function setZone(id, z) {
   const s = state.spaces[id];
   if (z > s.zoneMax) { s.zoneMax = z; save(); return true; }
