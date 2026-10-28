@@ -1,7 +1,7 @@
 // 進行状況（localStorage）。1 回のプレイの組み立て（選ばれた 5 語・部屋・置く物）も保存して、
 // 途中から同じ空間で再開できるようにする。
 import pool from '../data/pool.json';
-import { FINAL, makePlan } from './plan.js';
+import { FINAL, LAB, makePlan } from './plan.js';
 
 const KEY = 'tabetabe-kukan:v2';
 
@@ -21,10 +21,10 @@ function load() {
     const raw = localStorage.getItem(KEY);
     if (raw) {
       const s = JSON.parse(raw);
-      // 空間 6 は保存したものではなく、いまの定義を使う（作り直しても古い保存で遊べるように）
-      // 単語プールから外した語が入った保存は捨てて、選び直す
+      // 空間 4・5 は保存したものではなく、いまの定義を使う（作り直しても古い保存で遊べるように）
+      // 単語プールから外した語が入った保存・6 空間だったころの保存は捨てて、選び直す
       const inPool = (sp) => pool.words.some((w) => w.answerName === sp.answerName);
-      if (Array.isArray(s.plan) && s.plan.length === 6 && s.plan.slice(0, 5).every(inPool)) { s.plan[5] = FINAL; return s; }
+      if (Array.isArray(s.plan) && s.plan.length === 5 && s.plan.slice(0, 3).every(inPool)) { s.plan[3] = LAB; s.plan[4] = FINAL; return s; }
     }
   } catch { /* 保存できない環境でも遊べるようにする */ }
   return fresh();
@@ -42,7 +42,7 @@ export const plan = () => state.plan;
 export const spaceState = (id) => state.spaces[id];
 export const hasProgress = () => state.current > 0 || Object.values(state.spaces).some((s) => s.words.length || s.attempts);
 
-// はじめから：新しく 5 語を選び直す
+// はじめから：新しく 3 語を選び直す（脱出した記録も消える）
 export function reset() {
   state = fresh();
   save(true);
@@ -96,6 +96,15 @@ export function recordPath(id, x, z) {
   p.push([Math.round(x * 100) / 100, Math.round(z * 100) / 100]);
   if (p.length > 500) p.splice(0, p.length - 500);
   save();
+}
+
+// 研究室の扉から脱出した（最終空間には行かずに終わる）
+export function escape(id) {
+  state.spaces[id].escaped = true;
+  state.escaped = true;
+  state.current = state.plan.length;
+  state.finished = true;
+  save(true);
 }
 
 export function advance(fromIndex = state.current) {

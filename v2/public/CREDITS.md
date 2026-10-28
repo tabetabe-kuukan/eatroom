@@ -189,6 +189,10 @@
 | [幽玄](https://ja.wikipedia.org/wiki/%E5%B9%BD%E7%8E%84) | CC BY-SA 4.0 | 2026-10-26 |
 | [日本語の二人称代名詞](https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E4%BA%8C%E4%BA%BA%E7%A7%B0%E4%BB%A3%E5%90%8D%E8%A9%9E) | CC BY-SA 4.0 | 2026-10-23 |
 
+## 空間4「研究室」
+
+椅子・白衣・名札・扉・壁の印字は、外部の素材を使わずに three.js で手続き生成しています（`v2/src/game/lab.js`）。
+
 ## フォント
 
 - 張り紙・新聞・記録の文字：[Noto Serif JP](https://github.com/notofonts/noto-cjk)（Google, SIL Open Font License 1.1）。

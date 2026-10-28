@@ -53,6 +53,10 @@ ${rows.join('\n')}
 |---|---|---|
 ${wiki.join('\n')}
 
+## 空間4「研究室」
+
+椅子・白衣・名札・扉・壁の印字は、外部の素材を使わずに three.js で手続き生成しています（\`v2/src/game/lab.js\`）。
+
 ## フォント
 
 - 張り紙・新聞・記録の文字：[Noto Serif JP](https://github.com/notofonts/noto-cjk)（Google, SIL Open Font License 1.1）。

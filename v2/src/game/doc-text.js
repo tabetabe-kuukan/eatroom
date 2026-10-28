@@ -10,4 +10,7 @@ export const DOC_LABELS = {
 };
 
 // フォントを作るときに含める文字（make-font.mjs から読む）
-export const DOC_TEXT = Object.values(DOC_LABELS).flat().join('') + '第号年月日面頁番';
+export const DOC_TEXT = Object.values(DOC_LABELS).flat().join('') + '第号年月日面頁番'
+  // 空間 4「研究室」の文字（検索ワード・壁の印字・名札・扉のまわりの模様・脱出の文）
+  + '言語系観測研究室Z-TBKQ-001須戸幕大学大学院酸素炭素水素窒素カルシウムリン少量元素微量元素白衣主任出口扉入透字嶺'
+  + 'あなたは、食べ食べ空間から脱出した。';

@@ -22,14 +22,14 @@
       </div>
       <p class="controls pc">移動 WASD／矢印 ・ 走る Shift ・ 視点 マウス（クリックで固定） ・ 検索メモ Tab</p>
       <p class="controls touch">左で移動 ・ 右ドラッグで視点 ・ 右上で検索メモ</p>
-      <p class="small">全6空間 ・ 音が出ます ・ <a href="./CREDITS.md" target="_blank" rel="noopener">クレジット</a></p>
+      <p class="small">全5空間 ・ 音が出ます ・ <a href="./CREDITS.md" target="_blank" rel="noopener">クレジット</a></p>
     </div>
   </section>
 
   <!-- 読み込み -->
   <section id="loading" class="screen">
     <div class="loading-inner">
-      <p class="eyebrow" id="load-space">空間 1 / 6</p>
+      <p class="eyebrow" id="load-space">空間 1 / 5</p>
       <p class="load-msg" id="load-msg">検索ワードから空間を生成しています</p>
       <div class="bar"><i id="load-bar"></i></div>
       <p class="small" id="load-pct">0%</p>
@@ -52,7 +52,7 @@
   <!-- 空間に入ったときの案内 -->
   <section id="intro" class="layer">
     <div class="intro-inner">
-      <p class="eyebrow" id="intro-space">空間 1 / 6</p>
+      <p class="eyebrow" id="intro-space">空間 1 / 5</p>
       <p class="intro-tier" id="intro-tier"></p>
       <p class="intro-src">食べられた単語の痕跡：<b id="intro-n">9</b> 語</p>
       <p class="intro-note">壁や台に食い込んだ物、張り紙の言葉、変わってしまった部屋が痕跡です。<br />近づくと、その検索ワードが検索メモに記録されます。</p>
@@ -74,7 +74,7 @@
       <h2>検索メモ</h2>
       <button id="btn-memo-close" class="close" aria-label="閉じる">×</button>
     </header>
-    <p class="hint">答えはすべてWikipediaに載っている単語です。集めた検索ワードを手がかりに、自分で調べてみよう。</p>
+    <p class="hint">答えはすべてインターネットに載っている単語です。集めた検索ワードを手がかりに、自分で調べてみよう。</p>
     <div id="memo-list"></div>
     <form id="answer-form" autocomplete="off">
       <label for="answer">回答欄：この空間に食べられた単語は？</label>
@@ -93,7 +93,8 @@
       <h2 id="res-name"></h2>
       <figure class="quote">
         <blockquote id="res-quote"></blockquote>
-        <figcaption>
+        <figcaption id="res-cap-lab" hidden>出典：<span id="res-lab-src"></span></figcaption>
+        <figcaption id="res-cap-wiki">
           出典：<a id="res-link" target="_blank" rel="noopener">『<span id="res-title"></span>』</a>（日本語版ウィキペディア）<br />
           ライセンス：<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a> ・ 取得日：<span id="res-date"></span>
         </figcaption>
@@ -108,12 +109,14 @@
 
   <!-- 最終空間の黒画面 -->
   <div id="void"></div>
+  <!-- 研究室の扉から脱出したときの白い画面 -->
+  <div id="whiteout"><p id="whiteout-text">あなたは、食べ食べ空間から脱出した。</p></div>
 
   <!-- オールクリア -->
   <section id="allclear" class="screen">
     <div class="result-inner">
       <p class="eyebrow">ALL CLEAR</p>
-      <h2>オールクリア</h2>
+      <h2 id="allclear-title">ごちそうさま！</h2>
       <table class="summary"><tbody id="summary"></tbody></table>
       <div class="buttons">
         <button id="btn-restart" class="primary">はじめから遊ぶ</button>

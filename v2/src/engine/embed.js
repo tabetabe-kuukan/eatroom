@@ -295,7 +295,7 @@ export async function buildTrace(world, slot, entry, read = null, opts = {}) {
     parts.push({ type: 'special', sp, width: sp.place === 'world' ? 0 : sp.width });
   }
   if (words.length) {
-    const art = wordArt(slot.kind, words, opts.night, { color: tinted?.color, style: tinted?.style, roomW: slot.roomW });
+    const art = wordArt(slot.kind, words, opts.night, { color: tinted?.color, style: tinted?.style, roomW: slot.roomW, giant: tinted?.giant });
     parts.push({ type: 'words', art, width: art.width });
   }
   // ---- 面の上で横に使える幅を測る（壁の端・本棚・家具まで）。はみ出す文字は縮めて、全体を空いている側へずらす

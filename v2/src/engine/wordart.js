@@ -369,9 +369,15 @@ export function wordArt(kind, words, night = false, opts = {}) {
   if (!opts.style && night && kind === 'wall' && Math.random() < 0.4) style = pick(['neon', 'led']);
   if (style === '3d') {
     const roomW = opts.roomW || 7;
-    const a = kind === 'floor'
-      ? text3d(text, { height: 1.4 + Math.random() * 0.9, maxW: roomW * 0.8 })
-      : text3d(text, { height: 0.7 + Math.random() * 0.4, maxW: 3.0, depthRatio: 0.35 });
+    // opts.giant: 壁いっぱいの巨大な立体文字
+    // opts.giant === false: 床でもふつうの大きさにする
+    const a = kind === 'floor' && opts.giant === false
+      ? text3d(text, { height: 0.6 + Math.random() * 0.3, maxW: 3.0 })
+      : kind === 'floor'
+      ? text3d(text, { height: opts.giant ? 2.2 : 1.4 + Math.random() * 0.9, maxW: roomW * 0.8 })
+      : opts.giant
+        ? text3d(text, { height: 1.5, maxW: 10, depthRatio: 0.3 })
+        : text3d(text, { height: 0.7 + Math.random() * 0.4, maxW: 3.0, depthRatio: 0.35 });
     if (a) return { style, ...a };
     style = kind === 'floor' ? 'floor' : 'vinyl';
   }

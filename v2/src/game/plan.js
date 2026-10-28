@@ -1,5 +1,9 @@
-// 1 回のプレイの組み立て。単語プールから段階1〜5の答えを 1 語ずつ選び、空間 1〜5 にする。
-// 空間 6 は v1 と同じ「お前」。
+// 1 回のプレイの組み立て（全 5 空間）。
+// - 空間 1: 段階1 から 1 語
+// - 空間 2: 段階2〜4 をまとめた中から 1 語
+// - 空間 3: 段階5 から 1 語
+// - 空間 4: 決まった空間「研究室」（lab.js）
+// - 空間 5: 最終空間「あなた」
 //
 // 空間 1〜5 の作り方（区画 1〜3 = 検索ワードの 3 つの組）
 // - 区画の検索ワードに空間を表す言葉（和室・縁側など）があれば、その区画の部屋をそれに置き換える。
@@ -81,7 +85,8 @@ function planSpace(w, index) {
   return {
     id: `s${index + 1}`,
     kind: 'rooms',
-    tier: w.tier,
+    tier: index + 1,   // 表示する段階（空間の番号と同じ）
+    poolTier: w.tier,
     answerName: w.answerName,
     answers,
     wiki: w.wiki,
@@ -91,11 +96,36 @@ function planSpace(w, index) {
   };
 }
 
-// 空間 6「お前」。v1 と同じ答え・痕跡だが、空間は白い展示室にする。
+// 空間 4「研究室」。単語プールからは選ばず、置く物・場所もすべて決まっている（配置は lab.js）
+// 検索ワードは 6 つだけ。部屋の置き換え・夜・巨大化はない
+const labItem = (text, fixed) => ({ text, tokens: [{ word: text }], byRoom: false, fixed });
+export const LAB_ELEMENTS = '酸素　炭素　水素　窒素　カルシウム　リン　少量元素　微量元素';
+export const LAB = {
+  id: 'lab',
+  kind: 'rooms',
+  lab: true,
+  answerName: '字嶺 透',
+  answers: ['字嶺透', '字嶺 透', '字嶺', 'あざみねとおる', 'あざみね とおる', 'あざみね', 'アザミネトオル', 'アザミネ'],
+  night: false,
+  rooms: ['white', 'white', 'white'],
+  zones: [
+    { name: '第1区画', room: 'white', items: [labItem('言語系観測研究室', 'sign'), labItem('Z-TBKQ-001', 'record')] },
+    { name: '第2区画', room: 'white', items: [labItem('須戸幕大学大学院', 'diploma'), labItem(LAB_ELEMENTS, 'elements')] },
+    { name: '第3区画', room: 'white', items: [labItem('白衣', 'coat'), labItem('主任', 'tag')] },
+  ],
+};
+// リザルトに出す「記録」へのリンク（未設定ならリンクを出さない）
+export const ARCHIVE_URL = '';
+export const LAB_RESULT = {
+  source: '高次異存在観測研究所 研究報告 Z-TBKQ-001 No.02 より',
+  quote: '第4の空間の扉を通過した直後、主任研究員・字嶺透が消失した。（中略）同研究員は本存在に捕食され、第4の空間の語となったと判断した。',
+};
+
+// 空間 5「あなた」（最終空間）。v1 と同じ答え・痕跡だが、空間は白い展示室にする。
 // 痕跡は各国語の「お前」と、プレイヤー自身の記録（足跡・不正解の答え・何も映らない鏡）
 const finalItem = (w) => ({ text: w, tokens: [{ word: w }], byRoom: false });
 export const FINAL = {
-  id: '06',
+  id: 'final',
   kind: 'rooms',
   final: true,
   answerName: 'あなた',
@@ -127,9 +157,11 @@ function loadBags() {
 function saveBags(bags) {
   try { localStorage.setItem(BAG_KEY, JSON.stringify(bags)); } catch { /* 保存できなくても遊べる */ }
 }
-function draw(bags, tier) {
-  const names = pool.words.filter((w) => w.tier === tier).map((w) => w.answerName);
-  const bag = (bags[tier] || { deck: [], last: null });
+// tiers: 山札に入れる段階（空間 2 は段階2〜4 をまとめて 1 つの山札にする）
+function draw(bags, tiers) {
+  const key = tiers.join('-');
+  const names = pool.words.filter((w) => tiers.includes(w.tier)).map((w) => w.answerName);
+  const bag = (bags[key] || { deck: [], last: null });
   bag.deck = bag.deck.filter((n) => names.includes(n));   // プールから外した単語は捨てる
   if (!bag.deck.length) {
     bag.deck = shuffle([...names]);
@@ -138,15 +170,15 @@ function draw(bags, tier) {
   }
   const name = bag.deck.shift();
   bag.last = name;
-  bags[tier] = bag;
+  bags[key] = bag;
   return pool.words.find((w) => w.answerName === name);
 }
 
 export function makePlan() {
   const bags = loadBags();
-  const spaces = [1, 2, 3, 4, 5].map((t, i) => planSpace(draw(bags, t), i));
+  const spaces = [[1], [2, 3, 4], [5]].map((t, i) => planSpace(draw(bags, t), i));
   saveBags(bags);
-  return [...spaces, FINAL];
+  return [...spaces, LAB, FINAL];
 }
 
 // 空間ごとの検索ワード（メモに並ぶ単位）

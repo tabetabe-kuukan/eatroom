@@ -113,6 +113,11 @@ button.primary:hover { background: #fff; }
 #void { position: fixed; inset: 0; background: #000000; z-index: 100; display: none; cursor: none; }
 body.void, body.void * { cursor: none !important; }
 body.void #void { display: block; }
+/* 研究室の扉から脱出：1.5 秒で真っ白になり、白のまま 3 秒、小さな黒い文字が出る */
+#whiteout { position: fixed; inset: 0; background: #ffffff; z-index: 100; opacity: 0; pointer-events: none; transition: opacity 1.5s ease-in; display: grid; place-items: center; cursor: none; }
+#whiteout.show { opacity: 1; pointer-events: auto; }
+#whiteout p { margin: 0; color: #111; font-family: var(--serif); font-size: 15px; letter-spacing: 0.12em; opacity: 0; transition: opacity 1.2s ease; }
+#whiteout p.show { opacity: 1; }
 
 /* ---- v2: 白い展示室の上でも読めるように、画面の文字には暗い下地を敷く ---- */
 .where { background: rgba(10, 10, 12, 0.62); padding: 0.45em 0.9em; backdrop-filter: blur(4px); text-shadow: none; opacity: 1; border-radius: 2px; }

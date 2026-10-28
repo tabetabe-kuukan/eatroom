@@ -12,8 +12,9 @@ import { specialFor } from '../objects/specials.mjs';
 import { updateFlicker } from './engine/world.js';
 import { isCorrect } from './game/answer.js';
 import { decorateFinal } from './game/finale.js';
+import { buildLab, isExitNote } from './game/lab.js';
 import { playerShadow } from './game/shadow.js';
-import { kindsFor, LOOK_DAY, LOOK_NIGHT, memoWords } from './game/plan.js';
+import { ARCHIVE_URL, kindsFor, LAB_RESULT, LOOK_DAY, LOOK_NIGHT, memoWords } from './game/plan.js';
 import * as st from './game/state.js';
 
 const $ = (id) => document.getElementById(id);
@@ -31,7 +32,9 @@ let zone = 1;
 let elapsed = 0;
 let roomEnv = null;
 let updaters = [];   // ネオン・電光掲示板など動くもの
-let shadowUpdate = null; // 空間6：プレイヤーの影
+let shadowUpdate = null; // 最終空間：プレイヤーの影
+let labCtl = null;       // 空間 4「研究室」：隠し扉
+let shakeUntil = 0;      // 扉が現れるときの短い揺れ
 const clock = new THREE.Clock();
 const objById = new Map(OBJECTS.map((o) => [o.id, o]));
 const spaces = () => st.plan();
@@ -114,7 +117,8 @@ async function enterSpace(index) {
   setMode('ready');
 }
 
-// 空間 1〜5：白い展示室を 3 つ並べ、検索ワードを物・張り紙・部屋として置く
+// 空間 1〜3：白い展示室を 3 つ並べ、検索ワードを物・張り紙・部屋として置く
+// 空間 4（研究室）は決まった物を決まった場所に、空間 5（あなた）はプレイヤー自身の記録を置く
 async function buildRooms(progress) {
   look = def.night ? LOOK_NIGHT : LOOK_DAY;
   world = await loadRooms(def.rooms, look, R.renderer, { night: def.night, onProgress: (p) => progress(p * 0.8) });
@@ -136,7 +140,8 @@ async function buildRooms(progress) {
   updaters = [];
   let done = 0;
   const placed = [];
-  for (const [zi, z] of def.zones.entries()) {
+  labCtl = null;
+  for (const [zi, z] of (def.lab ? [] : def.zones).entries()) {
     // 特別な見せ方（黄色い壁・壁紙・木のうろなど）は、いまの定義から決め直す（保存したプレイにも効くように）
     for (const it of z.items) {
       it.tokens = it.tokens.map((t) => {
@@ -174,7 +179,14 @@ async function buildRooms(progress) {
       progress(0.8 + 0.2 * (++done / 9));
     }
   }
-  // 空間 6：空間 1〜5 の足跡・不正解の答え・何も映らない鏡（白い展示室に置く）
+  // 空間 4：研究室。検索メモに「出口」があれば、はじめから扉が開いている
+  if (def.lab) {
+    labCtl = await buildLab(world, readers, traces);
+    extras = labCtl;
+    if (st.notes(def.id).some(isExitNote)) labCtl.setDoor(true);
+    progress(1);
+  }
+  // 空間 5：空間 1〜4 の足跡・不正解の答え・何も映らない鏡（白い展示室に置く）
   shadowUpdate = null;
   if (def.final) {
     // 鏡の隣の作品名の札「YOU」
@@ -323,7 +335,10 @@ $('memo-list').addEventListener('submit', (e) => {
   if (e.target.id !== 'note-form') return;
   e.preventDefault();
   // 書いたら欄を閉じて、ボタンに戻す（空のときは閉じない）
-  if (st.addNote(def.id, $('note-input').value)) setNoteOpen(false);
+  const text = $('note-input').value;
+  if (!st.addNote(def.id, text)) return;
+  setNoteOpen(false);
+  if (labCtl && isExitNote(text) && !labCtl.isOpen()) exitEffect();
 });
 $('memo-list').addEventListener('click', (e) => {
   if (e.target.closest('#note-open')) return setNoteOpen(true);
@@ -332,7 +347,21 @@ $('memo-list').addEventListener('click', (e) => {
   if (!b) return;
   st.removeNote(def.id, Number(b.dataset.i));
   renderMemo();
+  // 研究室：「出口」のメモを消すと、扉も消える
+  if (labCtl?.isOpen() && !st.notes(def.id).some(isExitNote)) labCtl.setDoor(false);
 });
+
+// 研究室の隠し扉：メモが記録され、椅子の背後の壁に「出口」の文字が 1 秒浮かび、扉が現れて、メモが閉じる（約 4 秒）
+function exitEffect() {
+  const ctl = labCtl;
+  setTimeout(() => { if (labCtl === ctl) ctl.flashExitWord(); }, 500);
+  setTimeout(() => {
+    if (labCtl !== ctl) return;
+    ctl.setDoor(true, true);
+    shakeUntil = elapsed + 0.45;
+  }, 1600);
+  setTimeout(() => { if (labCtl === ctl) closeMemo(); }, 3900);
+}
 
 function openMemo() {
   if (mode !== 'play' && mode !== 'pause') return;
@@ -383,6 +412,17 @@ $('answer-form').onsubmit = (e) => {
 function fillResult() {
   const w = def.wiki;
   const s = st.spaceState(def.id);
+  // 研究室の答えはウィキペディアではなく、研究所の報告書から引く
+  $('res-cap-wiki').hidden = !!def.lab;
+  $('res-cap-lab').hidden = !def.lab;
+  if (def.lab) {
+    $('res-name').textContent = def.answerName;
+    $('res-quote').textContent = LAB_RESULT.quote;
+    $('res-lab-src').innerHTML = ARCHIVE_URL ? `<a href="${esc(ARCHIVE_URL)}" target="_blank" rel="noopener">${esc(LAB_RESULT.source)}</a>` : esc(LAB_RESULT.source);
+    $('res-zone').textContent = `${s.zoneMax} / 3`;
+    $('res-tries').textContent = `${s.attempts}回`;
+    return;
+  }
   $('res-name').textContent = def.answerName;
   $('res-quote').textContent = w?.extract || '';
   $('res-title').textContent = w?.title || def.answerName;
@@ -422,19 +462,42 @@ async function finale() {
     document.body.classList.remove('void');
     audio.setMasterMute(false);
     mode = 'final-result';
-    $('btn-next').textContent = 'オールクリアへ';
+    $('btn-next').textContent = '確認';
     showScreen('result');
   }, 5000);
 }
 
+// 研究室の扉をくぐった：白く溶けて、最終空間には行かずに終わる
+function escapeEnding() {
+  mode = 'void';
+  player.setEnabled(false);
+  document.exitPointerLock?.();
+  audio.stopAmbience(1.5);
+  st.escape(def.id);
+  $('hud').classList.remove('show');
+  $('memo').classList.remove('show');
+  $('whiteout').classList.add('show');          // 1.5 秒で白くなる
+  setTimeout(() => $('whiteout-text').classList.add('show'), 1500 + 3000); // 白のまま 3 秒
+  setTimeout(() => {
+    showAllClear();
+    $('whiteout').classList.remove('show');
+    $('whiteout-text').classList.remove('show');
+  }, 1500 + 3000 + 4500);
+}
+
 function showAllClear() {
-  st.advance(spaces().indexOf(def));
+  const escaped = !!st.getState().escaped;
+  if (!escaped) st.advance(spaces().indexOf(def));
   mode = 'allclear';
   if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
   $('summary').innerHTML = spaces().map((s, i) => {
     const ss = st.spaceState(s.id);
-    return `<tr><td>空間 ${i + 1}</td><td>${esc(s.answerName)}</td><td>区画 ${ss.zoneMax}/3</td><td>回答 ${ss.attempts}回</td></tr>`;
+    if (escaped && s.final) return `<tr><td>空間 ${i + 1}</td><td>—（未到達）</td><td></td><td></td></tr>`;
+    const name = escaped && s.lab ? '脱出' : s.answerName;
+    return `<tr><td>空間 ${i + 1}</td><td>${esc(name)}</td><td>区画 ${ss.zoneMax}/3</td><td>回答 ${ss.attempts}回</td></tr>`;
   }).join('');
+  // 最終空間まで進んだら「ごちそうさま！」、研究室の扉から脱出したときは「オールクリア！」
+  $('allclear-title').textContent = escaped ? 'オールクリア！' : 'ごちそうさま！';
   showScreen('allclear');
 }
 $('btn-restart').onclick = () => { st.reset(); enterSpace(0); };
@@ -451,12 +514,16 @@ function frame() {
     if (z !== zone) onZoneChange(z, zone);
     checkTraces();
     st.recordPath(def.id, player.pos.x, player.pos.z);
+    if (labCtl?.passed(player.pos)) { escapeEnding(); return; }
   }
   updateFlicker(world, look.flicker, elapsed);
   extras?.update?.(elapsed, R.camera);
   for (const u of updaters) u(elapsed);
   if (shadowUpdate) shadowUpdate(player.pos, dt);
   audio.setListener(R.camera);
+  // 扉が現れるときの短い揺れ（描くときだけずらす）
+  const shake = shakeUntil > elapsed ? (shakeUntil - elapsed) * 0.03 : 0;
+  if (shake) R.camera.position.add(new THREE.Vector3((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake, 0));
   R.render(elapsed);
   R.adapt(dt);
 }
@@ -498,5 +565,5 @@ if (import.meta.env.DEV) {
     },
   };
   const q = new URLSearchParams(location.search).get('space');
-  if (q) enterSpace(Math.max(0, Math.min(5, Number(q) - 1)));
+  if (q) enterSpace(Math.max(0, Math.min(spaces().length - 1, Number(q) - 1)));
 }
