@@ -32,6 +32,25 @@ export function initAudio() {
 
 export const audioReady = () => !!ctx;
 
+// ページが見えなくなったら（別のタブ・最小化・スマホのホーム画面など）音を止め、戻ったら再開する。
+// ページを閉じる・移動するときは音を完全に止める
+if (typeof document !== 'undefined') {
+  document.addEventListener('visibilitychange', () => {
+    if (!ctx || ctx.state === 'closed') return;
+    if (document.hidden) ctx.suspend().catch(() => {});
+    else ctx.resume().catch(() => {});
+  });
+  addEventListener('pagehide', (e) => {
+    if (!ctx || ctx.state === 'closed') return;
+    // 戻る・進むでページが保存される場合は一時停止だけにする（戻ったときに再開できるように）
+    if (e.persisted) ctx.suspend().catch(() => {});
+    else ctx.close().catch(() => {});
+  });
+  addEventListener('pageshow', (e) => {
+    if (e.persisted && ctx && ctx.state === 'suspended' && !document.hidden) ctx.resume().catch(() => {});
+  });
+}
+
 function impulse(sec, decay) {
   const n = Math.floor(ctx.sampleRate * sec);
   const b = ctx.createBuffer(2, n, ctx.sampleRate);
