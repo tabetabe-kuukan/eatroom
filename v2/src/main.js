@@ -498,6 +498,7 @@ function showAllClear() {
   }).join('');
   // 最終空間まで進んだら「ごちそうさま！」、研究室の扉から脱出したときは「オールクリア！」
   $('allclear-title').textContent = escaped ? 'オールクリア！' : 'ごちそうさま！';
+  $('allclear-eyebrow').textContent = escaped ? 'END.2 ESCAPE' : 'END.1　EATROOM';
   showScreen('allclear');
 }
 $('btn-restart').onclick = () => { st.reset(); enterSpace(0); };
