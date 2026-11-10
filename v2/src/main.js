@@ -10,11 +10,11 @@ import { loadRooms } from './engine/rooms.js';
 import { placeInRoom } from './engine/placer.js';
 import { specialFor } from '../objects/specials.mjs';
 import { updateFlicker } from './engine/world.js';
-import { isCorrect } from './game/answer.js';
+import { isAnswer, openBox } from './game/secret.js';
 import { decorateFinal } from './game/finale.js';
 import { buildLab, isExitNote } from './game/lab.js';
 import { playerShadow } from './game/shadow.js';
-import { ARCHIVE_URL, kindsFor, LAB_RESULT, LOOK_DAY, LOOK_NIGHT, memoWords } from './game/plan.js';
+import { ARCHIVE_URL, enabledSpecials, kindsFor, LOOK_DAY, LOOK_NIGHT, memoWords, secretOf } from './game/plan.js';
 import * as st from './game/state.js';
 
 const $ = (id) => document.getElementById(id);
@@ -146,7 +146,7 @@ async function buildRooms(progress) {
     for (const it of z.items) {
       it.tokens = it.tokens.map((t) => {
         if (t.object || t.special) return t;
-        const sp = specialFor(t.word, def.answers || []);
+        const sp = specialFor(t.word, enabledSpecials(def));
         if (!sp) return t;
         return sp.type === 'text' ? { ...t, color: sp.color, style: sp.style } : { word: t.word, special: sp.type };
       });
@@ -392,11 +392,19 @@ player.onLockLost(() => {
 });
 player.onStep((running) => audio.footstep('hard', running));
 
-$('answer-form').onsubmit = (e) => {
+// 答えはハッシュで照合し、正解したときだけ答えの名前・引用文を復号する（secret.js）
+let answering = false;
+$('answer-form').onsubmit = async (e) => {
   e.preventDefault();
   const v = $('answer').value;
-  if (!v.trim()) return;
-  const ok = isCorrect(def, v);
+  if (!v.trim() || answering) return;
+  const secret = secretOf(def);
+  const ok = isAnswer(secret, v);
+  if (ok) {
+    answering = true;
+    try { st.setReveal(def.id, await openBox(secret, v)); } catch (err) { console.error(err); }
+    answering = false;
+  }
   st.recordAttempt(def.id, v, ok);
   if (ok) {
     $('answer').value = '';
@@ -410,23 +418,25 @@ $('answer-form').onsubmit = (e) => {
 
 // ---------------------------------------------------------------- リザルト
 function fillResult() {
-  const w = def.wiki;
   const s = st.spaceState(def.id);
+  const r = s.reveal || {};
+  const w = r.wiki;
+  const name = r.name || '';
   // 研究室の答えはウィキペディアではなく、研究所の報告書から引く
   $('res-cap-wiki').hidden = !!def.lab;
   $('res-cap-lab').hidden = !def.lab;
   if (def.lab) {
-    $('res-name').textContent = def.answerName;
-    $('res-quote').textContent = LAB_RESULT.quote;
-    $('res-lab-src').innerHTML = ARCHIVE_URL ? `<a href="${esc(ARCHIVE_URL)}" target="_blank" rel="noopener">${esc(LAB_RESULT.source)}</a>` : esc(LAB_RESULT.source);
+    $('res-name').textContent = name;
+    $('res-quote').textContent = r.quote || '';
+    $('res-lab-src').innerHTML = ARCHIVE_URL ? `<a href="${esc(ARCHIVE_URL)}" target="_blank" rel="noopener">${esc(r.source || '')}</a>` : esc(r.source || '');
     $('res-zone').textContent = `${s.zoneMax} / 3`;
     $('res-tries').textContent = `${s.attempts}回`;
     return;
   }
-  $('res-name').textContent = def.answerName;
+  $('res-name').textContent = name;
   $('res-quote').textContent = w?.extract || '';
-  $('res-title').textContent = w?.title || def.answerName;
-  $('res-link').href = w?.url || `https://ja.wikipedia.org/wiki/${encodeURIComponent(def.answerName)}`;
+  $('res-title').textContent = w?.title || name;
+  $('res-link').href = w?.url || `https://ja.wikipedia.org/wiki/${encodeURIComponent(name)}`;
   $('res-date').textContent = w?.retrieved || '';
   $('res-zone').textContent = `${s.zoneMax} / 3`;
   $('res-tries').textContent = `${s.attempts}回`;
@@ -493,7 +503,7 @@ function showAllClear() {
   $('summary').innerHTML = spaces().map((s, i) => {
     const ss = st.spaceState(s.id);
     if (escaped && s.final) return `<tr><td>空間 ${i + 1}</td><td>—（未到達）</td><td></td><td></td></tr>`;
-    const name = escaped && s.lab ? '脱出' : s.answerName;
+    const name = escaped && s.lab ? '脱出' : ss.reveal?.name || '—';
     return `<tr><td>空間 ${i + 1}</td><td>${esc(name)}</td><td>区画 ${ss.zoneMax}/3</td><td>回答 ${ss.attempts}回</td></tr>`;
   }).join('');
   // 最終空間まで進んだら「ごちそうさま！」、研究室の扉から脱出したときは「オールクリア！」

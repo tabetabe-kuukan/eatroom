@@ -134,63 +134,7 @@
 リザルト画面では、日本語版ウィキペディアの記事冒頭の文を引用しています。
 引用文は REST API（`https://ja.wikipedia.org/api/rest_v1/page/summary/<タイトル>`）で取得したもので、[クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) の条件で利用しています。
 著作者はウィキペディアの各記事の執筆者です（各記事の履歴を参照）。
-
-| 記事 | ライセンス | 取得日 |
-|---|---|---|
-| [風鈴](https://ja.wikipedia.org/wiki/%E9%A2%A8%E9%88%B4) | CC BY-SA 4.0 | 2026-10-26 |
-| [提灯](https://ja.wikipedia.org/wiki/%E6%8F%90%E7%81%AF) | CC BY-SA 4.0 | 2026-10-26 |
-| [炬燵](https://ja.wikipedia.org/wiki/%E7%82%AC%E7%87%B5) | CC BY-SA 4.0 | 2026-10-26 |
-| [箸](https://ja.wikipedia.org/wiki/%E7%AE%B8) | CC BY-SA 4.0 | 2026-10-26 |
-| [虹](https://ja.wikipedia.org/wiki/%E8%99%B9) | CC BY-SA 4.0 | 2026-10-26 |
-| [自動販売機](https://ja.wikipedia.org/wiki/%E8%87%AA%E5%8B%95%E8%B2%A9%E5%A3%B2%E6%A9%9F) | CC BY-SA 4.0 | 2026-10-26 |
-| [噴水](https://ja.wikipedia.org/wiki/%E5%99%B4%E6%B0%B4) | CC BY-SA 4.0 | 2026-10-26 |
-| [地球儀](https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E5%84%80) | CC BY-SA 4.0 | 2026-10-26 |
-| [蚊帳](https://ja.wikipedia.org/wiki/%E8%9A%8A%E5%B8%B3) | CC BY-SA 4.0 | 2026-10-26 |
-| [公衆電話](https://ja.wikipedia.org/wiki/%E5%85%AC%E8%A1%86%E9%9B%BB%E8%A9%B1) | CC BY-SA 4.0 | 2026-10-26 |
-| [万華鏡](https://ja.wikipedia.org/wiki/%E4%B8%87%E8%8F%AF%E9%8F%A1) | CC BY-SA 4.0 | 2026-10-26 |
-| [オルゴール](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB) | CC BY-SA 4.0 | 2026-10-26 |
-| [けん玉](https://ja.wikipedia.org/wiki/%E3%81%91%E3%82%93%E7%8E%89) | CC BY-SA 4.0 | 2026-10-26 |
-| [きさらぎ駅](https://ja.wikipedia.org/wiki/%E3%81%8D%E3%81%95%E3%82%89%E3%81%8E%E9%A7%85) | CC BY-SA 4.0 | 2026-10-26 |
-| [ブラックボックス](https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9) | CC BY-SA 4.0 | 2026-10-26 |
-| [クイーンズ・ギャンビット・アクセプテッド](https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%B3%E3%83%93%E3%83%83%E3%83%88%E3%83%BB%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%97%E3%83%86%E3%83%83%E3%83%89) | CC BY-SA 4.0 | 2026-10-26 |
-| [(90) アンティオペ](https://ja.wikipedia.org/wiki/(90)_%E3%82%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%82%AA%E3%83%9A) | CC BY-SA 4.0 | 2026-10-26 |
-| [ばね](https://ja.wikipedia.org/wiki/%E3%81%B0%E3%81%AD) | CC BY-SA 4.0 | 2026-10-26 |
-| [アメダス](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A1%E3%83%80%E3%82%B9) | CC BY-SA 4.0 | 2026-10-26 |
-| [メリーさんの電話](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AA%E3%83%BC%E3%81%95%E3%82%93%E3%81%AE%E9%9B%BB%E8%A9%B1) | CC BY-SA 4.0 | 2026-10-26 |
-| [ベリリウム](https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AA%E3%83%AA%E3%82%A6%E3%83%A0) | CC BY-SA 4.0 | 2026-10-26 |
-| [ロジスティック写像](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B8%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E5%86%99%E5%83%8F) | CC BY-SA 4.0 | 2026-10-26 |
-| [カラオケ](https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1) | CC BY-SA 4.0 | 2026-10-26 |
-| [蜃気楼](https://ja.wikipedia.org/wiki/%E8%9C%83%E6%B0%97%E6%A5%BC) | CC BY-SA 4.0 | 2026-10-26 |
-| [プリズム](https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0) | CC BY-SA 4.0 | 2026-10-26 |
-| [光合成](https://ja.wikipedia.org/wiki/%E5%85%89%E5%90%88%E6%88%90) | CC BY-SA 4.0 | 2026-10-26 |
-| [琥珀](https://ja.wikipedia.org/wiki/%E7%90%A5%E7%8F%80) | CC BY-SA 4.0 | 2026-10-26 |
-| [ホタル](https://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%BF%E3%83%AB) | CC BY-SA 4.0 | 2026-10-26 |
-| [月食](https://ja.wikipedia.org/wiki/%E6%9C%88%E9%A3%9F) | CC BY-SA 4.0 | 2026-10-26 |
-| [潮汐](https://ja.wikipedia.org/wiki/%E6%BD%AE%E6%B1%90) | CC BY-SA 4.0 | 2026-10-26 |
-| [サンゴ礁](https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%82%B4%E7%A4%81) | CC BY-SA 4.0 | 2026-10-26 |
-| [活版印刷](https://ja.wikipedia.org/wiki/%E6%B4%BB%E7%89%88%E5%8D%B0%E5%88%B7) | CC BY-SA 4.0 | 2026-10-26 |
-| [天球儀 (恒星)](https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%90%83%E5%84%80_(%E6%81%92%E6%98%9F)) | CC BY-SA 4.0 | 2026-10-26 |
-| [ダゲレオタイプ](https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%B2%E3%83%AC%E3%82%AA%E3%82%BF%E3%82%A4%E3%83%97) | CC BY-SA 4.0 | 2026-10-26 |
-| [カメラ・オブスクラ](https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A1%E3%83%A9%E3%83%BB%E3%82%AA%E3%83%96%E3%82%B9%E3%82%AF%E3%83%A9) | CC BY-SA 4.0 | 2026-10-26 |
-| [六分儀](https://ja.wikipedia.org/wiki/%E5%85%AD%E5%88%86%E5%84%80) | CC BY-SA 4.0 | 2026-10-26 |
-| [テスラコイル](https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%B9%E3%83%A9%E3%82%B3%E3%82%A4%E3%83%AB) | CC BY-SA 4.0 | 2026-10-26 |
-| [幻灯機](https://ja.wikipedia.org/wiki/%E5%B9%BB%E7%81%AF%E6%A9%9F) | CC BY-SA 4.0 | 2026-10-26 |
-| [根付](https://ja.wikipedia.org/wiki/%E6%A0%B9%E4%BB%98) | CC BY-SA 4.0 | 2026-10-26 |
-| [鉱石ラジオ](https://ja.wikipedia.org/wiki/%E9%89%B1%E7%9F%B3%E3%83%A9%E3%82%B8%E3%82%AA) | CC BY-SA 4.0 | 2026-10-26 |
-| [潜望鏡](https://ja.wikipedia.org/wiki/%E6%BD%9C%E6%9C%9B%E9%8F%A1) | CC BY-SA 4.0 | 2026-10-26 |
-| [ペルティエ素子](https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%83%86%E3%82%A3%E3%82%A8%E7%B4%A0%E5%AD%90) | CC BY-SA 4.0 | 2026-10-26 |
-| [超伝導](https://ja.wikipedia.org/wiki/%E8%B6%85%E4%BC%9D%E5%B0%8E) | CC BY-SA 4.0 | 2026-10-26 |
-| [圧電効果](https://ja.wikipedia.org/wiki/%E5%9C%A7%E9%9B%BB%E5%8A%B9%E6%9E%9C) | CC BY-SA 4.0 | 2026-10-26 |
-| [形状記憶合金](https://ja.wikipedia.org/wiki/%E5%BD%A2%E7%8A%B6%E8%A8%98%E6%86%B6%E5%90%88%E9%87%91) | CC BY-SA 4.0 | 2026-10-26 |
-| [正規表現](https://ja.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE) | CC BY-SA 4.0 | 2026-10-26 |
-| [ガベージコレクション](https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%99%E3%83%BC%E3%82%B8%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3) | CC BY-SA 4.0 | 2026-10-26 |
-| [誘導加熱](https://ja.wikipedia.org/wiki/%E8%AA%98%E5%B0%8E%E5%8A%A0%E7%86%B1) | CC BY-SA 4.0 | 2026-10-26 |
-| [ファラデーケージ](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B8) | CC BY-SA 4.0 | 2026-10-26 |
-| [掛詞](https://ja.wikipedia.org/wiki/%E6%8E%9B%E8%A9%9E) | CC BY-SA 4.0 | 2026-10-26 |
-| [止揚](https://ja.wikipedia.org/wiki/%E6%AD%A2%E6%8F%9A) | CC BY-SA 4.0 | 2026-10-26 |
-| [キアロスクーロ](https://ja.wikipedia.org/wiki/%E3%82%AD%E3%82%A2%E3%83%AD%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AD) | CC BY-SA 4.0 | 2026-10-26 |
-| [幽玄](https://ja.wikipedia.org/wiki/%E5%B9%BD%E7%8E%84) | CC BY-SA 4.0 | 2026-10-26 |
-| [日本語の二人称代名詞](https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E4%BA%8C%E4%BA%BA%E7%A7%B0%E4%BB%A3%E5%90%8D%E8%A9%9E) | CC BY-SA 4.0 | 2026-10-23 |
+引用した記事（54 件）の題名・リンク・取得日は、その記事を引用したリザルト画面に表示しています（記事の一覧はゲームの答えの一覧になってしまうため、ここには載せていません）。
 
 ## フォント
 

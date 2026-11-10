@@ -1,6 +1,6 @@
 // 単語プールの確認用ページを作る: node v2/word-pool/make-review.mjs <出力パス>
 import { readFileSync, writeFileSync } from 'node:fs';
-const pool = JSON.parse(readFileSync('v2/src/data/pool.json', 'utf8'));
+const pool = JSON.parse(readFileSync('v2/word-pool/pool-plain.json', 'utf8'));
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const ex = { 1: '洞窟・着物', 2: '灯台・万華鏡', 3: '蜃気楼・日時計', 4: 'ジャイロスコープ・活版印刷', 5: 'アセンブリ言語・掛詞' };
 let sections = '';

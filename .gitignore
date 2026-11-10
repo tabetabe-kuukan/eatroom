@@ -14,3 +14,6 @@ blender/export/*.glb
 # v2 の確認用スクリーンショット
 v2/.shots/
 v2/dist/
+
+# 平文の単語プール（build-pool.mjs が作る確認用。答えが入るのでコミットしない）
+v2/word-pool/pool-plain.json

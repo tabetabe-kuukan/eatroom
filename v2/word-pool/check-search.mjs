@@ -6,7 +6,7 @@
 // 出力: v2/word-pool/search-check.json
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const pool = JSON.parse(readFileSync('v2/src/data/pool.json', 'utf8'));
+const pool = JSON.parse(readFileSync('v2/word-pool/pool-plain.json', 'utf8'));
 const UA = { 'User-Agent': 'tabetabe-kukan/0.2 (search word check)' };
 const API = 'https://ja.wikipedia.org/w/api.php';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

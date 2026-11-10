@@ -11,8 +11,3 @@ export function normalize(s) {
     .replace(/[\s　・･「」『』（）()［］\[\]【】、。，．,.!！?？"'“”‘’~〜～_\-－—―]/g, '');
 }
 
-export function isCorrect(space, input) {
-  const n = normalize(input);
-  if (!n) return false;
-  return space.answers.some((a) => normalize(a) === n);
-}

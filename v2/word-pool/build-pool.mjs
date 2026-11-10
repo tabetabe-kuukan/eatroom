@@ -1,14 +1,24 @@
-// verified.json（Wikipedia の検証結果）と search-words.mjs（検索ワード）から
-// ゲームが読む単語プール v2/src/data/pool.json を作る。
+// verified.json（Wikipedia の検証結果）と search-words.mjs（検索ワード）から単語プールを作る。
 //   node v2/word-pool/build-pool.mjs
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+// 書き出すもの
+// - v2/src/data/pool.json  : ゲームが読む単語プール。答え・引用は平文で持たない（判定はハッシュ、引用は暗号化。src/game/secret.js）
+// - v2/src/data/fixed.json : 空間 4「研究室」・空間 5「あなた」の答え（同じ形）
+// - v2/word-pool/pool-plain.json : 平文の単語プール（確認用スクリプト・クレジット用。ゲームには入らない）
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { isAnswer, seal } from '../src/game/secret.js';
+import { SPECIALS } from '../objects/specials.mjs';
 import { ANSWERS } from './answers.mjs';
+import { ANSWER_ROOMS, FINAL_ANSWERS, LAB_SECRET, SPECIAL_ANSWERS } from './secret-rules.mjs';
 import { SEARCH_WORDS, TIER_LABELS } from './search-words.mjs';
 import { SELECTED } from './selection.mjs';
 
 const verified = JSON.parse(readFileSync('v2/word-pool/verified.json', 'utf8'));
 const byTitle = new Map(verified.filter((r) => r.ok).map((r) => [r.title, r]));
 const today = new Date().toISOString().slice(0, 10);
+// 引用を取得した日は、前に作ったプールの日付を引き継ぐ（作り直しただけで日付が変わらないように）
+const prevPath = existsSync('v2/word-pool/pool-plain.json') ? 'v2/word-pool/pool-plain.json' : 'v2/src/data/pool.json';
+const prevDates = new Map();
+try { for (const w of JSON.parse(readFileSync(prevPath, 'utf8')).words) if (w.wiki?.retrieved) prevDates.set(w.wiki.title, w.wiki.retrieved); } catch { /* はじめて */ }
 
 // 回答の表記ゆれ（ゲーム側と同じ正規化）
 const norm = (s) => (s || '').normalize('NFKC').toLowerCase()
@@ -48,7 +58,7 @@ for (const [title, zones] of Object.entries(SEARCH_WORDS)) {
       url: `https://ja.wikipedia.org/wiki/${encodeURIComponent(v.title.replace(/ /g, '_'))}`,
       license: 'CC BY-SA 4.0',
       licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/deed.ja',
-      retrieved: today,
+      retrieved: prevDates.get(v.title) || today,
     },
   });
 }
@@ -56,6 +66,24 @@ for (const [t, list] of Object.entries(SELECTED)) {
   for (const n of list) if (!words.some((w) => w.answerName === n && w.tier === +t)) problems.push(`selection.mjs: 段階${t}の「${n}」が見つからない`);
 }
 mkdirSync('v2/src/data', { recursive: true });
-writeFileSync('v2/src/data/pool.json', JSON.stringify({ tiers: TIER_LABELS, words }, null, 1));
+writeFileSync('v2/word-pool/pool-plain.json', JSON.stringify({ tiers: TIER_LABELS, words }, null, 1));
+
+// ---- ゲームが読む形（答えを平文で持たない）
+const pad = (n) => String(n).padStart(2, '0');
+const sealed = [];
+for (const [i, w] of words.entries()) {
+  const entry = await seal(w.answers, { name: w.answerName, wiki: w.wiki });
+  const tokens = w.zones.flat().flatMap((s) => s.split(/[\s　]+/).filter(Boolean));
+  // この答えのときだけ使う特別な見せ方
+  const specials = [...new Set(tokens.filter((t) => SPECIALS[t]?.gated && SPECIAL_ANSWERS[t] && isAnswer(entry, SPECIAL_ANSWERS[t])))];
+  const rooms = Object.entries(ANSWER_ROOMS).find(([a]) => isAnswer(entry, a))?.[1];
+  sealed.push({ id: `w${w.tier}${pad(i)}`, tier: w.tier, zones: w.zones, ...(specials.length ? { specials } : {}), ...(rooms ? { rooms } : {}), ...entry });
+}
+writeFileSync('v2/src/data/pool.json', JSON.stringify({ tiers: TIER_LABELS, words: sealed }));
+const omae = JSON.parse(readFileSync('v2/src/data/omae.json', 'utf8'));
+writeFileSync('v2/src/data/fixed.json', JSON.stringify({
+  lab: await seal(LAB_SECRET.answers, LAB_SECRET.payload),
+  final: await seal(FINAL_ANSWERS, { name: 'あなた', wiki: omae }),
+}));
 for (const t of [1, 2, 3, 4, 5]) console.log(`段階${t}: ${words.filter((w) => w.tier === t).length} 語`);
 if (problems.length) { console.log('要確認:'); for (const p of problems) console.log(' -', p); }

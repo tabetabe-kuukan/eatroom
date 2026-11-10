@@ -16,18 +16,14 @@ export const ROOMS = [
   { id: 'sky', label: '空', depicts: ['空'], words: ['空'] },
 ];
 
-// 答えごとに決めた部屋（検索ワードに空間の言葉がなくても、その区画の部屋を置き換える）
-// { 答え: { 区画番号: 部屋の id } }
-export const ANSWER_ROOMS = {
-  けん玉: { 1: 'kids' },
-};
+// 答えごとに決めた部屋は v2/word-pool/secret-rules.mjs（答えの名前をゲームに入れないため。単語プールの rooms になる）
 
 export const NIGHT = (word) => word.includes('夜');
 
-// 検索ワード（「和室　床材」のように全角スペースで並ぶこともある）から部屋を選ぶ。answer は答えの表記の一覧
-export function roomFor(searchWord, answers = []) {
+// 検索ワード（「和室　床材」のように全角スペースで並ぶこともある）から部屋を選ぶ。isAnswer(言葉) はその言葉が答えか
+export function roomFor(searchWord, isAnswer = () => false) {
   for (const w of searchWord.split(/[\s　]+/)) {
-    const r = ROOMS.find((x) => x.words.includes(w) && !x.depicts.some((d) => answers.includes(d)));
+    const r = ROOMS.find((x) => x.words.includes(w) && !x.depicts.some(isAnswer));
     if (r) return { room: r, word: w };
   }
   return null;

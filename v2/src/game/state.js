@@ -23,7 +23,7 @@ function load() {
       const s = JSON.parse(raw);
       // 空間 4・5 は保存したものではなく、いまの定義を使う（作り直しても古い保存で遊べるように）
       // 単語プールから外した語が入った保存・6 空間だったころの保存は捨てて、選び直す
-      const inPool = (sp) => pool.words.some((w) => w.answerName === sp.answerName);
+      const inPool = (sp) => !!sp.word && pool.words.some((w) => w.id === sp.word);
       if (Array.isArray(s.plan) && s.plan.length === 5 && s.plan.slice(0, 3).every(inPool)) { s.plan[3] = LAB; s.plan[4] = FINAL; return s; }
     }
   } catch { /* 保存できない環境でも遊べるようにする */ }
@@ -78,6 +78,12 @@ export function setZone(id, z) {
   const s = state.spaces[id];
   if (z > s.zoneMax) { s.zoneMax = z; save(); return true; }
   return false;
+}
+
+// 正解したときに取り出した答えの名前・引用文（オールクリアの一覧・リザルトに使う）
+export function setReveal(id, reveal) {
+  state.spaces[id].reveal = reveal;
+  save(true);
 }
 
 export function recordAttempt(id, input, ok) {

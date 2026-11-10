@@ -23,7 +23,7 @@ const KIND = { hdri: 'HDRI', model: '3Dモデル', texture: 'テクスチャ' };
 const assetRows = [...assets.values()].sort((a, b) => (a.kind + a.name).localeCompare(b.kind + b.name))
   .map((a) => [KIND[a.kind] || a.kind, { text: a.name, url: a.url }, a.authors.join(', '), 'CC0', [...a.where].join('・')]);
 
-const pool = JSON.parse(readFileSync('v2/src/data/pool.json', 'utf8'));
+const pool = JSON.parse(readFileSync('v2/word-pool/pool-plain.json', 'utf8'));
 const omae = JSON.parse(readFileSync('v2/src/data/omae.json', 'utf8'));
 const wikiRows = [...pool.words.map((w) => w.wiki), omae]
   .map((w) => [{ text: w.title, url: w.url }, 'CC BY-SA 4.0', w.retrieved]);
@@ -69,8 +69,8 @@ const SECTIONS = [
       'リザルト画面では、日本語版ウィキペディアの記事冒頭の文を引用しています。',
       '引用文は REST API（`https://ja.wikipedia.org/api/rest_v1/page/summary/<タイトル>`）で取得したもので、[クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) の条件で利用しています。',
       '著作者はウィキペディアの各記事の執筆者です（各記事の履歴を参照）。',
+      `引用した記事（${wikiRows.length} 件）の題名・リンク・取得日は、その記事を引用したリザルト画面に表示しています（記事の一覧はゲームの答えの一覧になってしまうため、ここには載せていません）。`,
     ],
-    table: { head: ['記事', 'ライセンス', '取得日'], rows: wikiRows },
   },
   {
     h: 'フォント',

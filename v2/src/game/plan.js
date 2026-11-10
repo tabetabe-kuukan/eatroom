@@ -11,11 +11,26 @@
 // - 残りの言葉は、名詞でライブラリに物があればオブジェクト、それ以外は張り紙・新聞・記録の中の言葉にする
 // - オブジェクトのうち 1〜2 個を巨大化させる
 // - 検索ワードに「夜」を含む言葉があれば、空間全体が深夜の美術館になる
+//
+// 答えは平文で持たない（v2/word-pool/build-pool.mjs が作る pool.json・fixed.json。仕組みは secret.js）。
+// 空間の定義には単語プールの id（word）だけを入れ、答えの判定・リザルトの中身は secretOf() から取り出す
 import pool from '../data/pool.json';
-import omae from '../data/omae.json';
+import fixed from '../data/fixed.json';
 import { OBJECTS, objectsFor } from '../../objects/library.mjs';
 import { specialFor } from '../../objects/specials.mjs';
-import { ANSWER_ROOMS, NIGHT, roomFor } from '../../objects/spaces.mjs';
+import { NIGHT, roomFor } from '../../objects/spaces.mjs';
+import { isAnswer } from './secret.js';
+
+const WORD_BY_ID = new Map(pool.words.map((w) => [w.id, w]));
+export const poolWord = (id) => WORD_BY_ID.get(id);
+// 空間の答えの判定・リザルトの中身（ハッシュと暗号文）
+export function secretOf(def) {
+  if (def.lab) return fixed.lab;
+  if (def.final) return fixed.final;
+  return WORD_BY_ID.get(def.word);
+}
+// この空間で使える、特定の答えのときだけの特別な見せ方
+export const enabledSpecials = (def) => WORD_BY_ID.get(def.word)?.specials || [];
 
 const KEYS = ['left', 'table', 'right'];
 const ZONE_NAMES = ['第1区画', '第2区画', '第3区画'];
@@ -40,7 +55,8 @@ export function kindsFor(tokens) {
 }
 
 function planSpace(w, index) {
-  const answers = w.answers;
+  // 答えと同じに見える部屋・物は使わない（答えは平文で持たないので、ハッシュで確かめる）
+  const isAns = (d) => isAnswer(w, d);
   const used = new Set();
   const night = w.zones.flat().some(NIGHT);
   const rooms = [];
@@ -48,11 +64,11 @@ function planSpace(w, index) {
     let room = 'white';
     let roomWord = null;
     for (const s of words) {
-      const r = roomFor(s, answers);
+      const r = roomFor(s, isAns);
       if (r) { room = r.room.id; roomWord = { search: s, word: r.word }; break; }
     }
     // 答えごとに決めた部屋（けん玉 → 子ども部屋 など）は、検索ワードを使わずに置き換える
-    const fixedRoom = ANSWER_ROOMS[w.answerName]?.[zi + 1];
+    const fixedRoom = w.rooms?.[zi + 1];
     if (fixedRoom && room === 'white') room = fixedRoom;
     rooms.push(room);
     const items = words.map((s, k) => {
@@ -60,10 +76,10 @@ function planSpace(w, index) {
         .filter((t) => !(roomWord && roomWord.search === s && t === roomWord.word))
         .map((t) => {
           // 文字ではなく空間の変化で見せる言葉（黄色い壁・日光・水たまりなど）
-          const sp = specialFor(t, answers);
+          const sp = specialFor(t, w.specials || []);
           if (sp && sp.type !== 'text') return { word: t, special: sp.type };
           // 答えそのものに見える物、この空間ですでに使った物は使わない（「缶」と「飲料」が同じ缶にならないように）
-          const objs = objectsFor(t).filter((o) => !o.depicts.some((d) => answers.includes(d)) && !used.has(o.id));
+          const objs = objectsFor(t).filter((o) => !o.depicts.some(isAns) && !used.has(o.id));
           if (objs.length && !sp) {
             const o = pick(objs);
             used.add(o.id);
@@ -87,9 +103,7 @@ function planSpace(w, index) {
     kind: 'rooms',
     tier: index + 1,   // 表示する段階（空間の番号と同じ）
     poolTier: w.tier,
-    answerName: w.answerName,
-    answers,
-    wiki: w.wiki,
+    word: w.id,
     night,
     rooms,
     zones,
@@ -104,8 +118,6 @@ export const LAB = {
   id: 'lab',
   kind: 'rooms',
   lab: true,
-  answerName: '字嶺 透',
-  answers: ['字嶺透', '字嶺 透', '字嶺', 'あざみねとおる', 'あざみね とおる', 'あざみね', 'アザミネトオル', 'アザミネ'],
   night: false,
   rooms: ['white', 'white', 'white'],
   zones: [
@@ -114,12 +126,8 @@ export const LAB = {
     { name: '第3区画', room: 'white', items: [labItem('白衣', 'coat'), labItem('主任', 'tag')] },
   ],
 };
-// リザルトに出す「記録」へのリンク（未設定ならリンクを出さない）
+// リザルトに出す「記録」へのリンク（未設定ならリンクを出さない）。答え・引用文は fixed.json に暗号化して入っている
 export const ARCHIVE_URL = '';
-export const LAB_RESULT = {
-  source: '高次異存在観測研究所 研究報告 Z-TBKQ-001 No.02 より',
-  quote: '第4の空間の扉を通過した直後、主任研究員・字嶺透が消失した。（中略）同研究員は本存在に捕食され、第4の空間の語となったと判断した。',
-};
 
 // 空間 5「あなた」（最終空間）。v1 と同じ答え・痕跡だが、空間は白い展示室にする。
 // 痕跡は各国語の「お前」と、プレイヤー自身の記録（足跡・不正解の答え・何も映らない鏡）
@@ -128,9 +136,6 @@ export const FINAL = {
   id: 'final',
   kind: 'rooms',
   final: true,
-  answerName: 'あなた',
-  answers: ['あなた', '貴方', 'お前', 'おまえ', 'オマエ', '自分', 'わたし', '私', '俺', '僕'],
-  wiki: omae,
   night: false,
   rooms: ['white', 'white', 'white'],
   zones: [
@@ -143,7 +148,9 @@ export const FINAL = {
 
 // 段階ごとに「山札」を作って順に引く。山札が尽きるまで同じ単語は出ないので、すべての単語がまんべんなく出る。
 // 山札はブラウザに保存する（はじめからを繰り返しても続きから引く）。単語プールが変わった分は入れ直す
-const BAG_KEY = 'tabetabe-kukan:v2:bag';
+// 山札には単語プールの id を入れる（答えの名前は入れない）。答えの名前が入っていた古い山札は消す
+const BAG_KEY = 'tabetabe-kukan:v2:deck';
+try { localStorage.removeItem('tabetabe-kukan:v2:bag'); } catch { /* noop */ }
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -160,7 +167,7 @@ function saveBags(bags) {
 // tiers: 山札に入れる段階（空間 2 は段階2〜4 をまとめて 1 つの山札にする）
 function draw(bags, tiers) {
   const key = tiers.join('-');
-  const names = pool.words.filter((w) => tiers.includes(w.tier)).map((w) => w.answerName);
+  const names = pool.words.filter((w) => tiers.includes(w.tier)).map((w) => w.id);
   const bag = (bags[key] || { deck: [], last: null });
   bag.deck = bag.deck.filter((n) => names.includes(n));   // プールから外した単語は捨てる
   if (!bag.deck.length) {
@@ -171,7 +178,7 @@ function draw(bags, tiers) {
   const name = bag.deck.shift();
   bag.last = name;
   bags[key] = bag;
-  return pool.words.find((w) => w.answerName === name);
+  return WORD_BY_ID.get(name);
 }
 
 export function makePlan() {
